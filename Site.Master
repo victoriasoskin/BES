@@ -1,0 +1,31 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="WebPWI1.SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title></title>
+ <link id="Link1" href="~/Styles/site.css" rel="stylesheet" type="text/css" media="screen" runat="server" />
+        <script type="text/javascript">
+            function shint(s) {
+            var x = document.getElementById(s);
+            x.style.visibility = 'visible';
+        }
+        function hidehintimg(s) { 
+            var x = document.getElementById(s);
+            x.style.visibility = 'hidden';
+        }
+
+    </script>
+
+       <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body dir="rtl" style="font-family:Arial;">
+    <form runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+
+        </div>
+     </form>
+</body>
+</html>

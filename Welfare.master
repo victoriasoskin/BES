@@ -1,0 +1,54 @@
+﻿<%@ Master Language="VB" CodeFile="Welfare.master.vb" Inherits="Welfare" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<script type = "text/javascript" >
+    function disableBackButton() { 
+        window.history.forward();
+    }
+    setTimeout("disableBackButton()", 0);  
+</script>
+<head runat="server">
+    <title>בית אקשטיין - מבצעים והטבות</title>
+   <style type="text/css">
+		.reldiv
+		{
+			position:relative;
+			font-size: smaller; 
+			font-family: Arial;
+			width:100%;
+			direction:rtl;
+		}
+		.hdrdiv
+		{
+			text-align:center;
+			font-size:x-large;
+			font-weight:bold;
+			color:Olive;
+		}
+		.scrl
+		{
+			position:absolute;
+			bottom:auto;
+			left:100;
+		}
+		.rblbrdr td
+		{
+		    border:1px solid grey;
+		}
+	</style>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body dir="rtl">
+    <form id="form1" runat="server" method="post" autocomplete="off">
+        <div style="font-family:Arial">
+            <div style="font-size:xx-large;color:White;text-align:center;"></div>
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

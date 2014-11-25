@@ -1,0 +1,72 @@
+<%@ Master Language="VB" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<script runat="server">
+
+    Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs)
+        Dim smn As SiteMapNode
+        Dim stest As String = "~/" & Replace(Mid(Replace(LCase(Trim(Page.ToString)), "_aspx", ".aspx"), 5), "_", "/")
+        Dim qrystring As String = Request.ServerVariables("QUERY_STRING")
+        stest = stest & If(qrystring.Length > 0, "?" & qrystring, vbNullString)
+        If Session("stype") Is Nothing Then
+            Menu1.Visible = False
+        End If
+        If Not Session("Stype") Is Nothing Then
+            Menu1.Visible = True
+            SiteMapDataSource1.SiteMapProvider = Session("Stype")
+            SiteMapDataSource1.DataBind()
+            Dim s As String = Page.ToString
+            '            Dim smn As SiteMapNode = CType(SiteMapDataSource1.Provider.FindSiteMapNode("~/" & Replace(Mid(Replace(Session("Backto"), "_aspx", ".aspx"), 5), "_", "/")), SiteMapNode)
+            smn = CType(SiteMapDataSource1.Provider.FindSiteMapNode("~/" & Replace(Mid(Replace(LCase(Trim(Page.ToString)), "_aspx", ".aspx"), 5), "_", "/")), SiteMapNode)
+            If smn Is Nothing Then
+                Session("Backto") = vbNullString
+                If Session("SType") = "PWC" Then
+                    Response.Redirect("~/exit.aspx")
+                Else 
+                    Response.Redirect("~/Default.aspx")
+                End If
+            End If
+        End If
+        If Session("Backto") Is Nothing Then Session("Backto") = stest
+        If Session("username") Is Nothing And LCase(Trim(Page.ToString)) <> LCase("ASP.Entry_aspx") Then
+            Response.Redirect("~/Entry.aspx")
+        End If
+    End Sub
+</script>
+<style type="text/css">
+    .def {
+        padding-top:170px;
+    }
+</style>
+<html xmlns="http://www.w3.org/1999/xhtml" dir="rtl">
+<head runat="server">
+    <title>בית אקשטיין - אתר תפעולי</title>
+</head>
+<body  >
+    <form id="form1" runat="server">
+		<div id="DIV1" runat="server" style="position:relative;top:0px;right:0px;font-size: smaller; font-family: Arial;direction:rtl;width:100%;height:768px; background-image:url('images/be002.jpg');background-repeat:no-repeat;background-position:right top">
+			<table style="table-layout:fixed;width:100%;position:absolute;top:0px;right:0px;">
+				<tr>
+					<td style="vertical-align:top;width:150px;">
+								<asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1" StaticDisplayLevels="4" DynamicEnableDefaultPopOutImage="False" DynamicHorizontalOffset="0" MaximumDynamicDisplayLevels="0" StaticSubMenuIndent="" EnableViewState="true" CssClass="def">
+									<LevelMenuItemStyles>
+										<asp:MenuItemStyle Font-Bold="true"  ForeColor="black" />
+										<asp:MenuItemStyle Font-Bold="true" ForeColor="Black" />
+										<asp:MenuItemStyle Font-Size="8" ForeColor="Black"  />
+                                        <asp:MenuItemStyle Width="150" />
+									</LevelMenuItemStyles>
+								</asp:Menu>
+							</div>
+					<td style="vertical-align:top;width:auto;text-align:right;">
+						<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+						</asp:ContentPlaceHolder>
+					</td>
+				</tr>
+			</table>
+			<asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" SiteMapProvider="Admin" />
+			&nbsp;
+		</div>
+    </form>
+</body>
+</html>

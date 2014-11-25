@@ -1,0 +1,63 @@
+<%@ Master Language="VB" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" dir="rtl">
+<head runat="server">
+    <title>בית אקשטיין - אתר תפעולי</title>
+    <style type="text/css">
+		.reldiv
+		{
+			position:relative; 
+			font-size: smaller; 
+			font-family: Arial;
+			width:100%;
+		}
+		.login
+		{
+			position:absolute;
+			right:26px;
+			top:420px;
+		}
+		.bkimage
+		{
+			background-repeat:no-repeat;
+			background-position:right top;
+		}
+		.msgblock
+		{
+			position:absolute;
+			right:300px;
+			top:420px;
+			border:1 blue;
+		}
+		.survhdr
+		{
+			position:absolute;
+			top:50px;
+			right:500px;
+			font-size:xx-large;
+			color:Blue;
+			font-weight:bold;
+		}
+		.divmail
+		{
+			position:absolute;
+			right:455px;
+			top:520px;
+			background-color:#C0C0FF;
+			border-color:Blue;
+			border-style:groove;
+			border-width:thin;
+		}
+     </style>
+</head>
+<body background="images/openning.jpg" class="bkimage" >
+    <form id="form1" runat="server">
+		<div id="DIV1" runat="server" class="reldiv">
+			<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+			</asp:ContentPlaceHolder>
+		</div>
+    </form>
+</body>
+</html>

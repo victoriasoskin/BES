@@ -1,0 +1,139 @@
+<%@ Master Language="VB" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<script runat="server">
+
+    Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs)
+        Dim smn As SiteMapNode
+        Dim stest As String = "~/" & Replace(Mid(Replace(LCase(Trim(Page.ToString)), "_aspx", ".aspx"), 5), "_", "/")
+        Dim qrystring As String = Request.ServerVariables("QUERY_STRING")
+        stest = stest & If(qrystring.Length > 0, "?" & qrystring, vbNullString)
+        If Session("stype") Is Nothing Then
+            Menu1.Visible = False
+        End If
+        If Not Session("Stype") Is Nothing Then
+            Menu1.Visible = True
+            SiteMapDataSource1.SiteMapProvider = Session("Stype")
+            SiteMapDataSource1.DataBind()
+            Dim s As String = Page.ToString
+            '            Dim smn As SiteMapNode = CType(SiteMapDataSource1.Provider.FindSiteMapNode("~/" & Replace(Mid(Replace(Session("Backto"), "_aspx", ".aspx"), 5), "_", "/")), SiteMapNode)
+            smn = CType(SiteMapDataSource1.Provider.FindSiteMapNode("~/" & Replace(Mid(Replace(LCase(Trim(Page.ToString)), "_aspx", ".aspx"), 5), "_", "/")), SiteMapNode)
+            If smn Is Nothing Then
+                Session("Backto") = vbNullString
+                If Session("SType") = "PWC" Then
+                    Response.Redirect("~/exit.aspx")
+                Else 
+                    Response.Redirect("~/Default.aspx")
+                End If
+            End If
+        End If
+        If Session("Backto") Is Nothing Then Session("Backto") = stest
+        If Session("username") Is Nothing And LCase(Trim(Page.ToString)) <> LCase("ASP.Entry_aspx") Then
+            Response.Redirect("~/Entry.aspx")
+        End If
+        Menu1.Visible = False
+    End Sub
+</script>
+
+<html xmlns="http://www.w3.org/1999/xhtml" dir="rtl">
+<head runat="server">
+    <title>בית אקשטיין - אתר תפעולי</title>
+    <style type="text/css">
+		.reldiv
+		{
+			position:relative;
+			font-size: smaller; 
+			font-family: Arial;
+			width:100%;
+		}
+		.hdrdiv
+		{
+			text-align:center;
+			font-size:x-large;
+			font-weight:bold;
+			color:Blue;
+			width:100%;
+		}
+		.phdrdiv
+		{
+			text-align:center;
+			font-size:large;
+			font-weight:bold;
+			color:Blue;
+			width:100%;
+		}
+		.tblcells
+		{
+		    border-style:solid;
+		    border-width:thin;
+		    border-color:Gray;
+		}
+		.tblcellhdr
+		{
+		    background-color:Silver;
+		    border-bottom-color:Black;
+		    border-bottom-style:dotted;
+		    border-bottom-width:thin;
+		    font-weight:bold
+		}
+
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="DIV1" runat="server" style="font-size: smaller; font-family: Arial">
+        <table>
+            <tr>
+                <td  valign="top" align="center" 
+                 >
+                    <table>
+                        <tr>
+                            <td rowspan="4" valign="top">
+                                <asp:Label ID="Label2" runat="server" Height="577px"></asp:Label></td>
+                            <td  valign="top">
+                    </td>
+                        </tr>
+                        <tr>
+                            <td valign="top">
+                                <asp:Label ID="Label1" runat="server" ></asp:Label>&nbsp;
+                                <table>
+                                    <tr>
+                                        <td align="right" >
+                         <asp:Menu ID="Menu1" Visible="false" runat="server" DataSourceID="SiteMapDataSource1" StaticDisplayLevels="4" DynamicEnableDefaultPopOutImage="False" DynamicHorizontalOffset="1" MaximumDynamicDisplayLevels="0" StaticSubMenuIndent="" >
+                         <LevelMenuItemStyles>
+                         <asp:MenuItemStyle Font-Bold="true"  ForeColor="black" />
+                         <asp:MenuItemStyle Font-Bold="true" ForeColor="Black" />
+                         <asp:MenuItemStyle Font-Size="8" ForeColor="White" />
+                         
+                         </LevelMenuItemStyles>
+                        </asp:Menu>
+                                        </td>
+                                    </tr>
+                                </table>
+                                &nbsp;
+                   </td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                   </td>
+                        </tr>
+                        <tr>
+                            <td align="right" valign="top">
+                                &nbsp; &nbsp;&nbsp;
+                            </td>
+                        </tr>
+                    </table>
+                    &nbsp;&nbsp;&nbsp;
+                </td>
+                <td valign="top">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            </table>
+        &nbsp;<asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+    &nbsp;</div>
+    </form>
+</body>
+</html>
