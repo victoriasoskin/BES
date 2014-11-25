@@ -1,0 +1,387 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Form txt="טופס עזיבה" ID="12" mode="surveynoid" limit="">
+	<txt>טופס סיכום עזיבת עובד</txt>
+	<Group stype="Question" txt="שאלון" gid="1">
+			<txt>טופס סיכום עזיבת עובד</txt>
+			<val></val>
+        <Question id="0" control="label">
+            <txt>&#160;</txt>
+            <val></val>
+            <Answer>
+                <txt>
+                    5 - גבוה ביותר 1 - נמוך ביותר
+                </txt>
+                <val>1</val>
+            </Answer>
+        </Question>
+             <Question id="1">
+				<txt>
+                    האם עברת הכשרה כלשהי לקראת כניסתך לתפקיד?
+                </txt>
+				<val></val>
+				<Answer>
+					<txt>כן</txt>
+					<val>1</val>
+				</Answer>
+				<Answer>
+					<txt>לא</txt>
+					<val>2</val>
+				</Answer>
+                 <Answer>
+                     <txt> לא ידוע/לא רלוונטי</txt>
+                     <val>9</val>
+                 </Answer>
+             </Question>
+			<Question id="2">
+				<txt>
+                    אם כן - עד כמה הכשרה זו העניקה לך את הכלים הדרושים למילוי התפקיד?
+                </txt>
+				<val></val>
+                <Answer>
+                    <txt> 5</txt>
+                    <val>5</val>
+                </Answer>
+                <Answer>
+                    <txt> 4</txt>
+                    <val>4</val>
+                </Answer>
+                <Answer>
+                    <txt> 3</txt>
+                    <val>3</val>
+                </Answer>
+                <Answer>
+                    <txt> 2</txt>
+                    <val>2</val>
+                </Answer>
+                <Answer>
+                    <txt> 1</txt>
+                    <val>1</val>
+                </Answer>
+                <Answer>
+                    <txt> לא ידוע/לא רלוונטי</txt>
+                    <val>9</val>
+                </Answer>
+            </Question>
+			<Question id="3">
+				<txt>
+                    האם במהלך העבודה השוטפת עברת הכשרות נוספות?
+                </txt>
+				<val></val>
+                <Answer>
+                    <txt>כן</txt>
+                    <val>1</val>
+                </Answer>
+                <Answer>
+                    <txt>לא</txt>
+                    <val>2</val>
+                </Answer>
+                <Answer>
+                    <txt> לא ידוע/לא רלוונטי</txt>
+                    <val>9</val>
+                </Answer>
+            </Question>
+         <Question id="4">
+				<txt>
+                    אם כן - עד כמה הכשרה זו העניקה לך את הכלים הדרושים למילוי התפקיד?
+                </txt>
+				<val></val>
+             <Answer>
+                 <txt> 5</txt>
+                 <val>5</val>
+             </Answer>
+             <Answer>
+                 <txt> 4</txt>
+                 <val>4</val>
+             </Answer>
+             <Answer>
+                 <txt> 3</txt>
+                 <val>3</val>
+             </Answer>
+             <Answer>
+                 <txt> 2</txt>
+                 <val>2</val>
+             </Answer>
+             <Answer>
+                 <txt> 1</txt>
+                 <val>1</val>
+             </Answer>
+             <Answer>
+                 <txt> לא ידוע/לא רלוונטי</txt>
+                 <val>9</val>
+             </Answer>
+         </Question>
+			<Question id="5">
+				<txt>
+                    לעובדי משמרות - האם אופי העבודה תאם את צרכיך וציפיותיך?
+                </txt>
+				<val></val>
+                <Answer>
+                    <txt>כן</txt>
+                    <val>1</val>
+                </Answer>
+                <Answer>
+                    <txt>לא</txt>
+                    <val>2</val>
+                </Answer>
+                <Answer>
+                    <txt> לא ידוע/לא רלוונטי</txt>
+                    <val>9</val>
+                </Answer>
+            </Question>
+			<Question id="6">
+				<txt>
+                    עד כמה היו טובים יחסיך עם הממונה הישיר?
+                </txt>
+				<val></val>
+                <Answer>
+                    <txt> 5</txt>
+                    <val>5</val>
+                </Answer>
+                <Answer>
+                    <txt> 4</txt>
+                    <val>4</val>
+                </Answer>
+                <Answer>
+                    <txt> 3</txt>
+                    <val>3</val>
+                </Answer>
+                <Answer>
+                    <txt> 2</txt>
+                    <val>2</val>
+                </Answer>
+                <Answer>
+                    <txt> 1</txt>
+                    <val>1</val>
+                </Answer>
+                <Answer>
+                    <txt> לא ידוע/לא רלוונטי</txt>
+                    <val>9</val>
+                </Answer>
+            </Question>
+			<Question id="7">
+				<txt>
+                    עד כמה מצאת אוזן קשבת אצל הממונים עליך בעת הצורך?
+                </txt>
+				<val></val>
+                <Answer>
+                    <txt> 5</txt>
+                    <val>5</val>
+                </Answer>
+                <Answer>
+                    <txt> 4</txt>
+                    <val>4</val>
+                </Answer>
+                <Answer>
+                    <txt> 3</txt>
+                    <val>3</val>
+                </Answer>
+                <Answer>
+                    <txt> 2</txt>
+                    <val>2</val>
+                </Answer>
+                <Answer>
+                    <txt> 1</txt>
+                    <val>1</val>
+                </Answer>
+                <Answer>
+                    <txt> לא ידוע/לא רלוונטי</txt>
+                    <val>9</val>
+                </Answer>
+            </Question>
+			<Question id="8">
+				<txt>
+                    עד כמה הרגשת שיש עבודת צוות ושיתוף בין עובדי המסגרת?
+                </txt>
+				<val></val>
+                <Answer>
+                    <txt> 5</txt>
+                    <val>5</val>
+                </Answer>
+                <Answer>
+                    <txt> 4</txt>
+                    <val>4</val>
+                </Answer>
+                <Answer>
+                    <txt> 3</txt>
+                    <val>3</val>
+                </Answer>
+                <Answer>
+                    <txt> 2</txt>
+                    <val>2</val>
+                </Answer>
+                <Answer>
+                    <txt> 1</txt>
+                    <val>1</val>
+                </Answer>
+                <Answer>
+                    <txt> לא ידוע/לא רלוונטי</txt>
+                    <val>9</val>
+                </Answer>
+            </Question>
+			<Question id="9">
+				<txt>
+                    עד כמה היית שבע רצון מהתפקיד שלך?
+                </txt>
+				<val></val>
+                <Answer>
+                    <txt> 5</txt>
+                    <val>5</val>
+                </Answer>
+                <Answer>
+                    <txt> 4</txt>
+                    <val>4</val>
+                </Answer>
+                <Answer>
+                    <txt> 3</txt>
+                    <val>3</val>
+                </Answer>
+                <Answer>
+                    <txt> 2</txt>
+                    <val>2</val>
+                </Answer>
+                <Answer>
+                    <txt> 1</txt>
+                    <val>1</val>
+                </Answer>
+                <Answer>
+                    <txt> לא ידוע/לא רלוונטי</txt>
+                    <val>9</val>
+                </Answer>
+            </Question>
+			<Question id="10">
+				<txt>
+                    עד כמה אתה מרגיש הזדהות עם הארגון?
+                </txt>
+				<val></val>
+                <Answer>
+                    <txt> 5</txt>
+                    <val>5</val>
+                </Answer>
+                <Answer>
+                    <txt> 4</txt>
+                    <val>4</val>
+                </Answer>
+                <Answer>
+                    <txt> 3</txt>
+                    <val>3</val>
+                </Answer>
+                <Answer>
+                    <txt> 2</txt>
+                    <val>2</val>
+                </Answer>
+                <Answer>
+                    <txt> 1</txt>
+                    <val>1</val>
+                </Answer>
+                <Answer>
+                    <txt> לא ידוע/לא רלוונטי</txt>
+                    <val>9</val>
+                </Answer>
+            </Question>
+			<Question id="11">
+				<txt>
+                    האם היית ממליץ לחבריך לעבוד באחת ממסגרות בית אקשטיין?
+                </txt>
+				<val></val>
+                <Answer>
+                    <txt>כן</txt>
+                    <val>1</val>
+                </Answer>
+                <Answer>
+                    <txt>לא</txt>
+                    <val>2</val>
+                 </Answer>
+                <Answer>
+                    <txt> לא ידוע/לא רלוונטי</txt>
+                    <val>9</val>
+                </Answer>
+           </Question>
+            <Question id="12" control="ddl" Codetable="EL_WL" Codefield="WLID" Field="WLDescription">
+                <txt>
+                    מהי סיבת עזיבתך את בית אקשטיין?
+                </txt>
+                <val></val>
+             </Question>
+        <Question id="13">
+            <txt>
+                האם היית מעוניין לחזור לעבוד בבית אקשטיין או ארגון מטעמו בעתיד?
+            </txt>
+            <val></val>
+            <Answer>
+                <txt> 5</txt>
+                <val>5</val>
+            </Answer>
+            <Answer>
+                <txt> 4</txt>
+                <val>4</val>
+            </Answer>
+            <Answer>
+                <txt> 3</txt>
+                <val>3</val>
+            </Answer>
+            <Answer>
+                <txt> 2</txt>
+                <val>2</val>
+            </Answer>
+            <Answer>
+                <txt> 1</txt>
+                <val>1</val>
+            </Answer>
+            <Answer>
+                <txt> לא ידוע/לא רלוונטי</txt>
+                <val>9</val>
+            </Answer>
+        </Question>
+			<Question id="14" control="textbox">
+				<txt>סיכום שיחה - הערות נוספות לשיפור</txt>
+			</Question>
+ 	</Group>
+    <Report Sort="yes">
+        <Column n="1" Name="RowID" Header="פניה" Format=""></Column>
+        <Column n="2" Name="EmpID" Header="תעודת זהות" Format=""></Column>
+        <Column n="3" Name="Firstname" Header="שם פרטי" Format=""></Column>
+        <Column n="4" Name="lastname" Header="שם משפחה" Format=""></Column>
+        <Column n="5" Name="ServiceName" Header="אזור/חטיבה" Format=""></Column>
+        <Column n="6" Name="FrameName" Header="מסגרת" Format=""></Column>
+        <Column n="7" Name="Job" Header="תפקיד" Format=""></Column>
+        <Column n="8" Name="Phone" Header="טלפון" Format="" Wrap="no"></Column>
+        <Column n="9" Name="WorkCell" Header="טלפון נייד ארגוני 1" Format=""></Column>
+        <Column n="10" Name="WorkCellV" Header="טלפון נייד ארגוני 2" Format=""></Column>
+        <Column n="11" Name="PrivateCell" Header="טלפון נייד פרטי" Format=""></Column>
+        <Column n="12" Name="WLDescription" Header="סיבת עזיבה" Format=""></Column>
+        <Column n="13" Name="StartDate" Header="תאריך התחלה" Format="{0:dd/MM/yyyy}"></Column>
+        <Column n="14" Name="JobCharacteristics" Header="סוג העסקה" Format=""></Column>
+        <Column n="15" Name="LeaveRequestDate" Header="תאריך הודעה" Format="{0:dd/MM/yyyy}"></Column>
+        <Column n="16" Name="CalculatedLeavingDate" Header="תאריך ע&quot;פ חוק" Format="{0:dd/MM/yyyy}"></Column>
+        <Column n="17" Name="ActualLeavingDate" Header="תאריך עזיבה בפועל" Format="{0:dd/MM/yyyy}"></Column>
+        <Column n="18" Name="LeaveImmediatly" Header="עזיבה מיידית" Format=""></Column>
+        <Column n="19" Name="Email" Header="דוא&quot;ל" Format=""></Column>
+        <Column n="20" Name="WorkEmail" Header="דוא&quot;ל ארגוני" Format=""></Column>
+        <Column n="21" Name="WorkMailAction" Header="טיפול" Format=""></Column>
+        <Column n="22" Name="Comment" Header="הערות" Format=""></Column>
+        <Column n="23" Name="Loadtime" Header="תאריך פתיחה" Format="{0:dd/MM/yyyy}"></Column>
+        <Column n="24" Name="UserName" Header="שם פותח" Format=""></Column>
+        <Column n="25" Name="StatusName" Header="סטטוס" Format=""></Column>
+        <Column n="26" Name="ClosingDate" Header="תאריך סגירה" Format="{0:dd/MM/yyyy}"></Column>
+        <Column n="27" Name="cUserName" Header="שם סוגר" Format=""></Column>
+        <Column n="28" Name="_1" Header="שאלה 1" Format="{0:#}"></Column>
+        <Column n="29" Name="_2" Header="שאלה 2" Format="{0:#}"></Column>
+        <Column n="30" Name="_3" Header="שאלה 3" Format="{0:#}"></Column>
+        <Column n="31" Name="_4" Header="שאלה 4" Format="{0:#}"></Column>
+        <Column n="32" Name="_5" Header="שאלה 5" Format="{0:#}"></Column>
+        <Column n="33" Name="_6" Header="שאלה 6" Format="{0:#}"></Column>
+        <Column n="34" Name="_7" Header="שאלה 7" Format="{0:#}"></Column>
+        <Column n="35" Name="_8" Header="שאלה 8" Format="{0:#}"></Column>
+        <Column n="36" Name="_9" Header="שאלה 9" Format="{0:#}"></Column>
+        <Column n="37" Name="_10" Header="שאלה 10" Format="{0:#}"></Column>
+        <Column n="38" Name="_11" Header="שאלה 11" Format="{0:#}"></Column>
+        <Column n="39" Name="WLDescription_12" Header="סיבת עזיבה" Format=""></Column>
+        <Column n="40" Name="_13" Header="שאלה 13" Format="{0:#}"></Column>
+        <Column n="41" Name="TText" Header="שאלה 14" Format=""></Column>
+        <columnGroups>
+            <RepColumns name="כל העמודות">*</RepColumns>
+            <RepColumns name="שאלון">5,6,28,29,30,31,32,33,34,35,36,37,38,39,40,41</RepColumns>
+            <RepColumns name="טיפול במייל" filter="WorkEmail IS not NULL">2,3,4,5,6,15,17,20,21</RepColumns>
+        </columnGroups>
+    </Report>
+</Form>

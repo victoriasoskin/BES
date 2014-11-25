@@ -1,0 +1,5 @@
+C:\Users\Ariel\documents\visual studio 2012\Projects\PWI_N\PWI_N\bin\PWI_N.dll
+C:\Users\Ariel\documents\visual studio 2012\Projects\PWI_N\PWI_N\bin\PWI_N.pdb
+C:\Users\Ariel\documents\visual studio 2012\Projects\PWI_N\PWI_N\obj\Debug\PWI_N.dll
+C:\Users\Ariel\documents\visual studio 2012\Projects\PWI_N\PWI_N\obj\Debug\PWI_N.pdb
+C:\Users\Ariel\documents\visual studio 2012\Projects\PWI_N\PWI_N\obj\Debug\PWI_N.csprojResolveAssemblyReference.cache

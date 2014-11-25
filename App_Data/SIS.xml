@@ -1,0 +1,4526 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Form txt="סולם עוצמת תמיכות" ID="3">
+    <txt>סולם עוצמת תמיכות</txt>
+    <Group stype="Para" txt="הנחיות" gid="1">
+        <txt>הנחיות</txt>
+        <Question id="0">
+            <txt>הנחיות</txt>
+            <style>color:Blue;font-size:large;font-weight:bold</style>
+        </Question>
+        <Question id="0">
+            <txt>זהה את התדירות, זמן התמיכה היומי וסוג התמיכה המדווחת כהכרחית לאדם כדי שיצליח בששת תחומי הפעילות.</txt>
+        </Question>
+        <Question id="0">
+            <txt>סמן את הבחירה המתאימה</txt>
+            <style>font-weight:bold</style>
+        </Question>
+        <Question id="0">
+            <txt>1. יש למלא סולם זה ללא התייחסות לשירותים או לתמיכות הניתנות או הזמינות כעת.</txt>
+        </Question>
+        <Question id="0">
+            <txt>2. על הציונים לשקף את התמיכות ההכרחיות לאדם זה כדי שיצליח בכל פעילות?</txt>
+        </Question>
+        <Question id="0">
+            <txt>3. אם האדם משתמש בטכנולוגיית עזר, יש למדרג את האדם עם ציון הטכנולוגיה שבשימוש במקום הנתון.</txt>
+        </Question>
+        <Question id="0">
+            <txt>4. השלם את כל הפריטים, גם אם האדם אינו מבצע כעת את הפעילות הרשומה.</txt>
+        </Question>
+   </Group>
+    <Title txt="סולם צרכי התמיכה">
+        <txt>סולם צרכי התמיכה</txt>
+        <Group stype="Subgroup" txt="פעולות בבית" gid="2">
+            <txt>פעולות בבית</txt>
+            <SubGroup txt="שימוש בשירותים">
+                <txt>שימוש בשירותים</txt>
+                <Question id="1">
+                    <txt>תדירות</txt>
+                    <Answer>
+                        <txt>לא נדרשת או פחות מאחת לחודש</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לחודש אך לא אחת לשבוע</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לשבוע אך לא אחת ליום</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת ליום אך לא אחת לשעה</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>מדי שעה או בתדירות גבוהה יותר</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="2">
+                <txt>זמן התמיכה היומי</txt>
+                <Answer>
+                    <txt>אין צורך בתמיכה</txt>
+                    <val>0</val>
+                </Answer>
+                <Answer>
+                    <txt>פחות מ- 30 דקות</txt>
+                    <val>1</val>
+                </Answer>
+                <Answer>
+                    <txt>30 דקות עד פחות משעתיים</txt>
+                    <val>2</val>
+                </Answer>
+                <Answer>
+                    <txt>שעתיים עד פחות מ- 4 שעות</txt>
+                    <val>3</val>
+                </Answer>
+                <Answer>
+                    <txt>4 שעות ומעלה</txt>
+                    <val>4</val>
+                </Answer>
+            </Question>
+            <Question id="3">
+                    <txt>סוג התמיכה</txt>
+                    <Answer>
+                        <txt>אין צורך</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>השגחה ומעקב</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>הנחיה מילולית</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית חלקית</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית מלאה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+            </SubGroup>
+            <SubGroup stype="Subgroup" txt="טיפול בביגוד (כולל כביסות)">
+                <txt>טיפול בביגוד (כולל כביסות)</txt>
+                <Question id="4">
+                    <txt>תדירות</txt>
+                    <Answer>
+                        <txt>לא נדרשת או פחות מאחת לחודש</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לחודש אך לא אחת לשבוע</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לשבוע אך לא אחת ליום</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת ליום אך לא אחת לשעה</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>מדי שעה או בתדירות גבוהה יותר</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="5">
+                    <txt>זמן התמיכה היומי</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>פחות מ- 30 דקות</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>30 דקות עד פחות משעתיים</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>שעתיים עד פחות מ- 4 שעות</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>4 שעות ומעלה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="6">
+                    <txt>סוג התמיכה</txt>
+                    <Answer>
+                        <txt>אין צורך</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>השגחה ומעקב</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>הנחיה מילולית</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית חלקית</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית מלאה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+            </SubGroup>
+            <SubGroup txt="הכנת אוכל">
+                <txt>הכנת אוכל</txt>
+                <Question id="7">
+                    <txt>תדירות</txt>
+                    <Answer>
+                        <txt>לא נדרשת או פחות מאחת לחודש</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לחודש אך לא אחת לשבוע</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לשבוע אך לא אחת ליום</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת ליום אך לא אחת לשעה</txt>
+                        <val>3</val>
+                    </Answer>
+                </Question>
+                <Question id="8">
+                    <txt>זמן התמיכה היומי</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>פחות מ- 30 דקות</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>30 דקות עד פחות משעתיים</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>שעתיים עד פחות מ- 4 שעות</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>4 שעות ומעלה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="9">
+                    <txt>סוג התמיכה</txt>
+                    <Answer>
+                        <txt>אין צורך</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>השגחה ומעקב</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>הנחיה מילולית</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית חלקית</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית מלאה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+            </SubGroup>
+            <SubGroup  txt="אכילה">
+                <txt>אכילה</txt>
+                <Question id="10">
+                    <txt>תדירות</txt>
+                    <Answer>
+                        <txt>לא נדרשת או פחות מאחת לחודש</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לחודש אך לא אחת לשבוע</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לשבוע אך לא אחת ליום</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת ליום אך לא אחת לשעה</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>מדי שעה או בתדירות גבוהה יותר</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="11">
+                    <txt>זמן התמיכה היומי</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>פחות מ- 30 דקות</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>30 דקות עד פחות משעתיים</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>שעתיים עד פחות מ- 4 שעות</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>4 שעות ומעלה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="12">
+                    <txt>סוג התמיכה</txt>
+                    <Answer>
+                        <txt>אין צורך</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>השגחה ומעקב</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>הנחיה מילולית</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית חלקית</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית מלאה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+            </SubGroup>
+            <SubGroup  txt="נקיון וטיפול בבית">
+                <txt>נקיון וטיפול בבית</txt>
+                <Question id="13">
+                    <txt>תדירות</txt>
+                    <Answer>
+                        <txt>לא נדרשת או פחות מאחת לחודש</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לחודש אך לא אחת לשבוע</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לשבוע אך לא אחת ליום</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת ליום אך לא אחת לשעה</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>מדי שעה או בתדירות גבוהה יותר</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="14">
+                    <txt>זמן התמיכה היומי</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>פחות מ- 30 דקות</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>30 דקות עד פחות משעתיים</txt>
+                        <val>2</val>
+                    </Answer>
+                </Question>
+                <Question id="15">
+                    <txt>סוג התמיכה</txt>
+                    <Answer>
+                        <txt>אין צורך</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>השגחה ומעקב</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>הנחיה מילולית</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית חלקית</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית מלאה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+            </SubGroup>
+            <SubGroup  txt="לבוש">
+                <txt>לבוש</txt>
+                <Question id="16">
+                    <txt>תדירות</txt>
+                    <Answer>
+                        <txt>לא נדרשת או פחות מאחת לחודש</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לחודש אך לא אחת לשבוע</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לשבוע אך לא אחת ליום</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת ליום אך לא אחת לשעה</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>מדי שעה או בתדירות גבוהה יותר</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="17">
+                    <txt>זמן התמיכה היומי</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>פחות מ- 30 דקות</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>30 דקות עד פחות משעתיים</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>שעתיים עד פחות מ- 4 שעות</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>4 שעות ומעלה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="18">
+                    <txt>סוג התמיכה</txt>
+                    <Answer>
+                        <txt>אין צורך</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>השגחה ומעקב</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>הנחיה מילולית</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית חלקית</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית מלאה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+            </SubGroup>
+            <SubGroup  txt="רחצה וטיפול אישי בצרכי הגיינה וטיפוח">
+                <txt>רחצה וטיפול אישי בצרכי הגיינה וטיפוח</txt>
+                <Question id="19">
+                    <txt>תדירות</txt>
+                    <Answer>
+                        <txt>לא נדרשת או פחות מאחת לחודש</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לחודש אך לא אחת לשבוע</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לשבוע אך לא אחת ליום</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת ליום אך לא אחת לשעה</txt>
+                        <val>3</val>
+                    </Answer>
+                </Question>
+                <Question id="20">
+                    <txt>זמן התמיכה היומי</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>פחות מ- 30 דקות</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>30 דקות עד פחות משעתיים</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>שעתיים עד פחות מ- 4 שעות</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>4 שעות ומעלה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="21">
+                    <txt>סוג התמיכה</txt>
+                    <Answer>
+                        <txt>אין צורך</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>השגחה ומעקב</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>הנחיה מילולית</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית חלקית</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית מלאה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+            </SubGroup>
+            <SubGroup  txt="תפעול משירים ביתיים">
+                <txt>תפעול מכשירים ביתיים</txt>
+                <Question id="22">
+                    <txt>תדירות</txt>
+                    <Answer>
+                        <txt>לא נדרשת או פחות מאחת לחודש</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לחודש אך לא אחת לשבוע</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לשבוע אך לא אחת ליום</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת ליום אך לא אחת לשעה</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>מדי שעה או בתדירות גבוהה יותר</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="23">
+                    <txt>זמן התמיכה היומי</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>פחות מ- 30 דקות</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>30 דקות עד פחות משעתיים</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>שעתיים עד פחות מ- 4 שעות</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>4 שעות ומעלה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="24">
+                    <txt>סוג התמיכה</txt>
+                    <Answer>
+                        <txt>אין צורך</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>השגחה ומעקב</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>הנחיה מילולית</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית חלקית</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית מלאה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+            </SubGroup>
+        </Group>
+        <Group stype="Subgroup"  txt="פעולות חיים בקהילה" gid="3">
+            <txt>פעולות חיים בקהילה</txt>
+            <SubGroup txt="הגעה ממקום למקום בקהילה (תחבורה)">
+                <txt>הגעה ממקום למקום בקהילה (תחבורה)</txt>
+                <Question id="25">
+                    <txt>תדירות</txt>
+                    <Answer>
+                        <txt>לא נדרשת או פחות מאחת לחודש</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לחודש אך לא אחת לשבוע</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לשבוע אך לא אחת ליום</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת ליום אך לא אחת לשעה</txt>
+                        <val>3</val>
+                    </Answer>
+                </Question>
+                <Question id="26">
+                    <txt>זמן התמיכה היומי</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>פחות מ- 30 דקות</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>30 דקות עד פחות משעתיים</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>שעתיים עד פחות מ- 4 שעות</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>4 שעות ומעלה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="27">
+                    <txt>סוג התמיכה</txt>
+                    <Answer>
+                        <txt>אין צורך</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>השגחה ומעקב</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>הנחיה מילולית</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית חלקית</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית מלאה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+            </SubGroup>
+            <SubGroup  txt="השתתפות בפעילות פנאי במסגרות קהילתיות">
+                <txt>השתתפות בפעילות פנאי במסגרות קהילתיות</txt>
+                <Question id="28">
+                    <txt>תדירות</txt>
+                    <Answer>
+                        <txt>לא נדרשת או פחות מאחת לחודש</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לחודש אך לא אחת לשבוע</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לשבוע אך לא אחת ליום</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת ליום אך לא אחת לשעה</txt>
+                        <val>3</val>
+                    </Answer>
+                </Question>
+                <Question id="29">
+                    <txt>זמן התמיכה היומי</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>פחות מ- 30 דקות</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>30 דקות עד פחות משעתיים</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>שעתיים עד פחות מ- 4 שעות</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>4 שעות ומעלה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="30">
+                    <txt>סוג התמיכה</txt>
+                    <Answer>
+                        <txt>אין צורך</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>השגחה ומעקב</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>הנחיה מילולית</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית חלקית</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית מלאה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+            </SubGroup>
+            <SubGroup  txt="שימוש בשירות לציבור בקהילה">
+                <txt>שימוש בשירות לציבור בקהילה</txt>
+                <Question id="31">
+                    <txt>תדירות</txt>
+                    <Answer>
+                        <txt>לא נדרשת או פחות מאחת לחודש</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לחודש אך לא אחת לשבוע</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לשבוע אך לא אחת ליום</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת ליום אך לא אחת לשעה</txt>
+                        <val>3</val>
+                    </Answer>
+               </Question>
+                <Question id="32">
+                    <txt>זמן התמיכה היומי</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>פחות מ- 30 דקות</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>30 דקות עד פחות משעתיים</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>שעתיים עד פחות מ- 4 שעות</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>4 שעות ומעלה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="33">
+                    <txt>סוג התמיכה</txt>
+                    <Answer>
+                        <txt>אין צורך</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>השגחה ומעקב</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>הנחיה מילולית</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית חלקית</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית מלאה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+            </SubGroup>
+            <SubGroup  txt="ביקור חברים ובני משפחה">
+                <txt>ביקור חברים ובני משפחה</txt>
+                <Question id="34">
+                    <txt>תדירות</txt>
+                    <Answer>
+                        <txt>לא נדרשת או פחות מאחת לחודש</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לחודש אך לא אחת לשבוע</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לשבוע אך לא אחת ליום</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת ליום אך לא אחת לשעה</txt>
+                        <val>3</val>
+                    </Answer>
+                 </Question>
+                <Question id="35">
+                    <txt>זמן התמיכה היומי</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>פחות מ- 30 דקות</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>30 דקות עד פחות משעתיים</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>שעתיים עד פחות מ- 4 שעות</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>4 שעות ומעלה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="36">
+                    <txt>סוג התמיכה</txt>
+                    <Answer>
+                        <txt>אין צורך</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>השגחה ומעקב</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>הנחיה מילולית</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית חלקית</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית מלאה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+            </SubGroup>
+            <SubGroup  txt="השתתפות בפעילות קהילתית מועדפת (בית כנסת, התנדבות וכו')">
+                <txt>השתתפות בפעילות קהילתית מועדפת (בית כנסת, התנדבות וכו')</txt>
+                <Question id="37">
+                    <txt>תדירות</txt>
+                    <Answer>
+                        <txt>לא נדרשת או פחות מאחת לחודש</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לחודש אך לא אחת לשבוע</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לשבוע אך לא אחת ליום</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת ליום אך לא אחת לשעה</txt>
+                        <val>3</val>
+                    </Answer>
+               </Question>
+                <Question id="38">
+                    <txt>זמן התמיכה היומי</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>פחות מ- 30 דקות</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>30 דקות עד פחות משעתיים</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית חלקית</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>4 שעות ומעלה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="39">
+                    <txt>סוג התמיכה</txt>
+                    <Answer>
+                        <txt>אין צורך</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>השגחה ומעקב</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>הנחיה מילולית</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית חלקית</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית מלאה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+            </SubGroup>
+            <SubGroup  txt="רכישת שירותים ומוצרים">
+                <txt>רכישת שירותים ומוצרים</txt>
+                <Question id="40">
+                    <txt>תדירות</txt>
+                    <Answer>
+                        <txt>לא נדרשת או פחות מאחת לחודש</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לחודש אך לא אחת לשבוע</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לשבוע אך לא אחת ליום</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת ליום אך לא אחת לשעה</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>מדי שעה או בתדירות גבוהה יותר</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="41">
+                    <txt>זמן התמיכה היומי</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>פחות מ- 30 דקות</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>30 דקות עד פחות משעתיים</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>שעתיים עד פחות מ- 4 שעות</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>4 שעות ומעלה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="42">
+                    <txt>סוג התמיכה</txt>
+                    <Answer>
+                        <txt>אין צורך</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>השגחה ומעקב</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>הנחיה מילולית</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית חלקית</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית מלאה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+            </SubGroup>
+            <SubGroup  txt="קשרי גומלין עם חברי קהילה">
+                <txt>קשרי גומלין עם חברי קהילה</txt>
+                <Question id="43">
+                    <txt>תדירות</txt>
+                    <Answer>
+                        <txt>לא נדרשת או פחות מאחת לחודש</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לחודש אך לא אחת לשבוע</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לשבוע אך לא אחת ליום</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת ליום אך לא אחת לשעה</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>מדי שעה או בתדירות גבוהה יותר</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="44">
+                    <txt>זמן התמיכה היומי</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>פחות מ- 30 דקות</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>30 דקות עד פחות משעתיים</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>שעתיים עד פחות מ- 4 שעות</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>4 שעות ומעלה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="45">
+                    <txt>סוג התמיכה</txt>
+                    <Answer>
+                        <txt>אין צורך</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>השגחה ומעקב</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>הנחיה מילולית</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית חלקית</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית מלאה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+            </SubGroup>
+            <SubGroup  txt="נגישות בניינים ציבוריים">
+                <txt>נגישות בניינים ציבוריים</txt>
+                <Question id="46">
+                    <txt>תדירות</txt>
+                    <Answer>
+                        <txt>לא נדרשת או פחות מאחת לחודש</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לחודש אך לא אחת לשבוע</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לשבוע אך לא אחת ליום</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת ליום אך לא אחת לשעה</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>מדי שעה או בתדירות גבוהה יותר</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="47">
+                    <txt>זמן התמיכה היומי</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>פחות מ- 30 דקות</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>30 דקות עד פחות משעתיים</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>שעתיים עד פחות מ- 4 שעות</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>4 שעות ומעלה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="48">
+                    <txt>סוג התמיכה</txt>
+                    <Answer>
+                        <txt>אין צורך</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>השגחה ומעקב</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>הנחיה מילולית</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית חלקית</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית מלאה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+            </SubGroup>
+        </Group>
+        <Group stype="Subgroup" txt="פעולות למידה לאורך החיים" gid="4">
+            <txt>פעולות למידה לאורך החיים</txt>
+            <SubGroup txt="תקשורת עם אחרים בפעולות לימודיות">
+                <txt>תקשורת עם אחרים בפעולות לימודיות</txt>
+                <Question id="49">
+                    <txt>תדירות</txt>
+                    <Answer>
+                        <txt>לא נדרשת או פחות מאחת לחודש</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לחודש אך לא אחת לשבוע</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לשבוע אך לא אחת ליום</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת ליום אך לא אחת לשעה</txt>
+                        <val>3</val>
+                    </Answer>
+                </Question>
+                <Question id="50">
+                    <txt>זמן התמיכה היומי</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>פחות מ- 30 דקות</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>30 דקות עד פחות משעתיים</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>שעתיים עד פחות מ- 4 שעות</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>4 שעות ומעלה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="51">
+                    <txt>סוג התמיכה</txt>
+                    <Answer>
+                        <txt>אין צורך</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>השגחה ומעקב</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>הנחיה מילולית</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית חלקית</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית מלאה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+            </SubGroup>
+            <SubGroup  txt="השתתפות בהחלטות לימוד והכשרה">
+                <txt>השתתפות בהחלטות לימוד והכשרה</txt>
+                <Question id="52">
+                    <txt>תדירות</txt>
+                    <Answer>
+                        <txt>לא נדרשת או פחות מאחת לחודש</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לחודש אך לא אחת לשבוע</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לשבוע אך לא אחת ליום</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת ליום אך לא אחת לשעה</txt>
+                        <val>3</val>
+                    </Answer>
+                </Question>
+                <Question id="53">
+                    <txt>זמן התמיכה היומי</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>פחות מ- 30 דקות</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>30 דקות עד פחות משעתיים</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>שעתיים עד פחות מ- 4 שעות</txt>
+                        <val>3</val>
+                    </Answer>
+                </Question>
+                <Question id="54">
+                    <txt>סוג התמיכה</txt>
+                    <Answer>
+                        <txt>אין צורך</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>השגחה ומעקב</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>הנחיה מילולית</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית חלקית</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית מלאה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+            </SubGroup>
+            <SubGroup  txt="למידה ושימוש באסטרטגיות לפתרון בעיות">
+                <txt>למידה ושימוש באסטרטגיות לפתרון בעיות</txt>
+                <Question id="55">
+                    <txt>תדירות</txt>
+                    <Answer>
+                        <txt>לא נדרשת או פחות מאחת לחודש</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לחודש אך לא אחת לשבוע</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לשבוע אך לא אחת ליום</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת ליום אך לא אחת לשעה</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>מדי שעה או בתדירות גבוהה יותר</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="56">
+                    <txt>זמן התמיכה היומי</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>פחות מ- 30 דקות</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>30 דקות עד פחות משעתיים</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>שעתיים עד פחות מ- 4 שעות</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>4 שעות ומעלה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="57">
+                    <txt>סוג התמיכה</txt>
+                    <Answer>
+                        <txt>אין צורך</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>השגחה ומעקב</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>הנחיה מילולית</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית חלקית</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית מלאה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+            </SubGroup>
+            <SubGroup  txt="שימוש בטכנולוגיה ללמידה">
+                <txt>שימוש בטכנולוגיה ללמידה</txt>
+                <Question id="58">
+                    <txt>תדירות</txt>
+                    <Answer>
+                        <txt>לא נדרשת או פחות מאחת לחודש</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לחודש אך לא אחת לשבוע</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לשבוע אך לא אחת ליום</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת ליום אך לא אחת לשעה</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>מדי שעה או בתדירות גבוהה יותר</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="59">
+                    <txt>זמן התמיכה היומי</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>פחות מ- 30 דקות</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>30 דקות עד פחות משעתיים</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>שעתיים עד פחות מ- 4 שעות</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>4 שעות ומעלה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="60">
+                    <txt>סוג התמיכה</txt>
+                    <Answer>
+                        <txt>אין צורך</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>השגחה ומעקב</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>הנחיה מילולית</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית חלקית</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית מלאה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+            </SubGroup>
+            <SubGroup  txt="נגישות למסגרות לימוד והכשרה">
+                <txt>נגישות למסגרות לימוד והכשרה</txt>
+                <Question id="61">
+                    <txt>תדירות</txt>
+                    <Answer>
+                        <txt>לא נדרשת או פחות מאחת לחודש</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לחודש אך לא אחת לשבוע</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לשבוע אך לא אחת ליום</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת ליום אך לא אחת לשעה</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>מדי שעה או בתדירות גבוהה יותר</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="62">
+                    <txt>זמן התמיכה היומי</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>פחות מ- 30 דקות</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>30 דקות עד פחות משעתיים</txt>
+                        <val>2</val>
+                    </Answer>
+                </Question>
+                <Question id="63">
+                    <txt>סוג התמיכה</txt>
+                    <Answer>
+                        <txt>אין צורך</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>השגחה ומעקב</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>הנחיה מילולית</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית חלקית</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית מלאה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+            </SubGroup>
+            <SubGroup  txt="למידת תפקודים אקדמיים (קריאת שלטים, ספירת עודף וכדומה)">
+                <txt>למידת תפקודים אקדמיים (קריאת שלטים, ספירת עודף וכדומה)</txt>
+                <Question id="64">
+                    <txt>תדירות</txt>
+                    <Answer>
+                        <txt>לא נדרשת או פחות מאחת לחודש</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לחודש אך לא אחת לשבוע</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לשבוע אך לא אחת ליום</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת ליום אך לא אחת לשעה</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>מדי שעה או בתדירות גבוהה יותר</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="65">
+                    <txt>זמן התמיכה היומי</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>פחות מ- 30 דקות</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>30 דקות עד פחות משעתיים</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>שעתיים עד פחות מ- 4 שעות</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>4 שעות ומעלה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="66">
+                    <txt>סוג התמיכה</txt>
+                    <Answer>
+                        <txt>אין צורך</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>השגחה ומעקב</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>הנחיה מילולית</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית חלקית</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית מלאה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+            </SubGroup>
+            <SubGroup  txt="למידת מיומנויות חינוך פיזי ובריאות">
+                <txt>למידת מיומנויות חינוך פיזי ובריאות</txt>
+                <Question id="67">
+                    <txt>תדירות</txt>
+                    <Answer>
+                        <txt>לא נדרשת או פחות מאחת לחודש</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לחודש אך לא אחת לשבוע</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לשבוע אך לא אחת ליום</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת ליום אך לא אחת לשעה</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>מדי שעה או בתדירות גבוהה יותר</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="68">
+                    <txt>זמן התמיכה היומי</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>פחות מ- 30 דקות</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>30 דקות עד פחות משעתיים</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>שעתיים עד פחות מ- 4 שעות</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>4 שעות ומעלה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="69">
+                    <txt>סוג התמיכה</txt>
+                    <Answer>
+                        <txt>אין צורך</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>השגחה ומעקב</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>הנחיה מילולית</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית חלקית</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית מלאה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+            </SubGroup>
+            <SubGroup  txt="למידת מיומנויות החלטה עצמית">
+                <txt>למידת מיומנויות החלטה עצמית</txt>
+                <Question id="70">
+                    <txt>תדירות</txt>
+                    <Answer>
+                        <txt>לא נדרשת או פחות מאחת לחודש</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לחודש אך לא אחת לשבוע</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לשבוע אך לא אחת ליום</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת ליום אך לא אחת לשעה</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>מדי שעה או בתדירות גבוהה יותר</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="71">
+                    <txt>זמן התמיכה היומי</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>פחות מ- 30 דקות</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>30 דקות עד פחות משעתיים</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>שעתיים עד פחות מ- 4 שעות</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>4 שעות ומעלה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="72">
+                    <txt>סוג התמיכה</txt>
+                    <Answer>
+                        <txt>אין צורך</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>השגחה ומעקב</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>הנחיה מילולית</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית חלקית</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית מלאה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+            </SubGroup>
+            <SubGroup  txt="למידת אסטרטגיות ניהול עצמי">
+                <txt>למידת אסטרטגיות ניהול עצמי</txt>
+                <Question id="73">
+                    <txt>תדירות</txt>
+                    <Answer>
+                        <txt>לא נדרשת או פחות מאחת לחודש</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לחודש אך לא אחת לשבוע</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לשבוע אך לא אחת ליום</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת ליום אך לא אחת לשעה</txt>
+                        <val>3</val>
+                    </Answer>
+                  </Question>
+                <Question id="74">
+                    <txt>זמן התמיכה היומי</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>פחות מ- 30 דקות</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>30 דקות עד פחות משעתיים</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>שעתיים עד פחות מ- 4 שעות</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>4 שעות ומעלה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="75">
+                    <txt>סוג התמיכה</txt>
+                    <Answer>
+                        <txt>אין צורך</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>השגחה ומעקב</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>הנחיה מילולית</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית חלקית</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית מלאה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+            </SubGroup>
+        </Group>
+        <Group stype="Subgroup" txt="פעולות תעסוקה" gid="5">
+            <txt>פעולות תעסוקה</txt>
+            <SubGroup txt="תנאי קבלת עבודה/ משימה">
+                <txt>תנאי קבלת עבודה/ משימה</txt>
+                <Question id="76">
+                    <txt>תדירות</txt>
+                    <Answer>
+                        <txt>לא נדרשת או פחות מאחת לחודש</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לחודש אך לא אחת לשבוע</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לשבוע אך לא אחת ליום</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת ליום אך לא אחת לשעה</txt>
+                        <val>3</val>
+                    </Answer>
+                 </Question>
+                <Question id="77">
+                    <txt>זמן התמיכה היומי</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>פחות מ- 30 דקות</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>30 דקות עד פחות משעתיים</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>שעתיים עד פחות מ- 4 שעות</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>4 שעות ומעלה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="78">
+                    <txt>סוג התמיכה</txt>
+                    <Answer>
+                        <txt>אין צורך</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>השגחה ומעקב</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>הנחיה מילולית</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית חלקית</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית מלאה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+            </SubGroup>
+            <SubGroup  txt="למידה ושימוש במיומנויות עבודה ספציפיות">
+                <txt>למידה ושימוש במיומנויות עבודה ספציפיות</txt>
+                <Question id="79">
+                    <txt>תדירות</txt>
+                    <Answer>
+                        <txt>לא נדרשת או פחות מאחת לחודש</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לחודש אך לא אחת לשבוע</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לשבוע אך לא אחת ליום</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת ליום אך לא אחת לשעה</txt>
+                        <val>3</val>
+                    </Answer>
+                </Question>
+                <Question id="80">
+                    <txt>זמן התמיכה היומי</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>פחות מ- 30 דקות</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>30 דקות עד פחות משעתיים</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>שעתיים עד פחות מ- 4 שעות</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>4 שעות ומעלה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="81">
+                    <txt>סוג התמיכה</txt>
+                    <Answer>
+                        <txt>אין צורך</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>השגחה ומעקב</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>הנחיה מילולית</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית חלקית</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית מלאה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+            </SubGroup>
+            <SubGroup  txt="יחסי גומלין עם חברים לעבודה">
+                <txt>יחסי גומלין עם חברים לעבודה</txt>
+                <Question id="82">
+                    <txt>תדירות</txt>
+                    <Answer>
+                        <txt>לא נדרשת או פחות מאחת לחודש</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לחודש אך לא אחת לשבוע</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לשבוע אך לא אחת ליום</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת ליום אך לא אחת לשעה</txt>
+                        <val>3</val>
+                    </Answer>
+                </Question>
+                <Question id="83">
+                    <txt>זמן התמיכה היומי</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>פחות מ- 30 דקות</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>30 דקות עד פחות משעתיים</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>שעתיים עד פחות מ- 4 שעות</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>4 שעות ומעלה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="84">
+                    <txt>סוג התמיכה</txt>
+                    <Answer>
+                        <txt>אין צורך</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>השגחה ומעקב</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>הנחיה מילולית</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית חלקית</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית מלאה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+            </SubGroup>
+            <SubGroup  txt="יחסי גומלין עם ממונים / מנחים">
+                <txt>יחסי גומלין עם ממונים / מנחים</txt>
+                <Question id="85">
+                    <txt>תדירות</txt>
+                    <Answer>
+                        <txt>לא נדרשת או פחות מאחת לחודש</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לחודש אך לא אחת לשבוע</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לשבוע אך לא אחת ליום</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת ליום אך לא אחת לשעה</txt>
+                        <val>3</val>
+                    </Answer>
+                </Question>
+                <Question id="86">
+                    <txt>זמן התמיכה היומי</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>פחות מ- 30 דקות</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>30 דקות עד פחות משעתיים</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>שעתיים עד פחות מ- 4 שעות</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>4 שעות ומעלה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="87">
+                    <txt>סוג התמיכה</txt>
+                    <Answer>
+                        <txt>אין צורך</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>השגחה ומעקב</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>הנחיה מילולית</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית חלקית</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית מלאה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+            </SubGroup>
+            <SubGroup  txt="השלמת משימות תעסוקה במהירות מתקבלת על הדעת">
+                <txt>השלמת משימות תעסוקה במהירות מתקבלת על הדעת</txt>
+                <Question id="88">
+                    <txt>תדירות</txt>
+                    <Answer>
+                        <txt>לא נדרשת או פחות מאחת לחודש</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לחודש אך לא אחת לשבוע</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לשבוע אך לא אחת ליום</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת ליום אך לא אחת לשעה</txt>
+                        <val>3</val>
+                    </Answer>
+                </Question>
+                <Question id="89">
+                    <txt>זמן התמיכה היומי</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>פחות מ- 30 דקות</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>30 דקות עד פחות משעתיים</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית חלקית</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>4 שעות ומעלה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="90">
+                    <txt>סוג התמיכה</txt>
+                    <Answer>
+                        <txt>אין צורך</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>השגחה ומעקב</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>הנחיה מילולית</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית חלקית</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית מלאה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+            </SubGroup>
+            <SubGroup  txt="השלמת משימות תעסוקה באיכות מתקבלת על הדעת">
+                <txt>השלמת משימות תעסוקה באיכות מתקבלת על הדעת</txt>
+                <Question id="91">
+                    <txt>תדירות</txt>
+                    <Answer>
+                        <txt>לא נדרשת או פחות מאחת לחודש</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לחודש אך לא אחת לשבוע</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לשבוע אך לא אחת ליום</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת ליום אך לא אחת לשעה</txt>
+                        <val>3</val>
+                    </Answer>
+                </Question>
+                <Question id="92">
+                    <txt>זמן התמיכה היומי</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>פחות מ- 30 דקות</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>30 דקות עד פחות משעתיים</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>שעתיים עד פחות מ- 4 שעות</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>4 שעות ומעלה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="93">
+                    <txt>סוג התמיכה</txt>
+                    <Answer>
+                        <txt>אין צורך</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>השגחה ומעקב</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>הנחיה מילולית</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית חלקית</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית מלאה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+            </SubGroup>
+            <SubGroup  txt="שינוי מטלות תעסוקה">
+                <txt>שינוי מטלות תעסוקה</txt>
+                <Question id="94">
+                    <txt>תדירות</txt>
+                    <Answer>
+                        <txt>לא נדרשת או פחות מאחת לחודש</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לחודש אך לא אחת לשבוע</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לשבוע אך לא אחת ליום</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת ליום אך לא אחת לשעה</txt>
+                        <val>3</val>
+                    </Answer>
+                </Question>
+                <Question id="95">
+                    <txt>זמן התמיכה היומי</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>פחות מ- 30 דקות</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>30 דקות עד פחות משעתיים</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>שעתיים עד פחות מ- 4 שעות</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>4 שעות ומעלה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="96">
+                    <txt>סוג התמיכה</txt>
+                    <Answer>
+                        <txt>אין צורך</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>השגחה ומעקב</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>הנחיה מילולית</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית חלקית</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית מלאה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+            </SubGroup>
+            <SubGroup  txt="חיפש מידע וסיוע מהמעביד">
+                <txt>חיפש מידע וסיוע מהמעביד</txt>
+                <Question id="97">
+                    <txt>תדירות</txt>
+                    <Answer>
+                        <txt>לא נדרשת או פחות מאחת לחודש</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לחודש אך לא אחת לשבוע</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לשבוע אך לא אחת ליום</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת ליום אך לא אחת לשעה</txt>
+                        <val>3</val>
+                    </Answer>
+                </Question>
+                <Question id="98">
+                    <txt>זמן התמיכה היומי</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>פחות מ- 30 דקות</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>30 דקות עד פחות משעתיים</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>שעתיים עד פחות מ- 4 שעות</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>4 שעות ומעלה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="99">
+                    <txt>סוג התמיכה</txt>
+                    <Answer>
+                        <txt>אין צורך</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>השגחה ומעקב</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>הנחיה מילולית</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית חלקית</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית מלאה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+            </SubGroup>
+        </Group>
+        <Group stype="Subgroup" txt="פעולות בריאות ובטיחות" gid="6">
+            <txt>פעולות בריאות ובטיחות</txt>
+            <SubGroup  txt="לקיחת תרופות">
+                <txt>לקיחת תרופות</txt>
+                <Question id="100">
+                    <txt>תדירות</txt>
+                    <Answer>
+                        <txt>לא נדרשת או פחות מאחת לחודש</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לחודש אך לא אחת לשבוע</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לשבוע אך לא אחת ליום</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת ליום אך לא אחת לשעה</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>מדי שעה או בתדירות גבוהה יותר</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="101">
+                    <txt>זמן התמיכה היומי</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>פחות מ- 30 דקות</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>30 דקות עד פחות משעתיים</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>שעתיים עד פחות מ- 4 שעות</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>4 שעות ומעלה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="102">
+                    <txt>סוג התמיכה</txt>
+                    <Answer>
+                        <txt>אין צורך</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>השגחה ומעקב</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>הנחיה מילולית</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית חלקית</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית מלאה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+            </SubGroup>
+            <SubGroup  txt="המנעו מסיכוני בריאות ובטיחות">
+                <txt>המנעו מסיכוני בריאות ובטיחות</txt>
+                <Question id="103">
+                    <txt>תדירות</txt>
+                    <Answer>
+                        <txt>לא נדרשת או פחות מאחת לחודש</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לחודש אך לא אחת לשבוע</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לשבוע אך לא אחת ליום</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת ליום אך לא אחת לשעה</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>מדי שעה או בתדירות גבוהה יותר</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="104">
+                    <txt>זמן התמיכה היומי</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>פחות מ- 30 דקות</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>30 דקות עד פחות משעתיים</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>שעתיים עד פחות מ- 4 שעות</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>4 שעות ומעלה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="105">
+                    <txt>סוג התמיכה</txt>
+                    <Answer>
+                        <txt>אין צורך</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>השגחה ומעקב</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>הנחיה מילולית</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית חלקית</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית מלאה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+            </SubGroup>
+            <SubGroup  txt="שימוש בשירותי בריאות">
+                <txt>שימוש בשירותי בריאות</txt>
+                <Question id="106">
+                    <txt>תדירות</txt>
+                    <Answer>
+                        <txt>לא נדרשת או פחות מאחת לחודש</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לחודש אך לא אחת לשבוע</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לשבוע אך לא אחת ליום</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת ליום אך לא אחת לשעה</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>מדי שעה או בתדירות גבוהה יותר</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="107">
+                    <txt>זמן התמיכה היומי</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>פחות מ- 30 דקות</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>30 דקות עד פחות משעתיים</txt>
+                        <val>2</val>
+                    </Answer>
+                </Question>
+                <Question id="108">
+                    <txt>סוג התמיכה</txt>
+                    <Answer>
+                        <txt>אין צורך</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>השגחה ומעקב</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>הנחיה מילולית</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית חלקית</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית מלאה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+            </SubGroup>
+            <SubGroup  txt="ניידות">
+                <txt>ניידות</txt>
+                <Question id="109">
+                    <txt>תדירות</txt>
+                    <Answer>
+                        <txt>לא נדרשת או פחות מאחת לחודש</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לחודש אך לא אחת לשבוע</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לשבוע אך לא אחת ליום</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת ליום אך לא אחת לשעה</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>מדי שעה או בתדירות גבוהה יותר</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="110">
+                    <txt>זמן התמיכה היומי</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>פחות מ- 30 דקות</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>30 דקות עד פחות משעתיים</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>שעתיים עד פחות מ- 4 שעות</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>4 שעות ומעלה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="111">
+                    <txt>סוג התמיכה</txt>
+                    <Answer>
+                        <txt>אין צורך</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>השגחה ומעקב</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>הנחיה מילולית</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית חלקית</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית מלאה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+            </SubGroup>
+            <SubGroup  txt="למידה כיצד להגיע לשירותי חירום">
+                <txt>למידה כיצד להגיע לשירותי חירום</txt>
+                <Question id="112">
+                    <txt>תדירות</txt>
+                    <Answer>
+                        <txt>לא נדרשת או פחות מאחת לחודש</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לחודש אך לא אחת לשבוע</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לשבוע אך לא אחת ליום</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת ליום אך לא אחת לשעה</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>מדי שעה או בתדירות גבוהה יותר</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="113">
+                    <txt>זמן התמיכה היומי</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>פחות מ- 30 דקות</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>30 דקות עד פחות משעתיים</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית חלקית</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>4 שעות ומעלה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="114">
+                    <txt>סוג התמיכה</txt>
+                    <Answer>
+                        <txt>אין צורך</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>השגחה ומעקב</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>הנחיה מילולית</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית חלקית</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית מלאה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+            </SubGroup>
+            <SubGroup  txt="שמירה על תזונה">
+                <txt>שמירה על תזונה</txt>
+                <Question id="115">
+                    <txt>תדירות</txt>
+                    <Answer>
+                        <txt>לא נדרשת או פחות מאחת לחודש</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לחודש אך לא אחת לשבוע</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לשבוע אך לא אחת ליום</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת ליום אך לא אחת לשעה</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>מדי שעה או בתדירות גבוהה יותר</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="116">
+                    <txt>זמן התמיכה היומי</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>פחות מ- 30 דקות</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>30 דקות עד פחות משעתיים</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>שעתיים עד פחות מ- 4 שעות</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>4 שעות ומעלה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="117">
+                    <txt>סוג התמיכה</txt>
+                    <Answer>
+                        <txt>אין צורך</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>השגחה ומעקב</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>הנחיה מילולית</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית חלקית</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית מלאה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+            </SubGroup>
+            <SubGroup  txt="שמירה על כושר גופני ובריאותי">
+                <txt>שמירה על כושר גופני ובריאותי</txt>
+                <Question id="118">
+                    <txt>תדירות</txt>
+                    <Answer>
+                        <txt>לא נדרשת או פחות מאחת לחודש</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לחודש אך לא אחת לשבוע</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לשבוע אך לא אחת ליום</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת ליום אך לא אחת לשעה</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>מדי שעה או בתדירות גבוהה יותר</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="119">
+                    <txt>זמן התמיכה היומי</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>פחות מ- 30 דקות</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>30 דקות עד פחות משעתיים</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>שעתיים עד פחות מ- 4 שעות</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>4 שעות ומעלה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="120">
+                    <txt>סוג התמיכה</txt>
+                    <Answer>
+                        <txt>אין צורך</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>השגחה ומעקב</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>הנחיה מילולית</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית חלקית</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית מלאה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+            </SubGroup>
+            <SubGroup  txt="שמירה על רווחה רגשית">
+                <txt>שמירה על רווחה רגשית</txt>
+                <Question id="121">
+                    <txt>תדירות</txt>
+                    <Answer>
+                        <txt>לא נדרשת או פחות מאחת לחודש</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לחודש אך לא אחת לשבוע</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לשבוע אך לא אחת ליום</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת ליום אך לא אחת לשעה</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>מדי שעה או בתדירות גבוהה יותר</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="122">
+                    <txt>זמן התמיכה היומי</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>פחות מ- 30 דקות</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>30 דקות עד פחות משעתיים</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>שעתיים עד פחות מ- 4 שעות</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>4 שעות ומעלה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="123">
+                    <txt>סוג התמיכה</txt>
+                    <Answer>
+                        <txt>אין צורך</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>השגחה ומעקב</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>הנחיה מילולית</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית חלקית</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית מלאה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+            </SubGroup>
+         </Group>
+        <Group  stype="Subgroup" txt="פעולות חברתיות" gid="7">
+            <txt>פעולות חברתיות</txt>
+            <SubGroup txt="קשר עם דיירי הבית">
+                <txt>קשר עם דיירי הבית</txt>
+                <Question id="124">
+                    <txt>תדירות</txt>
+                    <Answer>
+                        <txt>לא נדרשת או פחות מאחת לחודש</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לחודש אך לא אחת לשבוע</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לשבוע אך לא אחת ליום</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת ליום אך לא אחת לשעה</txt>
+                        <val>3</val>
+                    </Answer>
+                </Question>
+                <Question id="125">
+                    <txt>זמן התמיכה היומי</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>פחות מ- 30 דקות</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>30 דקות עד פחות משעתיים</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>שעתיים עד פחות מ- 4 שעות</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>4 שעות ומעלה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="126">
+                    <txt>סוג התמיכה</txt>
+                    <Answer>
+                        <txt>אין צורך</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>השגחה ומעקב</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>הנחיה מילולית</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית חלקית</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית מלאה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+            </SubGroup>
+            <SubGroup  txt="השתתפות בפעילויות פנאי עם אחרים">
+                <txt>השתתפות בפעילויות פנאי עם אחרים</txt>
+                <Question id="127">
+                    <txt>תדירות</txt>
+                    <Answer>
+                        <txt>לא נדרשת או פחות מאחת לחודש</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לחודש אך לא אחת לשבוע</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לשבוע אך לא אחת ליום</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת ליום אך לא אחת לשעה</txt>
+                        <val>3</val>
+                    </Answer>
+                 </Question>
+                <Question id="128">
+                    <txt>זמן התמיכה היומי</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>פחות מ- 30 דקות</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>30 דקות עד פחות משעתיים</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>שעתיים עד פחות מ- 4 שעות</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>4 שעות ומעלה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="129">
+                    <txt>סוג התמיכה</txt>
+                    <Answer>
+                        <txt>אין צורך</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>השגחה ומעקב</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>הנחיה מילולית</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית חלקית</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית מלאה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+            </SubGroup>
+            <SubGroup  txt="קשר עם אחרים מחוץ לבית">
+                <txt>קשר עם אחרים מחוץ לבית</txt>
+                <Question id="130">
+                    <txt>תדירות</txt>
+                    <Answer>
+                        <txt>לא נדרשת או פחות מאחת לחודש</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לחודש אך לא אחת לשבוע</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לשבוע אך לא אחת ליום</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת ליום אך לא אחת לשעה</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>מדי שעה או בתדירות גבוהה יותר</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="131">
+                    <txt>זמן התמיכה היומי</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>פחות מ- 30 דקות</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>30 דקות עד פחות משעתיים</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>שעתיים עד פחות מ- 4 שעות</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>4 שעות ומעלה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="132">
+                    <txt>סוג התמיכה</txt>
+                    <Answer>
+                        <txt>אין צורך</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>השגחה ומעקב</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>הנחיה מילולית</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית חלקית</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית מלאה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+            </SubGroup>
+            <SubGroup  txt="התחברות">
+                <txt>התחברות</txt>
+                <Question id="133">
+                    <txt>תדירות</txt>
+                    <Answer>
+                        <txt>לא נדרשת או פחות מאחת לחודש</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לחודש אך לא אחת לשבוע</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לשבוע אך לא אחת ליום</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת ליום אך לא אחת לשעה</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>מדי שעה או בתדירות גבוהה יותר</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="134">
+                    <txt>זמן התמיכה היומי</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>פחות מ- 30 דקות</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>30 דקות עד פחות משעתיים</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>שעתיים עד פחות מ- 4 שעות</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>4 שעות ומעלה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="135">
+                    <txt>סוג התמיכה</txt>
+                    <Answer>
+                        <txt>אין צורך</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>השגחה ומעקב</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>הנחיה מילולית</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית חלקית</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית מלאה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+            </SubGroup>
+            <SubGroup  txt="תקשורת עם אחרים על צרכים אישיים">
+                <txt>תקשורת עם אחרים על צרכים אישיים</txt>
+                <Question id="136">
+                    <txt>תדירות</txt>
+                    <Answer>
+                        <txt>לא נדרשת או פחות מאחת לחודש</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לחודש אך לא אחת לשבוע</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לשבוע אך לא אחת ליום</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת ליום אך לא אחת לשעה</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>מדי שעה או בתדירות גבוהה יותר</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="137">
+                    <txt>זמן התמיכה היומי</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>פחות מ- 30 דקות</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>30 דקות עד פחות משעתיים</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית חלקית</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>4 שעות ומעלה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="138">
+                    <txt>סוג התמיכה</txt>
+                    <Answer>
+                        <txt>אין צורך</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>השגחה ומעקב</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>הנחיה מילולית</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית חלקית</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית מלאה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+            </SubGroup>
+            <SubGroup  txt="שימוש במיומנויות חברתיות מתאימות">
+                <txt>שימוש במיומנויות חברתיות מתאימות</txt>
+                <Question id="139">
+                    <txt>תדירות</txt>
+                    <Answer>
+                        <txt>לא נדרשת או פחות מאחת לחודש</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לחודש אך לא אחת לשבוע</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לשבוע אך לא אחת ליום</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת ליום אך לא אחת לשעה</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>מדי שעה או בתדירות גבוהה יותר</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="140">
+                    <txt>זמן התמיכה היומי</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>פחות מ- 30 דקות</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>30 דקות עד פחות משעתיים</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>שעתיים עד פחות מ- 4 שעות</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>4 שעות ומעלה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="141">
+                    <txt>סוג התמיכה</txt>
+                    <Answer>
+                        <txt>אין צורך</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>השגחה ומעקב</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>הנחיה מילולית</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית חלקית</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית מלאה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+            </SubGroup>
+            <SubGroup  txt="מעורבות ביחסים אינטימיים">
+                <txt>מעורבות ביחסים אינטימיים</txt>
+                <Question id="142">
+                    <txt>תדירות</txt>
+                    <Answer>
+                        <txt>לא נדרשת או פחות מאחת לחודש</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לחודש אך לא אחת לשבוע</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לשבוע אך לא אחת ליום</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת ליום אך לא אחת לשעה</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>מדי שעה או בתדירות גבוהה יותר</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="143">
+                    <txt>זמן התמיכה היומי</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>פחות מ- 30 דקות</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>30 דקות עד פחות משעתיים</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>שעתיים עד פחות מ- 4 שעות</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>4 שעות ומעלה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="144">
+                    <txt>סוג התמיכה</txt>
+                    <Answer>
+                        <txt>אין צורך</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>השגחה ומעקב</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>הנחיה מילולית</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית חלקית</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית מלאה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+            </SubGroup>
+            <SubGroup  txt="מעורבות בעבודה התנדבותית">
+                <txt>מעורבות בעבודה התנדבותית</txt>
+                <Question id="145">
+                    <txt>תדירות</txt>
+                    <Answer>
+                        <txt>לא נדרשת או פחות מאחת לחודש</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לחודש אך לא אחת לשבוע</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לשבוע אך לא אחת ליום</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת ליום אך לא אחת לשעה</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>מדי שעה או בתדירות גבוהה יותר</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="146">
+                    <txt>זמן התמיכה היומי</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>פחות מ- 30 דקות</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>30 דקות עד פחות משעתיים</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>שעתיים עד פחות מ- 4 שעות</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>4 שעות ומעלה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="147">
+                    <txt>סוג התמיכה</txt>
+                    <Answer>
+                        <txt>אין צורך</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>השגחה ומעקב</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>הנחיה מילולית</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית חלקית</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית מלאה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+            </SubGroup>
+        </Group>
+    </Title>
+    <Title txt="סולם הגנה נוספת וסינגור">
+        <txt>סולם הגנה נוספת וסינגור</txt>
+        <Group stype="Subgroup" txt="פעולות הגנה וסינגור">
+            <txt>פעולות הגנה וסינגור</txt>
+            <SubGroup txt="סינגור עצמי">
+                <txt>סינגור עצמי</txt>
+                <Question id="148">
+                    <txt>תדירות</txt>
+                    <Answer>
+                        <txt>לא נדרשת או פחות מאחת לחודש</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לחודש אך לא אחת לשבוע</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לשבוע אך לא אחת ליום</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת ליום אך לא אחת לשעה</txt>
+                        <val>3</val>
+                    </Answer>
+                </Question>
+                <Question id="149">
+                    <txt>זמן התמיכה היומי</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>פחות מ- 30 דקות</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>30 דקות עד פחות משעתיים</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>שעתיים עד פחות מ- 4 שעות</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>4 שעות ומעלה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="150">
+                    <txt>סוג התמיכה</txt>
+                    <Answer>
+                        <txt>אין צורך</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>השגחה ומעקב</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>הנחיה מילולית</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית חלקית</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית מלאה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+            </SubGroup>
+            <SubGroup  txt="ניהול כספים אישיים">
+                <txt>ניהול כספים אישיים</txt>
+                <Question id="151">
+                    <txt>תדירות</txt>
+                    <Answer>
+                        <txt>לא נדרשת או פחות מאחת לחודש</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לחודש אך לא אחת לשבוע</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לשבוע אך לא אחת ליום</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת ליום אך לא אחת לשעה</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>מדי שעה או בתדירות גבוהה יותר</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="152">
+                    <txt>זמן התמיכה היומי</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>פחות מ- 30 דקות</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>30 דקות עד פחות משעתיים</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>שעתיים עד פחות מ- 4 שעות</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>4 שעות ומעלה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="153">
+                    <txt>סוג התמיכה</txt>
+                    <Answer>
+                        <txt>אין צורך</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>השגחה ומעקב</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>הנחיה מילולית</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית חלקית</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית מלאה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+            </SubGroup>
+            <SubGroup  txt="הגנה עצמית מניצול">
+                <txt>הגנה עצמית מניצול</txt>
+                <Question id="154">
+                    <txt>תדירות</txt>
+                    <Answer>
+                        <txt>לא נדרשת או פחות מאחת לחודש</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לחודש אך לא אחת לשבוע</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לשבוע אך לא אחת ליום</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת ליום אך לא אחת לשעה</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>מדי שעה או בתדירות גבוהה יותר</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="155">
+                    <txt>זמן התמיכה היומי</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>פחות מ- 30 דקות</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>30 דקות עד פחות משעתיים</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>שעתיים עד פחות מ- 4 שעות</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>4 שעות ומעלה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="156">
+                    <txt>סוג התמיכה</txt>
+                    <Answer>
+                        <txt>אין צורך</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>השגחה ומעקב</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>הנחיה מילולית</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית חלקית</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית מלאה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+            </SubGroup>
+            <SubGroup  txt="תרגול אחריות חוקית">
+                <txt>תרגול אחריות חוקית</txt>
+                <Question id="157">
+                    <txt>תדירות</txt>
+                    <Answer>
+                        <txt>לא נדרשת או פחות מאחת לחודש</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לחודש אך לא אחת לשבוע</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לשבוע אך לא אחת ליום</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת ליום אך לא אחת לשעה</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>מדי שעה או בתדירות גבוהה יותר</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="158">
+                    <txt>זמן התמיכה היומי</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>פחות מ- 30 דקות</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>30 דקות עד פחות משעתיים</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>שעתיים עד פחות מ- 4 שעות</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>4 שעות ומעלה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="159">
+                    <txt>סוג התמיכה</txt>
+                    <Answer>
+                        <txt>אין צורך</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>השגחה ומעקב</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>הנחיה מילולית</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית חלקית</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית מלאה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+            </SubGroup>
+            <SubGroup  txt="שייכות ל והשתתפות בארגוני תמיכה או סינגור עצמי">
+                <txt>שייכות ל והשתתפות בארגוני תמיכה או סינגור עצמי</txt>
+                <Question id="160">
+                    <txt>תדירות</txt>
+                    <Answer>
+                        <txt>לא נדרשת או פחות מאחת לחודש</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לחודש אך לא אחת לשבוע</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לשבוע אך לא אחת ליום</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת ליום אך לא אחת לשעה</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>מדי שעה או בתדירות גבוהה יותר</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="161">
+                    <txt>זמן התמיכה היומי</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>פחות מ- 30 דקות</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>30 דקות עד פחות משעתיים</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית חלקית</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>4 שעות ומעלה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="162">
+                    <txt>סוג התמיכה</txt>
+                    <Answer>
+                        <txt>אין צורך</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>השגחה ומעקב</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>הנחיה מילולית</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית חלקית</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית מלאה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+            </SubGroup>
+            <SubGroup  txt="שימוש בשירותי החוק">
+                <txt>שימוש בשירותי החוק</txt>
+                <Question id="163">
+                    <txt>תדירות</txt>
+                    <Answer>
+                        <txt>לא נדרשת או פחות מאחת לחודש</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לחודש אך לא אחת לשבוע</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לשבוע אך לא אחת ליום</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת ליום אך לא אחת לשעה</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>מדי שעה או בתדירות גבוהה יותר</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="164">
+                    <txt>זמן התמיכה היומי</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>פחות מ- 30 דקות</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>30 דקות עד פחות משעתיים</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>שעתיים עד פחות מ- 4 שעות</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>4 שעות ומעלה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="165">
+                    <txt>סוג התמיכה</txt>
+                    <Answer>
+                        <txt>אין צורך</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>השגחה ומעקב</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>הנחיה מילולית</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית חלקית</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית מלאה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+            </SubGroup>
+            <SubGroup  txt="בחירה וקבלת החלטות">
+                <txt>בחירה וקבלת החלטות</txt>
+                <Question id="166">
+                    <txt>תדירות</txt>
+                    <Answer>
+                        <txt>לא נדרשת או פחות מאחת לחודש</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לחודש אך לא אחת לשבוע</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לשבוע אך לא אחת ליום</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת ליום אך לא אחת לשעה</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>מדי שעה או בתדירות גבוהה יותר</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="167">
+                    <txt>זמן התמיכה היומי</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>פחות מ- 30 דקות</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>30 דקות עד פחות משעתיים</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>שעתיים עד פחות מ- 4 שעות</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>4 שעות ומעלה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="168">
+                    <txt>סוג התמיכה</txt>
+                    <Answer>
+                        <txt>אין צורך</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>השגחה ומעקב</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>הנחיה מילולית</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית חלקית</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית מלאה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+            </SubGroup>
+            <SubGroup  txt="סינגור לאחרים">
+                <txt>סינגור לאחרים</txt>
+                <Question id="169">
+                    <txt>תדירות</txt>
+                    <Answer>
+                        <txt>לא נדרשת או פחות מאחת לחודש</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לחודש אך לא אחת לשבוע</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת לשבוע אך לא אחת ליום</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>לפחות אחת ליום אך לא אחת לשעה</txt>
+                        <val>3</val>
+                    </Answer>
+                </Question>
+                <Question id="170">
+                    <txt>זמן התמיכה היומי</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>פחות מ- 30 דקות</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>30 דקות עד פחות משעתיים</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>שעתיים עד פחות מ- 4 שעות</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>4 שעות ומעלה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+                <Question id="171">
+                    <txt>סוג התמיכה</txt>
+                    <Answer>
+                        <txt>אין צורך</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>השגחה ומעקב</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>הנחיה מילולית</txt>
+                        <val>2</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית חלקית</txt>
+                        <val>3</val>
+                    </Answer>
+                    <Answer>
+                        <txt>עזרה פיסית מלאה</txt>
+                        <val>4</val>
+                    </Answer>
+                </Question>
+            </SubGroup>
+        </Group>
+    </Title>
+    <Title txt="צרכי תמיכה חריגים בתחום הרפואי וההתנהגותי">
+        <txt>צרכי תמיכה חריגים בתחום הרפואי וההתנהגותי</txt>
+        <Group stype="Subgroup" txt="תמיכות רפואיות נדרשות " gid="8">
+            <txt>תמיכות רפואיות נדרשות</txt>
+            <SubGroup txt="טיפול נשימתי">
+                <txt>טיפול נשימתי</txt>
+                <Question id="172">
+                    <txt>טיפול בחמצן או אינהלציה</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>צורך בתמיכה קלה</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>צורך בתמיכה נרחבת</txt>
+                        <val>2</val>
+                    </Answer>
+                </Question>
+                <Question id="173">
+                    <txt>ניקוז</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>צורך בתמיכה קלה</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>צורך בתמיכה נרחבת</txt>
+
+                        <val>2</val>
+                    </Answer>
+                </Question>
+                <Question id="174">
+                    <txt>חזה</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>צורך בתמיכה קלה</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>צורך בתמיכה נרחבת</txt>
+                        <val>2</val>
+                    </Answer>
+                </Question>
+                <Question id="175">
+                    <txt>שאיבה</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>צורך בתמיכה קלה</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>צורך בתמיכה נרחבת</txt>
+                        <val>2</val>
+                    </Answer>
+                </Question>
+            </SubGroup>
+            <SubGroup txt="עזרה בהאכלה" >
+                <txt>עזרה בהאכלה</txt>
+                <Question id="176">
+                    <txt>גירוי אוראלי או העמדת הלסת</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>צורך בתמיכה קלה</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>צורך בתמיכה נרחבת</txt>
+                        <val>2</val>
+                    </Answer>
+                </Question>
+                <Question id="177">
+                    <txt>האכלה בזונדה</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>צורך בתמיכה קלה</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>צורך בתמיכה נרחבת</txt>
+                        <val>2</val>
+                    </Answer>
+                </Question>
+                <Question id="178">
+                    <txt>האכלה ישירות לבטן</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>צורך בתמיכה קלה</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>צורך בתמיכה נרחבת</txt>
+                        <val>2</val>
+                    </Answer>
+                </Question>
+            </SubGroup>
+            <SubGroup txt="טיפול בעור" >
+                <txt>טיפול בעור</txt>
+                <Question id="179">
+                    <txt>סיבוב או מיקום</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>צורך בתמיכה קלה</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>צורך בתמיכה נרחבת</txt>
+                        <val>2</val>
+                    </Answer>
+                </Question>
+                <Question id="180">
+                    <txt>חבישת פצעים פתוחים</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>צורך בתמיכה קלה</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>צורך בתמיכה נרחבת</txt>
+                        <val>2</val>
+                    </Answer>
+                </Question>
+            </SubGroup>
+            <SubGroup txt="טיפול רפואי יוצא דופן" >
+                <txt>טיפול רפואי יוצא דופן</txt>
+                <Question id="181">
+                    <txt>הגנה ממחלות מדבקות</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>צורך בתמיכה קלה</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>צורך בתמיכה נרחבת</txt>
+                        <val>2</val>
+                    </Answer>
+                </Question>
+                <Question id="182">
+                    <txt>טיפול בהתקפים</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>צורך בתמיכה קלה</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>צורך בתמיכה נרחבת</txt>
+                        <val>2</val>
+                    </Answer>
+                </Question>
+                <Question id="183">
+                    <txt>דיאליזה</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>צורך בתמיכה קלה</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>צורך בתמיכה נרחבת</txt>
+                        <val>2</val>
+                    </Answer>
+                </Question>
+                <Question id="184">
+                    <txt>טיפול בבטן</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>צורך בתמיכה קלה</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>צורך בתמיכה נרחבת</txt>
+                        <val>2</val>
+                    </Answer>
+                </Question>
+                <Question id="185">
+                    <txt>הרמה או העברה</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>צורך בתמיכה קלה</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>צורך בתמיכה נרחבת</txt>
+                        <val>2</val>
+                    </Answer>
+                </Question>
+                <Question id="186">
+                    <txt>שירותי תרפיה</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>צורך בתמיכה קלה</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>צורך בתמיכה נרחבת</txt>
+                        <val>2</val>
+                    </Answer>
+                </Question>
+                <Question id="187">
+                    <txt>אחר - פרט</txt>
+                    <textbox>yes</textbox>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>צורך בתמיכה קלה</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>צורך בתמיכה נרחבת</txt>
+                        <val>2</val>
+                    </Answer>
+                </Question>
+            </SubGroup>
+        </Group>
+        <Group stype="Subgroup" txt="תמיכות התנהגותיות נדרשות" gid="9">
+            <txt>תמיכות התנהגותיות נדרשות</txt>
+            <SubGroup txt="נטיה להרסנות">
+                <txt>נטיה להרסנות</txt>
+                <Question id="188">
+                    <txt>מניעת פגיעות ופציעות אחרים</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>צורך בתמיכה קלה</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>צורך בתמיכה נרחבת</txt>
+                        <val>2</val>
+                    </Answer>
+                </Question>
+                <Question id="189">
+                    <txt>מניעת הרס רכוש (שבירת רהיטים, הצתת אש)</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>צורך בתמיכה קלה</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>צורך בתמיכה נרחבת</txt>
+                        <val>2</val>
+                    </Answer>
+                </Question>
+                <Question id="190">
+                    <txt>מניעת גניבות</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>צורך בתמיכה קלה</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>צורך בתמיכה נרחבת</txt>
+                        <val>2</val>
+                    </Answer>
+                </Question>
+            </SubGroup>
+            <SubGroup txt="עזרה בהאכלה" >
+                <txt>עזרה בהאכלה</txt>
+                <Question id="191">
+                    <txt>מניעת פגיעה עצמית</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>צורך בתמיכה קלה</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>צורך בתמיכה נרחבת</txt>
+                        <val>2</val>
+                    </Answer>
+
+                </Question>
+                <Question id="192">
+                    <txt>מניעת אכילת דברים שאינם ראויים לאכילה</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>צורך בתמיכה קלה</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>צורך בתמיכה נרחבת</txt>
+                        <val>2</val>
+                    </Answer>
+
+                </Question>
+                <Question id="193">
+                    <txt>מניעת נסיונות התאבדות</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>צורך בתמיכה קלה</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>צורך בתמיכה נרחבת</txt>
+                        <val>2</val>
+                    </Answer>
+
+                </Question>
+            </SubGroup>
+            <SubGroup txt="מיני" >
+                <txt>מיני</txt>
+                <Question id="194">
+                    <txt>מניעת תוקפנות מינית</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>צורך בתמיכה קלה</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>צורך בתמיכה נרחבת</txt>
+                        <val>2</val>
+                   </Answer>
+                </Question>
+                <Question id="195">
+                    <txt>מניעת התנהגות שאינה אגרסיבית אך אינה הולמת (חשיפה בציבור, נגיעות לא הולמות וכדומה)</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>צורך בתמיכה קלה</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>צורך בתמיכה נרחבת</txt>
+                        <val>2</val>
+                    </Answer>
+                </Question>
+            </SubGroup>
+            <SubGroup txt="אחר" >
+                <txt>אחר</txt>
+                <Question id="196">
+                    <txt>מניעת התקפי זעם או התפרצויות רגשיות</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>צורך בתמיכה קלה</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>צורך בתמיכה נרחבת</txt>
+                        <val>2</val>
+                   </Answer>
+                </Question>
+                <Question id="197">
+                    <txt>מניעת שוטטות</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>צורך בתמיכה קלה</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>צורך בתמיכה נרחבת</txt>
+                        <val>2</val>
+                    </Answer>
+                </Question>
+                <Question id="198">
+                    <txt>מניעת התמכרות לסמים</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>צורך בתמיכה קלה</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>צורך בתמיכה נרחבת</txt>
+                        <val>2</val>
+                    </Answer>
+                </Question>
+                <Question id="199">
+                    <txt>שימור טיפולים נפשיים</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>צורך בתמיכה קלה</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>צורך בתמיכה נרחבת</txt>
+                        <val>2</val>
+                    </Answer>
+                </Question>
+                <Question id="200">
+                    <txt>מניעת בעיות התנהגות חריגות אחרות</txt>
+                    <Answer>
+                        <txt>אין צורך בתמיכה</txt>
+                        <val>0</val>
+                    </Answer>
+                    <Answer>
+                        <txt>צורך בתמיכה קלה</txt>
+                        <val>1</val>
+                    </Answer>
+                    <Answer>
+                        <txt>צורך בתמיכה נרחבת</txt>
+                        <val>2</val>
+                    </Answer>
+                </Question>
+                <Question id="201">
+                    <txt>פרט</txt>
+                    <textbox>yes</textbox>
+                </Question>
+            </SubGroup>
+        </Group>
+    </Title>
+    <Group stype="sisResults" txt="טופס ניקוד ופרופיל" gid="10">
+   </Group>
+</Form>
+
+        

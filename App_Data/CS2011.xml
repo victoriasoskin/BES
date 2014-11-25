@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Form txt="סקר שביעות רצון לקוחות 2011" ID="11" mode="surveynoid" limit="">
+	<txt>סקר שביעות רצון לקוחות 2011</txt>
+	<Group stype="Question" txt="שאלון" gid="1">
+			<txt>סקר שביעות רצון לקוחות 2011</txt>
+			<val></val>
+			<Question id="1">
+				<txt>באיזו מידה השתפרה איכות החיים שלך מאז כניסתך למסגרת</txt>
+				<val></val>
+				<Answer>
+					<txt> במידה רבה</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt> במידה בינונית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt> במידה מועטה</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt> כלל לא</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+			<Question id="2">
+				<txt>באיזו מידה אתה מרגיש שהצוות מאמין בך</txt>
+				<val></val>
+				<Answer>
+					<txt> במידה רבה</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt> במידה בינונית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt> במידה מועטה</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt> כלל לא</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+			<Question id="3">
+				<txt>באיזו מידה אתה מרגיש שהצוות מכבד אותך</txt>
+				<val></val>
+				<Answer>
+					<txt> במידה רבה</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt> במידה בינונית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt> במידה מועטה</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt> כלל לא</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+			<Question id="4">
+				<txt>באיזו מידה מתייחסים לרצונות שלך  (יש לך זכות בחירה)?</txt>
+				<val></val>
+				<Answer>
+					<txt> במידה רבה</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt> במידה בינונית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt> במידה מועטה</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt> כלל לא</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+			<Question id="5">
+				<txt>באיזו מידה הסביבה במסגרת נקייה ומטופחת ונעים לך להיות בה</txt>
+				<val></val>
+				<Answer>
+					<txt> במידה רבה</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt> במידה בינונית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt> במידה מועטה</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt> כלל לא</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+			<Question id="6">
+				<txt>באיזו מידה אתה מרגיש טוב במסגרת</txt>
+				<val></val>
+				<Answer>
+					<txt> במידה רבה</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt> במידה בינונית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt> במידה מועטה</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt> כלל לא</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+			<Question id="7">
+				<txt>באיזו מידה אתה מרגיש שהמסגרת תורמת לך להרגיש  שאתה חלק מהקהילה (שכנים, חברים, חוגים, משפחה וכד')</txt>
+				<val></val>
+				<Answer>
+					<txt> במידה רבה</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt> במידה בינונית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt> במידה מועטה</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt> כלל לא</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+			<Question id="8">
+				<txt>באיזו מידה אתה מרגיש בטוח במסגרת</txt>
+				<val></val>
+				<Answer>
+					<txt> במידה רבה</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt> במידה בינונית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt> במידה מועטה</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt> כלל לא</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+			<Question id="9">
+				<txt>באיזו מידה תורמת המסגרת לפעילויות חברתיות/קשרים חברתיים</txt>
+				<val></val>
+				<Answer>
+					<txt> במידה רבה</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt> במידה בינונית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt> במידה מועטה</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt> כלל לא</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+			<Question id="10">
+				<txt>באיזו מידה ניתנות לך הזדמנויות במסגרת לממש את היכולות שלך</txt>
+				<val></val>
+				<Answer>
+					<txt> במידה רבה</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt> במידה בינונית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt> במידה מועטה</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt> כלל לא</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+			<Question id="11">
+				<txt>באיזה מידה לדעתך יש השפעה של השירות אותו אתה מקבל על איכות החיים</txt>
+				<val></val>
+				<Answer>
+					<txt> במידה רבה</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt> במידה בינונית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt> במידה מועטה</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt> כלל לא</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+			<Question id="12">
+				<txt>&lt;b&gt;רק לתלמידי בתי הספר&lt;/b&gt;&lt;br /&gt;באיזו מידה בית הספר מקדם אותך  מבחינה לימודית	</txt>
+				<val></val>
+				<Answer>
+					<txt> במידה רבה</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt> במידה בינונית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt> במידה מועטה</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt> כלל לא</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+			<Question id="13">
+				<txt>&lt;b&gt;רק לתעסוקה&lt;/b&gt;&lt;br /&gt;באיזו מידה מקום העבודה שלך הולם את כישוריך</txt>
+				<val></val>
+				<Answer>
+					<txt> במידה רבה</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt> במידה בינונית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt> במידה מועטה</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt> כלל לא</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+			<Question id="14">
+				<txt>הערות נוספות</txt>
+				<textbox>yes</textbox>
+			</Question>
+	</Group>
+</Form>

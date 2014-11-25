@@ -1,0 +1,708 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Form txt="שאלון איכות חיים" ID="1">
+	<txt>שאלון איכות חיים לתלמיד</txt>
+	<Group stype="Para" txt="הנחיות" gid="1">
+		<txt>הנחיות</txt>
+		<Question id="0">
+			<txt>ניתן לישם את שאלון איכות החיים על אנשים עם צרכים מיוחדים בעלי יכולת ביטוי מניחה את הדעת. על הבוחן להיות רגיש לאפשרות שהמשיב לא יבין חלק מהפריטים או את המשמעות של חלק מהמילים. אם זה קורה, ניתן לנסח מחדש את הפריט בכדי לשפר את ההבנה. אם זה קורה לעיתים קרובות, או שאין לאדם יכולת ביטוי, קיימת אפשרות ששני אנשים, המכירים היטב את האדם, ימלאו את השאלון.</txt>
+		</Question>
+		<Question id="0">
+			<txt>הנחיות למשיבים</txt>
+			<style>color:Blue;font-size:large;font-weight:bold</style>
+		</Question>
+		<Question id="0">
+			<txt>קרא את ההנחיות הבאות למשיבים:</txt>
+		</Question>
+		<Question id="0">
+			<txt>"אני רוצה שתחשוב על היכן אתה גר, עובד ומבלה ועל המשפחה, החברים ואנשי הצוות שאתה מכיר. אם אתה רוצה, אתה יכול לבחון את האפשרויות הניתנות לכל פריט, אם אתה רוצה, אני יכול לבחון אותם בעבורך, לאחר שנקרא ונדון בכל אחת משלוש האפשרויות בכל פריט. נסה בבקשה לענות על כל פריט ויש לנו את כל הזמן שאתה צריך. אין תשובת שגויות. אנו רק רוצים לדעת כיצד אתה מרגיש לגבי מקום מגוריך, העבודה, וזמנך הפנוי ובני המשפחה, חברים ואנשי צוות שאתה מכיר. יש לך שאלות?"</txt>
+			<style>color:Blue</style>
+		</Question>
+		<Question id="0">
+			<txt>אם המשיב מסכים, הבוחן ממשיך עם השאלון ו- 40 הפריטים שבו. בזמן קריאת הפריטים, יש לשים לב למינוח המדויק. ניתן לנסח מחדש פריטים ולחזור עליהם ככל הנדרש בכדי לוודא שהמשיב מבין את הפריט.</txt>
+		</Question>
+		<Question id="0">
+			<txt>הנחיות למדרגים</txt>
+			<style>color:Blue;font-size:large;font-weight:bold</style>
+		</Question>
+		<Question id="0">
+			<txt>על המדרגים להכיר את האדם היטב ועליהם להשלים את השאלון "כאילו הם היו האדם עצמו" (כלומר, לדרג כיצד האדם היה מקבל את הדברים).</txt>
+		</Question>
+		<Question id="0">
+			<txt>על המדרגים להשלים את השאלון באופן עצמאי וללא דיון כלשהו על הפריטים או על האדם.</txt>
+		</Question>
+		<Question id="0">
+			<txt>הנחיות מיוחדות לפריטים הנוגעים לתעסוקה:</txt>
+			<style>color:Blue;font-size:medium</style>
+		</Question>
+		<Question id="0">
+			<txt>אם האדם אינו מועסק, אל תשאל את השאלות המסומנות בעמוד "יכולת / יצרניות". להשלמת השאלון, בחר בכל השאלות האלה את התשובה השמאלית.</txt>
+		</Question>
+		<Question id="0">
+			<txt>תוכניות  תעסוקה מוגנת צריכות להיחשב כעבודות.</txt>
+		</Question>
+	</Group>
+	<Group stype="Question" txt="שביעות רצון" gid="2">
+		<txt>שביעות רצון</txt>
+		<val></val>
+		<Question id="1">
+			<txt>באופן כללי, האם אתה אומר שהחיים:</txt>
+			<val></val>
+			<Answer>
+				<txt>מוציאים ממך את המיטב</txt>
+				<val>3</val>
+			</Answer>
+			<Answer>
+				<txt>מתייחסים אליך כמו לאחרים</txt>
+				<val>2</val>
+			</Answer>
+			<Answer>
+				<txt>לא נותנים לך הזדמנות</txt>
+				<val>1</val>
+			</Answer>
+		</Question>
+		<Question id="2">
+			<txt>עד כמה אתה נהנה מהחיים?</txt>
+			<val></val>
+			<Answer>
+				<txt>נהנה מאוד</txt>
+				<val>3</val>
+			</Answer>
+			<Answer>
+				<txt>נהנה במידה מסוימת</txt>
+				<val>2</val>
+			</Answer>
+			<Answer>
+				<txt>לא ממש נהנה</txt>
+				<val>1</val>
+			</Answer>
+		</Question>
+		<Question id="3">
+			<txt>בהשוואה לאחרים, האם אתה אמיד, כמו כולם או פחות אמיד מכולם?</txt>
+			<val></val>
+			<Answer>
+				<txt>יותר מאחרים</txt>
+				<val>3</val>
+			</Answer>
+			<Answer>
+				<txt>כמו אחרים</txt>
+				<val>2</val>
+			</Answer>
+			<Answer>
+				<txt>פחות מאחרים</txt>
+				<val>1</val>
+			</Answer>
+		</Question>
+		<Question id="4">
+			<txt>האם מרבית הדברים שקורים לך:</txt>
+			<val></val>
+			<Answer>
+				<txt>מספקים</txt>
+				<val>3</val>
+			</Answer>
+			<Answer>
+				<txt>סבירים</txt>
+				<val>2</val>
+			</Answer>
+			<Answer>
+				<txt>מאכזבים</txt>
+				<val>1</val>
+			</Answer>
+		</Question>
+		<Question id="5">
+			<txt>עד כמה אתה הינך שבע רצון מביתך הנוכחי או מקום מגוריך?</txt>
+			<val></val>
+			<Answer>
+				<txt>מאוד שבע רצון</txt>
+				<val>3</val>
+			</Answer>
+			<Answer>
+				<txt>שבע רצון במידה מסוימת</txt>
+				<val>2</val>
+			</Answer>
+			<Answer>
+				<txt>לא שבע רצון או מאוד לא שבע רצון</txt>
+				<val>1</val>
+			</Answer>
+		</Question>
+		<Question id="6">
+			<txt>האם יש לך יותר בעיות מלאחרים או אולי פחות?</txt>
+			<val></val>
+			<Answer>
+				<txt>פחות בעיות</txt>
+				<val>3</val>
+			</Answer>
+			<Answer>
+				<txt>אותו מספר בעיות כמו לאחרים</txt>
+				<val>2</val>
+			</Answer>
+			<Answer>
+				<txt>יותר בעיות מלאחרים</txt>
+				<val>1</val>
+			</Answer>
+		</Question>
+		<Question id="7">
+			<txt>כמה פעמים בחודש אתה מרגיש בודד?</txt>
+			<val></val>
+			<Answer>
+				<txt>לעיתים רחוקות, לא יותר מפעם או פעמיים</txt>
+				<val>3</val>
+			</Answer>
+			<Answer>
+				<txt>מדי פעם, לפחות 5-6 פעמים בחודש</txt>
+				<val>2</val>
+			</Answer>
+			<Answer>
+				<txt>לעיתים תכופות, 1-2 פעמים בשבוע</txt>
+				<val>1</val>
+			</Answer>
+		</Question>
+		<Question id="8">
+			<txt>האם אתה חש מנוכר בארועים חברתיים?</txt>
+			<val></val>
+			<Answer>
+				<txt>לעיתים רחוקות או לעולם לא</txt>
+				<val>3</val>
+			</Answer>
+			<Answer>
+				<txt>לפעמים</txt>
+				<val>2</val>
+			</Answer>
+			<Answer>
+				<txt>בדרך כלל</txt>
+				<val>1</val>
+			</Answer>
+		</Question>
+		<Question id="9">
+			<txt>בהשוואה לאחרים עד כמה אתה חושב שאתה מצליח?</txt>
+			<val></val>
+			<Answer>
+				<txt>כנראה שיותר מצליח מהאדם הממוצע</txt>
+				<val>3</val>
+			</Answer>
+			<Answer>
+				<txt>מצליח כמו האדם הממוצע</txt>
+				<val>2</val>
+			</Answer>
+			<Answer>
+				<txt>פחות מצליח מהאדם הממוצע</txt>
+				<val>1</val>
+			</Answer>
+		</Question>
+		<Question id="10">
+			<txt>מה לגבי בני משפחה? האם הם גורמים לך להרגיש:</txt>
+			<val></val>
+			<Answer>
+				<txt>כחבר חשוב במשפחה</txt>
+				<val>3</val>
+			</Answer>
+			<Answer>
+				<txt>לעיתים כחלק מהמשפחה</txt>
+				<val>2</val>
+			</Answer>
+			<Answer>
+				<txt>כמו זר</txt>
+				<val>1</val>
+			</Answer>
+		</Question>
+	</Group>
+	<Group stype="Question" txt="יכולת / יצרניות" gid="3">
+		<txt>יכולת / יצרניות</txt>
+		<val></val>
+		<Question id="11">
+			<txt>עד כמה תוכנית ההכשרה או הלימוד שלך הכינו אותך למה שאתה עושה כעת?</txt>
+			<val></val>
+			<Answer>
+				<txt>טוב מאוד</txt>
+				<val>3</val>
+			</Answer>
+			<Answer>
+				<txt>במידה מסויימת</txt>
+				<val>2</val>
+			</Answer>
+			<Answer>
+				<txt>בכלל לא</txt>
+				<val>1</val>
+			</Answer>
+		</Question>
+		<Question id="12">
+			<txt>האם אתה חש שעבודתך או פעילויות היום יום בעלות ערך או רלוונטיות לך או לאחרים?</txt>
+			<val></val>
+			<Answer>
+				<txt>כן, בודאי</txt>
+				<val>3</val>
+			</Answer>
+			<Answer>
+				<txt>סביר להניח</txt>
+				<val>2</val>
+			</Answer>
+			<Answer>
+				<txt>אני לא בטוח, או ודאי שלא</txt>
+				<val>1</val>
+			</Answer>
+		</Question>
+		<Question id="100">
+			<txt>שים לב: אם האדם אינו מועסק, אל תשאל את השאלות מכאן ועד סוף העמוד. סמן בשאלות אלה את התשובה השמאלית ביותר.</txt>
+			<val></val>
+			<style>background-color:aqua</style>
+		</Question>
+		<Question id="13">
+			<txt>עד כמה אתה מרגיש שאתה טוב בעבודתך?</txt>
+			<val></val>
+			<Answer>
+				<txt>טוב מאוד, ואחרים אומרים לי שאני טוב</txt>
+				<val>3</val>
+			</Answer>
+			<Answer>
+				<txt>אני טוב אבל אף אחד לא אומר לי</txt>
+				<val>2</val>
+			</Answer>
+			<Answer>
+				<txt>אני מתקשה  בעבודה</txt>
+				<val>1</val>
+			</Answer>
+		</Question>
+		<Question id="14">
+			<txt>כיצד מתייחסים אליך בעבודה?</txt>
+			<val></val>
+			<Answer>
+				<txt>כמו לכל העובדים אחרים</txt>
+				<val>3</val>
+			</Answer>
+			<Answer>
+				<txt>שונה באופן מסוים מהעובדים האחרים</txt>
+				<val>2</val>
+			</Answer>
+			<Answer>
+				<txt>שונה מאוד מלאחרים</txt>
+				<val>1</val>
+			</Answer>
+		</Question>
+		<Question id="15">
+			<txt>עד כמה אתה שבע רצון מהמיומנות והניסיון שקיבלת או מקבל מהעבודה?</txt>
+			<val></val>
+			<Answer>
+				<txt>שבע רצון מאוד</txt>
+				<val>3</val>
+			</Answer>
+			<Answer>
+				<txt>שבע רצון במידה מסוימת</txt>
+				<val>2</val>
+			</Answer>
+			<Answer>
+				<txt>איני שבע רצון</txt>
+				<val>1</val>
+			</Answer>
+		</Question>
+		<Question id="16">
+			<txt>האם אתה לומד מיומנויות שיעזרו לך להשיג עבודה שונה או טובה יותר? מהן מיומנויות אלה?</txt>
+			<val></val>
+			<Answer>
+				<txt>כן, בודאי (ציין מיומנות אחת או יותר)</txt>
+				<val>3</val>
+			</Answer>
+			<Answer>
+				<txt>אני לא בטוח, יתכן (לציין מיומנויות כלליות)</txt>
+				<val>2</val>
+			</Answer>
+			<Answer>
+				<txt>לא, אין לי הזדמנויות בעבודה ללמוד מיומנויות חדשות</txt>
+				<val>1</val>
+			</Answer>
+		</Question>
+		<Question id="17">
+			<txt>האם אתה חש שאתה מקבל תשלום הוגן בעבור עבודתך?</txt>
+			<val></val>
+			<Answer>
+				<txt>כן, בודאי</txt>
+				<val>3</val>
+			</Answer>
+			<Answer>
+				<txt>לפעמים</txt>
+				<val>2</val>
+			</Answer>
+			<Answer>
+				<txt>לא, איני חש שמשלמים לי מספיק</txt>
+				<val>1</val>
+			</Answer>
+		</Question>
+		<Question id="18">
+			<txt>האם העבודה מספקת לך מספיק כסף לקניית דברים שאתה רוצה?</txt>
+			<val></val>
+			<Answer>
+				<txt>כן, אני יכול בדרך כלל לקנות דברים הגיונים שאני רוצה</txt>
+				<val>3</val>
+			</Answer>
+			<Answer>
+				<txt>אני צריך להמתין לקניית פריטים או לא לקנותם בכלל</txt>
+				<val>2</val>
+			</Answer>
+			<Answer>
+				<txt>לא, איני משתכר מספיק כדי לקנות מה שאני רוצה</txt>
+				<val>1</val>
+			</Answer>
+		</Question>
+		<Question id="19">
+			<txt>עד כמה אתה שבע רצון מההטבות שאתה  מקבל ממקום העבודה?</txt>
+			<val></val>
+			<Answer>
+				<txt>שבע רצון מאוד</txt>
+				<val>3</val>
+			</Answer>
+			<Answer>
+				<txt>שבע רצון במידה מסוימת</txt>
+				<val>2</val>
+			</Answer>
+			<Answer>
+				<txt>איני שבע רצון</txt>
+				<val>1</val>
+			</Answer>
+		</Question>
+		<Question id="20">
+			<txt>עד כמה משגיחים עליך בעבודה</txt>
+			<val></val>
+			<Answer>
+				<txt>ממונה נמצא רק כשאני זקוק לא או לה</txt>
+				<val>3</val>
+			</Answer>
+			<Answer>
+				<txt>הממונה נמצא רוב הזמן - אם אני צריך אותו וגם אם לא</txt>
+				<val>2</val>
+			</Answer>
+			<Answer>
+				<txt>הממונה נמצא כל הזמן ומביט בעבודתי</txt>
+				<val>1</val>
+			</Answer>
+		</Question>
+	</Group>
+	<Group stype="Question" txt="קידום / עצמאות" gid="4">
+		txt="קידום / עצמאות">
+		<txt>קידום / עצמאות</txt>
+		<val></val>
+		<Question id="21">
+			<txt>כיצד החלטת לבצע את העבודה או פעילויות אחרות שאתה עושה כעת?</txt>
+			<val></val>
+			<Answer>
+				<txt>בחרתי בעבודה זו בגלל התשלום, ההטבות או העניין</txt>
+				<val>3</val>
+			</Answer>
+			<Answer>
+				<txt>לפי מה שהיה זמין ושיכולתי למצוא</txt>
+				<val>2</val>
+			</Answer>
+			<Answer>
+				<txt>מישהו אחר החליט עבורי</txt>
+				<val>1</val>
+			</Answer>
+		</Question>
+		<Question id="22">
+			<txt>מי מחליט כיצד אתה מוציא את כספך?</txt>
+			<val></val>
+			<Answer>
+				<txt>אני מחליט</txt>
+				<val>3</val>
+			</Answer>
+			<Answer>
+				<txt>אני מחליט, עם סיוע מאחרים</txt>
+				<val>2</val>
+			</Answer>
+			<Answer>
+				<txt>מישהו אחר מחליט</txt>
+				<val>1</val>
+			</Answer>
+		</Question>
+		<Question id="23">
+			<txt>כיצד אתה משתמש בשירותי הבריאות בקהילה (רופא, רופא שיניים וכדומה)?</txt>
+			<val></val>
+			<Answer>
+				<txt>כמעט תמיד לבד</txt>
+				<val>3</val>
+			</Answer>
+			<Answer>
+				<txt>בד"כ עם ליווי, או שמישהו אחר קבע לי את הפגישה</txt>
+				<val>2</val>
+			</Answer>
+			<Answer>
+				<txt>לעולם לא לבדי</txt>
+				<val>1</val>
+			</Answer>
+		</Question>
+		<Question id="24">
+			<txt>עד כמה יש לך שליטה על הדברים שאתה עושה כל יום, כמו ללכת לישון, לאכול, ומה אתה עושה לשם הנאה?</txt>
+			<val></val>
+			<Answer>
+				<txt>שליטה מלאה</txt>
+				<val>3</val>
+			</Answer>
+			<Answer>
+				<txt>שליטה חלקית</txt>
+				<val>2</val>
+			</Answer>
+			<Answer>
+				<txt>שליטה מועטה</txt>
+				<val>1</val>
+			</Answer>
+		</Question>
+		<Question id="25">
+			<txt>מתי יכולים חבריך לבקר אותך בביתך?</txt>
+			<val></val>
+			<Answer>
+				<txt>מתי שאני רוצה</txt>
+				<val>3</val>
+			</Answer>
+			<Answer>
+				<txt>בכל יום, כל זמן שמישהו אחר מסכים או נמצא</txt>
+				<val>2</val>
+			</Answer>
+			<Answer>
+				<txt>רק בימים מסויימים</txt>
+				<val>1</val>
+			</Answer>
+		</Question>
+		<Question id="26">
+			<txt>האם יש לך מפתח לביתך?</txt>
+			<val></val>
+			<Answer>
+				<txt>כן, יש לי מפתח ואני משתמש בו כרצוני</txt>
+				<val>3</val>
+			</Answer>
+			<Answer>
+				<txt>כן, יש לי מפתח אבל הוא פותח מקומות מסויימים בלבד</txt>
+				<val>2</val>
+			</Answer>
+			<Answer>
+				<txt>לא</txt>
+				<val>1</val>
+			</Answer>
+		</Question>
+		<Question id="27">
+			<txt>האם מותר לך להחזיק חיית מחמד?</txt>
+			<val></val>
+			<Answer>
+				<txt>כן, בודאי</txt>
+				<val>3</val>
+			</Answer>
+			<Answer>
+				<txt>כנראה שכן, אבל אני צאריך לשאול</txt>
+				<val>2</val>
+			</Answer>
+			<Answer>
+				<txt>לא</txt>
+				<val>1</val>
+			</Answer>
+		</Question>
+		<Question id="28">
+			<txt>האם יש לך אפוטרופוס</txt>
+			<val></val>
+			<Answer>
+				<txt>לא, אני אחראי לעצמי</txt>
+				<val>3</val>
+			</Answer>
+			<Answer>
+				<txt>כן, אפוטרופוס באון מוגבל</txt>
+				<val>2</val>
+			</Answer>
+			<Answer>
+				<txt>כן, יש לי אפוטרופוס מלא</txt>
+				<val>1</val>
+			</Answer>
+		</Question>
+		<Question id="29">
+			<txt>האם יש אנשים המתגוררים איתך שלעיתים פוגעים בך, מטרידים אותך, מפחידים אותך או מרגיזים אותך?</txt>
+			<val></val>
+			<Answer>
+				<txt>לא</txt>
+				<val>3</val>
+			</Answer>
+			<Answer>
+				<txt>כן, ובעיות אלו מופיעות אחת לחודש או אחת לשבוע</txt>
+				<val>2</val>
+			</Answer>
+			<Answer>
+				<txt>כן, ובעיות אלה מופיעות כל יום או יותר מפעם ביום</txt>
+				<val>1</val>
+			</Answer>
+		</Question>
+		<Question id="30">
+			<txt>באופן כללי, האם אתה אומר שחייך הם:</txt>
+			<val></val>
+			<Answer>
+				<txt>חופשיים</txt>
+				<val>3</val>
+			</Answer>
+			<Answer>
+				<txt>במידה מסויימת מתוכננים עבורך</txt>
+				<val>2</val>
+			</Answer>
+			<Answer>
+				<txt>בד"כ איני יכול לעשות כרצוני</txt>
+				<val>1</val>
+			</Answer>
+		</Question>
+	</Group>
+	<Group stype="Question" txt ="שייכות חברתית / שילוב בקהילה" gid="5">
+		<txt>שייכות חברתית / שילוב בקהילה</txt>
+		<val></val>
+		<Question id="31">
+			<txt>(בכמה מועדונים קהילתיים או ארגונים הינך חבר (כולל בית כנסת או פעילות דתית אחרת?</txt>
+			<val></val>
+			<Answer>
+				<txt>2-3</txt>
+				<val>3</val>
+			</Answer>
+			<Answer>
+				<txt>1 בלבד</txt>
+				<val>2</val>
+			</Answer>
+			<Answer>
+				<txt>אף אחד</txt>
+				<val>1</val>
+			</Answer>
+		</Question>
+		<Question id="32">
+			<txt>עד כמה אתה מרוצה ממועדונים אלה?</txt>
+			<val></val>
+			<Answer>
+				<txt>מרוצה מאוד</txt>
+				<val>3</val>
+			</Answer>
+			<Answer>
+				<txt>מרוצה במידה מסויימת</txt>
+				<val>2</val>
+			</Answer>
+			<Answer>
+				<txt>לא מרוצה או מאוד לא מרוצה</txt>
+				<val>1</val>
+			</Answer>
+		</Question>
+		<Question id="33">
+			<txt>האם אתה מודאג ממה שאנשים מצפים ממך?</txt>
+			<val></val>
+			<Answer>
+				<txt>לפעמים, אבל לא כל הזמן</txt>
+				<val>3</val>
+			</Answer>
+			<Answer>
+				<txt>לעיתים רחוקות</txt>
+				<val>2</val>
+			</Answer>
+			<Answer>
+				<txt>לעולם לא או כל הזמן</txt>
+				<val>1</val>
+			</Answer>
+		</Question>
+		<Question id="34">
+			<txt>כמה פעמים בשבוע אתה מדבר (או מתרועע) עם שכנים, בחצר או בביתם?</txt>
+			<val></val>
+			<Answer>
+				<txt>3-4 פעמים בשבוע</txt>
+				<val>3</val>
+			</Answer>
+			<Answer>
+				<txt>1-2 פעמים בשבוע</txt>
+				<val>2</val>
+			</Answer>
+			<Answer>
+				<txt>לעולם לא או כל הזמן</txt>
+				<val>1</val>
+			</Answer>
+		</Question>
+		<Question id="35">
+			<txt>האם יש לך חברים הבאים לבקר אותך בבית?</txt>
+			<val></val>
+			<Answer>
+				<txt>לעיתים קרובות למדי</txt>
+				<val>3</val>
+			</Answer>
+			<Answer>
+				<txt>לפעמים</txt>
+				<val>2</val>
+			</Answer>
+			<Answer>
+				<txt>לעיתים נדירות או לעולם לא</txt>
+				<val>1</val>
+			</Answer>
+		</Question>
+		<Question id="36">
+			<txt>באיזה תדירות אתה משתתף בפעילויות מהנות (מסיבות, ריקודים, קונצרטים, משחקים) בקהילה?</txt>
+			<val></val>
+			<Answer>
+				<txt>3-4 פעמים בחודש</txt>
+				<val>3</val>
+			</Answer>
+			<Answer>
+				<txt>1-2 פעמים בחודש</txt>
+				<val>2</val>
+			</Answer>
+			<Answer>
+				<txt>פחות מאחת לודש</txt>
+				<val>1</val>
+			</Answer>
+		</Question>
+		<Question id="37">
+			<txt>האם אתה משתתף פעיל בפעילויות  אלה?</txt>
+			<val></val>
+			<Answer>
+				<txt>בדרך כלל, רוב הזמן</txt>
+				<val>3</val>
+			</Answer>
+			<Answer>
+				<txt>לעיתים תכופות, בערך חצי מהזמן</txt>
+				<val>2</val>
+			</Answer>
+			<Answer>
+				<txt>לעיתים רחוקות או לעולם לא</txt>
+				<val>1</val>
+			</Answer>
+		</Question>
+		<Question id="38">
+			<txt>מה לגבי הזדמנויות לפגישות או נישואין?</txt>
+			<val></val>
+			<Answer>
+				<txt>אני נשוי או שיש לי הזדמנות להפגש עם מי שאני רוצה</txt>
+				<val>3</val>
+			</Answer>
+			<Answer>
+				<txt>יש לי הזדמנויות מוגבלות להפגש או להנשא</txt>
+				<val>2</val>
+			</Answer>
+			<Answer>
+				<txt>אין לי הזדמנות להפגש או להנשא</txt>
+				<val>1</val>
+			</Answer>
+		</Question>
+		<Question id="39">
+			<txt>כיצד מתייחסים השכנים אליך?</txt>
+			<val></val>
+			<Answer>
+				<txt>טוב מאוד או טוב (מזמינים אותך לפעילויות, קפה וכדומה)</txt>
+				<val>3</val>
+			</Answer>
+			<Answer>
+				<txt>באופן הוגן (אומרים שלום, מבקרים וכדומה)</txt>
+				<val>2</val>
+			</Answer>
+			<Answer>
+				<txt>גרוע או גרוע מאוד (מתעלמים ממך, מציקים לך וכדומה)</txt>
+				<val>1</val>
+			</Answer>
+		</Question>
+		<Question id="40">
+			<txt>באופן כללי, האם תאמר שחייך הם:</txt>
+			<val></val>
+			<Answer>
+				<txt>כדאיים מאוד</txt>
+				<val>3</val>
+			</Answer>
+			<Answer>
+				<txt>בסדר</txt>
+				<val>2</val>
+			</Answer>
+			<Answer>
+				<txt>חסרי תועלת</txt>
+				<val>1</val>
+			</Answer>
+		</Question>
+	</Group>
+	<Group stype="lqResults" txt="תוצאות" gid="6">
+	</Group>
+</Form>

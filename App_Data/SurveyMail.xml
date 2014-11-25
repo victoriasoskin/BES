@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SMails>
+	<Fields>
+		<Field>EName</Field>
+		<Field>EID</Field>
+		<Field>FrameName</Field>
+		<Field>msgbody</Field>
+	</Fields>
+	<Mail>
+		<To>arielpelli1@gmail.com</To>
+		<From>survey@be-online.org</From>
+		<Subject>הודעה מ#Surveyname#</Subject>
+		<Body>
+			#msgbody#
+			#EID#
+			#ENAME#
+			#FrameName#
+		</Body>
+	</Mail>
+</SMails>

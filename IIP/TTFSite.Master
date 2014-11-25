@@ -1,0 +1,139 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="TTFSite.Master.cs" Inherits="TTF.TTFSite" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <script src="Scripts/jquery-1.10.2.min.js"></script>
+    <style type="text/css">
+        .masterDiv {
+            direction: rtl;
+            font-family: Arial;
+        }
+        /*td {
+            border:1px dashed black;
+        }*/
+        .spanval {
+            direction: ltr;
+        }
+
+        .rowHeader {
+            background-color: #DDDDDD;
+            font-size: 14px;
+        }
+
+        .rowHeaderb {
+            background-color: #DDDDDD;
+            font-size: 14px;
+            border-bottom: 3px solid Gray;
+        }
+
+        .dataCell {
+            font-size: 14px;
+        }
+
+        .ptbl {
+            width: 100%;
+            border: 1px solid Gray;
+        }
+
+            .ptbl td {
+                border: 1px solid #DDDDDD;
+            }
+
+
+        .ptbla {
+            width: 100%;
+            border: 3px solid Gray;
+        }
+
+        .pEhdr {
+            font-weight: bold;
+            background-color: lightblue;
+            white-space: nowrap;
+        }
+
+        .phdr {
+            font-weight: bold;
+            background-color: #DDDDDD;
+            white-space: nowrap;
+        }
+
+        .prowhdr {
+            width: 60px;
+            font-weight: 600;
+        }
+
+        .psubhdr {
+            background-color: #DDDDDD;
+        }
+
+        .pEsubhdr {
+            background-color: lightblue;
+        }
+
+        .pcol {
+            vertical-align: top;
+            border-left: 1px solid Gray;
+        }
+
+        .pcolleft {
+            vertical-align: top;
+        }
+
+        .blist {
+            margin-right: 15px;
+        }
+
+        .btns {
+            float: left;
+            font-weight: normal;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .editbck {
+            font-size: 14px;
+            background-color: #DDEEFF;
+        }
+
+        .tdLastRow {
+            border-bottom: 3px solid Gray;
+            font-size: 14px;
+        }
+
+        .btnweek {
+            white-space: normal;
+            text-decoration: none;
+            color: Black;
+            border: 2px inset white;
+        }
+
+        .divHeader {
+            width: 950px;
+            position: fixed;
+            top: 0px;
+            right: 5px;
+            background-color: #EEEEEE;
+            border: 1px solid gray;
+            z-index: 666;
+        }
+        .lvHeader {
+            width: 950px;
+            background-color: #EEEEEE;
+            border: 1px solid gray;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="masterDiv">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

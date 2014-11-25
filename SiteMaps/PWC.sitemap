@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="" title=""  description="כניסה">
+        <siteMapNode title="שינוי סיסמא" url="cpe.aspx" />
+        <siteMapNode title="יציאה מהמערכת" url="~/Exit.aspx" />
+		<siteMapNode url="ge.aspx" />
+	</siteMapNode>
+</siteMap>

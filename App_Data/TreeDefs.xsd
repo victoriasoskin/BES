@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Trees">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element maxOccurs="unbounded" name="Tree">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Query">
+                  <xs:complexType>
+                    <xs:simpleContent>
+                      <xs:extension base="xs:string">
+                        <xs:attribute name="TreeTable" type="xs:string" use="required" />
+                        <xs:attribute name="IdField" type="xs:string" use="required" />
+                        <xs:attribute name="ParentField" type="xs:string" use="required" />
+                        <xs:attribute name="RootField" type="xs:string" use="required" />
+                        <xs:attribute name="NameField" type="xs:string" use="required" />
+                        <xs:attribute name="OrderField" type="xs:string" use="required" />
+                        <xs:attribute name="DepthField" type="xs:string" use="required" />
+                        <xs:attribute name="IsParentField" type="xs:string" use="required" />
+                      </xs:extension>
+                    </xs:simpleContent>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="nodeAttributes">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element maxOccurs="unbounded" name="NodeDepth">
+                        <xs:complexType>
+                          <xs:sequence>
+                            <xs:element name="Attributes">
+                              <xs:complexType mixed="true">
+                                <xs:sequence minOccurs="0">
+                                  <xs:element name="Attribute">
+                                    <xs:complexType>
+                                      <xs:attribute name="Name" type="xs:string" use="required" />
+                                      <xs:attribute name="Value" type="xs:string" use="required" />
+                                    </xs:complexType>
+                                  </xs:element>
+                                </xs:sequence>
+                              </xs:complexType>
+                            </xs:element>
+                            <xs:element minOccurs="0" name="Details">
+                              <xs:complexType mixed="true">
+                                <xs:sequence minOccurs="0">
+                                  <xs:element maxOccurs="unbounded" name="Item">
+                                    <xs:complexType>
+                                      <xs:sequence>
+                                        <xs:element name="Query" type="xs:string" />
+                                        <xs:element name="List">
+                                          <xs:complexType>
+                                            <xs:simpleContent>
+                                              <xs:extension base="xs:string">
+                                                <xs:attribute name="ControlType" type="xs:unsignedByte" use="required" />
+                                                <xs:attribute name="Id" type="xs:string" use="optional" />
+                                                <xs:attribute name="Name" type="xs:string" use="optional" />
+                                                <xs:attribute name="DataType" type="xs:string" use="optional" />
+                                                <xs:attribute name="XmlFileName" type="xs:string" use="optional" />
+                                                <xs:attribute name="XmlIndex" type="xs:unsignedByte" use="optional" />
+                                                <xs:attribute name="Params" type="xs:string" use="optional" />
+                                                <xs:attribute name="ValidationType" type="xs:string" use="optional" />
+                                                <xs:attribute name="PartOfName" type="xs:string" use="optional" />
+                                              </xs:extension>
+                                            </xs:simpleContent>
+                                          </xs:complexType>
+                                        </xs:element>
+                                      </xs:sequence>
+                                      <xs:attribute name="Id" type="xs:unsignedByte" use="required" />
+                                      <xs:attribute name="Title" type="xs:string" use="required" />
+                                      <xs:attribute name="TableName" type="xs:string" use="optional" />
+                                      <xs:attribute name="KeyField" type="xs:string" use="optional" />
+                                      <xs:attribute name="FieldName" type="xs:string" use="optional" />
+                                      <xs:attribute name="DBType" type="xs:unsignedByte" use="optional" />
+                                      <xs:attribute name="FieldLength" type="xs:string" use="optional" />
+                                      <xs:attribute name="Validate" type="xs:string" use="optional" />
+                                    </xs:complexType>
+                                  </xs:element>
+                                </xs:sequence>
+                              </xs:complexType>
+                            </xs:element>
+                          </xs:sequence>
+                          <xs:attribute name="Min_Group_Depth" type="xs:unsignedByte" use="required" />
+                          <xs:attribute name="Max_Group_Depth" type="xs:unsignedByte" use="required" />
+                          <xs:attribute name="Name" type="xs:string" use="optional" />
+                       </xs:complexType>
+                      </xs:element>
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element minOccurs="0" name="XmlFile">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="Query" type="xs:string" />
+                      <xs:element name="Param">
+                        <xs:complexType>
+                          <xs:simpleContent>
+                            <xs:extension base="xs:string">
+                              <xs:attribute name="Id" type="xs:unsignedByte" use="required" />
+                            </xs:extension>
+                          </xs:simpleContent>
+                        </xs:complexType>
+                      </xs:element>
+                    </xs:sequence>
+                    <xs:attribute name="FileName" type="xs:string" use="required" />
+                  </xs:complexType>
+                </xs:element>
+              </xs:sequence>
+              <xs:attribute name="Id" type="xs:unsignedByte" use="required" />
+              <xs:attribute name="Name" type="xs:string" use="required" />
+              <xs:attribute name="Root" type="xs:string" use="required" />
+              <xs:attribute name="MaxDepth" type="xs:unsignedByte" use="required" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="ControlTypes">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element maxOccurs="unbounded" name="Control">
+                  <xs:complexType>
+                    <xs:attribute name="Id" type="xs:unsignedByte" use="required" />
+                    <xs:attribute name="Name" type="xs:string" use="required" />
+                    <xs:attribute name="Key" type="xs:string" use="optional" />
+                    <xs:attribute name="Text" type="xs:string" use="optional" />
+                  </xs:complexType>
+                </xs:element>
+              </xs:sequence>
+              <xs:attribute name="For" type="xs:string" use="required" />
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

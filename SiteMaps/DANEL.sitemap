@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="default.aspx" title="דף הבית"  description="כניסה">
+        <siteMapNode title="דוחות יציבות כלכלית">
+            <siteMapNode title="יעד לקוחות" url="CSTCOUNT.aspx" />
+        </siteMapNode>
+        <siteMapNode title="שונות">
+        <siteMapNode title="שינוי סיסמא" url="cpe.aspx" />
+      </siteMapNode>
+      <siteMapNode title="יציאה מהמערכת" url="~/Exit.aspx" />
+        <!--!לא מוצגים בתפריט - לצורך בקרת כניסה-->
+        <siteMapNode url="~/CustEventReportU.aspx" />
+        <siteMapNode url="~/CustStatus.aspx" />
+        <siteMapNode url="p3aDetTrans.aspx" />
+        <siteMapNode url="p3aDontShowMessage.aspx" />
+		<siteMapNode url="ge.aspx" />
+		<siteMapNode url="ErrMessage.aspx" />
+
+	</siteMapNode>
+</siteMap>

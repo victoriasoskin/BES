@@ -1,0 +1,488 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Trees>
+  <Tree Id="1" Name="תפריטים לתפקידים" Root="תפריטים לתפקידים" MaxDepth="15">
+    <Query TreeTable="AA_Roles_Menu_Tree" IdField="Id" ParentField="Parent" RootField="Root" NameField="Name" OrderField="Ord" DepthField="Depth" IsParentField="IsParent">
+      SELECT Id,Name,Depth,Parent,Val,Root,Ord,ISParent FROM AA_vRoleS_Menu_Tree
+    </Query>
+    <nodeAttributes>
+      <NodeDepth Min_Group_Depth="0" Max_Group_Depth="0">
+        <Attributes>
+          <Attribute Name="style" Value="font-weight:bold;text-decoration:underline;" />
+        </Attributes>
+      </NodeDepth>
+      <NodeDepth Min_Group_Depth="1" Max_Group_Depth="1">
+        <Attributes>
+          <Attribute Name="style" Value="background-color:#DDDDDD;" />
+        </Attributes>
+        <Details>
+          <Item Id="1" Title="תפקיד" TableName="AA_Roles_Menu_Tree" KeyField="Id" FieldName="Val" DBType="56" FieldLength="">
+            <Query>
+              SELECT Val FROM AA_vRoleS_Menu_Tree WHERE Id={0}
+            </Query>
+            <List ControlType="2">
+              SELECT UserGroupID as Id,UserGroupName As Name From Book10_21.dbo.p0t_Ugroup Order by UserGroupName
+            </List>
+          </Item>
+        </Details>
+      </NodeDepth>
+      <NodeDepth Min_Group_Depth="2" Max_Group_Depth="15">
+        <Attributes>
+          <Attribute Name="style" Value="direction:rtl;" />
+        </Attributes>
+        <Details>
+          <Item Id="1" Title="תוכנית" TableName="AA_Roles_Menu_Tree" KeyField="Id" FieldName="Val" DBType="56" FieldLength="">
+            <Query>
+              SELECT val FROM AA_vRoleS_Menu_Tree WHERE Id={0}
+            </Query>
+            <List ControlType="2">
+              SELECT Id,ISNULL(Text,Name) As Name From AA_Titles order by Name
+            </List>
+          </Item>
+        </Details>
+      </NodeDepth>
+    </nodeAttributes>
+    <XmlFile FileName="sitemaps/R{1}.sitemap">
+      <Query>
+        EXEC TV_pXMLsiteMap N'(select * FROM dbo.Rolesitemap({1}))',N'Ord',{UserID},N'[]',1
+      </Query>
+      <Param Id="1">
+        SELECT TOP 1 Val As p FROM AA_RoleS_Menu_Tree WHERE Id = {0}
+      </Param>
+    </XmlFile>
+  </Tree>
+  <Tree Id="2" Name="תפריטים למשתמשים" Root="תפריטים למשתמשים" MaxDepth="15">
+    <Query TreeTable="AA_Users_Menu_Tree" IdField="Id" ParentField="Parent" RootField="Root" NameField="Name" OrderField="Ord" DepthField="Depth" IsParentField="IsParent">
+      SELECT * FROM AA_ftUser_Menu_Tree (44)
+    </Query>
+    <nodeAttributes>
+      <NodeDepth Min_Group_Depth="0" Max_Group_Depth="0">
+        <Attributes>
+          <Attribute Name="style" Value="font-weight:bold;text-decoration:underline;" />
+        </Attributes>
+      </NodeDepth>
+      <NodeDepth Min_Group_Depth="1" Max_Group_Depth="15">
+        <Attributes>
+        </Attributes>
+        <Details>
+          <Item Id="1" Title="תוכנית" TableName="AA_Users_Menu_Tree" KeyField="Id" FieldName="Val" DBType="56" FieldLength="">
+            <Query>
+              SELECT val FROM AA_ftUser_Menu_Tree(44) WHERE Id={0}
+            </Query>
+            <List ControlType="2">
+              SELECT Id,ISNULL(Text,Name) As Name From AA_Titles order by Name
+            </List>
+          </Item>
+        </Details>
+      </NodeDepth>
+    </nodeAttributes>
+    <XmlFile FileName="sitemaps/U{2}.sitemap">
+      <Query>
+        EXEC TV_pXMLsiteMap N'(select * FROM dbo.sitemap({1}))',N'Ord',{UserID},N'[]',1
+      </Query>
+      <Param Id="1">
+        SELECT TOP 1 Val As p FROM AA_RoleS_Menu_Tree WHERE Id = {0}
+      </Param>
+    </XmlFile>
+  </Tree>
+  <Tree Id="3" Name="ארגון - כספים" Root="ארגון - כספים" MaxDepth="15">
+    <Query TreeTable="AA_Categories" IdField="Id" ParentField="Parent" RootField="Root" NameField="Name" OrderField="Ord" DepthField="Depth" IsParentField="IsParent">
+      SELECT Id ,Name ,Parent ,Root ,Ord ,Depth ,IsParent FROM B10Sec.dbo.AA_Categories WHERE Root=1
+    </Query>
+    <nodeAttributes>
+      <NodeDepth Min_Group_Depth="0" Max_Group_Depth="0">
+        <Attributes>
+          <Attribute Name="style" Value="font-weight:bold;text-decoration:underline;" />
+        </Attributes>
+      </NodeDepth>
+      <NodeDepth Min_Group_Depth="1" Max_Group_Depth="15">
+        <Attributes>
+        </Attributes>
+        <Details>
+          <Item Id="1" Title="יחידה ארגונית" TableName="AA_Roles_Menu_Tree" KeyField="Id" FieldName="Val" DBType="56" FieldLength="" >
+            <Query>
+            </Query>
+            <List ControlType="1">
+            </List>
+          </Item>
+          <Item Id="2" Title="סוג הכנסות" TableName="AA_Frame_AdditionalColumns" KeyField="Frm_CatID" FieldName="IncomeTypeID" DBType="56" FieldLength="" Validate="None">
+            <Query>
+              SELECT IncomeTypeID As Val,Name as Text FROM AA_Frame_AdditionalColumns c LEFT OUTER JOIN AA_Frame_IncomeTypes i ON c.IncomeTypeID = i.Id WHERE Frm_CatID = {0}
+            </Query>
+            <List ControlType="2">
+              SELECT Id,Name FROM AA_Frame_IncomeTypes
+            </List>
+          </Item>
+          <Item Id="3" Title="לקוחות" TableName="AA_Frame_AdditionalColumns" KeyField="Frm_CatID" FieldName="CustomerTypeID" DBType="56" FieldLength="" Validate="None">
+            <Query>
+              SELECT CustomerTypeID AS Val,i.Term as Text FROM AA_Frame_AdditionalColumns c LEFT OUTER JOIN Book10_21.dbo.Term_list i ON c.CustomerTypeID = i.TermId WHERE Frm_CatID = {0}
+            </Query>
+            <List ControlType="2">
+              SELECT TermID as Id,Term AS Name FROM Book10_21.dbo.Term_List Where TermID IN (SELECT termID FROM AA_Frame_CustomerTypes)
+            </List>
+          </Item>
+          <Item Id="4" Title="חברה" TableName="AA_Frame_AdditionalColumns" KeyField="Frm_CatID" FieldName="CompanyID" DBType="56" FieldLength="" Validate="None">
+            <Query>
+              SELECT CompanyID As Val,i.Name As Text FROM AA_Frame_AdditionalColumns c LEFT OUTER JOIN AA_Companies i ON c.CompanyID = i.Id WHERE Frm_CatID = {0}
+            </Query>
+            <List ControlType="2">
+              SELECT Id ,Name FROM AA_Companies
+            </List>
+          </Item>
+          <Item Id="5" Title="יש הכנסות" TableName="AA_Frame_AdditionalColumns" KeyField="Frm_CatID" FieldName="IsPaid" DBType="104" FieldLength="" Validate="None">
+            <Query>
+              SELECT IsPaid As Val,CASE ISNULL(IsPaid,0) WHEN 0 THEN 'לא' ELSE 'כן' END As Text FROM AA_Frame_AdditionalColumns WHERE Frm_CatID = {0}
+            </Query>
+            <List ControlType="2">
+              SELECT 0 AS Id,'לא' AS Name UNION ALL SELECT 1 AS Id,'כן' AS Name
+            </List>
+          </Item>
+          <Item Id="5" Title="סוג שנה" TableName="AA_Frame_AdditionalColumns" KeyField="Frm_CatID" FieldName="IsPaid" DBType="56" FieldLength="" Validate="None">
+            <Query>
+              SELECT YearType As Val,CASE ISNULL(YearType,0) WHEN 0 THEN 'קלנדרית' ELSE 'אקדמית' END As Text FROM AA_Frame_AdditionalColumns WHERE Frm_CatID = {0}
+            </Query>
+            <List ControlType="2">
+              SELECT 0 AS Id,'קלנדרית' AS Name UNION ALL SELECT 1 AS Id,'אקדמית' AS Name
+            </List>
+          </Item>
+        </Details>
+      </NodeDepth>
+    </nodeAttributes>
+  </Tree>
+  <Tree Id="4" Name="תקציב" Root="תקציב" MaxDepth="15">
+    <Query TreeTable="AA_Categories" IdField="Id" ParentField="Parent" RootField="Root" NameField="Name" OrderField="Ord" DepthField="Depth" IsParentField="IsParent">
+      SELECT Id ,Name ,Parent ,Root ,Ord ,Depth ,IsParent FROM B10Sec.dbo.AA_Categories WHERE Root=47
+    </Query>
+    <nodeAttributes>
+      <NodeDepth Min_Group_Depth="0" Max_Group_Depth="15">
+        <Attributes>
+        </Attributes>
+        <Details>
+          <Item Id="1" Title="יחידה ארגונית">
+            <Query>
+            </Query>
+            <List ControlType="1">
+            </List>
+          </Item>
+        </Details>
+      </NodeDepth>
+    </nodeAttributes>
+  </Tree>
+  <Tree Id="5" Name="תפקידים" Root="תפקידים" MaxDepth="15">
+    <Query TreeTable="AA_Categories" IdField="Id" ParentField="Parent" RootField="Root" NameField="Name" OrderField="Ord" DepthField="Depth" IsParentField="IsParent">
+      SELECT Id ,Name ,Parent ,Root ,Ord ,Depth ,IsParent FROM B10Sec.dbo.AA_Categories WHERE Root=449
+    </Query>
+    <nodeAttributes>
+      <NodeDepth Min_Group_Depth="0" Max_Group_Depth="15">
+        <Attributes>
+        </Attributes>
+        <Details>
+          <Item Id="1" Title="יחידה ארגונית">
+            <Query>
+            </Query>
+            <List Id="" Name="יחידה ארגונית" ControlType="1">
+            </List>
+          </Item>
+        </Details>
+      </NodeDepth>
+    </nodeAttributes>
+  </Tree>
+  <Tree Id="6" Name="גרסאות" Root="גרסאות" MaxDepth="15">
+    <Query TreeTable="AA_Categories" IdField="Id" ParentField="Parent" RootField="Root" NameField="Name" OrderField="Ord" DepthField="Depth" IsParentField="IsParent">
+      SELECT Id ,Name ,Parent ,Root ,Ord ,Depth ,IsParent FROM B10Sec.dbo.AA_Categories WHERE Root=340
+    </Query>
+    <nodeAttributes>
+      <NodeDepth Min_Group_Depth="0" Max_Group_Depth="15">
+        <Attributes>
+        </Attributes>
+        <Details>
+          <Item Id="1" Title="יחידה ארגונית">
+            <Query>
+            </Query>
+            <List Id="" Name="יחידה ארגונית" ControlType="1">
+            </List>
+          </Item>
+        </Details>
+      </NodeDepth>
+    </nodeAttributes>
+  </Tree>
+  <Tree Id="7" Name="ארגון - ניהול" Root="מבנה ארגוני" MaxDepth="15">
+    <Query TreeTable="AA_Categories" IdField="Id" ParentField="Parent" RootField="Root" NameField="Name" OrderField="Ord" DepthField="Depth" IsParentField="IsParent">
+      SELECT * FROM dbo.BEONline_Frames ()
+    </Query>
+    <nodeAttributes>
+      <NodeDepth Min_Group_Depth="0" Max_Group_Depth="0">
+        <Attributes>
+          <Attribute Name="style" Value="font-weight:bold;text-decoration:underline;" />
+        </Attributes>
+      </NodeDepth>
+      <NodeDepth Min_Group_Depth="1" Max_Group_Depth="15">
+        <Attributes>
+        </Attributes>
+        <Details>
+          <Item Id="1" Title="יחידה ארגונית" TableName="AA_Roles_Menu_Tree" KeyField="Id" FieldName="Val" DBType="56" FieldLength="" >
+            <Query>
+            </Query>
+            <List ControlType="1">
+            </List>
+          </Item>
+          <Item Id="2" Title="לקות" TableName="AA_Frame_AdditionalColumns" KeyField="Frm_CatID" FieldName="LakutID" DBType="56" FieldLength="" Validate="None">
+            <Query>
+              SELECT c.LakutID As Val,l.Lakut as Text FROM AA_Frame_AdditionalColumns c LEFT OUTER JOIN Book10_21.dbo.p5t_Lakut l ON c.LakutID = l.LakutID
+              WHERE Frm_CatID = {0}
+            </Query>
+            <List ControlType="2">
+              SELECT LakutID AS Id,Lakut AS Name FROM Book10_21.dbo.p5t_Lakut
+            </List>
+          </Item>
+          <Item Id="3" Title="סוג שירות" TableName="AA_Frame_AdditionalColumns" KeyField="Frm_CatID" FieldName="ServiceTypeID" DBType="56" FieldLength="" Validate="None">
+            <Query>
+              SELECT c.ServiceTypeID AS Val,i.ServiceType as Text FROM AA_Frame_AdditionalColumns c LEFT OUTER JOIN Book10_21.dbo.p5t_ServiceType i ON c.ServiceTypeID = i.ServiceTypeID WHERE Frm_CatID = {0}
+            </Query>
+            <List ControlType="2">
+              SELECT ServiceTypeID AS Id,ServiceType AS Name FROM Book10_21.dbo.p5t_ServiceType
+            </List>
+          </Item>
+          <Item Id="4" Title="קבוצת גיל" TableName="AA_Frame_AdditionalColumns" KeyField="Frm_CatID" FieldName="AgeID" DBType="56" FieldLength="" Validate="None">
+            <Query>
+              SELECT c.AgeID As Val,Age As Text FROM AA_Frame_AdditionalColumns c LEFT OUTER JOIN Book10_21.dbo.p0t_Age i ON c.AgeID = i.AgeId WHERE Frm_CatID = {0}
+            </Query>
+            <List ControlType="2">
+              SELECT AgeID As Id ,Age As Name FROM Book10_21.dbo.p0t_Age
+            </List>
+          </Item>
+        </Details>
+      </NodeDepth>
+    </nodeAttributes>
+  </Tree>
+  <Tree Id="8" Name="פעולות לתפקידים" Root="פעולות לתפקידים" MaxDepth="15">
+    <Query TreeTable="AA_Roles_EventTypes" IdField="Id" ParentField="Parent" RootField="Root" NameField="Name" OrderField="Ord" DepthField="Depth" IsParentField="IsParent">
+      SELECT Id,Name,Depth,Parent,Val,Root,Ord,ISParent FROM AA_vRoleS_EventTypes
+    </Query>
+    <nodeAttributes>
+      <NodeDepth Min_Group_Depth="0" Max_Group_Depth="0">
+        <Attributes>
+          <Attribute Name="style" Value="font-weight:bold;text-decoration:underline;" />
+        </Attributes>
+      </NodeDepth>
+      <NodeDepth Min_Group_Depth="1" Max_Group_Depth="1">
+        <Attributes>
+          <Attribute Name="style" Value="background-color:#DDDDDD;" />
+        </Attributes>
+        <Details>
+          <Item Id="1" Title="תפקיד" TableName="AA_vRoles_EventTypes" KeyField="Id" FieldName="Val" DBType="56" FieldLength="">
+            <Query>
+              SELECT Val FROM AA_vRoleS_EventTypes WHERE Id={0}
+            </Query>
+            <List ControlType="2">
+              SELECT UserGroupID as Id,UserGroupName As Name From Book10_21.dbo.p0t_Ugroup Order by UserGroupName
+            </List>
+          </Item>
+        </Details>
+      </NodeDepth>
+      <NodeDepth Min_Group_Depth="2" Max_Group_Depth="2">
+        <Attributes>
+        </Attributes>
+        <Details>
+          <Item Id="1" Title="סוג פעולה" TableName="AA_Roles_EventTypes" KeyField="Id" FieldName="Val" DBType="56" FieldLength="">
+            <Query>
+              SELECT val FROM AA_vRoleS_EventTypes WHERE Id={0}
+            </Query>
+            <List ControlType="2">
+              SELECT CustEventTypeId As Id,CustEventTypeName As Name From Book10_21.dbo.CustEventTypes order by CustEventTypeName
+            </List>
+          </Item>
+          <Item Id="2" Title="הרשאה להוספה" TableName="AA_Roles_TransactionTypes_AdditionalColumns" KeyField="RoleEventID" FieldName="CanInsert" DBType="56" FieldLength="">
+            <Query>
+              SELECT ISNULL(CanInsert,0) AS Val,CASE ISNULL(CanInsert,0) WHEN 0 THEN 'לא' ELSE 'כן' END As Text FROM AA_Roles_TransactionTypes_AdditionalColumns WHERE RoleEventId={0}
+            </Query>
+            <List ControlType="2">
+              SELECT 0 AS Id,'לא' AS Name UNION ALL SELECT 1 AS Id,'כן' AS Name
+            </List>
+          </Item>
+          <Item Id="3" Title="הרשאה לעדכון" TableName="AA_Roles_TransactionTypes_AdditionalColumns" KeyField="RoleEventID" FieldName="CanUpdate" DBType="56" FieldLength="">
+            <Query>
+              SELECT ISNULL(CanUpdate,0) AS Val,CASE ISNULL(CanUpdate,0) WHEN 0 THEN 'לא' ELSE 'כן' END As Text FROM AA_Roles_TransactionTypes_AdditionalColumns WHERE RoleEventId={0}
+            </Query>
+            <List ControlType="2">
+              SELECT 0 AS Id,'לא' AS Name UNION ALL SELECT 1 AS Id,'כן' AS Name
+            </List>
+          </Item>
+          <Item Id="4" Title="הרשאה למחיקה" TableName="AA_Roles_TransactionTypes_AdditionalColumns" KeyField="RoleEventID" FieldName="CanDelete" DBType="56" FieldLength="">
+            <Query>
+              SELECT ISNULL(CanDelete,0) AS Val,CASE ISNULL(CanDelete,0) WHEN 0 THEN 'לא' ELSE 'כן' END As Text FROM AA_Roles_TransactionTypes_AdditionalColumns WHERE RoleEventId={0}
+            </Query>
+            <List ControlType="2">
+              SELECT 0 AS Id,'לא' AS Name UNION ALL SELECT 1 AS Id,'כן' AS Name
+            </List>
+          </Item>
+        </Details>
+      </NodeDepth>
+    </nodeAttributes>
+  </Tree>
+  <Tree Id="9" Name="מסגרות למשתמשים" Root="מסגרות למשתמשים" MaxDepth="15">
+    <Query TreeTable="AA_Users_Frames" IdField="Id" ParentField="Parent" RootField="Root" NameField="Name" OrderField="Ord" DepthField="Depth" IsParentField="IsParent">
+      SELECT * FROM dbo.AA_ftUser_Frames({U})
+    </Query>
+    <nodeAttributes>
+      <NodeDepth Min_Group_Depth="0" Max_Group_Depth="0">
+        <Attributes>
+          <Attribute Name="style" Value="font-weight:bold;text-decoration:underline;" />
+        </Attributes>
+      </NodeDepth>
+      <NodeDepth Min_Group_Depth="1" Max_Group_Depth="1">
+        <Attributes>
+        </Attributes>
+        <Details>
+          <Item Id="1" Title="יחידה ארגונית" TableName="AA_Users_Frames" KeyField="Id" FieldName="Val" DBType="56" FieldLength="">
+            <Query>
+              SELECT Val As Text FROM AA_Users_Frames WHERE Id={0}
+            </Query>
+            <List ControlType="5">
+              (SELECT * FROM dbo.BEONline_Frames ())
+            </List>
+          </Item>
+          <Item Id="2" Title="הרשאה לשנות" TableName="AA_User_Frames_AdditionalColumns" KeyField="UserFrameID" FieldName="CanEdit" DBType="56" FieldLength="">
+            <Query>
+              SELECT ISNULL(CanEdit,0) AS Val,CASE ISNULL(CanEdit,0) WHEN 0 THEN 'לא' ELSE 'כן' END As Text FROM AA_User_Frames_AdditionalColumns WHERE UserFrameId={0}
+            </Query>
+            <List ControlType="2">
+              SELECT 0 AS Id,'לא' AS Name UNION ALL SELECT 1 AS Id,'כן' AS Name
+            </List>
+          </Item>
+        </Details>
+      </NodeDepth>
+    </nodeAttributes>
+  </Tree>
+  <Tree Id="10" Name="משתמשים" Root="משתמשים" MaxDepth="15">
+    <Query TreeTable="AA_Users_Frames" IdField="Id" ParentField="Parent" RootField="Root" NameField="Name" OrderField="Ord" DepthField="Depth" IsParentField="IsParent">
+      Select * FROM ftUsers({X})
+    </Query>
+    <nodeAttributes>
+      <NodeDepth Min_Group_Depth="0" Max_Group_Depth="0">
+        <Attributes>
+          <Attribute Name="style" Value="font-weight:bold;text-decoration:underline;" />
+        </Attributes>
+      </NodeDepth>
+      <NodeDepth Min_Group_Depth="1" Max_Group_Depth="15">
+        <Attributes>
+        </Attributes>
+        <Details>
+        </Details>
+      </NodeDepth>
+    </nodeAttributes>
+  </Tree>
+  <ControlTypes For="Documentation">
+    <Control Id="1" Name="TextBox" />
+    <Control Id="2" Name="DropDownList" Key="Id" Text="Name" />
+  </ControlTypes>
+  <Tree Id="11" Name="מצגות סקרים" Root="מצגות סקרים" MaxDepth="4">
+    <Query TreeTable="PT_Presentations" IdField="Id" ParentField="Parent" RootField="Root" NameField="Name" OrderField="Ord" DepthField="Depth" IsParentField="IsParent" AdditionalTable="PT_Presentation_AdditionalColumns">
+      Select * FROM PT_vPresentations
+    </Query>
+    <nodeAttributes>
+      <NodeDepth Name="מצגות סקרים" Min_Group_Depth="0" Max_Group_Depth="0">
+        <Attributes>
+          <Attribute Name="style" Value="font-weight:bold;text-decoration:underline;" />
+        </Attributes>
+      </NodeDepth>
+      <NodeDepth Name="סוג סקר" Min_Group_Depth="1" Max_Group_Depth="1">
+        <Attributes>
+          <Attribute Name="style" Value="background-color:#DDDDDD;" />
+        </Attributes>
+        <Details>
+          <Item Id="1" Title="קבוצת סקרים" TableName="PT_Presentations" KeyField="Id" FieldName="Val" DBType="56" FieldLength="" >
+            <Query>
+              SELECT Val FROM PT_vPresentations WHERE Id={0}
+            </Query>
+            <List ControlType="2">
+              SELECT SurveyGroupID AS Id,SurveyGroup as Name FROM B10B.dbo.SV_SurveyGroups
+            </List>
+          </Item>
+        </Details>
+      </NodeDepth>
+      <NodeDepth Name="שנת סקר" Min_Group_Depth="2" Max_Group_Depth="2">
+        <Attributes>
+        </Attributes>
+        <Details>
+          <Item Id="1" Title="שנת הסקר" TableName="PT_Presentations" KeyField="Id" FieldName="Val" DBType="56" FieldLength="" >
+            <Query>
+              SELECT Val FROM PT_VPresentations WHERE Id={0}
+            </Query>
+            <List ControlType="2">
+              SELECT SurveyID AS Id,Survey + '[' + CAST(shortdescription as nvarchar(4)) + ']' as Name FROM B10B.dbo.SV_Surveys
+            </List>
+          </Item>
+        </Details>
+      </NodeDepth>
+      <NodeDepth Name="מצגת" Min_Group_Depth="3" Max_Group_Depth="3">
+        <Attributes>
+        </Attributes>
+        <Details>
+          <Item Id="1" Title="שם המצגת" TableName="PT_Presentations" KeyField="Id" FieldName="Name" DBType="231" FieldLength="50" >
+            <Query>
+            </Query>
+            <List ControlType="1">
+            </List>
+          </Item>
+         <Item Id="2" Title="לפי אזור" TableName="PT_Presentation_AdditionalColumns" KeyField="PresentationId" FieldName="ByService" DBType="104" FieldLength="" >
+            <Query>
+              SELECT ByService As Val,CASE ISNULL(ByService,0) WHEN 0 THEN 'לא' ELSE 'כן' END As Text FROM PT_Presentation_AdditionalColumns WHERE  PresentationId={0}
+            </Query>
+            <List ControlType="2">
+              SELECT 0 AS Id,'לא' AS Name UNION ALL SELECT 1 AS Id,'כן' AS Name
+            </List>
+          </Item>
+          <Item Id="3" Title="לפי מסגרת" TableName="PT_Presentation_AdditionalColumns" KeyField="PresentationId" FieldName="ByFrame" DBType="104" FieldLength="" >
+            <Query>
+              SELECT ByFrame As Val,CASE ISNULL(ByFrame,0) WHEN 0 THEN 'לא' ELSE 'כן' END As Text FROM PT_Presentation_AdditionalColumns WHERE  PresentationId={0}
+            </Query>
+            <List ControlType="2">
+              SELECT 0 AS Id,'לא' AS Name UNION ALL SELECT 1 AS Id,'כן' AS Name
+            </List>
+          </Item>
+         </Details>
+      </NodeDepth>
+      <NodeDepth Name="שקף" Min_Group_Depth="4" Max_Group_Depth="5">
+        <Attributes>
+        </Attributes>
+        <Details>
+          <Item Id="1" Title="שקף" TableName="PT_Presentations" KeyField="Id" FieldName="Text" DBType="231" FieldLength="50" >
+            <Query>
+              SELECT  Text FROM PT_Presentations WHERE Id={0}
+            </Query>
+            <List ControlType="2" DataType="Xml" XmlFileName="~/App_Data/SurveyReps.Xml" XmlIndex="1" Params="3|2"  ValidationType="None">
+            </List>
+          </Item>
+          <Item Id="2" Title="מימד" TableName="PT_Presentation_AdditionalColumns" KeyField="PresentationId" FieldName="ProfileID" DBType="56" FieldLength="" PartOfName="Yes" >
+            <Query>
+              SELECT  ProfileID As Val,Title As Text FROM PT_Presentation_AdditionalColumns a LEFT OUTER JOIN B10B.dbo.SV_Survey_Profiles p ON p.CategoryID=a.ProfileID WHERE PresentationId={0}
+            </Query>
+            <List ControlType="2">
+              SELECT CategoryID As Id, title As Name FROM B10B.dbo.SV_Survey_Profiles WHERE SurveyID=16
+            </List>
+          </Item>
+          <Item Id="3" Title="תחום" TableName="PT_Presentation_AdditionalColumns" KeyField="PresentationId" FieldName="ServiceTypeID" DBType="56" FieldLength="" PartOfName="Yes" >
+            <Query>
+              SELECT  a.ServiceTypeID As Val,s.Name As Text FROM PT_Presentation_AdditionalColumns a LEFT OUTER JOIN Book10_21.dbo.p5t_ServiceTypes_H s ON s.Id=a.ServiceTypeID WHERE PresentationId={0}
+            </Query>
+            <List ControlType="2">
+              SELECT Id, Name FROM Book10_21.dbo.p5t_ServiceTypes_H
+            </List>
+          </Item>
+          <Item Id="4" Title="כותרת נוספת" TableName="PT_Presentation_AdditionalColumns" KeyField="PresentationId" FieldName="OnTopTitleFieldNameID" DBType="56" FieldLength="" >
+            <Query>
+              SELECT  a.OnTopTitleFieldNameID As Val,s.Name As Text FROM PT_Presentation_AdditionalColumns a LEFT OUTER JOIN (SELECT * FROM GL_Classes WHERE ClassNameID=2) s ON s.Id=a.OnTopTitleFieldNameID WHERE PresentationId={0}
+            </Query>
+            <List ControlType="2">
+              SELECT Id, Name FROM GL_Classes WHERE ClassNameID=2
+            </List>
+          </Item>
+        </Details>
+      </NodeDepth>
+    </nodeAttributes>
+  </Tree>
+  <ControlTypes For="Documentation">
+    <Control Id="1" Name="TextBox" />
+    <Control Id="2" Name="DropDownList" Key="Id" Text="Name" />
+  </ControlTypes>
+</Trees>

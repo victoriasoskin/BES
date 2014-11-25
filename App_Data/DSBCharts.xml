@@ -1,0 +1,900 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Charts>
+    
+  <!--<Chart ID="1" SubID="" Name="לא משולמים 2013"  SubTitle="(חודשים)" Title="חודשים לא משולמים לפי אזורים">
+        <Query LegandLabels="lastm" XLabels="servicename" YValues="c" ChartType="Column" DataSourceID="BEBook10" Url="Url" Target="_blank">
+            SELECT s.ServiceName, p.ServiceID, COUNT(*) c, DATEADD (month, DATEDIFF(month, -1, getdate()) - 2, 0) as lastm
+            ,'Dsb.Aspx?ID=4&amp;SID=1&amp;P1='+ CAST(p.serviceID As nvarchar (5)) AS Url
+            FROM [Book10_21].[dbo].[p0v_PayListNU] p
+            LEFT OUTER JOIN [Book10_21].[dbo].[ServiceList] s on s.ServiceID=p.ServiceID
+            where Paid=0 AND p.ServiceID != 16 AND PaymentMonth&lt;=DATEADD(month, DATEDIFF(month, -1, getdate()) - 2, 0)
+            group by s.ServiceName, p.ServiceID
+        </Query>
+        <Styles>
+            <Style Entity="Chart" Member="Width=300" Enum="0" Property="" PropertyType="Method" DataType="Int32" Value="Window" />
+        </Styles>
+        <Params>
+        </Params>
+    </Chart>-->
+  <!--*****************************************************************************************************************************-->
+  <!--*****************************************************************************************************************************-->
+  <!--*****************************************************************************************************************************-->
+  <!--*****************************************************************************************************************************-->
+
+
+  <!--<Chart ID="1" SubID="1" Name="לא משולמים 2013 - מסגרות"  SubTitle="(חודשים)" Title="חודשים לא משולמים לפי אזור">
+        <Query LegandLabels="servicename" XLabels="FrameName" YValues="c" ChartType="Column" DataSourceID="BEBook10" Url="Url" Target="_blank">
+            SELECT s.ServiceName, p.serviceID, FrameName, COUNT(*) c, DATEADD(month, DATEDIFF(month, -1, getdate()) - 2, 0) as lastm
+            ,'Dsb.Aspx?ID=4&amp;SID=2&amp;P1='+ CAST(p.FrameID As nvarchar (5)) AS Url
+            FROM [Book10_21].[dbo].[p0v_PayListNU] p
+            LEFT OUTER JOIN [Book10_21].[dbo].[ServiceList] s on s.ServiceID=p.ServiceID
+            WHERE  Paid=0 AND p.ServiceID != 16 AND PaymentMonth&lt;=DATEADD(month, DATEDIFF(month, -1, getdate()) - 2, 0)
+            AND p.serviceID={1}
+            GROUP BY s.ServiceName, p.ServiceID, FrameName, FrameID
+        </Query>
+        <Styles>
+            <Style Entity="Chart" Member="Width=300" Enum="0" Property="" PropertyType="Method" DataType="Int32" Value="Window" />
+        </Styles>
+        <Params>
+        </Params>
+    </Chart>-->
+  <!--*****************************************************************************************************************************-->
+ 
+  <!--<Chart ID="1" SubID="2" Name="לא משולמים 2013 - לפי מסגרת"  SubTitle="(חודשים)" Title="חודשים לא משולמים לפי מסגרת">
+        <Query LegandLabels="FrameName" XLabels="CustomerName" YValues="c" ChartType="Column" DataSourceID="BEBook10" Url="URL" Target="_blank">
+            SELECT s.ServiceName, p.serviceID,[FrameName], COUNT(*) c, customername, NULL AS Url
+            FROM [Book10_21].[dbo].[p0v_PayListNU] p
+            LEFT OUTER JOIN [Book10_21].[dbo].[ServiceList] s ON s.ServiceID=p.ServiceID
+            WHERE  Paid=0 AND p.ServiceID != 16 AND PaymentMonth&lt;=DATEADD(month, DATEDIFF(month, -1, getdate()) - 2, 0)
+            AND p.FrameID={1}
+        GROUP BY s.ServiceName, p.ServiceID, FrameName, customername, FrameID
+         </Query>
+        <Styles>
+            <Style Entity="Chart" Member="Width=300" Enum="0" Property="" PropertyType="Method" DataType="Int32" Value="Window" />
+        </Styles>
+        <Params>
+        </Params>
+    </Chart>-->
+  <!--**********************שאלונים לחינוך בפריסת איזורים**************************************************-->
+ 
+  <Chart ID="2" SubID="" Name="שאלונים לחינוך"  SubTitle="" Title="שאלונים לחינוך">
+    <Query LegandLabels="QF" XLabels="Area" YValues="p" ChartType="Column" DataSourceID="BEBook10" Url="URL" Target="_blank">
+      Select
+      s.ServiceName Area ,N'אין' [QF],
+      sum(case when e.custEventID is  null then 1 else 0 end) p,
+      '/Dsb.Aspx?ID=2&amp;SID=1&amp;P1='+ CAST(s.ServiceID As nvarchar (5)) AS Url
+      from
+      Book10_21.dbo.TT_CustomerList c
+      LEFT OUTER JOIN
+      (select CustomerID, MAX(CustEventID) custEventID from Book10_21.dbo.CustEventList
+      where CustEventTypeID=127 GROUP BY CustomerID)e on e.CustomerID=c.CustomerId
+      LEFT OUTER JOIN Book10_21.DBO.FrameList f ON f.FrameID=c.FrameID
+      LEFT OUTER JOIN Book10_21.DBO.ServiceList s ON s.ServiceID=f.ServiceID
+      where f.ServiceTypeID=3 and f.frameid in
+      (select FrameID from Book10.dbo.p0v_UserFrameList where UserID={UserID} )
+      group by s.ServiceName,S.ServiceID
+      union all
+      Select
+      s.ServiceName Area,N'יש' [QF],
+      sum(case  when e.custEventID is not null then 1 else 0 end) p,
+      '/Dsb.Aspx?ID=2&amp;SID=1&amp;P1=' + CAST(s.ServiceID As nvarchar (5)) AS Url
+      from
+      Book10_21.dbo.TT_CustomerList c
+      LEFT OUTER JOIN
+      (select CustomerID, MAX(CustEventID) custEventID from Book10_21.dbo.CustEventList
+      where CustEventTypeID=127 GROUP BY CustomerID)e on e.CustomerID=c.CustomerId
+      LEFT OUTER JOIN Book10_21.DBO.FrameList f ON f.FrameID=c.FrameID
+      LEFT OUTER JOIN Book10_21.DBO.ServiceList s ON s.ServiceID=f.ServiceID
+
+      where f.ServiceTypeID=3 and f.frameid in
+      (select FrameID from Book10.dbo.p0v_UserFrameList where UserID={UserID} )
+      group by s.ServiceName,S.ServiceID
+    </Query>
+    <Styles>
+      <Style Entity="Chart" Member="Width=300" Enum="0" Property="" PropertyType="Method" DataType="Int32" Value="Window" />
+    </Styles>
+    <Params>
+    </Params>
+  </Chart>
+<!--  שאלונים לחינוך בפריסת מסגרות -->
+  <Chart ID="2" SubID="1" Name="שאלונים לחינוך - לפי מסגרות"  SubTitle="" Title=" שאלונים לחינוך">
+    <Query LegandLabels="QF" XLabels="Frame" YValues="p" ChartType="Column" DataSourceID="BEBook10" Url="URL" Target="_blank">
+      Select
+      f.FrameName Frame,N'אין' [QF],
+      sum(case  when e.custEventID is  null then 1 else 0 end) p,
+      '/Dsb.Aspx?ID=2&amp;SID=2&amp;P1='+ CAST(f.FrameID As nvarchar (5)) +'&amp;P2='+ f.frameName AS Url
+      from
+      Book10_21.dbo.TT_CustomerList c
+      LEFT OUTER JOIN
+      (select CustomerID, MAX(CustEventID) custEventID from Book10_21.dbo.CustEventList
+      where CustEventTypeID=127 GROUP BY CustomerID)e on e.CustomerID=c.CustomerId
+      LEFT OUTER JOIN Book10_21.DBO.FrameList f ON f.FrameID=c.FrameID
+      where f.ServiceTypeID=3 and f.serviceId={1} and f.frameid in
+      (select FrameID from Book10.dbo.p0v_UserFrameList where UserID={UserID} )
+      group by f.FrameName,f.FrameID
+      union all
+      Select
+      f.FrameName Frame,N'יש' [QF],
+      sum(case  when e.custEventID is not null then 1 else 0 end) p ,
+      '/Dsb.Aspx?ID=2&amp;SID=2&amp;P1='+ CAST(f.FrameID As nvarchar (5))+'&amp;P2='+ f.frameName AS Url
+      from
+      Book10_21.dbo.TT_CustomerList c
+      LEFT OUTER JOIN
+      (select CustomerID, MAX(CustEventID) custEventID from Book10_21.dbo.CustEventList
+      where CustEventTypeID=127 GROUP BY CustomerID)e on e.CustomerID=c.CustomerId
+      LEFT OUTER JOIN Book10_21.DBO.FrameList f ON f.FrameID=c.FrameID
+      where f.ServiceTypeID=3 and f.serviceId={1} and f.frameid in
+      (select FrameID from Book10.dbo.p0v_UserFrameList where UserID={UserID} )
+      group by f.FrameName,f.FrameID
+    </Query>
+    <Styles>
+      <Style Entity="Chart" Member="Width=300" Enum="0" Property="" PropertyType="Method" DataType="Int32" Value="Window" />
+    </Styles>
+    <Params>
+    </Params>
+  </Chart>
+  
+  <!--סיכום שאלונים בבית ספר-->
+
+  <Chart ID="2" SubID="2" Name="שאלונים לחינוך ב {2} "  SubTitle="" Title=" שאלונים לחינוך">
+    <Query LegandLabels="QF" XLabels="Frame" YValues="p" ChartType="Column" DataSourceID="BEBook10" Url="URL" Target="_blank">
+      Select
+      f.FrameName Frame,N'אין' [QF],
+      sum(case  when e.custEventID is  null then 1 else 0 end) p,
+      '/Dsb.Aspx?ID=2&amp;SID=3&amp;P1='+ CAST(f.FrameID As nvarchar (5)) +'&amp;P2='+ f.frameName AS Url
+      from
+      Book10_21.dbo.TT_CustomerList c
+      LEFT OUTER JOIN
+      (select CustomerID, MAX(CustEventID) custEventID from Book10_21.dbo.CustEventList
+      where CustEventTypeID=127 GROUP BY CustomerID)e on e.CustomerID=c.CustomerId
+      LEFT OUTER JOIN Book10_21.DBO.FrameList f ON f.FrameID=c.FrameID
+      where f.ServiceTypeID=3 and f.frameId={1} and f.frameid in
+      (select FrameID from Book10.dbo.p0v_UserFrameList where UserID={UserID} )
+      group by f.FrameName,f.FrameID
+      union all
+      Select
+      f.FrameName Frame,N'יש' [QF],
+      sum(case  when e.custEventID is not null then 1 else 0 end) p ,
+      '/Dsb.Aspx?ID=2&amp;SID=3&amp;P1='+ CAST(f.FrameID As nvarchar (5))+'&amp;P2='+ f.frameName AS Url
+      from
+      Book10_21.dbo.TT_CustomerList c
+      LEFT OUTER JOIN
+      (select CustomerID, MAX(CustEventID) custEventID from Book10_21.dbo.CustEventList
+      where CustEventTypeID=127 GROUP BY CustomerID)e on e.CustomerID=c.CustomerId
+      LEFT OUTER JOIN Book10_21.DBO.FrameList f ON f.FrameID=c.FrameID
+      where f.ServiceTypeID=3 and  f.frameid={1} and f.frameid in
+      (select FrameID from Book10.dbo.p0v_UserFrameList where UserID={UserID} )
+      group by f.FrameName,f.FrameID
+    </Query>
+    <Styles>
+      <Style Entity="Chart" Member="Width=300" Enum="0" Property="" PropertyType="Method" DataType="Int32" Value="Window" />
+    </Styles>
+    <Params>
+    </Params>
+  </Chart>
+  
+  <!--  שאלונים לחינוך בפריסת שכבה -->
+  <Chart ID="2" SubID="3" Name=" שאלונים לחינוך {2} - לפי שיכבה "  SubTitle="" Title="  שאלונים לחינוך - לפי שיכבה">
+    <Query LegandLabels="QF" XLabels="Layer" YValues="p" ChartType="Column" DataSourceID="BEBook10" Url="URL" Target="_blank">
+      Select
+      f.FrameName Frame,
+      case when cl.Name IS NULL then N'לא הזינו שיכבה' ELSE CL.NAME end AS Layer,
+
+      N'אין' [QF],
+      sum(case  when e.custEventID is  null then 1 else 0 end) p,
+      '/Dsb.Aspx?ID=2&amp;SID=4&amp;P1='+  CAST( mp.LayerId As nvarchar (5))+'&amp;P2='+ f.frameName+'&amp;P3='+ cl.name+ '&amp;P4='+ CAST( f.frameId As nvarchar (5)) COLLATE Hebrew_CI_AI AS Url
+      from
+      Book10_21.dbo.TT_CustomerList c
+      LEFT OUTER JOIN
+      (select CustomerID, MAX(CustEventID) custEventID from Book10_21.dbo.CustEventList
+      where CustEventTypeID=127 GROUP BY CustomerID)e on e.CustomerID=c.CustomerId
+      LEFT OUTER JOIN Book10_21.DBO.FrameList f ON f.FrameID=c.FrameID
+      LEFT OUTER JOIN Book10.DBO.TT_MP mp ON mp.CustomerId=e.CustomerID
+      LEFT OUTER JOIN B10Sec.dbo.TT_Classes cl on cl.Id=mp.LayerId
+      where f.ServiceTypeID=3 and f.FrameID={1} and f.frameid in
+      (select FrameID from Book10.dbo.p0v_UserFrameList where UserID={UserID} )
+      group by f.FrameName, f.FrameId,cl.Name,mp.LayerId
+      union all
+      Select
+      f.FrameName Frame,
+      case when cl.Name IS NULL then N'לא הזינו שיכבה' ELSE CL.NAME end,
+
+      N'יש' [QF],
+      sum(case  when e.custEventID is not null then 1 else 0 end),
+      '/Dsb.Aspx?ID=2&amp;SID=4&amp;P1='+ CAST( mp.LayerId As nvarchar (5))+'&amp;P2='+ f.frameName+'&amp;P3='+ cl.name+ '&amp;P4='+ CAST( f.frameId As nvarchar (5)) COLLATE Hebrew_CI_AI AS Url
+      from
+      Book10_21.dbo.TT_CustomerList c
+      LEFT OUTER JOIN
+      (select CustomerID, MAX(CustEventID) custEventID from Book10_21.dbo.CustEventList
+      where CustEventTypeID=127 GROUP BY CustomerID)e on e.CustomerID=c.CustomerId
+      LEFT OUTER JOIN Book10_21.DBO.FrameList f ON f.FrameID=c.FrameID
+      LEFT OUTER JOIN Book10.DBO.TT_MP mp ON mp.CustomerId=e.CustomerID
+      LEFT OUTER JOIN B10Sec.dbo.TT_Classes cl on cl.Id=mp.LayerId
+      where f.ServiceTypeID=3 and f.FrameID={1} and f.frameid in
+      (select FrameID from Book10.dbo.p0v_UserFrameList where UserID={UserID} )
+      group by f.FrameName, f.FrameId,cl.Name,mp.LayerId
+    </Query>
+    <Styles>
+      <Style Entity="Chart" Member="Width=300" Enum="0" Property="" PropertyType="Method" DataType="Int32" Value="Window" />
+    </Styles>
+    <Params>
+    </Params>
+  </Chart>
+
+  <!--  שאלונים לחינוך בפריסת שכבה -->
+  <Chart ID="2" SubID="4" Name=" שאלונים לחינוך {2} שיכבה {3} - לפי כיתה "  SubTitle="" Title="  שאלונים לחינוך - לפי כיתה">
+    <Query LegandLabels="QF" XLabels="Class" YValues="p" ChartType="Column" DataSourceID="BEBook10" Url="URL" Target="_blank">
+      Select
+      f.FrameName Frame,cl.Name Layer,
+      case when cl1.Name IS NULL then N'לא הזינו כיתה' ELSE CL1.NAME end as Class,
+      N'אין' [QF],
+      sum(case  when e.custEventID is  null then 1 else 0 end) p
+      from
+      Book10_21.dbo.TT_CustomerList c
+      LEFT OUTER JOIN
+      (select CustomerID, MAX(CustEventID) custEventID from Book10_21.dbo.CustEventList
+      where CustEventTypeID=127 GROUP BY CustomerID)e on e.CustomerID=c.CustomerId
+      LEFT OUTER JOIN Book10_21.DBO.FrameList f ON f.FrameID=c.FrameID
+      LEFT OUTER JOIN Book10.DBO.TT_MP mp ON mp.CustomerId=e.CustomerID
+      LEFT OUTER JOIN B10Sec.dbo.TT_Classes cl on cl.Id=mp.LayerId
+      LEFT OUTER JOIN B10Sec.dbo.TT_Classes cl1 on cl1.Id=mp.ClassId
+      where f.ServiceTypeID=3 and mp.LayerId={1} and f.frameid={4} and f.frameid in
+      (select FrameID from Book10.dbo.p0v_UserFrameList where UserID={UserID} )
+      group by f.FrameName, cl.Name,cl1.Name
+      union all
+      Select
+      f.FrameName Frame,cl.Name [שיכבה],
+      case when cl1.Name IS NULL then N'לא הזינו כיתה' ELSE CL1.NAME end as Class,
+      N'יש' [QF],
+      sum(case  when e.custEventID is not null then 1 else 0 end)
+      from
+      Book10_21.dbo.TT_CustomerList c
+      LEFT OUTER JOIN
+      (select CustomerID, MAX(CustEventID) custEventID from Book10_21.dbo.CustEventList
+      where CustEventTypeID=127 GROUP BY CustomerID)e on e.CustomerID=c.CustomerId
+      LEFT OUTER JOIN Book10_21.DBO.FrameList f ON f.FrameID=c.FrameID
+      LEFT OUTER JOIN Book10.DBO.TT_MP mp ON mp.CustomerId=e.CustomerID
+      LEFT OUTER JOIN B10Sec.dbo.TT_Classes cl on cl.Id=mp.LayerId
+      LEFT OUTER JOIN B10Sec.dbo.TT_Classes cl1 on cl1.Id=mp.ClassId
+      where f.ServiceTypeID=3  and mp.LayerId={1} and f.frameid={4} and f.frameid in
+      (select FrameID from Book10.dbo.p0v_UserFrameList where UserID={UserID} )
+      group by f.FrameName, cl.Name,cl1.Name
+    </Query>
+    <Styles>
+      <Style Entity="Chart" Member="Width=300" Enum="0" Property="" PropertyType="Method" DataType="Int32" Value="Window" />
+    </Styles>
+    <Params>
+    </Params>
+  </Chart>
+  
+ <!--ממוצע אירגוני--> 
+  <Chart ID="3" SubID="" Name="   ממוצע תחומים אירגוני    "  SubTitle="" Title="  ממוצע תחומים אירגוני ">
+    <Query LegandLabels="ST" XLabels="grp" YValues="perc" ChartType="Column" DataSourceID="BEBook10" Url="URL" Target="_blank">
+      select
+      grp,round(AVG(cast(perc as float)),2) as perc,' ' ST,
+      '/Dsb.Aspx?ID=3&amp;SID=1&amp;' AS URL
+      from Book10_21.dbo.TT_CustomerList cl
+      LEFT OUTER JOIN (select CustomerID, MAX(CustEventID) custEventID , CustRelateID , CustEventTypeId from Book10_21.dbo.CustEventList
+      where CustEventTypeID=127 GROUP BY CustomerID ,CustRelateID,CustEventTypeId ) el  ON el.CustomerID=cl.CustomerId
+      LEFT OUTER JOIN Book10_21.DBO.p5t_FormResults r on r.FormID=el.CustRelateID
+      LEFT OUTER JOIN Book10_21.dbo.FrameList F ON cl.FrameID = f.FrameID
+      LEFT OUTER JOIN Book10_21.DBO.ServiceList S on s.ServiceID=f.ServiceID
+      where CustEventTypeID=127 and s.ServiceID in (1,2,3,4) and (gid is not null and grp is not null) and f.frameid in
+      (select FrameID from Book10.dbo.p0v_UserFrameList where UserID={UserID} )
+      group by gid, grp
+      order by gid
+    </Query>
+    <Styles>
+      <Style Entity="Chart" Member="Width=300" Enum="0" Property="" PropertyType="Method" DataType="Int32" Value="Window" />
+    </Styles>
+    <Params>
+    </Params>
+  </Chart>
+
+ <!--ממוצע איזורים-->
+  <Chart ID="3" SubID="1" Name="  ממוצע תחומים - לפי אזורים   "  SubTitle="" Title=" ממוצע תחומים - לפי אזורים ">
+    <Query LegandLabels="GRP" XLabels="AREA" YValues="perc" ChartType="Column" DataSourceID="BEBook10" Url="url" Target="_blank">
+      select
+      s.ServiceName AREA, GRP,round(AVG(cast(perc as float)),2) as perc,
+      '/Dsb.Aspx?ID=3&amp;SID=2&amp;P1='+ CAST( S.ServiceId As nvarchar (5)) AS Url
+      from Book10_21.dbo.TT_CustomerList cl
+      LEFT OUTER JOIN (select CustomerID, MAX(CustEventID) custEventID , CustRelateID , CustEventTypeId from Book10_21.dbo.CustEventList
+      where CustEventTypeID=127 GROUP BY CustomerID ,CustRelateID,CustEventTypeId ) el  ON el.CustomerID=cl.CustomerId
+      LEFT OUTER JOIN Book10_21.DBO.p5t_FormResults r on r.FormID=el.CustRelateID
+      LEFT OUTER JOIN Book10_21.dbo.FrameList F ON cl.FrameID = f.FrameID
+      LEFT OUTER JOIN Book10_21.DBO.ServiceList S on s.ServiceID=f.ServiceID
+      where CustEventTypeID=127 and s.ServiceID in (1,2,3,4) and (gid is not null and grp is not null) and f.ServiceTypeID=3 and f.frameid in
+      (select FrameID from Book10.dbo.p0v_UserFrameList where UserID={UserID} )
+      group by s.ServiceName ,gid, grp,S.serviceId
+      order by s.ServiceName,gid
+    </Query>
+    <Styles>
+      <Style Entity="Chart" Member="Width=300" Enum="0" Property="" PropertyType="Method" DataType="Int32" Value="Window" />
+    </Styles>
+    <Params>
+    </Params>
+  </Chart>
+ 
+   <!--ממוצע תחומים לפי מסגרות--> 
+  
+  <Chart ID="3" SubID="2" Name="  ממוצע תחומים - לפי מסגרות   "  SubTitle="" Title=" ממוצע תחומים - לפי מסגרות ">
+    <Query LegandLabels="GRP" XLabels="Frame" YValues="perc" ChartType="Column" DataSourceID="BEBook10" Url="url" Target="_blank">
+      select
+      F.FrameName Frame, grp,round(AVG(cast(perc as float)),2) as perc,
+      '/Dsb.Aspx?ID=3&amp;SID=3&amp;P1='+ CAST( f.FrameID As nvarchar (5)) +'&amp;P2='+ f.frameName AS Url
+      from Book10_21.dbo.TT_CustomerList cl
+      LEFT OUTER JOIN (select CustomerID, MAX(CustEventID) custEventID , CustRelateID , CustEventTypeId from Book10_21.dbo.CustEventList
+      where CustEventTypeID=127 GROUP BY CustomerID ,CustRelateID,CustEventTypeId ) el  ON el.CustomerID=cl.CustomerId
+      LEFT OUTER JOIN Book10_21.DBO.p5t_FormResults r on r.FormID=el.CustRelateID
+      LEFT OUTER JOIN Book10_21.dbo.FrameList F ON cl.FrameID = f.FrameID
+      LEFT OUTER JOIN Book10_21.DBO.ServiceList S on s.ServiceID=f.ServiceID
+      where CustEventTypeID=127 and s.ServiceID ={1} and (gid is not null and grp is not null) and f.ServiceTypeID=3 and f.frameid in
+      (select FrameID from Book10.dbo.p0v_UserFrameList where UserID={UserID} )
+      group by F.FrameName ,gid, grp,f.FrameID
+      order by F.FrameName,gid
+    </Query>
+    <Styles>
+      <Style Entity="Chart" Member="Width=300" Enum="0" Property="" PropertyType="Method" DataType="Int32" Value="Window" />
+    </Styles>
+    <Params>
+    </Params>
+  </Chart>
+
+  <!--ממוצע תחומים לפי מסגרת-->
+ 
+  <Chart ID="3" SubID="3" Name="  ממוצע תחומים - {2}   "  SubTitle="" Title=" ממוצע תחומים - לפי מסגרת ">
+    <Query LegandLabels="st" XLabels="grp" YValues="perc" ChartType="Column" DataSourceID="BEBook10" Url="url" Target="_blank">
+
+      select
+      grp,' ' ST,
+      round(AVG(cast(perc as float)),2) as perc,
+      '/Dsb.Aspx?ID=3&amp;SID=4&amp;P1={1}' +'&amp;P2='+ f.frameName AS Url
+      from Book10_21.dbo.TT_CustomerList cl
+      LEFT OUTER JOIN (select CustomerID, MAX(CustEventID) custEventID , CustRelateID , CustEventTypeId from Book10_21.dbo.CustEventList
+      where CustEventTypeID=127 GROUP BY CustomerID ,CustRelateID,CustEventTypeId ) el  ON el.CustomerID=cl.CustomerId
+      LEFT OUTER JOIN Book10_21.DBO.p5t_FormResults r on r.FormID=el.CustRelateID
+      LEFT OUTER JOIN Book10_21.dbo.FrameList F ON cl.FrameID = f.FrameID
+      where CustEventTypeID=127 and (gid is not null and grp is not null) and f.FrameID={1} and f.frameid in
+      (select FrameID from Book10.dbo.p0v_UserFrameList where UserID={UserID} )
+      group by gid,grp,f.framename
+      order by gid
+    </Query>
+    <Styles>
+      <Style Entity="Chart" Member="Width=300" Enum="0" Property="" PropertyType="Method" DataType="Int32" Value="Window" />
+    </Styles>
+    <Params>
+    </Params>
+  </Chart>
+  
+  <!--ממוצע תחומים לפי שכבה-->
+
+  <Chart ID="3" SubID="4" Name="  ממוצע תחומים - {2} לפי שכבות   "  SubTitle="" Title=" ממוצע תחומים - לפי שכבות ">
+    <Query LegandLabels="grp" XLabels="Layer" YValues="perc" ChartType="Column" DataSourceID="BEBook10" Url="url" Target="_blank">
+
+      select
+      case when c.Name IS NULL then N'לא הזינו שיכבה' ELSE C.NAME end AS Layer,
+      grp,
+      round(AVG(cast(perc as float)),2) as perc,
+      '/Dsb.Aspx?ID=3&amp;SID=5&amp;P1='+ CAST( mp.LayerId As nvarchar (5)) +'&amp;P2='+ f.frameName+ '&amp;P3='+ c.Name COLLATE Hebrew_CI_AI +'&amp;P4='+CAST( f.FrameId As nvarchar (5))AS Url
+      from Book10_21.dbo.TT_CustomerList cl
+      LEFT OUTER JOIN (select CustomerID, MAX(CustEventID) custEventID , CustRelateID , CustEventTypeId from Book10_21.dbo.CustEventList
+      where CustEventTypeID=127 GROUP BY CustomerID ,CustRelateID,CustEventTypeId ) el  ON el.CustomerID=cl.CustomerId
+      LEFT OUTER JOIN Book10_21.DBO.p5t_FormResults r on r.FormID=el.CustRelateID
+      LEFT OUTER JOIN Book10_21.dbo.FrameList F ON cl.FrameID = f.FrameID
+      LEFT OUTER JOIN Book10.DBO.TT_MP mp ON mp.CustomerId=el.CustomerID
+      LEFT OUTER JOIN B10Sec.dbo.TT_Classes c on c.Id=mp.LayerId
+      where CustEventTypeID=127  and f.FrameID={1} and f.ServiceTypeID=3 and f.frameid in
+      (select FrameID from Book10.dbo.p0v_UserFrameList where UserID={UserID} )
+      group by grp ,gid,c.Name,mp.LayerId,f.frameName,f.frameId
+      order by c.Name, gid
+    </Query>
+    <Styles>
+      <Style Entity="Chart" Member="Width=300" Enum="0" Property="" PropertyType="Method" DataType="Int32" Value="Window" />
+    </Styles>
+    <Params>
+    </Params>
+  </Chart>
+
+  <!--ממוצע תחומים לפי כיתה-->
+
+  <Chart ID="3" SubID="5" Name="  ממוצע תחומים - {2} שיכבה {3} חלוקה לפי כיתה   "  SubTitle="" Title=" ממוצע תחומים - לפי כיתה ">
+    <Query LegandLabels="grp" XLabels="Class" YValues="perc" ChartType="Column" DataSourceID="BEBook10" Url="" Target="_blank">
+
+      select
+      case when c1.Name IS NULL then N'לא הזינו כיתה' ELSE C1.NAME end AS Class,
+      grp,
+      round(AVG(cast(perc as float)),2) as perc
+      from Book10_21.dbo.TT_CustomerList cl
+      LEFT OUTER JOIN (select CustomerID, MAX(CustEventID) custEventID , CustRelateID , CustEventTypeId from Book10_21.dbo.CustEventList
+      where CustEventTypeID=127 GROUP BY CustomerID ,CustRelateID,CustEventTypeId ) el  ON el.CustomerID=cl.CustomerId
+      LEFT OUTER JOIN Book10_21.DBO.p5t_FormResults r on r.FormID=el.CustRelateID
+      LEFT OUTER JOIN Book10_21.dbo.FrameList F ON cl.FrameID = f.FrameID
+      LEFT OUTER JOIN Book10.DBO.TT_MP mp ON mp.CustomerId=el.CustomerID
+      LEFT OUTER JOIN B10Sec.dbo.TT_Classes c on c.Id=mp.LayerId
+      LEFT OUTER JOIN B10Sec.dbo.TT_Classes c1 on c1.Id=mp.ClassId
+      where CustEventTypeID=127  and mp.LayerID={1} and f.ServiceTypeID=3  and f.FrameID={4} and  f.frameid in
+      (select FrameID from Book10.dbo.p0v_UserFrameList where UserID={UserID} )
+      group by grp ,gid,c.Name,c1.name
+      order by c1.Name, gid
+    </Query>
+    <Styles>
+      <Style Entity="Chart" Member="Width=300" Enum="0" Property="" PropertyType="Method" DataType="Int32" Value="Window" />
+    </Styles>
+    <Params>
+    </Params>
+  </Chart>
+
+  <Chart ID="4" SubID="" Name="   ממוצע לפי תחום    "  SubTitle="" Title="  ממוצע לפי תחום ">
+    <Query LegandLabels="ST" XLabels="grp" YValues="perc" ChartType="Column" DataSourceID="BEBook10" Url="URL" Target="_blank">
+      select
+      grp,round(AVG(cast(perc as float)),2) as perc,' ' ST,
+      '/Dsb.Aspx?ID=4&amp;SID=1&amp;P1='+ grp AS URL
+      from Book10_21.dbo.TT_CustomerList cl
+      LEFT OUTER JOIN (select CustomerID, MAX(CustEventID) custEventID , CustRelateID , CustEventTypeId from Book10_21.dbo.CustEventList
+      where CustEventTypeID=127 GROUP BY CustomerID ,CustRelateID,CustEventTypeId ) el  ON el.CustomerID=cl.CustomerId
+      LEFT OUTER JOIN Book10_21.DBO.p5t_FormResults r on r.FormID=el.CustRelateID
+      LEFT OUTER JOIN Book10_21.dbo.FrameList F ON cl.FrameID = f.FrameID
+      LEFT OUTER JOIN Book10_21.DBO.ServiceList S on s.ServiceID=f.ServiceID
+      where CustEventTypeID=127 and s.ServiceID in (1,2,3,4) and (gid is not null and grp is not null) and f.ServiceTypeID=3 and f.frameid in
+      (select FrameID from Book10.dbo.p0v_UserFrameList where UserID={UserID} )
+      group by gid, grp
+      order by gid
+    </Query>
+    <Styles>
+      <Style Entity="Chart" Member="Width=300" Enum="0" Property="" PropertyType="Method" DataType="Int32" Value="Window" />
+    </Styles>
+    <Params>
+    </Params>
+  </Chart>
+  <!--ממוצע תחום לפי איזורים-->
+  <Chart ID="4" SubID="1" Name=" ממוצע אזורים בתחום {1}  "  SubTitle="" Title=" ממוצע אזורים בתחום {1}  ">
+    <Query LegandLabels="ST" XLabels="Area" YValues="perc" ChartType="Column" DataSourceID="BEBook10" Url="url" Target="_blank">
+      select s.serviceName Area,
+      grp,round(AVG(cast(perc as float)),2) as perc,' ' ST,
+      '/Dsb.Aspx?ID=4&amp;SID=2&amp;P1='+ grp+'&amp;P2='+CAST(s.serviceID As nvarchar (5))+'&amp;P3='+s.serviceName  AS URL
+      from Book10_21.dbo.TT_CustomerList cl
+      LEFT OUTER JOIN (select CustomerID, MAX(CustEventID) custEventID , CustRelateID , CustEventTypeId from Book10_21.dbo.CustEventList
+      where CustEventTypeID=127 GROUP BY CustomerID ,CustRelateID,CustEventTypeId ) el  ON el.CustomerID=cl.CustomerId
+      LEFT OUTER JOIN Book10_21.DBO.p5t_FormResults r on r.FormID=el.CustRelateID
+      LEFT OUTER JOIN Book10_21.dbo.FrameList F ON cl.FrameID = f.FrameID
+      LEFT OUTER JOIN Book10_21.DBO.ServiceList S on s.ServiceID=f.ServiceID
+      where CustEventTypeID=127 and s.ServiceID in (1,2,3,4) and grp=N'{1}' and f.ServiceTypeID=3 and f.frameid in
+      (select FrameID from Book10.dbo.p0v_UserFrameList where UserID={UserID} )
+      group by s.serviceName,s.serviceID, gid, grp
+      order by gid
+    </Query>
+    <Styles>
+      <Style Entity="Chart" Member="Width=300" Enum="0" Property="" PropertyType="Method" DataType="Int32" Value="Window" />
+    </Styles>
+    <Params>
+    </Params>
+  </Chart>
+  <Chart ID="4" SubID="2" Name="ממוצע תחום {1} ב{3} "  SubTitle="" Title=" ממוצע תחום {1} ב{3}  ">
+    <Query LegandLabels="ST" XLabels="Frame" YValues="perc" ChartType="Column" DataSourceID="BEBook10" Url="url" Target="_blank">
+      select f.frameName Frame,
+      grp,round(AVG(cast(perc as float)),2) as perc,' ' ST,
+      '/Dsb.Aspx?ID=4&amp;SID=3&amp;P1='+ grp+'&amp;P2='+CAST(f.FrameID As nvarchar (5)) +'&amp;P3='+f.frameName AS URL
+      from Book10_21.dbo.TT_CustomerList cl
+      LEFT OUTER JOIN (select CustomerID, MAX(CustEventID) custEventID , CustRelateID , CustEventTypeId from Book10_21.dbo.CustEventList
+      where CustEventTypeID=127 GROUP BY CustomerID ,CustRelateID,CustEventTypeId ) el  ON el.CustomerID=cl.CustomerId
+      LEFT OUTER JOIN Book10_21.DBO.p5t_FormResults r on r.FormID=el.CustRelateID
+      LEFT OUTER JOIN Book10_21.dbo.FrameList F ON cl.FrameID = f.FrameID
+      LEFT OUTER JOIN Book10_21.DBO.ServiceList S on s.ServiceID=f.ServiceID
+      where CustEventTypeID=127 and s.ServiceID ={2} and grp=N'{1}' and f.ServiceTypeID=3 and f.frameid in
+      (select FrameID from Book10.dbo.p0v_UserFrameList where UserID={UserID} )
+      group by f.frameName, f.FrameID,gid, grp
+      order by gid,f.FrameID
+    </Query>
+    <Styles>
+      <Style Entity="Chart" Member="Width=300" Enum="0" Property="" PropertyType="Method" DataType="Int32" Value="Window" />
+    </Styles>
+    <Params>
+    </Params>
+  </Chart>
+
+  <Chart ID="4" SubID="3" Name="ממוצע תחום {1} ב{3} "  SubTitle="" Title=" ממוצע תחום {1} ב{3}  ">
+    <Query LegandLabels="ST" XLabels="Layer" YValues="perc" ChartType="Column" DataSourceID="BEBook10" Url="url" Target="_blank">
+      select
+      case when c.Name IS NULL then N'לא הזינו שיכבה' ELSE C.NAME end AS Layer, 
+      grp,round(AVG(cast(perc as float)),2) as perc,'לפי שיכבה' ST,
+      '/Dsb.Aspx?ID=4&amp;SID=4&amp;P1='+ grp+'&amp;P2='+CAST(c.ID As nvarchar (5)) +'&amp;P3='+ CAST({2} As nvarchar (5))+'&amp;P4='+f.frameName +'&amp;P5='+ c.Name COLLATE Hebrew_CI_AI AS URL
+      from Book10_21.dbo.TT_CustomerList cl
+      LEFT OUTER JOIN (select CustomerID, MAX(CustEventID) custEventID , CustRelateID , CustEventTypeId from Book10_21.dbo.CustEventList
+      where CustEventTypeID=127 GROUP BY CustomerID ,CustRelateID,CustEventTypeId) el  ON el.CustomerID=cl.CustomerId
+      LEFT OUTER JOIN Book10_21.DBO.p5t_FormResults r on r.FormID=el.CustRelateID
+      LEFT OUTER JOIN Book10_21.dbo.FrameList F ON cl.FrameID = f.FrameID
+      LEFT OUTER JOIN Book10_21.DBO.ServiceList S on s.ServiceID=f.ServiceID
+      LEFT OUTER JOIN Book10.DBO.TT_MP mp ON mp.CustomerId=el.CustomerID
+      LEFT OUTER JOIN B10Sec.dbo.TT_Classes c on c.Id=mp.LayerId
+      where CustEventTypeID=127 and f.frameId ={2}  and grp=N'{1}' and f.ServiceTypeID=3 and f.frameid in
+      (select FrameID from Book10.dbo.p0v_UserFrameList where UserID={UserID} )
+      group by c.Name,c.ID, f.FrameID,gid, grp,f.FrameName
+      order by gid
+    </Query>
+    <Styles>
+      <Style Entity="Chart" Member="Width=300" Enum="0" Property="" PropertyType="Method" DataType="Int32" Value="Window" />
+    </Styles>
+    <Params>
+    </Params>
+  </Chart>
+
+  <Chart ID="4" SubID="4" Name="ממוצע תחום {1} ב{4} שיכבה {5} "  SubTitle="" Title=" ממוצע תחום {1} ב{3}  ">
+    <Query LegandLabels="ST" XLabels="Class" YValues="perc" ChartType="Column" DataSourceID="BEBook10" Url="url" Target="_blank">
+      select c1.Name Class ,
+      grp,round(AVG(cast(perc as float)),2) as perc,' לפי כיתה' ST
+      <!--'http://srv/t1/Dsb.Aspx?ID=4&amp;SID=1&amp;P1='+ grp+'&amp;P2='+CAST(f.FrameID As nvarchar (5)) AS URL-->
+      from Book10_21.dbo.TT_CustomerList cl
+      LEFT OUTER JOIN Book10_21.dbo.CustEventList el  ON el.CustomerID=cl.CustomerId
+      LEFT OUTER JOIN Book10_21.DBO.p5t_FormResults r on r.FormID=el.CustRelateID
+      LEFT OUTER JOIN Book10_21.dbo.FrameList F ON cl.FrameID = f.FrameID
+      LEFT OUTER JOIN Book10_21.DBO.ServiceList S on s.ServiceID=f.ServiceID
+      LEFT OUTER JOIN Book10.DBO.TT_MP mp ON mp.CustomerId=el.CustomerID
+      LEFT OUTER JOIN B10Sec.dbo.TT_Classes c on c.Id=mp.LayerId
+      LEFT OUTER JOIN B10Sec.dbo.TT_Classes c1 on c1.Id=mp.ClassId
+      where CustEventTypeID=127 and c.id ={2} and grp='{1}' and f.ServiceTypeID=3 and f.frameId={3} and f.frameid in
+      (select FrameID from Book10.dbo.p0v_UserFrameList where UserID={UserID} )
+      group by c.Name,c1.Name, f.FrameID,gid, grp
+      order by gid
+    </Query>
+    <Styles>
+      <Style Entity="Chart" Member="Width=300" Enum="0" Property="" PropertyType="Method" DataType="Int32" Value="Window" />
+    </Styles>
+    <Params>
+    </Params>
+  </Chart>
+
+  <!--***********************************************************************************
+  ***************************************************************************************
+  *****************  כמויות של תוכניות תמיכה *****************************************
+  ***************************************************************************************-->
+  <Chart ID="5" SubID="" Name="תוכניות תמיכה לתלמיד - אירגוני"  SubTitle="" Title="תוכניות תמיכה לתלמיד - איזורים">
+    <Query LegandLabels="QF" XLabels="Area" YValues="CustNum" ChartType="Column" DataSourceID="BEBook10" Url="URL" Target="_blank">
+      SELECT
+      s.serviceName Area, N'יש' [QF],
+      COUNT(distinct(p.CustomerId)) CustNum,
+      '/Dsb.Aspx?ID=5&amp;SID=1&amp;P1='+ CAST( S.ServiceId As nvarchar (5))+'&amp;P2='+s.serviceName AS Url
+      FROM
+      (select * from
+      Book10_21.dbo.TT_CustomerList cl where cl.CustomerId in (select CustomerID from Book10.dbo.TT_WP))p
+      left outer join Book10_21.dbo.FrameList  f on p.FrameID = f.FrameID
+      left outer join Book10_21.dbo.ServiceList s on  f.ServiceID= s.ServiceID
+      where s.ServiceID in (1,2,3,4) and f.ServiceTypeID=3 and f.frameid in
+      (select FrameID from Book10.dbo.p0v_UserFrameList where UserID={UserID} )
+      group by s.ServiceName,s.ServiceID
+      union
+      SELECT
+      s.serviceName, N'אין' [QF],
+      COUNT(distinct(p.CustomerId)) CustNum,
+      '/Dsb.Aspx?ID=5&amp;SID=1&amp;P1='+ CAST( S.ServiceId As nvarchar (5))+'&amp;P2='+s.serviceName AS Url
+      FROM
+      (select * from
+      Book10_21.dbo.TT_CustomerList cl where cl.CustomerId not in (select CustomerID from Book10.dbo.TT_WP))p
+      left outer join Book10_21.dbo.FrameList  f on p.FrameID = f.FrameID
+      left outer join Book10_21.dbo.ServiceList s on  f.ServiceID= s.ServiceID
+      where s.ServiceID in (1,2,3,4) and f.ServiceTypeID=3 and f.frameid in
+      (select FrameID from Book10.dbo.p0v_UserFrameList where UserID={UserID} )
+      group by s.ServiceName,s.ServiceID
+    </Query>
+    <Styles>
+      <Style Entity="Chart" Member="Width=300" Enum="0" Property="" PropertyType="Method" DataType="Int32" Value="Window" />
+    </Styles>
+    <Params>
+    </Params>
+  </Chart>
+
+  <Chart ID="5" SubID="1" Name="תוכניות תמיכה לתלמיד - ב{2}"  SubTitle="" Title=" תוכניות תמיכה לתלמיד - מסגרות ">
+    <Query LegandLabels="QF" XLabels="Frame" YValues="CustNum" ChartType="Column" DataSourceID="BEBook10" Url="URL" Target="_blank">
+      SELECT
+      f.FrameName Frame, N'יש' [QF],
+      COUNT(distinct(p.CustomerId)) CustNum,
+      '/Dsb.Aspx?ID=5&amp;SID=2&amp;P1='+ CAST( f.FrameId As nvarchar (5))+'&amp;P2='+f.frameName AS Url
+      FROM
+      (select * from
+      Book10_21.dbo.TT_CustomerList cl where cl.CustomerId in (select CustomerID from Book10.dbo.TT_WP))p
+      left outer join Book10_21.dbo.FrameList  f on p.FrameID = f.FrameID
+      left outer join Book10_21.dbo.ServiceList s on  f.ServiceID= s.ServiceID
+      where s.ServiceID ={1} and f.ServiceTypeID=3 and f.frameid in
+      (select FrameID from Book10.dbo.p0v_UserFrameList where UserID={UserID} )
+      group by f.FrameName, f.FrameId
+      union
+      SELECT
+      f.FrameName Frame, N'אין' [QF],
+      COUNT(distinct(p.CustomerId)) CustNum,
+      '/t1/Dsb.Aspx?ID=5&amp;SID=2&amp;P1='+ CAST( f.FrameId As nvarchar (5))+'&amp;P2='+f.frameName AS Url
+      FROM
+      (select * from
+      Book10_21.dbo.TT_CustomerList cl where cl.CustomerId not in (select CustomerID from Book10.dbo.TT_WP))p
+      left outer join Book10_21.dbo.FrameList  f on p.FrameID = f.FrameID
+      left outer join Book10_21.dbo.ServiceList s on  f.ServiceID= s.ServiceID
+      where s.ServiceID ={1} and f.ServiceTypeID=3 and f.frameid in
+      (select FrameID from Book10.dbo.p0v_UserFrameList where UserID={UserID} )
+      group by f.FrameName, f.FrameId
+    </Query>
+    <Styles>
+      <Style Entity="Chart" Member="Width=300" Enum="0" Property="" PropertyType="Method" DataType="Int32" Value="Window" />
+    </Styles>
+    <Params>
+    </Params>
+  </Chart>
+
+  <Chart ID="5" SubID="2" Name="תוכניות תמיכה לתלמיד - ב{2}"  SubTitle="" Title=" תוכניות תמיכה לתלמיד - שכבות ">
+    <Query LegandLabels="QF" XLabels="Layer" YValues="CustNum" ChartType="Column" DataSourceID="BEBook10" Url="URL" Target="_blank">
+      SELECT
+      case when c.Name IS NULL then N'לא הזינו שיכבה' ELSE C.NAME end AS Layer,
+      N'יש' [QF],
+      COUNT(distinct(p.CustomerId)) CustNum,
+      '/Dsb.Aspx?ID=5&amp;SID=3&amp;P1='+ CAST( f.FrameId As nvarchar (5))+'&amp;P2='+f.frameName+'&amp;P3='+ CAST(mp.LayerId As nvarchar (5)) AS Url
+      FROM
+      (select * from
+      Book10_21.dbo.TT_CustomerList cl where cl.CustomerId in (select CustomerID from Book10.dbo.TT_WP))p
+      left outer join Book10_21.dbo.FrameList  f on p.FrameID = f.FrameID
+      left outer join Book10_21.dbo.ServiceList s on  f.ServiceID= s.ServiceID
+      LEFT OUTER JOIN Book10.DBO.TT_MP mp ON mp.CustomerId=p.CustomerID
+      LEFT OUTER JOIN B10Sec.dbo.TT_Classes c on c.Id=mp.LayerId
+      where f.frameID ={1} and f.ServiceTypeID=3 and f.frameid in
+      (select FrameID from Book10.dbo.p0v_UserFrameList where UserID={UserID} )
+      group by c.Name,f.FrameId,f.framename,mp.LayerId
+      union
+      SELECT
+      case when c.Name IS NULL then N'לא הזינו שיכבה' ELSE C.NAME end AS Layer
+      , N'אין' [QF],
+      COUNT(distinct(p.CustomerId)) CustNum,
+      '/Dsb.Aspx?ID=5&amp;SID=3&amp;P1='+ CAST( f.FrameId As nvarchar (5))+'&amp;P2='+f.frameName+'&amp;P3='+ CAST(mp.LayerId As nvarchar (5)) AS Url
+      FROM
+      (select * from
+      Book10_21.dbo.TT_CustomerList cl where cl.CustomerId not in (select CustomerID from Book10.dbo.TT_WP))p
+      left outer join Book10_21.dbo.FrameList  f on p.FrameID = f.FrameID
+      left outer join Book10_21.dbo.ServiceList s on  f.ServiceID= s.ServiceID
+      LEFT OUTER JOIN Book10.DBO.TT_MP mp ON mp.CustomerId=p.CustomerID
+      LEFT OUTER JOIN B10Sec.dbo.TT_Classes c on c.Id=mp.LayerId
+      where f.frameID ={1} and f.ServiceTypeID=3 and f.frameid in
+      (select FrameID from Book10.dbo.p0v_UserFrameList where UserID={UserID} )
+      group by c.Name,f.FrameId,f.framename,mp.LayerId
+    </Query>
+    <Styles>
+      <Style Entity="Chart" Member="Width=300" Enum="0" Property="" PropertyType="Method" DataType="Int32" Value="Window" />
+    </Styles>
+    <Params>
+    </Params>
+  </Chart>
+
+  <Chart ID="5" SubID="3" Name="תוכניות תמיכה לתלמיד - ב{2} בשכבה {3}"  SubTitle="" Title=" תוכניות תמיכה לתלמיד - כיתות ">
+    <Query LegandLabels="QF" XLabels="Class" YValues="CustNum" ChartType="Column" DataSourceID="BEBook10" Url="" Target="_blank">
+      SELECT
+      case when c1.Name IS NULL then N'לא הזינו כיתה' ELSE C1.NAME end AS Class,
+      N'יש' [QF],
+      COUNT(distinct(p.CustomerId)) CustNum
+     
+      FROM
+      (select * from
+      Book10_21.dbo.TT_CustomerList cl where cl.CustomerId in (select CustomerID from Book10.dbo.TT_WP))p
+      left outer join Book10_21.dbo.FrameList  f on p.FrameID = f.FrameID
+      left outer join Book10_21.dbo.ServiceList s on  f.ServiceID= s.ServiceID
+      LEFT OUTER JOIN Book10.DBO.TT_MP mp ON mp.CustomerId=p.CustomerID
+      LEFT OUTER JOIN B10Sec.dbo.TT_Classes c on c.Id=mp.LayerId
+      LEFT OUTER JOIN B10Sec.dbo.TT_Classes c1 on c1.Id=mp.ClassId
+      where f.frameID ={1} and f.ServiceTypeID=3 and mp.LayerID={3} and f.frameid in
+      (select FrameID from Book10.dbo.p0v_UserFrameList where UserID={UserID} )
+      group by c1.Name,f.FrameId,f.framename,c.name
+      union
+      SELECT
+      case when c1.Name IS NULL then N'לא הזינו כיתה' ELSE C1.NAME end AS Class
+      , N'אין' [QF],
+      COUNT(distinct(p.CustomerId)) CustNum
+     
+      FROM
+      (select * from
+      Book10_21.dbo.TT_CustomerList cl where cl.CustomerId not in (select CustomerID from Book10.dbo.TT_WP))p
+      left outer join Book10_21.dbo.FrameList  f on p.FrameID = f.FrameID
+      left outer join Book10_21.dbo.ServiceList s on  f.ServiceID= s.ServiceID
+      LEFT OUTER JOIN Book10.DBO.TT_MP mp ON mp.CustomerId=p.CustomerID
+      LEFT OUTER JOIN B10Sec.dbo.TT_Classes c on c.Id=mp.LayerId
+      LEFT OUTER JOIN B10Sec.dbo.TT_Classes c1 on c1.Id=mp.ClassId
+      where f.frameID ={1} and f.ServiceTypeID=3  and mp.LayerID={3} and f.frameid in
+      (select FrameID from Book10.dbo.p0v_UserFrameList where UserID={UserID} )
+      group by c1.Name,f.FrameId,f.framename,c.name
+    </Query>
+    <Styles>
+      <Style Entity="Chart" Member="Width=300" Enum="0" Property="" PropertyType="Method" DataType="Int32" Value="Window" />
+    </Styles>
+    <Params>
+    </Params>
+  </Chart>
+
+  
+<!--ממוצעים לפי שאלות של שאלון לניהול תמיכות-->
+
+  <Chart ID="6" SubID="" Name="שאלות משאלון לניהול תמיכות"  SubTitle="" Title="שאלות משאלון לניהול תמיכות">
+    <Query LegandLabels="s" XLabels="q" YValues="average" ChartType="Column" DataSourceID="BEBook10" Url="url" Target="_blank">    
+      SELECT  'q' + right('00' + cast(a.QuestionID as nvarchar),2) q ,  round(avg(cast(a.Val as float)),2) average ,'מספר שאלה - q' s,
+      '/Dsb.Aspx?ID=6&amp;SID=1' AS Url
+      FROM (select * from Book10_21.dbo.p5t_Answers where FormID not in (
+	    select formid from Book10_21.dbo.p5t_Answers where Val is null)) a
+      left outer join (select * from Book10_21.dbo.CustEventList  where month(CustEventDate) > 9 and YEAR(CustEventDate)>=2013) e on a.FormID=e.CustRelateID
+      left outer join [Book10_21].[dbo].p5t_FormsQuestions q on q.QuestionId=a.QuestionID
+      left outer join Book10_21.dbo.FrameList f on e.CustFrameID=f.FrameID
+      left outer join Book10_21.dbo.ServiceList s on s.ServiceID=f.ServiceID
+      where  CustEventTypeID=127  and q.EventTypeId=127 and e.CustomerID is not NULL and f.ServiceTypeID=3 and f.frameid in
+      (select FrameID from Book10.dbo.p0v_UserFrameList where UserID={UserID} )
+      group by a.QuestionID order by a.QuestionID
+    </Query> 
+    <Styles>
+      <Style Entity="Chart" Member="Width=300" Enum="0" Property="" PropertyType="Method" DataType="Int32" Value="Window" />
+    </Styles>
+    <Params>
+    </Params>
+  </Chart>
+ <!--הצגה של הטבלה האירגונית במסך מלא-->
+<Chart ID="6" SubID="1" Name="שאלות משאלון לניהול תמיכות"  SubTitle="" Title="שאלות משאלון לניהול תמיכות">
+    <Query LegandLabels="s" XLabels="q" YValues="average" ChartType="Column" DataSourceID="BEBook10" Url="url" Target="_blank">
+      SELECT  'q' + right('00' + cast(a.QuestionID as nvarchar),2) q ,  round(avg(cast(a.Val as float)),2) average ,'מספר שאלה - q' s,
+      '/Dsb.Aspx?ID=6&amp;SID=2' AS Url
+      FROM (select * from Book10_21.dbo.p5t_Answers where FormID not in (
+	    select formid from Book10_21.dbo.p5t_Answers where Val is null)) a
+      left outer join (select * from Book10_21.dbo.CustEventList  where month(CustEventDate) > 9 and YEAR(CustEventDate)>=2013) e on a.FormID=e.CustRelateID
+      left outer join [Book10_21].[dbo].p5t_FormsQuestions q on q.QuestionId=a.QuestionID
+      left outer join Book10_21.dbo.FrameList f on e.CustFrameID=f.FrameID
+      left outer join Book10_21.dbo.ServiceList s on s.ServiceID=f.ServiceID
+      where  CustEventTypeID=127  and q.EventTypeId=127 and e.CustomerID is not NULL and f.ServiceTypeID=3 and f.frameid in
+      (select FrameID from Book10.dbo.p0v_UserFrameList where UserID={UserID} )
+       group by a.QuestionID order by a.QuestionID
+    </Query>
+    <Styles>
+      <Style Entity="Chart" Member="Width=300" Enum="0" Property="" PropertyType="Method" DataType="Int32" Value="Window" />
+    </Styles>
+    <Params>
+    </Params>
+  </Chart>
+<!--חלוקה לפי איזורים-->
+<Chart ID="6" SubID="2" Name="שאלות משאלון לניהול תמיכות"  SubTitle="" Title="שאלות משאלון לניהול תמיכות">
+    <Query LegandLabels="Area" XLabels="q" YValues="average" ChartType="Column" DataSourceID="BEBook10" Url="url" Target="_blank">
+      SELECT  s.servicename Area,'q' + right('00' + cast(a.QuestionID as nvarchar),2) q ,  round(avg(cast(a.Val as float)),2) average ,'מספר שאלה - q' s,
+      '/Dsb.Aspx?ID=6&amp;SID=3'+ '&amp;P1='+ CAST( s.serviceId As nvarchar (5)) + '&amp;P2='+s.serviceName AS Url
+      FROM (select * from Book10_21.dbo.p5t_Answers where FormID not in (
+	    select formid from Book10_21.dbo.p5t_Answers where Val is null)) a
+      left outer join (select * from Book10_21.dbo.CustEventList  where month(CustEventDate) > 9 and YEAR(CustEventDate)>=2013) e on a.FormID=e.CustRelateID
+      left outer join [Book10_21].[dbo].p5t_FormsQuestions q on q.QuestionId=a.QuestionID
+      left outer join Book10_21.dbo.FrameList f on e.CustFrameID=f.FrameID
+      left outer join Book10_21.dbo.ServiceList s on s.ServiceID=f.ServiceID
+      where  CustEventTypeID=127  and q.EventTypeId=127 and e.CustomerID is not NULL and f.ServiceTypeID=3  and f.frameid in
+      (select FrameID from Book10.dbo.p0v_UserFrameList where UserID={UserID} )
+      group by s.servicename,a.QuestionID ,s.serviceId order by s.servicename,a.QuestionID
+    </Query>
+    <Styles>
+      <Style Entity="Chart" Member="Width=300" Enum="0" Property="" PropertyType="Method" DataType="Int32" Value="Window" />
+    </Styles>
+    <Params>
+    </Params>
+  </Chart>
+<!--חלוקה לפי בתי ספר  לא מראה את כל השאלות , רק לפי היגדים-->
+  <Chart ID="6" SubID="3" Name="שאלות משאלון לניהול תמיכות {2}"  SubTitle="" Title="שאלות משאלון לניהול תמיכות">
+    <Query LegandLabels="grp" XLabels="Frame" YValues="perc" ChartType="Column" DataSourceID="BEBook10" Url="url" Target="_blank">
+      <!--SELECT  f.frameName Frames,'q' + right('00' + cast(a.QuestionID as nvarchar),2) q ,  round(avg(cast(a.Val as float)),2) average ,'מספר שאלה - q' s,
+      '/Dsb.Aspx?ID=6&amp;SID=4'+ '&amp;P1='+ CAST( f.frameId As nvarchar (5)) + '&amp;P2='+f.frameName AS Url
+      FROM (select * from Book10_21.dbo.p5t_Answers where FormID not in (
+	    select formid from Book10_21.dbo.p5t_Answers where Val is null)) a
+      left outer join (select * from Book10_21.dbo.CustEventList  where month(CustEventDate) > 9 and YEAR(CustEventDate)>=2013) e on a.FormID=e.CustRelateID
+      left outer join [Book10_21].[dbo].p5t_FormsQuestions q on q.QuestionId=a.QuestionID
+      left outer join Book10_21.dbo.FrameList f on e.CustFrameID=f.FrameID
+      left outer join Book10_21.dbo.ServiceList s on s.ServiceID=f.ServiceID
+      where  CustEventTypeID=127  and q.EventTypeId=127 and e.CustomerID is not NULL and f.ServiceTypeID=3 and s.serviceId={1}
+      group by  f.frameId,a.QuestionID,f.framename order by  f.frameId,a.QuestionID-->
+      
+     select
+      F.FrameName Frame, grp,round(AVG(cast(perc as float)),2) as perc,
+      '/Dsb.Aspx?ID=6&amp;SID=4'+'&amp;P1='+ CAST( f.FrameID As nvarchar (5)) +'&amp;P2='+ f.frameName AS Url
+      from Book10_21.dbo.TT_CustomerList cl
+      LEFT OUTER JOIN (select CustomerID, MAX(CustEventID) custEventID , CustRelateID , CustEventTypeId from Book10_21.dbo.CustEventList
+      where CustEventTypeID=127 GROUP BY CustomerID ,CustRelateID,CustEventTypeId ) el  ON el.CustomerID=cl.CustomerId
+      LEFT OUTER JOIN Book10_21.DBO.p5t_FormResults r on r.FormID=el.CustRelateID
+      LEFT OUTER JOIN Book10_21.dbo.FrameList F ON cl.FrameID = f.FrameID
+      LEFT OUTER JOIN Book10_21.DBO.ServiceList S on s.ServiceID=f.ServiceID
+      where CustEventTypeID=127 and s.ServiceID ={1} and (gid is not null and grp is not null) and f.ServiceTypeID=3 and f.frameid in
+      (select FrameID from Book10.dbo.p0v_UserFrameList where UserID={UserID} )
+      group by F.FrameName ,gid, grp,f.FrameID
+      order by F.FrameName,gid
+    </Query>
+    <Styles>
+      <Style Entity="Chart" Member="Width=300" Enum="0" Property="" PropertyType="Method" DataType="Int32" Value="Window" />
+    </Styles>
+    <Params>
+    </Params>
+  </Chart>
+
+<Chart ID="6" SubID="4" Name="שאלות משאלון לניהול תמיכות {2}"  SubTitle="" Title="שאלות משאלון לניהול תמיכות">
+    <Query LegandLabels="s" XLabels="q" YValues="average" ChartType="Column" DataSourceID="BEBook10" Url="url" Target="_blank">
+      SELECT  f.frameName Frame,'q' + right('00' + cast(a.QuestionID as nvarchar),2) q ,  round(avg(cast(a.Val as float)),2) average ,'מספר שאלה - q' s,
+      '/Dsb.Aspx?ID=6&amp;SID=5' AS Url
+      FROM (select * from Book10_21.dbo.p5t_Answers where FormID not in (
+	    select formid from Book10_21.dbo.p5t_Answers where Val is null)) a
+      left outer join (select * from Book10_21.dbo.CustEventList  where month(CustEventDate) > 9 and YEAR(CustEventDate)>=2013) e on a.FormID=e.CustRelateID
+      left outer join [Book10_21].[dbo].p5t_FormsQuestions q on q.QuestionId=a.QuestionID
+      left outer join Book10_21.dbo.FrameList f on e.CustFrameID=f.FrameID
+      left outer join Book10_21.dbo.ServiceList s on s.ServiceID=f.ServiceID
+      where  CustEventTypeID=127  and q.EventTypeId=127 and e.CustomerID is not NULL and f.ServiceTypeID=3 and f.frameId={1} and f.frameid in
+      (select FrameID from Book10.dbo.p0v_UserFrameList where UserID={UserID} )
+      group by  f.frameId,a.QuestionID,f.framename order by  f.frameId,a.QuestionID
+    </Query>
+    <Styles>
+      <Style Entity="Chart" Member="Width=300" Enum="0" Property="" PropertyType="Method" DataType="Int32" Value="Window" />
+    </Styles>
+    <Params>
+    </Params>
+  </Chart>
+
+
+<Chart ID="7" SubID="" Name="תוכניות תמיכה לפי תחומים והגדים"  SubTitle="" Title="תוכניות תמיכה לפי תחומים והגדים">
+    <Query LegandLabels="s" XLabels="Thum" YValues="number" ChartType="Column" DataSourceID="BEBook10" Url="url" Target="_blank">
+      select c.name Thum ,  count(c.Name) number ,'סה"כ תכניות תמיכה לפי תחום - אירגוני' s, 
+      '/Dsb.Aspx?ID=7&amp;SID=1' AS Url
+      from Book10.dbo.TT_WP wp
+      left outer join B10Sec.dbo.TT_Classes c on c.Id=wp.RangeId
+      left outer join Book10_21.dbo.FrameList f on f.FrameID= wp.Frm_CatID
+      left outer join Book10_21.dbo.ServiceList s on s.ServiceID=f.ServiceID
+      where f.ServiceTypeID=3 and year(wp.LoadTime)>=2013 and c.Name is not null and f.frameid in
+      (select FrameID from Book10.dbo.p0v_UserFrameList where UserID={UserID} )
+      group by c.name
+    </Query>
+    <Styles>
+      <Style Entity="Chart" Member="Width=300" Enum="0" Property="" PropertyType="Method" DataType="Int32" Value="Window" />
+    </Styles>
+    <Params>
+    </Params>
+  </Chart>
+<Chart ID="7" SubID="1" Name="תוכניות תמיכה לפי תחומים והגדים"  SubTitle="" Title="תוכניות תמיכה לפי תחומים והגדים">
+    <Query LegandLabels="s" XLabels="Thum" YValues="number" ChartType="Column" DataSourceID="BEBook10" Url="url" Target="_blank">
+       select c.name Thum ,count(c.Name) number ,' ' s, 
+      '/Dsb.Aspx?ID=7&amp;SID=2' AS Url
+      from Book10.dbo.TT_WP wp
+      left outer join B10Sec.dbo.TT_Classes c on c.Id=wp.RangeId
+      left outer join Book10_21.dbo.FrameList f on f.FrameID= wp.Frm_CatID
+      left outer join Book10_21.dbo.ServiceList s on s.ServiceID=f.ServiceID
+      where f.ServiceTypeID=3 and year(wp.LoadTime)>=2013 and c.Name is not null and f.frameid in
+      (select FrameID from Book10.dbo.p0v_UserFrameList where UserID={UserID} )
+      group by c.name
+    </Query>
+    <Styles>
+      <Style Entity="Chart" Member="Width=300" Enum="0" Property="" PropertyType="Method" DataType="Int32" Value="Window" />
+    </Styles>
+    <Params>
+    </Params>
+  </Chart>
+
+<Chart ID="7" SubID="2" Name="תוכניות תמיכה לפי תחומים והגדים"  SubTitle="" Title="תוכניות תמיכה לפי תחומים והגדים">
+    <Query LegandLabels="Thum" XLabels="Area" YValues="number" ChartType="Column" DataSourceID="BEBook10" Url="url" Target="_blank">
+       select s.serviceName Area,c.name Thum ,count(c.Name) number ,' ' s, 
+      '/Dsb.Aspx?ID=7&amp;SID=3'+ '&amp;P1='+ CAST( s.serviceId As nvarchar (5))+ '&amp;P2='+ s.serviceName AS Url
+      from Book10.dbo.TT_WP wp
+      left outer join B10Sec.dbo.TT_Classes c on c.Id=wp.RangeId
+      left outer join Book10_21.dbo.FrameList f on f.FrameID= wp.Frm_CatID
+      left outer join Book10_21.dbo.ServiceList s on s.ServiceID=f.ServiceID
+      where f.ServiceTypeID=3 and year(wp.LoadTime)>=2013 and c.Name is not null and f.frameid in
+      (select FrameID from Book10.dbo.p0v_UserFrameList where UserID={UserID} )
+      group by s.serviceName,c.name, s.serviceId
+    </Query>
+    <Styles>
+      <Style Entity="Chart" Member="Width=300" Enum="0" Property="" PropertyType="Method" DataType="Int32" Value="Window" />
+    </Styles>
+    <Params>
+    </Params>
+  </Chart>
+
+<Chart ID="7" SubID="3" Name="תוכניות תמיכה לפי תחומים והגדים ב{2} "  SubTitle="" Title="תוכניות תמיכה לפי תחומים והגדים">
+    <Query LegandLabels="Thum" XLabels="Area" YValues="number" ChartType="Column" DataSourceID="BEBook10" Url="url" Target="_blank">
+       select f.frameName Area,c.name Thum ,count(c.Name) number ,' ' s, 
+      '/Dsb.Aspx?ID=7&amp;SID=1' AS Url
+      from Book10.dbo.TT_WP wp
+      left outer join B10Sec.dbo.TT_Classes c on c.Id=wp.RangeId
+      left outer join Book10_21.dbo.FrameList f on f.FrameID= wp.Frm_CatID
+      left outer join Book10_21.dbo.ServiceList s on s.ServiceID=f.ServiceID
+      where f.ServiceTypeID=3 and year(wp.LoadTime)>=2013 and c.Name is not null and s.serviceId= {1} and f.frameid in
+      (select FrameID from Book10.dbo.p0v_UserFrameList where UserID={UserID} )
+      group by f.frameName,c.name
+    </Query>
+    <Styles>
+      <Style Entity="Chart" Member="Width=300" Enum="0" Property="" PropertyType="Method" DataType="Int32" Value="Window" />
+    </Styles>
+    <Params>
+    </Params>
+  </Chart>
+</Charts>

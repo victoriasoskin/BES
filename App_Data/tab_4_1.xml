@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<tab Round="2">
+	<Group Name="חברתי" gid="1" >
+  </Group>
+  <Group Name="התנהגותי - רגשי" gid="2" >
+  </Group>
+  <Group Name="סינגור עצמי" gid="3" >
+  </Group>
+  <Group Name="קהילה טבעית" gid="4" >
+  </Group>
+  <Group Name="הכוונה עצמית" gid="5" >
+  </Group>
+  <Group Name="פדגוגי" gid="6" >
+  </Group>
+  <Group Name="טכנולוגיות למידה" gid="7" >
+  </Group>
+</tab>

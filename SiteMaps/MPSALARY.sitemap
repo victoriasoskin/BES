@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+	<siteMapNode url="default.aspx" title=""  description="כניסה">
+		<siteMapNode title="הצעת עבודה" url="NewEmpProp.aspx" />
+    <siteMapNode title="סיום העסקת עובד" url="LeavingEmp.aspx" />
+    <siteMapNode title="עמידה בתקציב כח אדם" url="~/p1aSalary.Aspx" />
+    <siteMapNode url="ge.aspx" />
+		<siteMapNode url="ErrMessage.aspx" />
+		<siteMapNode title="יציאה מהמערכת" url="Exit.aspx" />
+	</siteMapNode>
+</siteMap>

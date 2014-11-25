@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<tab62>
+    <Group Name="פעולות בבית" gid="2">
+        <sgrade min="89" max="999"  standard="19" percentage="100" />
+        <sgrade min="87" max="88"  standard="18" percentage="100" />
+        <sgrade min="85" max="86"  standard="17" percentage="99" />
+        <sgrade min="81" max="84"  standard="16" percentage="98" />
+        <sgrade min="77" max="80"  standard="15" percentage="95" />
+        <sgrade min="73" max="76"  standard="14" percentage="91" />
+        <sgrade min="68" max="72"  standard="13" percentage="84" />
+        <sgrade min="62" max="67"  standard="12" percentage="75" />
+        <sgrade min="55" max="61"  standard="11" percentage="63" />
+        <sgrade min="48" max="54"  standard="10" percentage="50" />
+        <sgrade min="40" max="47"  standard="9" percentage="37" />
+        <sgrade min="32" max="39"  standard="8" percentage="25" />
+        <sgrade min="25" max="31"  standard="7" percentage="16" />
+        <sgrade min="18" max="24"  standard="6" percentage="9" />
+        <sgrade min="11" max="17"  standard="5" percentage="5" />
+        <sgrade min="3 "  max="10" standard="4" percentage="2" />
+        <sgrade min="0 "  max="2" standard="3" percentage="1" />
+    </Group>
+    <Group Name="פעולות חיים בקהילה" gid="3">
+        <sgrade min="95" max="999"  standard="19" percentage="100" />
+        <sgrade min="93" max="94"  standard="18" percentage="100" />
+        <sgrade min="91" max="92"  standard="17" percentage="99" />
+        <sgrade min="88" max="90"  standard="16" percentage="98" />
+        <sgrade min="84" max="87"  standard="15" percentage="95" />
+        <sgrade min="70" max="83"  standard="14" percentage="91" />
+        <sgrade min="74" max="78"  standard="13" percentage="84" />
+        <sgrade min="69" max="73"  standard="12" percentage="75" />
+        <sgrade min="63" max="68"  standard="11" percentage="63" />
+        <sgrade min="56" max="62"  standard="10" percentage="50" />
+        <sgrade min="49" max="55"  standard="9" percentage="37" />
+        <sgrade min="41" max="48"  standard="8" percentage="25" />
+        <sgrade min="33" max="40"  standard="7" percentage="16" />
+        <sgrade min="25" max="32"  standard="6" percentage="9" />
+        <sgrade min="16" max="24"  standard="5" percentage="5" />
+        <sgrade min="6 "  max="15" standard="4" percentage="2" />
+        <sgrade min="0 "  max="5" standard="3" percentage="1" />
+    </Group>
+    <Group Name="פעולות למידה לאורך החיים" gid="4">
+        <sgrade min="97" max="999"  standard="16" percentage="98" />
+        <sgrade min="92" max="96"  standard="15" percentage="95" />
+        <sgrade min="86" max="91"  standard="14" percentage="91" />
+        <sgrade min="79" max="85"  standard="13" percentage="84" />
+        <sgrade min="72" max="78"  standard="12" percentage="75" />
+        <sgrade min="64" max="71"  standard="11" percentage="63" />
+        <sgrade min="55" max="63"  standard="10" percentage="50" />
+        <sgrade min="46" max="54"  standard="9" percentage="37" />
+        <sgrade min="36" max="45"  standard="8" percentage="25" />
+        <sgrade min="27" max="35"  standard="7" percentage="16" />
+        <sgrade min="18" max="26"  standard="6" percentage="9" />
+        <sgrade min="9 "  max="17" standard="5" percentage="5" />
+        <sgrade min="0 "  max="8" standard="4" percentage="2" />
+    </Group>
+    <Group Name="פעולות תעסוקה" gid="5">
+        <sgrade min="96" max="999"  standard="16" percentage="98" />
+        <sgrade min="91" max="95"  standard="15" percentage="95" />
+        <sgrade min="85" max="90"  standard="14" percentage="91" />
+        <sgrade min="78" max="84"  standard="13" percentage="84" />
+        <sgrade min="70" max="77"  standard="12" percentage="75" />
+        <sgrade min="61" max="69"  standard="11" percentage="63" />
+        <sgrade min="52" max="60"  standard="10" percentage="50" />
+        <sgrade min="42" max="51"  standard="9" percentage="37" />
+        <sgrade min="32" max="41"  standard="8" percentage="25" />
+        <sgrade min="23" max="31"  standard="7" percentage="16" />
+        <sgrade min="15" max="22"  standard="6" percentage="9" />
+        <sgrade min="7 "  max="14" standard="5" percentage="5" />
+        <sgrade min="0 "  max="6" standard="4" percentage="2" />
+    </Group>
+    <Group Name="פעולות בריאות ובטיחות" gid="6">
+        <sgrade min="98" max="999"  standard="17" percentage="99" />
+        <sgrade min="92" max="97"  standard="16" percentage="98" />
+        <sgrade min="86" max="91"  standard="15" percentage="95" />
+        <sgrade min="79" max="85"  standard="14" percentage="91" />
+        <sgrade min="72" max="78"  standard="13" percentage="84" />
+        <sgrade min="65" max="71"  standard="12" percentage="75" />
+        <sgrade min="57" max="64"  standard="11" percentage="63" />
+        <sgrade min="49" max="56"  standard="10" percentage="50" />
+        <sgrade min="42" max="48"  standard="9" percentage="37" />
+        <sgrade min="34" max="41"  standard="8" percentage="25" />
+        <sgrade min="27" max="33"  standard="7" percentage="16" />
+        <sgrade min="20" max="26"  standard="6" percentage="9" />
+        <sgrade min="13" max="19"  standard="5" percentage="5" />
+        <sgrade min="7 "  max="12" standard="4" percentage="2" />
+        <sgrade min="1 "  max="6" standard="3" percentage="1" />
+        <sgrade min="0" s="" max="0" standard="2" percentage="0" />
+    </Group>
+    <Group Name="פעולות חברתיות" gid="7">
+        <sgrade min="98" max="999"  standard="16" percentage="98" />
+        <sgrade min="91" max="97"  standard="15" percentage="95" />
+        <sgrade min="84" max="90"  standard="14" percentage="91" />
+        <sgrade min="76" max="83"  standard="13" percentage="84" />
+        <sgrade min="68" max="75"  standard="12" percentage="75" />
+        <sgrade min="58" max="67"  standard="11" percentage="63" />
+        <sgrade min="48" max="57"  standard="10" percentage="50" />
+        <sgrade min="38" max="47"  standard="9" percentage="37" />
+        <sgrade min="28" max="37"  standard="8" percentage="25" />
+        <sgrade min="19" max="27"  standard="7" percentage="16" />
+        <sgrade min="10" max="18"  standard="6" percentage="9" />
+        <sgrade min="3 "  max="9" standard="5" percentage="5" />
+        <sgrade min="0 "  max="2" standard="4" percentage="2" />
+    </Group>
+</tab62>

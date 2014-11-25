@@ -1,0 +1,365 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Reports>
+  <Report ID="1" Name="דוח תקציב למנהל">
+    <Versions>
+      SELECT Version, [VersionID] As CategoryID FROM Versions
+    </Versions>
+    <Params>
+      <Param Name="@FrameID"></Param>
+      <Param Name="@VersionCategoryID1"></Param>
+    </Params>
+    <Page PID="1" Name="יעד הכנסות">
+      <Query>
+        <Txt>
+          Select Scenario as OScenario, isnull(Scenario,'לקוחות') As Scenario,dT,Sum(TermValue) As TermValue
+          FROM p7v_Standards Where FrameID = @FrameID And VersionCategoryID = @VersionCategoryID1
+          Group By Scenario,dT
+        </Txt>
+      </Query>
+      <Pivot>
+        <PivotParams
+  RowFields="Scenario"
+  RowOrderFields="OScenario"
+  ColumnField1="dT"
+  ColumnOrderFields="dT"
+  DataFields="TermValue"
+  Tottxt='סה&quot;כ '
+  ColType="varchar(50)" />
+      </Pivot>
+      <AdditionalColumns>
+        <Column Name="ממוצע" Sumtext="לקוחות" />
+      </AdditionalColumns>
+      <Formats>
+        <RowHdr>הערה</RowHdr>
+        <NumberFormat>   #,###;(#,###);    -  </NumberFormat>
+        <Seperator>_12</Seperator>
+      </Formats>
+      <Calculations>
+        <Column N="13" F="M|+0.083333333||A|+_1||A|+_2||A|+_3||A|+_4||A|+_5||A|+_6||A|+_7||A|+_8||A|+_9||A|+_10||A|+_11|+_12" />
+      </Calculations>
+      <Chart Type="StackedArea" Width="700" FirstColumn="1" LastColumn="12" />
+    </Page>
+    <Page PID="2" Name="דוח שעות עבודה שבועי">
+      <Query>
+        <Txt>
+          SELECT [נושא] + CASE ISNULL(DontShowTemplate,0) WHEN 0 THEN '' ELSE CHAR(159) END As JobName
+          ,[תאריך אסמכתא] As TDate
+          ,[כמות]/4.333 As Q
+          ,[סדר_שורות_משרות2008] As Ord
+          FROM [BEBudget] b
+          LEFT OUTER JOIN (SELECT * FROM ReportComments WHERE Report=1 AND PageID=2 AND Comment IS NULL) c ON ISNULL(c.FrameCategoryID,0)=CASE WHEN c.FrameCategoryID IS NULL THEN 0 ELSE b.FrameCategoryID END AND ISNULL(c.VersionCategoryID,0)=CASE WHEN c.VersionCategoryID IS NULL THEN 0 ELSE b.VersionCategoryID END AND ISNULL(c.BudgetCategoryID,0)=CASE WHEN c.BudgetCategoryID IS NULL THEN 0 ELSE b.BudgetCategoryID END And ISNULL(c.JobCategoryID,0)=CASE WHEN c.JobCategoryID IS NULL THEN 0 ELSE b.JobCategoryID END
+          LEFT OUTER JOIN Misrot_besqxl j on j.CategoryID=b.JobCategoryID
+          WHere b.FrameCategoryID=@FrameID And isnull(c.DontShow,0)=0 AND b.VersionCategoryID=@VersionCategoryID1 And b.BudgetCategoryID=229 And [מספר תבנית] &lt; 100000000
+        </Txt>
+      </Query>
+      <Pivot>
+        <PivotParams
+  RowFields="JobName"
+  RowOrderFields="Ord"
+  ColumnField1="TDate"
+  ColumnOrderFields="Tdate"
+  DataFields="Q"
+  Tottxt='סה&quot;כ '
+  ColType="varchar(50)" />
+      </Pivot>
+      <Links>
+        <Link Frame="tdd" Version="DDLVERSION1" Budget_1="שכר" Budget_2="שכר בסיסי" Budget="" Subject="column0" Type="_blank" Location="http://be-online.org/App_Doc/T"></Link>
+      </Links>
+      <AdditionalColumns>
+        <Column Name="סיכום" Sumtext="שעות" />
+      </AdditionalColumns>
+      <Formats>
+        <RowHdr>תפקיד</RowHdr>
+        <NumberFormat>   #,###;(#,###);    -  </NumberFormat>
+        <Seperator>דצמבר</Seperator>
+      </Formats>
+      <Calculations>
+        <Column N="13" F="A|+_1||A|+_2||A|+_3||A|+_4||A|+_5||A|+_6||A|+_7||A|+_8||A|+_9||A|+_10||A|+_11|+_12" />
+      </Calculations>
+    </Page>
+    <Page PID="3" Name="דוח שעות עבודה כמותי">
+      <Query>
+        <Txt>
+          Select Job,iSNULL(Name,job) + ' (' + shType + ')'  As Name,Q,oRD,ColOrd,HourType From (
+          Select m.[משרות2008_-_1] as Job, שם as Name, [סוג העסקה] as shType, ISNULL([שעות שבועיות],[שעות חדשיות]/4.333) As Q,'ש"ע שבועיות' As HourType,m.סדר_שורות_משרות2008 as Ord,1 As ColOrd,DontShow
+          From BEMPBudget p
+          LEFT OUTER JOIN TemplateIndex t on t.TempltID=p.[מספר תבנית]
+          LEFT OUTER JOIN (Select distinct VersionCategoryID,FrameCategoryID,[מספר תבנית],JobCategoryID From BEBudget Where VersionCategoryID=@VersionCategoryID1 And FrameCategoryID=@FrameID) b on b.[מספר תבנית]=p.[מספר תבנית]
+          LEFT OUTER JOIN Misrot_besqxl m on m.CategoryID=b.JobCategoryID
+          LEFT OUTER JOIN (SELECT * FROM ReportComments WHERE Report=1 AND PageID=3 AND BudgetCategoryID=229 AND Comment IS NULL) c ON ISNULL(c.FrameCategoryID,0)=CASE WHEN c.FrameCategoryID IS NULL THEN 0 ELSE b.FrameCategoryID END AND ISNULL(c.VersionCategoryID,0)=CASE WHEN c.VersionCategoryID IS NULL THEN 0 ELSE b.VersionCategoryID END And ISNULL(c.JobCategoryID,0)=CASE WHEN c.JobCategoryID IS NULL THEN 0 ELSE b.JobCategoryID END
+          Where t.VersionCategoryID=@VersionCategoryID1 And b.FrameCategoryID=@FrameID And ISNULL(DontShow,0)=0
+          UNION ALL
+          Select t.TempltSubject as Job, שם as Name, [סוג העסקה] as shType, [שעות חדשיות] As Q,'ש"ע חודשיות' As HourType,m.סדר_שורות_משרות2008 as Ord,2 As ColOrd,DontShow
+          From BEMPBudget p
+          LEFT OUTER JOIN TemplateIndex t on t.TempltID=p.[מספר תבנית]
+          LEFT OUTER JOIN (Select distinct VersionCategoryID,FrameCategoryID,[מספר תבנית],JobCategoryID From BEBudget Where VersionCategoryID=@VersionCategoryID1 And FrameCategoryID=@FrameID) b on b.[מספר תבנית]=p.[מספר תבנית]
+          LEFT OUTER JOIN Misrot_besqxl m on m.CategoryID=b.JobCategoryID
+          LEFT OUTER JOIN (SELECT * FROM ReportComments WHERE Report=1 AND PageID=3 And BudgetCategoryID=229 AND Comment IS NULL) c ON ISNULL(c.FrameCategoryID,0)=CASE WHEN c.FrameCategoryID IS NULL THEN 0 ELSE b.FrameCategoryID END AND ISNULL(c.VersionCategoryID,0)=CASE WHEN c.VersionCategoryID IS NULL THEN 0 ELSE b.VersionCategoryID END AND ISNULL(c.JobCategoryID,0)=CASE WHEN c.JobCategoryID IS NULL THEN 0 ELSE b.JobCategoryID END
+          Where t.VersionCategoryID=@VersionCategoryID1 And b.FrameCategoryID=@FrameID) x
+          Where Q!=0 AND isnull(DontShow,0)=0
+        </Txt>
+      </Query>
+      <Pivot>
+        <PivotParams
+  RowFields="Job|Name"
+  RowOrderFields="Ord"
+  ColumnField1="HourType"
+  ColumnOrderFields="ColOrd"
+  DataFields="Q"
+  Tottxt='סה&quot;כ '
+  ColType="varchar(50)" />
+      </Pivot>
+      <Formats>
+        <RowHdr>תפקיד/שם</RowHdr>
+        <NumberFormat>   #,###;(#,###);    -  </NumberFormat>
+        <Seperator></Seperator>
+      </Formats>
+    </Page>
+    <Page PID="4" Name="הוצאות תפעול">
+      <Query>
+        <Txt>
+          SELECT Bud,DateValue As Tdate,S,Ord
+          FROM ALLVersionDates a
+          LEFT OUTER JOIN (
+          SELECT
+          Case  WHEN [תקציב_-_2]='מזון' AND b.FrameCategoryID in (8,9,366) THEN [תקציב_-_2] + '_' ELSE isnull([תקציב_-_3],[תקציב_-_2] + '_')  END + CASE ISNULL(DontShowTemplate,0) WHEN 0 THEN '' ELSE CHAR(159) END As Bud
+          ,[תאריך אסמכתא] As TDate
+          ,-סכום As S
+          ,[סדר_שורות_תקציב] As Ord,b.versionCategoryID
+          FROM [BEBudget] b
+          LEFT OUTER JOIN BUDGET_besqxl d on d.CategoryID=b.BudgetCategoryID
+          LEFT OUTER JOIN TemplateIndex t on t.TempltID=b.[מספר תבנית]
+          LEFT OUTER JOIN (SELECT * FROM ReportComments WHERE Report=1 AND PageID=4 AND Comment IS NULL) c ON ISNULL(c.FrameCategoryID,0)=CASE WHEN c.FrameCategoryID IS NULL THEN 0 ELSE b.FrameCategoryID END AND ISNULL(c.VersionCategoryID,0)=CASE WHEN c.VersionCategoryID IS NULL THEN 0 ELSE b.VersionCategoryID END AND ISNULL(c.BudgetCategoryID,0)=CASE WHEN c.BudgetCategoryID IS NULL THEN 0 ELSE b.BudgetCategoryID END And ISNULL(c.JobCategoryID,0)=CASE WHEN c.JobCategoryID IS NULL THEN 0 ELSE b.JobCategoryID END
+          Where b.FrameCategoryID=@FrameID And b.VersionCategoryID=@VersionCategoryID1 AND ISNULL(DontShow,0)=0
+          And d.[תקציב_-_1]='הוצאות תפעול' And נושא='למנהל' And [מספר תבנית] &lt; 100000000
+          And TempltBudget != 'שכר' + char(183) + 'שכר בסיסי') b ON b.VersionCategoryID=a.CategoryID AND a.DateValue = b.TDate
+          WHERE a.CategoryID = @VersionCategoryID1
+        </Txt>
+      </Query>
+      <Pivot>
+        <PivotParams
+  RowFields="Bud"
+  RowOrderFields="Ord"
+  ColumnField1="TDate"
+  ColumnOrderFields="Tdate"
+  DataFields="S"
+  Tottxt='סה&quot;כ '
+  ColType="varchar(50)" />
+      </Pivot>
+      <Links>
+        <Link Frame="tdd" Version="DDLVERSION1" Budget_1="הוצאות תפעול" Budget_2="_" Budget="column0" Subject="" Type="_blank" Location="http://be-online.org/App_Doc/T"></Link>
+      </Links>
+      <AdditionalColumns>
+        <Column Name="סיכום" Sumtext="סכום" />
+      </AdditionalColumns>
+      <Formats>
+        <RowHdr>סעיף תקציבי</RowHdr>
+        <NumberFormat>   #,###;(#,###);    -  </NumberFormat>
+        <Seperator>_12</Seperator>
+      </Formats>
+      <Calculations>
+        <Column N="13" F="A|+_1||A|+_2||A|+_3||A|+_4||A|+_5||A|+_6||A|+_7||A|+_8||A|+_9||A|+_10||A|+_11|+_12" />
+      </Calculations>
+    </Page>
+    <Page PID="5" Name="השקעות">
+      <Query>
+        <Txt>
+          SELECT נושא + CASE ISNULL(DontShowTemplate,0) WHEN 0 THEN '' ELSE CHAR(159) END As Bud,isnull(נושא,'השקעות_') As B1
+          ,DATEADD(month,MonthN,t.FirstDate) As TDate
+          ,-סכום As S
+          FROM
+          p0t_Months m
+          CROSS JOIN (SELECT FirstDate FROM Versions where VersionID=@VersionCategoryID1) t
+          LEFT OUTER JOIN (SELECT * FROM [BEBudget] Where FrameCategoryID=@FrameID And VersionCategoryID=@VersionCategoryID1
+          And BudgetCategoryID=205 And [מספר תבנית] &lt; 100000000) b on m.MonthN+1=DATEPART(MONTH,b.[תאריך אסמכתא])
+          LEFT OUTER JOIN (SELECT * FROM ReportComments WHERE Report=1 AND PageID=5 AND Comment IS NULL) c ON ISNULL(c.FrameCategoryID,0)=CASE WHEN c.FrameCategoryID IS NULL THEN 0 ELSE b.FrameCategoryID END AND ISNULL(c.VersionCategoryID,0)=CASE WHEN c.VersionCategoryID IS NULL THEN 0 ELSE b.VersionCategoryID END AND ISNULL(c.BudgetCategoryID,0)=CASE WHEN c.BudgetCategoryID IS NULL THEN 0 ELSE b.BudgetCategoryID END And ISNULL(c.JobCategoryID,0)=CASE WHEN c.JobCategoryID IS NULL THEN 0 ELSE b.JobCategoryID END
+          Where ISNULL(DontShow,0)=0
+        </Txt>
+      </Query>
+      <Pivot>
+        <PivotParams
+  RowFields="Bud"
+  RowOrderFields="B1"
+  ColumnField1="TDate"
+  ColumnOrderFields="Tdate"
+  DataFields="S"
+  Tottxt='סה&quot;כ '
+  ColType="varchar(50)" />
+      </Pivot>
+      <Links>
+        <Link Frame="tdd" Version="DDLVERSION1" Budget_1="השקעות" Budget_2="השקעות מנהל" Budget="" Subject="column0" Type="_blank" Location="http://be-online.org/App_Doc/T"></Link>
+      </Links>
+      <AdditionalColumns>
+        <Column Name="סיכום" Sumtext="סכום" />
+      </AdditionalColumns>
+      <Formats>
+        <RowHdr>תאור</RowHdr>
+        <NumberFormat>   #,###;(#,###);    -  </NumberFormat>
+        <Seperator>_12</Seperator>
+      </Formats>
+      <Calculations>
+        <Column N="13" F="A|+_1||A|+_2||A|+_3||A|+_4||A|+_5||A|+_6||A|+_7||A|+_8||A|+_9||A|+_10||A|+_11|+_12" />
+      </Calculations>
+    </Page>
+    <Page PID="6" Name="הצטידות">
+      <Query>
+        <Txt>
+          SELECT נושא + CASE ISNULL(DontShowTemplate,0) WHEN 0 THEN '' ELSE CHAR(159) END As Bud,isnull(נושא,'הצטידות_') As B1
+          ,DATEADD(month,MonthN,t.FirstDate) As TDate
+          ,-סכום As S
+          FROM
+          p0t_Months m
+          CROSS JOIN (SELECT FirstDate FROM Versions where VersionID=@VersionCategoryID1) t
+          LEFT OUTER JOIN (SELECT * FROM [BEBudget] Where FrameCategoryID=@FrameID And VersionCategoryID=@VersionCategoryID1
+          And BudgetCategoryID=446 And [מספר תבנית] &lt; 100000000) b on m.MonthN+1=DATEPART(MONTH,b.[תאריך אסמכתא])
+          LEFT OUTER JOIN (SELECT * FROM ReportComments WHERE Report=1 AND PageID=5 AND Comment IS NULL) c ON ISNULL(c.FrameCategoryID,0)=CASE WHEN c.FrameCategoryID IS NULL THEN 0 ELSE b.FrameCategoryID END AND ISNULL(c.VersionCategoryID,0)=CASE WHEN c.VersionCategoryID IS NULL THEN 0 ELSE b.VersionCategoryID END AND ISNULL(c.BudgetCategoryID,0)=CASE WHEN c.BudgetCategoryID IS NULL THEN 0 ELSE b.BudgetCategoryID END And ISNULL(c.JobCategoryID,0)=CASE WHEN c.JobCategoryID IS NULL THEN 0 ELSE b.JobCategoryID END
+          Where ISNULL(DontShow,0)=0
+        </Txt>
+      </Query>
+      <Pivot>
+        <PivotParams
+  RowFields="Bud"
+  RowOrderFields="B1"
+  ColumnField1="TDate"
+  ColumnOrderFields="Tdate"
+  DataFields="S"
+  Tottxt='סה&quot;כ '
+  ColType="varchar(50)" />
+      </Pivot>
+      <Links>
+        <Link Frame="tdd" Version="DDLVERSION1" Budget_1="השקעות" Budget_2="הצטיידות למנהל" Budget="" Subject="column0" Type="_blank" Location="http://be-online.org/App_Doc/T"></Link>
+      </Links>
+      <AdditionalColumns>
+        <Column Name="סיכום" Sumtext="סכום" />
+      </AdditionalColumns>
+      <Formats>
+        <RowHdr>תאור</RowHdr>
+        <NumberFormat>   #,###;(#,###);    -  </NumberFormat>
+        <Seperator>_12</Seperator>
+      </Formats>
+      <Calculations>
+        <Column N="13" F="A|+_1||A|+_2||A|+_3||A|+_4||A|+_5||A|+_6||A|+_7||A|+_8||A|+_9||A|+_10||A|+_11|+_12" />
+      </Calculations>
+    </Page>
+  </Report>
+  <Report ID="2" Name="דוח תקציב פרויקטים גדולים">
+    <Versions>
+      SELECT Version, [VersionID] As CategoryID FROM Versions
+    </Versions>
+    <Params>
+      <Param Name="@VersionCategoryID1"></Param>
+    </Params>
+    <Page PID="1" Name="פרויקטים גדולים">
+      <Query>
+        <Txt>
+          SELECT
+          ISNULL([שירות_-_1],'') As Px1,
+          CASE WHEN [שירות_-_3] IS NULL THEN [שירות_-_2] ELSE [שירות_-_3] END + CASE WHEN [נושא] IS NULL THEN '' ELSE ': ' + [נושא] END As Px2
+          ,DATEADD(month,MonthN,x.FirstDate) As TDate
+          ,-סכום As S
+          ,[סדר_שורות_שירות] As Ord
+          FROM p0t_Months m
+          CROSS JOIN (SELECT FirstDate FROM Versions where VersionID=@VersionCategoryID1) x
+          LEFT OUTER JOIN (SELECT * FROM [BEBudget] Where BudgetCategoryID=206 And VersionCategoryID=@VersionCategoryID1
+          AND [מספר תבנית] &lt; 100000000) b on  m.MonthN+1=DATEPART(MONTH,b.[תאריך אסמכתא])
+          LEFT OUTER JOIN SHERUT_besqxl d on d.CategoryID=b.FrameCategoryID
+          LEFT OUTER JOIN TemplateIndex t on t.TempltID=b.[מספר תבנית]
+          LEFT OUTER JOIN (SELECT * FROM ReportComments WHERE Report=2 AND PageID=1 AND Comment IS NULL) c ON ISNULL(c.FrameCategoryID,0)=CASE WHEN c.FrameCategoryID IS NULL THEN 0 ELSE b.FrameCategoryID END AND ISNULL(c.VersionCategoryID,0)=CASE WHEN c.VersionCategoryID IS NULL THEN 0 ELSE b.VersionCategoryID END AND ISNULL(c.BudgetCategoryID,0)=CASE WHEN c.BudgetCategoryID IS NULL THEN 0 ELSE b.BudgetCategoryID END And ISNULL(c.JobCategoryID,0)=CASE WHEN c.JobCategoryID IS NULL THEN 0 ELSE b.JobCategoryID END
+          Where ISNULL(DontShow,0)=0
+        </Txt>
+      </Query>
+      <Pivot>
+        <PivotParams
+  RowFields="Px1|Px2"
+  RowOrderFields="Ord"
+  ColumnField1="TDate"
+  ColumnOrderFields="Tdate"
+  DataFields="S"
+  Tottxt='סה&quot;כ '
+  ColType="varchar(50)" />
+      </Pivot>
+      <Links>
+        <Link Frame="reprow" Version="DDLVERSION1" Budget_1="השקעות" Budget_2="פרויקטים גדולים" Budget="" Subject="" Type="_blank" Location="http://be-online.org/App_Doc/T"></Link>
+      </Links>
+      <AdditionalColumns>
+        <Column Name="סיכום" Sumtext="סכום" />
+      </AdditionalColumns>
+      <Formats>
+        <RowHdr>מסגרת/פרויקט</RowHdr>
+        <NumberFormat>   #,###;(#,###);    -  </NumberFormat>
+        <Seperator>_12</Seperator>
+      </Formats>
+      <Calculations>
+        <Column N="13" F="A|+_1||A|+_2||A|+_3||A|+_4||A|+_5||A|+_6||A|+_7||A|+_8||A|+_9||A|+_10||A|+_11|+_12" />
+      </Calculations>
+    </Page>
+  </Report>
+  <Report ID="3" Name="בנקים">
+    <Versions>
+      SELECT Version, [VersionID] As CategoryID FROM Versions
+    </Versions>
+    <Params>
+      <Param Name="@VersionCategoryID1"></Param>
+    </Params>
+    <Page PID="1" Name="בנק אשפוזים">
+      <Query>
+        <Txt>
+          SELECT [Service_1],[Service_2],[Service_3],[Q],[TransDate],[VersionCategoryID],[BudgetCategoryID],[TType],RowOrd,ColOrd
+          FROM  [p1v_Banks] WHERE BudgetCategoryID=192 AND VersionCategoryID=@VersionCategoryID1
+        </Txt>
+      </Query>
+      <Pivot>
+        <PivotParams
+        RowFields="[Service_1]|[Service_2]"
+        RowOrderFields="RowOrd"
+        ColumnField1="TType"
+        ColumnOrderFields="ColOrd"
+        DataFields="Q"
+        Tottxt='סה&quot;כ '
+        ColType="varchar(50)" />
+      </Pivot>
+      <AdditionalColumns>
+        <Column Name="הפרש" Sumtext="סכום" />
+      </AdditionalColumns>
+      <Calculations>
+        <Column N="3" F="A|+_1|+_2" />
+      </Calculations>
+      <Formats>
+        <RowHdr>מסגרת</RowHdr>
+        <NumberFormat Ftext="הפרש">#,###; (#,###);</NumberFormat>
+        <NumberFormat>#,###; #,###;</NumberFormat>
+        <Seperator>.</Seperator>
+      </Formats>
+    </Page>
+    <Page PID="2" Name="בנק הדרכה">
+      <Query>
+        <Txt>
+          SELECT [Service_1],[Service_2],[Service_3],[Q],[TransDate],[VersionCategoryID],[BudgetCategoryID],[TType],RowOrd,ColOrd
+          FROM  [p1v_Banks] WHERE BudgetCategoryID=191 AND VersionCategoryID=@VersionCategoryID1
+        </Txt>
+      </Query>
+      <Pivot>
+        <PivotParams
+        RowFields="[Service_1]|[Service_2]"
+        RowOrderFields="RowOrd"
+        ColumnField1="TType"
+        ColumnOrderFields="ColOrd"
+        DataFields="Q"
+        Tottxt='סה&quot;כ '
+        ColType="varchar(50)" />
+      </Pivot>
+      <AdditionalColumns>
+        <Column Name="הפרש" Sumtext="סכום" />
+      </AdditionalColumns>
+      <Calculations>
+        <Column N="3" F="A|+_1|+_2" />
+      </Calculations>
+      <Formats>
+        <RowHdr>מסגרת</RowHdr>
+        <NumberFormat Ftext="הפרש">#,###; (#,###);</NumberFormat>
+        <NumberFormat>#,###; #,###;</NumberFormat>
+        <Seperator>.</Seperator>
+      </Formats>
+    </Page>
+  </Report>
+</Reports>

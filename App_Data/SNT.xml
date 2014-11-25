@@ -1,0 +1,1126 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Form txt="שאלון לניהול תמיכות" ID="4">
+    <txt>שאלון לניהול תמיכות</txt>    
+    <!--<Group stype="Para" txt="הנחיות" gid="1">
+        <txt>הנחיות</txt>
+        <Question id="0">
+            <txt>הנחיות לתלמידים</txt>
+            <style>color:Blue;font-size:large;font-weight:bold</style>
+        </Question>
+        <Question id="0">
+            <txt>תחשוב על היכן אתה גר, לומד ומבלה ועל המשפחה, החברים והמורים שאתה מכיר. השאלות הבאות שואלות כיצד אתה מרגיש לגבי דברים אלו. אתה יכול לבחון את האפשרויות הניתנות לכל פריט, סמן את התשובה המתארת באופן הטוב ביותר כיצד אתה באמת מרגיש. נסה בבקשה לענות על כל פריט וקח את כל הזמן שאתה צריך. אין תשובות שגויות. אנו רק רוצים לדעת כיצד אתה מרגיש לגבי מקום מגוריך, בית הספר, וזמנך הפנוי ובני המשפחה, חברים ומורים שאתה מכיר. יש לך שאלות?</txt>
+        </Question>
+        <Question id="0">
+            <txt>הנחיות לבוחנים</txt>
+            <style>color:Blue;font-size:large;font-weight:bold</style>
+        </Question>
+        <Question id="0">
+            <txt>לתלמידים שאינם יכולים לקרוא או להבין את כל השאלות, הבוחן צריך לקרוא את ההנחיות הבאות:</txt>
+        </Question>
+        <Question id="0">
+            <txt>"אני רוצה שתחשוב על היכן אתה גר, לומד ומבלה ועל המשפחה, החברים והמורים שאתה מכיר. ביחד הבה ונענה על מספר שאלות השואלות כיצד אתה מרגיש לגבי דברים אלו. אם אתה רוצה, אתה יכול לבחון את האפשרויות הניתנות לכל פריט או, אם אתה רוצה, אני יכול לסמן, לאחר שנקרא ונדון בכל פריט, את התשובה המתארת באופן הטוב ביותר כיצד אתה באמת מרגיש. נסה בבקשה לענות על כל פריט וקח את כל הזמן שאתה צריך. אין תשובת שגויות. אנו רק רוצים לדעת כיצד אתה מרגיש לגבי מקום מגוריך, בית הספר, וזמנך הפנוי ובני המשפחה, חברים ומורים שאתה מכיר. יש לך שאלות?"</txt>
+            <style>color:Blue</style>
+        </Question>
+        <Question id="0">
+            <txt>הנחיות למדרגים</txt>
+            <style>color:Blue;font-size:large;font-weight:bold</style>
+        </Question>
+        <Question id="0">
+            <txt>על המדרגים להכיר את התלמיד היטב ועליהם להשלים את השאלון "כאילו הם היו האדם עצמו" (כלומר, לדרג כיצד האדם היה מקבל את הדברים). אנא, סמן את התשובה הרצויה.</txt>
+        </Question>
+        <Question id="0">
+            <txt>על המדרגים להשלים את השאלון באופן עצמאי וללא דיון כלשהו על הפריטים או על האדם.</txt>
+        </Question>
+    </Group>-->
+    <Group stype="Question" txt="חברתי - קבוצת השווים" gid="1">
+        <txt>"חברתי - קבוצת השווים</txt>
+        <Question id="1">
+            <txt>
+              יצירת קשר משמעותי עם קבוצת השווים
+            </txt>
+          <style>width:620px; background-color: #EEEEEE;</style>
+          <Answer>
+                <txt>אין צורך בתמיכה</txt>
+                <val>0</val>
+            </Answer>
+            <Answer>
+                <txt>תמיכה על בסיס פעילות חד-פעמית</txt>
+                <val>1</val>
+            </Answer>
+            <Answer>
+                <txt>תמיכה על בסיס מספר מוגבל של פעילויות</txt>
+                <val>2</val>
+            </Answer>
+            <Answer>
+              <txt>תמיכה על בסיס שבועי</txt>
+              <val>3</val>
+            </Answer>
+            <Answer>
+              <txt>תמיכה על בסיס יומי</txt>
+              <val>4</val>
+            </Answer>
+        </Question>
+        <Question id="2">
+          <style>width:620px; background-color: #EEEEEE;</style>
+          <txt>
+            יצירת קשר משמעותי עם מבוגרים (צוות חינוכי)
+          </txt>
+          <Answer>
+            <txt>אין צורך בתמיכה</txt>
+            <val>0</val>
+          </Answer>
+          <Answer>
+            <txt>תמיכה על בסיס פעילות חד-פעמית</txt>
+            <val>1</val>
+          </Answer>
+          <Answer>
+            <txt>תמיכה על בסיס מספר מוגבל של פעילויות</txt>
+            <val>2</val>
+          </Answer>
+          <Answer>
+            <txt>תמיכה על בסיס שבועי</txt>
+            <val>3</val>
+          </Answer>
+          <Answer>
+            <txt>תמיכה על בסיס יומי</txt>
+            <val>4</val>
+          </Answer>
+        </Question>
+        <Question id="3">
+          <style>width:620px; background-color: #EEEEEE;</style>
+          <txt>
+            הבנת סיטואציות חברתיות
+          </txt>
+          <Answer>
+            <txt>אין צורך בתמיכה</txt>
+            <val>0</val>
+          </Answer>
+          <Answer>
+            <txt>תמיכה על בסיס פעילות חד-פעמית</txt>
+            <val>1</val>
+          </Answer>
+          <Answer>
+            <txt>תמיכה על בסיס מספר מוגבל של פעילויות</txt>
+            <val>2</val>
+          </Answer>
+          <Answer>
+            <txt>תמיכה על בסיס שבועי</txt>
+            <val>3</val>
+          </Answer>
+          <Answer>
+            <txt>תמיכה על בסיס יומי</txt>
+            <val>4</val>
+          </Answer>
+        </Question>
+        <Question id="4">
+          <style>width:620px; background-color: #EEEEEE;</style>
+          <txt>
+            התמודדות עם סיטואציות חברתית
+          </txt>
+          <Answer>
+            <txt>אין צורך בתמיכה</txt>
+            <val>0</val>
+          </Answer>
+          <Answer>
+            <txt>תמיכה על בסיס פעילות חד-פעמית</txt>
+            <val>1</val>
+          </Answer>
+          <Answer>
+            <txt>תמיכה על בסיס מספר מוגבל של פעילויות</txt>
+            <val>2</val>
+          </Answer>
+          <Answer>
+            <txt>תמיכה על בסיס שבועי</txt>
+            <val>3</val>
+          </Answer>
+          <Answer>
+            <txt>תמיכה על בסיס יומי</txt>
+            <val>4</val>
+          </Answer>
+        </Question>
+        <Question id="5">
+          <style>width:620px; background-color: #EEEEEE;</style>
+          <txt>
+            שימוש ברשתות חברתיות
+          </txt>
+          <Answer>
+            <txt>אין צורך בתמיכה</txt>
+            <val>0</val>
+          </Answer>
+          <Answer>
+            <txt>תמיכה על בסיס פעילות חד-פעמית</txt>
+            <val>1</val>
+          </Answer>
+          <Answer>
+            <txt>תמיכה על בסיס מספר מוגבל של פעילויות</txt>
+            <val>2</val>
+          </Answer>
+          <Answer>
+            <txt>תמיכה על בסיס שבועי</txt>
+            <val>3</val>
+          </Answer>
+          <Answer>
+            <txt>תמיכה על בסיס יומי</txt>
+            <val>4</val>
+          </Answer>
+        </Question>
+        <Question id="6">
+          <style>width:620px; background-color: #EEEEEE;</style>
+          <txt>
+            שימוש במגע פיזי
+          </txt>
+          <Answer>
+            <txt>אין צורך בתמיכה</txt>
+            <val>0</val>
+          </Answer>
+          <Answer>
+            <txt>תמיכה על בסיס פעילות חד-פעמית</txt>
+            <val>1</val>
+          </Answer>
+          <Answer>
+            <txt>תמיכה על בסיס מספר מוגבל של פעילויות</txt>
+            <val>2</val>
+          </Answer>
+          <Answer>
+            <txt>תמיכה על בסיס שבועי</txt>
+            <val>3</val>
+          </Answer>
+          <Answer>
+            <txt>תמיכה על בסיס יומי</txt>
+            <val>4</val>
+          </Answer>
+        </Question>
+        <Question id="7">
+          <style>width:620px; background-color: #EEEEEE;</style>
+          <txt>
+            שימוש באסטרטגיות לרכישת מקום בחברה
+          </txt>
+          <Answer>
+            <txt>אין צורך בתמיכה</txt>
+            <val>0</val>
+          </Answer>
+          <Answer>
+            <txt>תמיכה על בסיס פעילות חד-פעמית</txt>
+            <val>1</val>
+          </Answer>
+          <Answer>
+            <txt>תמיכה על בסיס מספר מוגבל של פעילויות</txt>
+            <val>2</val>
+          </Answer>
+          <Answer>
+            <txt>תמיכה על בסיס שבועי</txt>
+            <val>3</val>
+          </Answer>
+          <Answer>
+            <txt>תמיכה על בסיס יומי</txt>
+            <val>4</val>
+          </Answer>
+        </Question>
+        <Question id="8">
+          <style>width:620px; background-color: #EEEEEE;</style>
+          <txt>
+            מעורבות ביחסים אינטימיים
+          </txt>
+          <Answer>
+            <txt>אין צורך בתמיכה</txt>
+            <val>0</val>
+          </Answer>
+          <Answer>
+            <txt>תמיכה על בסיס פעילות חד-פעמית</txt>
+            <val>1</val>
+          </Answer>
+          <Answer>
+            <txt>תמיכה על בסיס מספר מוגבל של פעילויות</txt>
+            <val>2</val>
+          </Answer>
+          <Answer>
+            <txt>תמיכה על בסיס שבועי</txt>
+            <val>3</val>
+          </Answer>
+          <Answer>
+            <txt>תמיכה על בסיס יומי</txt>
+            <val>4</val>
+          </Answer>
+        </Question>
+        <Question id="0" sumGroup="sum" firstQuestion="1" lastQuestion="8">
+          <style>width:620px; background-color: #EEEEEE; padding-left:15px;</style>
+          <txt>
+            סיכום
+          </txt>
+        </Question>
+    </Group>
+    <Group stype="Question"  txt="התנהגותי - רגשי" gid="2">
+        <txt>
+          התנהגותי - רגשי
+        </txt>
+      <Question id="9">
+        <style>width:620px; background-color: #EEEEEE;</style>
+        <txt>
+          המנעות מפגיעה פיזית בזולת
+        </txt>
+        <Answer>
+          <txt>אין צורך בתמיכה</txt>
+          <val>0</val>
+        </Answer>
+        <Answer>
+          <txt>תמיכה על בסיס פעילות חד-פעמית</txt>
+          <val>1</val>
+        </Answer>
+        <Answer>
+          <txt>תמיכה על בסיס מספר מוגבל של פעילויות</txt>
+          <val>2</val>
+        </Answer>
+        <Answer>
+          <txt>תמיכה על בסיס שבועי</txt>
+          <val>3</val>
+        </Answer>
+        <Answer>
+          <txt>תמיכה על בסיס יומי</txt>
+          <val>4</val>
+        </Answer>
+      </Question>
+      <Question id="10">
+        <style>width:620px; background-color: #EEEEEE;</style>
+        <txt>
+          המנעות מפגיעה מילולית בזולת
+        </txt>
+        <Answer>
+          <txt>אין צורך בתמיכה</txt>
+          <val>0</val>
+        </Answer>
+        <Answer>
+          <txt>תמיכה על בסיס פעילות חד-פעמית</txt>
+          <val>1</val>
+        </Answer>
+        <Answer>
+          <txt>תמיכה על בסיס מספר מוגבל של פעילויות</txt>
+          <val>2</val>
+        </Answer>
+        <Answer>
+          <txt>תמיכה על בסיס שבועי</txt>
+          <val>3</val>
+        </Answer>
+        <Answer>
+          <txt>תמיכה על בסיס יומי</txt>
+          <val>4</val>
+        </Answer>
+      </Question>
+      <Question id="11">
+        <style>width:620px; background-color: #EEEEEE;</style>
+        <txt>
+          התמודדות עם מצבי רוח ואי שקט
+        </txt>
+        <Answer>
+          <txt>אין צורך בתמיכה</txt>
+          <val>0</val>
+        </Answer>
+        <Answer>
+          <txt>תמיכה על בסיס פעילות חד-פעמית</txt>
+          <val>1</val>
+        </Answer>
+        <Answer>
+          <txt>תמיכה על בסיס מספר מוגבל של פעילויות</txt>
+          <val>2</val>
+        </Answer>
+        <Answer>
+          <txt>תמיכה על בסיס שבועי</txt>
+          <val>3</val>
+        </Answer>
+        <Answer>
+          <txt>תמיכה על בסיס יומי</txt>
+          <val>4</val>
+        </Answer>
+      </Question>
+      <Question id="12">
+        <style>width:620px; background-color: #EEEEEE;</style>
+        <txt>
+          שימוש בתגובה תואמת סיטואציה
+        </txt>
+        <Answer>
+          <txt>אין צורך בתמיכה</txt>
+          <val>0</val>
+        </Answer>
+        <Answer>
+          <txt>תמיכה על בסיס פעילות חד-פעמית</txt>
+          <val>1</val>
+        </Answer>
+        <Answer>
+          <txt>תמיכה על בסיס מספר מוגבל של פעילויות</txt>
+          <val>2</val>
+        </Answer>
+        <Answer>
+          <txt>תמיכה על בסיס שבועי</txt>
+          <val>3</val>
+        </Answer>
+        <Answer>
+          <txt>תמיכה על בסיס יומי</txt>
+          <val>4</val>
+        </Answer>
+      </Question>
+      <Question id="13">
+        <style>width:620px; background-color: #EEEEEE;</style>
+        <txt>
+          תפקוד בפעילויות מחוץ לכיתה
+        </txt>
+        <Answer>
+          <txt>אין צורך בתמיכה</txt>
+          <val>0</val>
+        </Answer>
+        <Answer>
+          <txt>תמיכה על בסיס פעילות חד-פעמית</txt>
+          <val>1</val>
+        </Answer>
+        <Answer>
+          <txt>תמיכה על בסיס מספר מוגבל של פעילויות</txt>
+          <val>2</val>
+        </Answer>
+        <Answer>
+          <txt>תמיכה על בסיס שבועי</txt>
+          <val>3</val>
+        </Answer>
+        <Answer>
+          <txt>תמיכה על בסיס יומי</txt>
+          <val>4</val>
+        </Answer>
+      </Question>
+      <Question id="0" sumGroup="sum" firstQuestion="9" lastQuestion="13">
+        <style>width:620px; background-color: #EEEEEE;</style>
+        <txt>
+          סיכום
+        </txt>
+      </Question>
+    </Group>
+    <Group stype="Question"  txt="סינגור עצמי" gid="3">
+      <txt>
+        סינגור עצמי
+      </txt>
+      <Question id="14">
+        <style>width:620px; background-color: #EEEEEE;</style>
+        <txt>
+          הכרה בקשיים
+        </txt>
+        <Answer>
+          <txt>אין צורך בתמיכה</txt>
+          <val>0</val>
+        </Answer>
+        <Answer>
+          <txt>תמיכה על בסיס פעילות חד-פעמית</txt>
+          <val>1</val>
+        </Answer>
+        <Answer>
+          <txt>תמיכה על בסיס מספר מוגבל של פעילויות</txt>
+          <val>2</val>
+        </Answer>
+        <Answer>
+          <txt>תמיכה על בסיס שבועי</txt>
+          <val>3</val>
+        </Answer>
+        <Answer>
+          <txt>תמיכה על בסיס יומי</txt>
+          <val>4</val>
+        </Answer>
+      </Question>
+      <Question id="15">
+        <style>width:620px; background-color: #EEEEEE;</style>
+        <txt>
+          בקשת עזרה
+        </txt>
+        <Answer>
+          <txt>אין צורך בתמיכה</txt>
+          <val>0</val>
+        </Answer>
+        <Answer>
+          <txt>תמיכה על בסיס פעילות חד-פעמית</txt>
+          <val>1</val>
+        </Answer>
+        <Answer>
+          <txt>תמיכה על בסיס מספר מוגבל של פעילויות</txt>
+          <val>2</val>
+        </Answer>
+        <Answer>
+          <txt>תמיכה על בסיס שבועי</txt>
+          <val>3</val>
+        </Answer>
+        <Answer>
+          <txt>תמיכה על בסיס יומי</txt>
+          <val>4</val>
+        </Answer>
+      </Question>
+      <Question id="16">
+        <txt>
+          שימוש בעזרה
+        </txt>
+        <style>width:620px; background-color: #EEEEEE;</style>
+        <Answer>
+          <txt>אין צורך בתמיכה</txt>
+          <val>0</val>
+        </Answer>
+        <Answer>
+          <txt>תמיכה על בסיס פעילות חד-פעמית</txt>
+          <val>1</val>
+        </Answer>
+        <Answer>
+          <txt>תמיכה על בסיס מספר מוגבל של פעילויות</txt>
+          <val>2</val>
+        </Answer>
+        <Answer>
+          <txt>תמיכה על בסיס שבועי</txt>
+          <val>3</val>
+        </Answer>
+        <Answer>
+          <txt>תמיכה על בסיס יומי</txt>
+          <val>4</val>
+        </Answer>
+      </Question>
+      <Question id="17">
+        <txt>
+          הגנה עצמית מניצול
+        </txt>
+        <style>width:620px; background-color: #EEEEEE;</style>
+        <Answer>
+          <txt>אין צורך בתמיכה</txt>
+          <val>0</val>
+        </Answer>
+        <Answer>
+          <txt>תמיכה על בסיס פעילות חד-פעמית</txt>
+          <val>1</val>
+        </Answer>
+        <Answer>
+          <txt>תמיכה על בסיס מספר מוגבל של פעילויות</txt>
+          <val>2</val>
+        </Answer>
+        <Answer>
+          <txt>תמיכה על בסיס שבועי</txt>
+          <val>3</val>
+        </Answer>
+        <Answer>
+          <txt>תמיכה על בסיס יומי</txt>
+          <val>4</val>
+        </Answer>
+      </Question>
+      <Question id="18">
+        <style>width:620px; background-color: #EEEEEE;</style>
+        <txt>
+          קידום מטרות אישיות
+        </txt>
+        <Answer>
+          <txt>אין צורך בתמיכה</txt>
+          <val>0</val>
+        </Answer>
+        <Answer>
+          <txt>תמיכה על בסיס פעילות חד-פעמית</txt>
+          <val>1</val>
+        </Answer>
+        <Answer>
+          <txt>תמיכה על בסיס מספר מוגבל של פעילויות</txt>
+          <val>2</val>
+        </Answer>
+        <Answer>
+          <txt>תמיכה על בסיס שבועי</txt>
+          <val>3</val>
+        </Answer>
+        <Answer>
+          <txt>תמיכה על בסיס יומי</txt>
+          <val>4</val>
+        </Answer>
+      </Question>
+      <Question id="0" sumGroup="sum" firstQuestion="14" lastQuestion="18">
+        <style>width:620px; background-color: #EEEEEE;</style>
+        <txt>
+          סיכום
+        </txt>
+      </Question>
+    </Group>
+    <Group stype="Question"  txt="קהילה טבעית" gid="4">
+    <txt>
+      קהילה טבעית
+    </txt>
+    <Question id="19">
+      <style>width:620px; background-color: #EEEEEE;</style>
+      <txt>
+        השתתפות בפעילויות אחה"צ בקהילה
+      </txt>
+      <Answer>
+        <txt>אין צורך בתמיכה</txt>
+        <val>0</val>
+      </Answer>
+      <Answer>
+        <txt>תמיכה על בסיס פעילות חד-פעמית</txt>
+        <val>1</val>
+      </Answer>
+      <Answer>
+        <txt>תמיכה על בסיס מספר מוגבל של פעילויות</txt>
+        <val>2</val>
+      </Answer>
+      <Answer>
+        <txt>תמיכה על בסיס שבועי</txt>
+        <val>3</val>
+      </Answer>
+      <Answer>
+        <txt>תמיכה על בסיס יומי</txt>
+        <val>4</val>
+      </Answer>
+    </Question>
+    <Question id="20">
+      <style>width:620px; background-color: #EEEEEE;</style>
+      <txt>
+        התניידות בצורה עצמאית
+      </txt>
+      <Answer>
+        <txt>אין צורך בתמיכה</txt>
+        <val>0</val>
+      </Answer>
+      <Answer>
+        <txt>תמיכה על בסיס פעילות חד-פעמית</txt>
+        <val>1</val>
+      </Answer>
+      <Answer>
+        <txt>תמיכה על בסיס מספר מוגבל של פעילויות</txt>
+        <val>2</val>
+      </Answer>
+      <Answer>
+        <txt>תמיכה על בסיס שבועי</txt>
+        <val>3</val>
+      </Answer>
+      <Answer>
+        <txt>תמיכה על בסיס יומי</txt>
+        <val>4</val>
+      </Answer>
+    </Question>
+    <Question id="21">
+      <style>width:620px; background-color: #EEEEEE;</style>
+      <txt>
+        קשרים עם חברים בקהילה
+      </txt>
+      <Answer>
+        <txt>אין צורך בתמיכה</txt>
+        <val>0</val>
+      </Answer>
+      <Answer>
+        <txt>תמיכה על בסיס פעילות חד-פעמית</txt>
+        <val>1</val>
+      </Answer>
+      <Answer>
+        <txt>תמיכה על בסיס מספר מוגבל של פעילויות</txt>
+        <val>2</val>
+      </Answer>
+      <Answer>
+        <txt>תמיכה על בסיס שבועי</txt>
+        <val>3</val>
+      </Answer>
+      <Answer>
+        <txt>תמיכה על בסיס יומי</txt>
+        <val>4</val>
+      </Answer>
+    </Question>
+    <Question id="22">
+      <style>width:620px; background-color: #EEEEEE;</style>
+      <txt>
+        תחושת שייכות עם בני המשפחה
+      </txt>
+      <Answer>
+        <txt>אין צורך בתמיכה</txt>
+        <val>0</val>
+      </Answer>
+      <Answer>
+        <txt>תמיכה על בסיס פעילות חד-פעמית</txt>
+        <val>1</val>
+      </Answer>
+      <Answer>
+        <txt>תמיכה על בסיס מספר מוגבל של פעילויות</txt>
+        <val>2</val>
+      </Answer>
+      <Answer>
+        <txt>תמיכה על בסיס שבועי</txt>
+        <val>3</val>
+      </Answer>
+      <Answer>
+        <txt>תמיכה על בסיס יומי</txt>
+        <val>4</val>
+      </Answer>
+    </Question>
+    <Question id="23">
+      <style>width:620px; background-color: #EEEEEE;</style>
+      <txt>
+        השתתפות בקבלת החלטות במשפחה
+      </txt>
+      <Answer>
+        <txt>אין צורך בתמיכה</txt>
+        <val>0</val>
+      </Answer>
+      <Answer>
+        <txt>תמיכה על בסיס פעילות חד-פעמית</txt>
+        <val>1</val>
+      </Answer>
+      <Answer>
+        <txt>תמיכה על בסיס מספר מוגבל של פעילויות</txt>
+        <val>2</val>
+      </Answer>
+      <Answer>
+        <txt>תמיכה על בסיס שבועי</txt>
+        <val>3</val>
+      </Answer>
+      <Answer>
+        <txt>תמיכה על בסיס יומי</txt>
+        <val>4</val>
+      </Answer>
+    </Question>
+      <Question id="0" sumGroup="sum" firstQuestion="19" lastQuestion="23">
+        <style>width:620px; background-color: #EEEEEE;</style>
+        <txt>
+          סיכום
+        </txt>
+      </Question>
+    </Group>
+    <Group stype="Question"  txt="הכוונה עצמית" gid="5">
+       <txt>
+      הכוונה עצמית
+    </txt>
+    <Question id="24">
+      <txt>
+        בחירה וקבלת החלטה
+      </txt>
+     <style>width:620px; background-color: #EEEEEE;</style>
+      <Answer>
+        <txt>אין צורך בתמיכה</txt>
+        <val>0</val>
+      </Answer>
+      <Answer>
+        <txt>תמיכה על בסיס פעילות חד-פעמית</txt>
+        <val>1</val>
+      </Answer>
+      <Answer>
+        <txt>תמיכה על בסיס מספר מוגבל של פעילויות</txt>
+        <val>2</val>
+      </Answer>
+      <Answer>
+        <txt>תמיכה על בסיס שבועי</txt>
+        <val>3</val>
+      </Answer>
+      <Answer>
+        <txt>תמיכה על בסיס יומי</txt>
+        <val>4</val>
+      </Answer>
+    </Question>
+    <Question id="25">
+      <style>width:620px; background-color: #EEEEEE;</style>
+      <txt>
+        קביעת מטרות אפשריות עבור עצמו
+      </txt>
+      <Answer>
+        <txt>אין צורך בתמיכה</txt>
+        <val>0</val>
+      </Answer>
+      <Answer>
+        <txt>תמיכה על בסיס פעילות חד-פעמית</txt>
+        <val>1</val>
+      </Answer>
+      <Answer>
+        <txt>תמיכה על בסיס מספר מוגבל של פעילויות</txt>
+        <val>2</val>
+      </Answer>
+      <Answer>
+        <txt>תמיכה על בסיס שבועי</txt>
+        <val>3</val>
+      </Answer>
+      <Answer>
+        <txt>תמיכה על בסיס יומי</txt>
+        <val>4</val>
+      </Answer>
+    </Question>
+    <Question id="26">
+      <style>width:620px; background-color: #EEEEEE;</style>
+      <txt>
+        קביעת סדרי עדיפויות ופעולה על פיהם
+      </txt>
+      <Answer>
+        <txt>אין צורך בתמיכה</txt>
+        <val>0</val>
+      </Answer>
+      <Answer>
+        <txt>תמיכה על בסיס פעילות חד-פעמית</txt>
+        <val>1</val>
+      </Answer>
+      <Answer>
+        <txt>תמיכה על בסיס מספר מוגבל של פעילויות</txt>
+        <val>2</val>
+      </Answer>
+      <Answer>
+        <txt>תמיכה על בסיס שבועי</txt>
+        <val>3</val>
+      </Answer>
+      <Answer>
+        <txt>תמיכה על בסיס יומי</txt>
+        <val>4</val>
+      </Answer>
+    </Question>
+    <Question id="27">
+      <style>width:620px; background-color: #EEEEEE;</style>
+      <txt>
+        ניהול זמן בהתאם למטרות
+      </txt>
+      <Answer>
+        <txt>אין צורך בתמיכה</txt>
+        <val>0</val>
+      </Answer>
+      <Answer>
+        <txt>תמיכה על בסיס פעילות חד-פעמית</txt>
+        <val>1</val>
+      </Answer>
+      <Answer>
+        <txt>תמיכה על בסיס מספר מוגבל של פעילויות</txt>
+        <val>2</val>
+      </Answer>
+      <Answer>
+        <txt>תמיכה על בסיס שבועי</txt>
+        <val>3</val>
+      </Answer>
+      <Answer>
+        <txt>תמיכה על בסיס יומי</txt>
+        <val>4</val>
+      </Answer>
+    </Question>
+    <Question id="28">
+      <style>width:620px; background-color: #EEEEEE;</style>
+      <txt>
+        התמדה בתוכנית אישית לאורך זמן
+      </txt>
+      <Answer>
+        <txt>אין צורך בתמיכה</txt>
+        <val>0</val>
+      </Answer>
+      <Answer>
+        <txt>תמיכה על בסיס פעילות חד-פעמית</txt>
+        <val>1</val>
+      </Answer>
+      <Answer>
+        <txt>תמיכה על בסיס מספר מוגבל של פעילויות</txt>
+        <val>2</val>
+      </Answer>
+      <Answer>
+        <txt>תמיכה על בסיס שבועי</txt>
+        <val>3</val>
+      </Answer>
+      <Answer>
+        <txt>תמיכה על בסיס יומי</txt>
+        <val>4</val>
+      </Answer>
+    </Question>
+    <Question id="29">
+      <style>width:620px; background-color: #EEEEEE;</style>
+      <txt>
+        מודעות ולקיחת אחריות על תפקודו כתלמיד בביה"ס
+      </txt>
+      <Answer>
+        <txt>אין צורך בתמיכה</txt>
+        <val>0</val>
+      </Answer>
+      <Answer>
+        <txt>תמיכה על בסיס פעילות חד-פעמית</txt>
+        <val>1</val>
+      </Answer>
+      <Answer>
+        <txt>תמיכה על בסיס מספר מוגבל של פעילויות</txt>
+        <val>2</val>
+      </Answer>
+      <Answer>
+        <txt>תמיכה על בסיס שבועי</txt>
+        <val>3</val>
+      </Answer>
+      <Answer>
+        <txt>תמיכה על בסיס יומי</txt>
+        <val>4</val>
+      </Answer>
+    </Question>
+    <Question id="30">
+      <style>width:620px; background-color: #EEEEEE;</style>
+      <txt>
+        מודעות ולקיחת אחריות על חלקו בסיטואציות חברתיות ובאירועים חריגים
+      </txt>
+      <Answer>
+        <txt>אין צורך בתמיכה</txt>
+        <val>0</val>
+      </Answer>
+      <Answer>
+        <txt>תמיכה על בסיס פעילות חד-פעמית</txt>
+        <val>1</val>
+      </Answer>
+      <Answer>
+        <txt>תמיכה על בסיס מספר מוגבל של פעילויות</txt>
+        <val>2</val>
+      </Answer>
+      <Answer>
+        <txt>תמיכה על בסיס שבועי</txt>
+        <val>3</val>
+      </Answer>
+      <Answer>
+        <txt>תמיכה על בסיס יומי</txt>
+        <val>4</val>
+      </Answer>
+    </Question>
+      <Question id="0" sumGroup="sum" firstQuestion="24" lastQuestion="30">
+        <style>width:620px; background-color: #EEEEEE;</style>
+        <txt>
+          סיכום
+        </txt>
+      </Question>
+    </Group>
+    <Group stype="Question"  txt="פדגוגיה" gid="6">
+      <txt>
+        פדגוגיה
+      </txt>
+      <Question id="31">
+        <style>width:620px; background-color: #EEEEEE;</style>
+        <txt>
+          הוראה מתקנת באנגלית
+        </txt>
+        <Answer>
+          <txt>אין צורך בתמיכה</txt>
+          <val>0</val>
+        </Answer>
+        <Answer>
+          <txt>תמיכה על בסיס פעילות חד-פעמית</txt>
+          <val>1</val>
+        </Answer>
+        <Answer>
+          <txt>תמיכה על בסיס מספר מוגבל של פעילויות</txt>
+          <val>2</val>
+        </Answer>
+        <Answer>
+          <txt>תמיכה על בסיס שבועי</txt>
+          <val>3</val>
+        </Answer>
+        <Answer>
+          <txt>תמיכה על בסיס יומי</txt>
+          <val>4</val>
+        </Answer>
+      </Question>
+      <Question id="32">
+        <style>width:620px; background-color: #EEEEEE;</style>
+        <txt>
+          הוראה מתקנת בחשבון
+        </txt>
+        <Answer>
+          <txt>אין צורך בתמיכה</txt>
+          <val>0</val>
+        </Answer>
+        <Answer>
+          <txt>תמיכה על בסיס פעילות חד-פעמית</txt>
+          <val>1</val>
+        </Answer>
+        <Answer>
+          <txt>תמיכה על בסיס מספר מוגבל של פעילויות</txt>
+          <val>2</val>
+        </Answer>
+        <Answer>
+          <txt>תמיכה על בסיס שבועי</txt>
+          <val>3</val>
+        </Answer>
+        <Answer>
+          <txt>תמיכה על בסיס יומי</txt>
+          <val>4</val>
+        </Answer>
+      </Question>
+      <Question id="33">
+        <style>width:620px; background-color: #EEEEEE;</style>
+        <txt>
+          הוראה מתקנת בשפה
+        </txt>
+        <Answer>
+          <txt>אין צורך בתמיכה</txt>
+          <val>0</val>
+        </Answer>
+        <Answer>
+          <txt>תמיכה על בסיס פעילות חד-פעמית</txt>
+          <val>1</val>
+        </Answer>
+        <Answer>
+          <txt>תמיכה על בסיס מספר מוגבל של פעילויות</txt>
+          <val>2</val>
+        </Answer>
+        <Answer>
+          <txt>תמיכה על בסיס שבועי</txt>
+          <val>3</val>
+        </Answer>
+        <Answer>
+          <txt>תמיכה על בסיס יומי</txt>
+          <val>4</val>
+        </Answer>
+      </Question>
+      <Question id="34">
+        <style>width:620px; background-color: #EEEEEE;</style>
+        <txt>
+          שליטה באסטרטגיות למידה
+        </txt>
+        <Answer>
+          <txt>אין צורך בתמיכה</txt>
+          <val>0</val>
+        </Answer>
+        <Answer>
+          <txt>תמיכה על בסיס פעילות חד-פעמית</txt>
+          <val>1</val>
+        </Answer>
+        <Answer>
+          <txt>תמיכה על בסיס מספר מוגבל של פעילויות</txt>
+          <val>2</val>
+        </Answer>
+        <Answer>
+          <txt>תמיכה על בסיס שבועי</txt>
+          <val>3</val>
+        </Answer>
+        <Answer>
+          <txt>תמיכה על בסיס יומי</txt>
+          <val>4</val>
+        </Answer>
+      </Question>
+      <Question id="35">
+        <style>width:620px; background-color: #EEEEEE;</style>
+        <txt>
+          התכוננות למבחן/הערכה לימודית
+        </txt>
+        <Answer>
+          <txt>אין צורך בתמיכה</txt>
+          <val>0</val>
+        </Answer>
+        <Answer>
+          <txt>תמיכה על בסיס פעילות חד-פעמית</txt>
+          <val>1</val>
+        </Answer>
+        <Answer>
+          <txt>תמיכה על בסיס מספר מוגבל של פעילויות</txt>
+          <val>2</val>
+        </Answer>
+        <Answer>
+          <txt>תמיכה על בסיס שבועי</txt>
+          <val>3</val>
+        </Answer>
+        <Answer>
+          <txt>תמיכה על בסיס יומי</txt>
+          <val>4</val>
+        </Answer>
+      </Question>
+      <Question id="36">
+        <style>width:620px; background-color: #EEEEEE;</style>
+        <txt>
+          למידה עצמאית
+        </txt>
+        <Answer>
+          <txt>אין צורך בתמיכה</txt>
+          <val>0</val>
+        </Answer>
+        <Answer>
+          <txt>תמיכה על בסיס פעילות חד-פעמית</txt>
+          <val>1</val>
+        </Answer>
+        <Answer>
+          <txt>תמיכה על בסיס מספר מוגבל של פעילויות</txt>
+          <val>2</val>
+        </Answer>
+        <Answer>
+          <txt>תמיכה על בסיס שבועי</txt>
+          <val>3</val>
+        </Answer>
+        <Answer>
+          <txt>תמיכה על בסיס יומי</txt>
+          <val>4</val>
+        </Answer>
+      </Question>
+      <Question id="37">
+        <style>width:620px; background-color: #EEEEEE;</style>
+        <txt>
+          למידה בקבוצה
+        </txt>
+        <Answer>
+          <txt>אין צורך בתמיכה</txt>
+          <val>0</val>
+        </Answer>
+        <Answer>
+          <txt>תמיכה על בסיס פעילות חד-פעמית</txt>
+          <val>1</val>
+        </Answer>
+        <Answer>
+          <txt>תמיכה על בסיס מספר מוגבל של פעילויות</txt>
+          <val>2</val>
+        </Answer>
+        <Answer>
+          <txt>תמיכה על בסיס שבועי</txt>
+          <val>3</val>
+        </Answer>
+        <Answer>
+          <txt>תמיכה על בסיס יומי</txt>
+          <val>4</val>
+        </Answer>
+      </Question>
+      <Question id="0" sumGroup="sum" firstQuestion="31" lastQuestion="37">
+        <style>width:620px; background-color: #EEEEEE;</style>
+        <txt>
+          סיכום
+        </txt>
+      </Question>
+    </Group>
+    <Group stype="Question"  txt="טכנולוגיות למידה" gid="7">
+    <txt>
+      טכנולוגיות למידה
+    </txt>
+    <Question id="38">
+      <style>width:620px; background-color: #EEEEEE;</style>
+      <txt>
+        שימוש באפליקציות תוכנה
+      </txt>
+      <Answer>
+        <txt>אין צורך בתמיכה</txt>
+        <val>0</val>
+      </Answer>
+      <Answer>
+        <txt>תמיכה על בסיס פעילות חד-פעמית</txt>
+        <val>1</val>
+      </Answer>
+      <Answer>
+        <txt>תמיכה על בסיס מספר מוגבל של פעילויות</txt>
+        <val>2</val>
+      </Answer>
+      <Answer>
+        <txt>תמיכה על בסיס שבועי</txt>
+        <val>3</val>
+      </Answer>
+      <Answer>
+        <txt>תמיכה על בסיס יומי</txt>
+        <val>4</val>
+      </Answer>
+    </Question>
+    <Question id="39">
+      <style>width:620px; background-color: #EEEEEE;</style>
+      <txt>
+        שימוש באינטרנט
+      </txt>
+      <Answer>
+        <txt>אין צורך בתמיכה</txt>
+        <val>0</val>
+      </Answer>
+      <Answer>
+        <txt>תמיכה על בסיס פעילות חד-פעמית</txt>
+        <val>1</val>
+      </Answer>
+      <Answer>
+        <txt>תמיכה על בסיס מספר מוגבל של פעילויות</txt>
+        <val>2</val>
+      </Answer>
+      <Answer>
+        <txt>תמיכה על בסיס שבועי</txt>
+        <val>3</val>
+      </Answer>
+      <Answer>
+        <txt>תמיכה על בסיס יומי</txt>
+        <val>4</val>
+      </Answer>
+    </Question>
+  <Question id="0" sumGroup="sum" firstQuestion="38" lastQuestion="39">
+    <style>width:620px; background-color: #EEEEEE;</style>
+    <txt>
+      סיכום
+    </txt>
+  </Question>
+  </Group>
+    <Group stype="eduResults" txt="תוצאות" gid="8">
+    </Group>
+</Form>

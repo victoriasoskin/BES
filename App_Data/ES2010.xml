@@ -1,0 +1,732 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Form txt="סקר שביעות רצון עובדים 2010" ID="2" mode="survey" limit="">
+	<txt>סקר שביעות רצון עובדים 2010</txt>
+	<Group stype="Para" txt="הנחיות" gid="1">
+
+			<txt>הנחיות</txt>
+		<Question id="0">
+			<txt>עובד/ת יקרה,</txt>
+			<style>color:Blue</style>
+		</Question>
+		<Question id="0">
+			<txt></txt>
+		</Question>
+		<Question id="0">
+			<txt>נשמח שתקדיש/י כמה דקות מזמנך למילוי הסקר, ותשתפ/י אותנו בתחושותיך, ברעיונותיך, בתלונותייך ובמידת שביעות רצונך מבית אקשטיין.</txt>
+			<style>color:Blue</style>
+		</Question>
+		<Question id="0">
+			<txt>
+				לפניך 27 היגדים , עליך לבחור את התשובה המבטאת בצורה הטובה ביותר את עמדתך. בכל עת תוכל/י לצאת מהשאלון ולחזור אליו שוב ותשובותיך ישמרו במערכת.
+			</txt>
+				<style>color:Blue</style>
+		</Question>
+		<Question id="0">
+			<txt>לצורך כניסה לסקר תידרש/י בכניסה הראשונית להקליד את מספר תעודת הזהות שלך ולבחור בסיסמא אישית. תעודת הזהות דרושה אך ורק כדי שלכל עובד ימולא שאלון אחד בלבד.</txt>
+			<style>color:Blue</style>
+		</Question>
+		<Question id="0">
+			<txt>לתשומת לבך, הסקר הינו אנונימי, לאחר הלחיצה על כפתור "שליחה למערכת" השאלון ישלח לבסיס בנתונים של הסקר ללא מספר הזהות. </txt>
+			<style>color:Blue</style>
+		</Question>
+		<Question id="0">
+			<txt>מועד אחרון להשבה על הסקר הינו ה-10 ביוני.</txt>
+			<style>color:Blue</style>
+		</Question>
+		<Question id="0">
+			<txt> </txt>
+		</Question>
+		<Question id="0">
+			<txt>אנו מודים לך על השתתפותך בסקר.</txt>
+			<style>color:Blue</style>
+		</Question>
+		<Question id="0">
+			<txt>צוות משאבי אנוש.</txt>
+			<style>color:Blue</style>
+		</Question>
+		<Question id="0">
+			<txt> </txt>
+		</Question>
+		<Question id="0">
+			<txt>* השאלון מנוסח בלשון זכר, אולם מיועד לנשים וגברים כאחד.</txt>
+			<style>color:Blue</style>
+		</Question>
+		<Question id="0">
+			<txt></txt>
+		</Question>
+		<Question id="0">
+			<txt>כדי לעבור לדף השאלון יש ללחוץ על הקישור "שאלון" בראש דף זה</txt>
+			<style>color:Green;font-weight:bold</style>
+		</Question>
+		<Question id="0">
+			<txt>כדי לעבור לדף ההנחיות יש ללחוץ על הקישור "הנחיות" בראש דף זה</txt>
+			<style>color:Green;font-weight:bold</style>
+		</Question>
+		<Question id="0">
+			<txt>לאחר סיום מילוי השאלון יש ללחוץ על כפתור "שליחה למערכת", והשאלון ישלח לבסיס הנתונים של הסקרים.</txt>
+			<style>color:Green;font-weight:bold</style>
+		</Question>
+
+	</Group>
+	<Group stype="Question" txt="שאלון" gid="2">
+			<txt>סקר שביעות רצון עובדים 2010</txt>
+			<val></val>
+			<Question id="1">
+				<txt>עבודתי חשובה ותורמת לחברה הישראלית .</txt>
+				<val></val>
+				<Answer>
+					<txt>במידה רבה מאוד</txt>
+					<val>5</val>
+				</Answer>
+				<Answer>
+					<txt>במידה רבה</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt>במידה בינונית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt>במידה מועטה</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt>בכלל לא</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+			<Question id="2">
+				<txt>במהלך השנה האחרונה היו לי במקום העבודה הזדמנויות ללמוד דברים חדשים ולהתפתח.</txt>
+				<val></val>
+				<Answer>
+					<txt>במידה רבה מאוד</txt>
+					<val>5</val>
+				</Answer>
+				<Answer>
+					<txt>במידה רבה</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt>במידה בינונית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt>במידה מועטה</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt>בכלל לא</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+			<Question id="3">
+				<txt>אני מעריך את המנהל הישיר שלי (למשל, מנהל שכבה בבית ספר, או מנהל בית במעון)</txt>
+				<val></val>
+				<Answer>
+					<txt>במידה רבה מאוד</txt>
+					<val>5</val>
+				</Answer>
+				<Answer>
+					<txt>במידה רבה</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt>במידה בינונית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt>במידה מועטה</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt>בכלל לא</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+			<Question id="4">
+				<txt>שמעתי על שינויים שחלים בבית אקשטיין בשנה האחרונה.</txt>
+				<val></val>
+				<Answer>
+					<txt>במידה רבה מאוד</txt>
+					<val>5</val>
+				</Answer>
+				<Answer>
+					<txt>במידה רבה</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt>במידה בינונית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt>במידה מועטה</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt>בכלל לא</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+			<Question id="5">
+				<txt>התחושה בקרב חבריי היא שארגון בית אקשטיין דואג לעובדים שלו.</txt>
+				<val></val>
+				<Answer>
+					<txt>במידה רבה מאוד</txt>
+					<val>5</val>
+				</Answer>
+				<Answer>
+					<txt>במידה רבה</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt>במידה בינונית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt>במידה מועטה</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt>בכלל לא</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+			<Question id="6">
+				<txt>נראה לי שבמקום העבודה יש משקל לדעותיי.</txt>
+				<val></val>
+				<Answer>
+					<txt>במידה רבה מאוד</txt>
+					<val>5</val>
+				</Answer>
+				<Answer>
+					<txt>במידה רבה</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt>במידה בינונית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt>במידה מועטה</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt>בכלל לא</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+			<Question id="7">
+				<txt>אני מתייעץ עם המנהל  הישיר שלי בנושאים מקצועיים.</txt>
+				<val></val>
+				<Answer>
+					<txt>במידה רבה מאוד</txt>
+					<val>5</val>
+				</Answer>
+				<Answer>
+					<txt>במידה רבה</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt>במידה בינונית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt>במידה מועטה</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt>בכלל לא</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+			<Question id="8">
+				<txt>קיימות הזדמנויות קידום בארגון.</txt>
+				<val></val>
+				<Answer>
+					<txt>במידה רבה מאוד</txt>
+					<val>5</val>
+				</Answer>
+				<Answer>
+					<txt>במידה רבה</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt>במידה בינונית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt>במידה מועטה</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt>בכלל לא</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+			<Question id="9">
+				<txt>כשאני נתקל בבעיה מסוימת בעבודה אני זוכה לעזרה מחברי לצוות.</txt>
+				<val></val>
+				<Answer>
+					<txt>במידה רבה מאוד</txt>
+					<val>5</val>
+				</Answer>
+				<Answer>
+					<txt>במידה רבה</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt>במידה בינונית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt>במידה מועטה</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt>בכלל לא</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+			<Question id="10">
+				<txt>במהלך השבועות האחרונים זכיתי להתייחסות על שביצעתי עבודתי היטב.</txt>
+				<val></val>
+				<Answer>
+					<txt>במידה רבה מאוד</txt>
+					<val>5</val>
+				</Answer>
+				<Answer>
+					<txt>במידה רבה</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt>במידה בינונית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt>במידה מועטה</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt>בכלל לא</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+			<Question id="11">
+				<txt>מקום העבודה מאפשר לי לעשות מדי יום את הדברים אותם אני אוהב.</txt>
+				<val></val>
+				<Answer>
+					<txt>במידה רבה מאוד</txt>
+					<val>5</val>
+				</Answer>
+				<Answer>
+					<txt>במידה רבה</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt>במידה בינונית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt>במידה מועטה</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt>בכלל לא</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+			<Question id="12">
+				<txt>אני שותף בקבלת החלטות בדברים הקשורים בתחום עבודתי.</txt>
+				<val></val>
+				<Answer>
+					<txt>במידה רבה מאוד</txt>
+					<val>5</val>
+				</Answer>
+				<Answer>
+					<txt>במידה רבה</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt>במידה בינונית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt>במידה מועטה</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt>בכלל לא</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+			<Question id="13">
+				<txt>נראה לי כי המנהל  הישיר שלי מתעניין בי כאדם.</txt>
+				<val></val>
+				<Answer>
+					<txt>במידה רבה מאוד</txt>
+					<val>5</val>
+				</Answer>
+				<Answer>
+					<txt>במידה רבה</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt>במידה בינונית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt>במידה מועטה</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt>בכלל לא</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+			<txt>חטיבה טיפולית</txt>
+			<val></val>
+			<Question id="14">
+				<txt>אני מאמין בגישה השיקומית/חינוכית של הארגון כלפי הלקוח.</txt>
+				<val></val>
+				<Answer>
+					<txt>במידה רבה מאוד</txt>
+					<val>5</val>
+				</Answer>
+				<Answer>
+					<txt>במידה רבה</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt>במידה בינונית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt>במידה מועטה</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt>בכלל לא</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+			<Question id="15">
+				<txt>יש לי במקום העבודה חברים שאכפת להם ממני.</txt>
+				<val></val>
+				<Answer>
+					<txt>במידה רבה מאוד</txt>
+					<val>5</val>
+				</Answer>
+				<Answer>
+					<txt>במידה רבה</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt>במידה בינונית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt>במידה מועטה</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt>בכלל לא</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+			<Question id="16">
+				<txt>לעיתים אני זוכה לפרגון ויחס אישי ממנהל המסגרת.</txt>
+				<val></val>
+				<Answer>
+					<txt>במידה רבה מאוד</txt>
+					<val>5</val>
+				</Answer>
+				<Answer>
+					<txt>במידה רבה</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt>במידה בינונית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt>במידה מועטה</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt>בכלל לא</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+			<Question id="17">
+				<txt>עומדים לרשותי החומרים והציוד הדרושים לי כדי לבצע את עבודתי כהלכה.</txt>
+				<val></val>
+				<Answer>
+					<txt>במידה רבה מאוד</txt>
+					<val>5</val>
+				</Answer>
+				<Answer>
+					<txt>במידה רבה</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt>במידה בינונית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt>במידה מועטה</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt>בכלל לא</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+			<Question id="18">
+				<txt>המנהל הישיר שלי הוא לא רק "ראש צוות" אלא גם חבר בצוות.</txt>
+				<val></val>
+				<Answer>
+					<txt>במידה רבה מאוד</txt>
+					<val>5</val>
+				</Answer>
+				<Answer>
+					<txt>במידה רבה</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt>במידה בינונית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt>במידה מועטה</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt>בכלל לא</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+			<Question id="19">
+				<txt>ייעוד ומטרות הארגון שבו אני עובד גורמים לי לחוש שעבודתי היא בעלת חשיבות.</txt>
+				<Answer>
+					<txt>במידה רבה מאוד</txt>
+					<val>5</val>
+				</Answer>
+				<Answer>
+					<txt>במידה רבה</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt>במידה בינונית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt>במידה מועטה</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt>בכלל לא</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+			<Question id="20">
+				<txt>אני יוזם רעיונות חדשים מפעם לפעם.</txt>
+				<Answer>
+					<txt>במידה רבה מאוד</txt>
+					<val>5</val>
+				</Answer>
+				<Answer>
+					<txt>במידה רבה</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt>במידה בינונית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt>במידה מועטה</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt>בכלל לא</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+			<Question id="21">
+				<txt>אני יודע מה הציפיות ממני במקום העבודה.</txt>
+				<val></val>
+				<Answer>
+					<txt>במידה רבה מאוד</txt>
+					<val>5</val>
+				</Answer>
+				<Answer>
+					<txt>במידה רבה</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt>במידה בינונית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt>במידה מועטה</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt>בכלל לא</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+			<Question id="22">
+				<txt>רמת הטיפול הניתן על-ידי הצוות ללקוח גבוהה.</txt>
+				<val></val>
+				<Answer>
+					<txt>במידה רבה מאוד</txt>
+					<val>5</val>
+				</Answer>
+				<Answer>
+					<txt>במידה רבה</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt>במידה בינונית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt>במידה מועטה</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt>בכלל לא</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+			<Question id="23">
+				<txt>מנכ"ל בית אקשטיין ומנהל האזור/חטיבה מעורבים בנעשה אצלנו במסגרת.</txt>
+				<val></val>
+				<Answer>
+					<txt>במידה רבה מאוד</txt>
+					<val>5</val>
+				</Answer>
+				<Answer>
+					<txt>במידה רבה</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt>במידה בינונית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt>במידה מועטה</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt>בכלל לא</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+			<Question id="24">
+				<txt>אני חושב שהשכר שאני מקבל הוא הוגן.</txt>
+				<val></val>
+				<Answer>
+					<txt>במידה רבה מאוד</txt>
+					<val>5</val>
+				</Answer>
+				<Answer>
+					<txt>במידה רבה</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt>במידה בינונית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt>במידה מועטה</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt>בכלל לא</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+			<Question id="25">
+				<txt>אני שואף להתפתח מבחינה אישית ומקצועית.</txt>
+				<val></val>
+				<Answer>
+					<txt>במידה רבה מאוד</txt>
+					<val>5</val>
+				</Answer>
+				<Answer>
+					<txt>במידה רבה</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt>במידה בינונית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt>במידה מועטה</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt>בכלל לא</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+			<Question id="26">
+				<txt>מנהל המסגרת בה אני עובד מכיר את ה"שטח".</txt>
+				<val></val>
+				<Answer>
+					<txt>במידה רבה מאוד</txt>
+					<val>5</val>
+				</Answer>
+				<Answer>
+					<txt>במידה רבה</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt>במידה בינונית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt>במידה מועטה</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt>בכלל לא</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+			<Question id="27">
+				<txt>
+					בעבודתי היומיומית אני פועל למען החזון של הארגון:
+					"ארגון בינלאומי מוביל להתפתחות אישית וחברתית"
+				</txt>
+				<val></val>
+				<Answer>
+					<txt>במידה רבה מאוד</txt>
+					<val>5</val>
+				</Answer>
+				<Answer>
+					<txt>במידה רבה</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt>במידה בינונית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt>במידה מועטה</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt>בכלל לא</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+			<Question id="28">
+				<txt>
+					האם ישנם דברים שאתה רוצה להוסיף שלדעתך לא באו לידי ביטוי בשאלון?(טקסט חופשי)
+				</txt>
+				<textbox>yes</textbox>
+			</Question>
+	</Group>
+</Form>

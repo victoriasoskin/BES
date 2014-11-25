@@ -1,0 +1,29 @@
+﻿html 
+{
+    direction:rtl;
+    font-family:@Arial Unicode MS;
+    font-size:small;
+}
+body 
+{
+}
+.h1 
+{
+    font-size:xx-large;
+    font-weight:bolder;
+    padding-right:10px;
+} 
+.pg
+{
+    position:absolute;
+    background-color:#C0C0C0;
+    width:100%;
+}
+.blockHeader
+{
+    font-size:medium;
+    color:ButtonText;
+    font-weight:bolder;
+    height:25px;   
+    padding-right:10px;     
+}

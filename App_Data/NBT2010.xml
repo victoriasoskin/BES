@@ -1,0 +1,527 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Form txt="הדבר הגדול הבא" ID="1" mode="vote" limit="frame">
+	<txt>הדבר הגדול הבא</txt>
+	<Group stype="Para" txt="הנחיות" gid="1">
+		<val></val>
+		<txt>הנחיות</txt>
+		<Question id="0">
+			<txt>שלום רב,</txt>
+			<style>color:Blue;font-weight:bold</style>
+		</Question>
+		<Question id="0">
+			<txt>בדפים הבאים יוצגו לפניכם הפרויקטים לבחירה בחלוקה על פי קטגוריות עלות הפרויקטים.</txt>
+		</Question>
+		<Question id="0">
+			<txt> ניתן לבחור בפרויקט אחד מכל קטגוריה. </txt>
+		</Question>
+		<Question id="0">
+			<txt></txt>
+		</Question>
+		<Question id="0">
+			<txt>על מנת להגיע לרשימת הפרויקטים יש ללחוץ על הקישורים המתאימים מתחת לכותרת דף זה.</txt>
+		</Question>
+		<Question id="0">
+			<txt>בכל עת תוכל לחזור להנחיות בלחיצה על הקישור "הנחיות".</txt>
+		</Question>
+		<Question id="0">
+			<txt>תוכל אף לחזור לרשימת הפרויקטים עם התקצירים בלחיצה על הקישור – "לרשימת הפרויקטים".</txt>
+		</Question>
+
+		<Question id="0">
+			<txt></txt>
+		</Question>
+		<Question id="0">
+			<txt>לאחר הבחירה (בכל אחת מהקטגוריות) יש ללחוץ על כפתור "שליחת ההצבעה".</txt>
+			<style>color:Green;font-weight:bold</style>
+		</Question>
+		<Question id="0">
+			<txt></txt>
+		</Question>
+		<Question id="0">
+			<txt>אנו מודים לך על השתתפותך בהצבעה.</txt>
+		</Question>
+		<Question id="0">
+			<txt>צוות הדבר הגדול הבא.</txt>
+		</Question>
+	</Group>
+	<Group stype="Question" txt="קטגוריה 2 (עד 10,000 שח)" gid="3">
+		<txt>קטגוריה 2 (עד 10,000 שח)</txt>
+		<val></val>
+		<Question id="2">
+			<txt>קטגוריה 2 (עד 10,000 שח)</txt>
+			<val></val>
+			<Answer>
+				<txt>
+					&lt;span  style="text-decoration:underline"&gt;מסגרת:&lt;/span&gt;
+					&lt;span style="color:grey;font-weight:bold"&gt;דיור מוגן לאנשים עם מגבלות נפשיות.אורנשטיין, חדרה.&lt;/span&gt;
+					&lt;br/&gt;
+					&lt;span  style="text-decoration:underline;padding-right:35px"&gt;פרויקט: &lt;/span&gt;
+					&lt;span style="color:blue;font-weight:bold"&gt;"ארזים": קבוצת דיירים הפועלים למען עצמם ולמען דיירים אחרים. &lt;/span&gt;
+				</txt>
+				<val>1</val>
+				<frame>71</frame>
+			</Answer>
+			<Answer>
+				<txt>
+					&lt;span  style="text-decoration:underline"&gt;מסגרת:&lt;/span&gt;
+					&lt;span style="color:grey;font-weight:bold"&gt;הוסטל לדיירים המאובחנים על הרצף האוטיסטי.
+					ז'בוטינסקי, ת"א
+					.&lt;/span&gt;
+					&lt;br/&gt;
+					&lt;span  style="text-decoration:underline;padding-right:35px"&gt;פרויקט: &lt;/span&gt;
+					&lt;span style="color:blue;font-weight:bold"&gt;"זום": קורס צילום, מן היסודות ועד הקמת תערוכה של צילומי הדיירים. &lt;/span&gt;
+				</txt>
+				<frame>88</frame>
+				<val>2</val>
+			</Answer>
+			<Answer>
+				<txt>
+					&lt;span  style="text-decoration:underline"&gt;מסגרת:&lt;/span&gt;
+					&lt;span style="color:grey;font-weight:bold"&gt;קהילה צעירה: פנימייה לנערים ומבוגרים עם פיגור שכלי בינוני ועמוק.&lt;/span&gt;
+					&lt;br/&gt;
+					&lt;span  style="text-decoration:underline;padding-right:35px"&gt;פרויקט: &lt;/span&gt;
+					&lt;span style="color:blue;font-weight:bold"&gt;"beנקי: רחיצת מכוניות מיוחדת"-
+					הפעלת מיזם תעסוקתי של רחיצת מכוניות
+					&lt;span  style="padding-right:80px"&gt;על ידי הדיירים.&lt;/span&gt;
+					&lt;/span&gt;
+				</txt>
+				<frame>105</frame>
+				<val>3</val>
+			</Answer>
+			<Answer>
+				<txt>
+					&lt;span  style="text-decoration:underline"&gt;מסגרת:&lt;/span&gt;
+					&lt;span style="color:grey;font-weight:bold"&gt;הוסטל המיועד לילדים ובני נוער עם אוטיזם.
+					עין שמר.
+					&lt;/span&gt;
+					&lt;br/&gt;
+					&lt;span  style="text-decoration:underline;padding-right:35px"&gt;פרויקט: &lt;/span&gt;
+					&lt;span style="color:blue;font-weight:bold"&gt;"קורס למדריכים מומחים":
+					קורס מיוחד לצוות המדריכים להפעלת חדרי פעילות
+					&lt;span  style="padding-right:80px"&gt;המיועדים לאוכלוסיית האוטיסטים.&lt;/span&gt;
+					&lt;/span&gt;
+				</txt>
+				<val>4</val>
+				<frame>101</frame>
+			</Answer>
+			<Answer>
+				<txt>
+					&lt;span  style="text-decoration:underline"&gt;מסגרת:&lt;/span&gt;
+					&lt;span style="color:grey;font-weight:bold"&gt;מסגרת שיקומית לגילאי 18 ומעלה.
+					קיבוץ גת.
+					&lt;/span&gt;
+					&lt;br/&gt;
+					&lt;span  style="text-decoration:underline;padding-right:35px"&gt;פרויקט: &lt;/span&gt;
+					&lt;span style="color:blue;font-weight:bold"&gt;"עשה לך חבר": הקמת והפעלת חוות כלבים מגזע מיוחד בהוסטל.
+					&lt;/span&gt;
+				</txt>
+				<val>5</val>
+				<frame>106</frame>
+			</Answer>
+		</Question>
+	</Group>
+	<Group stype="Question" txt="קטגוריה 3 (עד 25,000 שח)" gid="4">
+		<txt>קטגוריה 3 (עד 25,000 שח)</txt>
+		<val></val>
+		<Question id="3">
+			<txt>קטגוריה 3 (עד 25,000 שח)</txt>
+			<val></val>
+			<Answer>
+				<txt>
+					&lt;span  style="text-decoration:underline"&gt;מסגרת:&lt;/span&gt;
+					&lt;span style="color:grey;font-weight:bold"&gt;בי"ס לתלמידים עם קשיים נפשיים.
+					תיכון בית-ינאי.
+					&lt;/span&gt;
+					&lt;br/&gt;
+					&lt;span  style="text-decoration:underline;padding-right:35px"&gt;פרויקט: &lt;/span&gt;
+					&lt;span style="color:blue;font-weight:bold"&gt;"אמת מול אמת - ללמוד את
+					הנרטיב ההיסטורי של האחר": לימוד היסטוריה 
+					&lt;span  style="padding-right:80px"&gt;משני הצדדים על די צמד מורות מבית אקשטיין (יהודיה וערביה).&lt;/span&gt;
+					&lt;/span&gt;
+				</txt>
+				<val>1</val>
+				<frame>67</frame>
+			</Answer>
+			<Answer>
+				<txt>
+					&lt;span  style="text-decoration:underline"&gt;מסגרת:&lt;/span&gt;
+					&lt;span style="color:grey;font-weight:bold"&gt;בי"ס לתלמידים עם קשיים נפשיים.
+					נצר-סירני.
+					&lt;/span&gt;
+					&lt;br/&gt;
+					&lt;span  style="text-decoration:underline;padding-right:35px"&gt;פרויקט: &lt;/span&gt;
+					&lt;span style="color:blue;font-weight:bold"&gt;"להקשיב, לדבר, להתחבר: שפת הגישור כדרך לפתרון קונפליקטים" – קורס 
+					&lt;span  style="padding-right:80px"&gt;גישור לתלמידים וצוות.&lt;/span&gt;
+					&lt;/span&gt;
+				</txt>
+				<val>2</val>
+				<frame>94</frame>
+			</Answer>
+			<Answer>
+				<txt>
+					&lt;span  style="text-decoration:underline"&gt;מסגרת:&lt;/span&gt;
+					&lt;span style="color:grey;font-weight:bold"&gt;קהילה מוגנת לדיירים מבוגרים עם פיגור שכלי.
+					&lt;/span&gt;
+					&lt;br/&gt;
+					&lt;span  style="text-decoration:underline;padding-right:35px"&gt;פרויקט: &lt;/span&gt;
+					&lt;span style="color:blue;font-weight:bold"&gt;"הסיפור שbe": הוצאה לאור של סיפורי חיים של דיירים ועובדים מיוחדים.
+					&lt;/span&gt;
+				</txt>
+				<val>3</val>
+				<frame>60</frame>
+			</Answer>
+			<Answer>
+				<txt>
+					&lt;span  style="text-decoration:underline"&gt;מסגרת:&lt;/span&gt;
+					&lt;span style="color:grey;font-weight:bold"&gt;מרכז תעסוקה לאנשים בעלי פיגור שכלי.
+					בית-אקשטיין, רמלה.
+					&lt;/span&gt;
+					&lt;br/&gt;
+					&lt;span  style="text-decoration:underline;padding-right:35px"&gt;פרויקט: &lt;/span&gt;
+					&lt;span style="color:blue;font-weight:bold"&gt;"מרכז יום טיפולי": פיתוח ערכות חושיות, ליצירת עולם של חוויות - מחוץ לכיסא 
+					&lt;span  style="padding-right:80px"&gt;הגלגלים.&lt;/span&gt;
+					&lt;/span&gt;
+				</txt>
+				<val>4</val>
+				<frame></frame>
+			</Answer>
+			<Answer>
+				<txt>
+					&lt;span  style="text-decoration:underline"&gt;מסגרת:&lt;/span&gt;
+					&lt;span style="color:grey;font-weight:bold"&gt;מרכז תעסוקה
+					לאוכלוסיות עם פיגור, ואוכלוסיות שיקום.
+					הרכבת, בנימינה
+					&lt;/span&gt;
+					&lt;br/&gt;
+					&lt;span  style="text-decoration:underline;padding-right:35px"&gt;פרויקט: &lt;/span&gt;
+					&lt;span style="color:blue;font-weight:bold"&gt;"תיאטרון ירוק": הקמת תיאטרון בובות המציג הצגות בנושא קבלת השונה 
+					&lt;span  style="padding-right:80px"&gt;ומיחזור ומופיע בפני גני ילדים ובתי ספר.&lt;/span&gt;
+					&lt;/span&gt;
+				</txt>
+				<val>5</val>
+				<frame>58</frame>
+			</Answer>
+			<Answer>
+				<txt>
+					&lt;span  style="text-decoration:underline"&gt;מסגרת:&lt;/span&gt;
+					&lt;span style="color:grey;font-weight:bold"&gt;בי"ס לתלמידים עם ליקויי למידה.
+					גן-שמואל.
+					&lt;/span&gt;
+					&lt;br/&gt;
+					&lt;span  style="text-decoration:underline;padding-right:35px"&gt;פרויקט: &lt;/span&gt;
+					&lt;span style="color:blue;font-weight:bold"&gt;"מרכז למידה" – הקמת מערך של למידה ממוחשבת - מתוקשבת, הוראה 
+					&lt;span  style="padding-right:80px"&gt;מקוונת ושיעורים וירטואליים.&lt;/span&gt;
+					&lt;/span&gt;
+				</txt>
+				<val>6</val>
+				<frame>86</frame>
+			</Answer>
+			<Answer>
+				<txt>
+					&lt;span  style="text-decoration:underline"&gt;מסגרת:&lt;/span&gt;
+					&lt;span style="color:grey;font-weight:bold"&gt;הוסטל לאוטיסטים בתפקוד גבוה. הטללים, רעננה.
+					&lt;/span&gt;
+					&lt;br/&gt;
+					&lt;span  style="text-decoration:underline;padding-right:35px"&gt;פרויקט: &lt;/span&gt;
+					&lt;span style="color:blue;font-weight:bold"&gt;"מבט על הבית": סדנת צילום משותפת לדיירים ב'בית אקשטיין רעננה' 
+					&lt;span  style="padding-right:80px"&gt;ולתלמידי תיכון ברעננה.&lt;/span&gt;
+					&lt;/span&gt;
+				</txt>
+				<val>7</val>
+				<frame>91</frame>
+			</Answer>
+			<Answer>
+				<txt>
+					&lt;span  style="text-decoration:underline"&gt;מסגרת:&lt;/span&gt;
+					&lt;span style="color:grey;font-weight:bold"&gt;הוסטל לצעירים עם תסמונת אספרגר.
+					שלונסקי.
+					&lt;/span&gt;
+					&lt;br/&gt;
+					&lt;span  style="text-decoration:underline;padding-right:35px"&gt;פרויקט: &lt;/span&gt;
+					&lt;span style="color:blue;font-weight:bold"&gt;"יוצרים מסגרת" – הקמת תערוכה של יצירות אומנות של אנשים עם תסמונת 
+					&lt;span  style="padding-right:80px"&gt;אספרגר.&lt;/span&gt;
+					&lt;/span&gt;
+				</txt>
+				<val>8</val>
+				<frame>62</frame>
+			</Answer>
+		</Question>
+	</Group>
+	<Group stype="Para" txt="תקצירי הפרויקטים" gid="5">
+		<val></val>
+		<txt>תקצירי הפרויקטים</txt>
+		<Question id="0">
+			<txt></txt>
+		</Question>
+		<Question id="0">
+			<txt>קטגוריה 2 (עד 10,000 שח)</txt>
+			<style>color:Red;font-weight:bold;font-size:x-large</style>
+		</Question>
+		<Question id="0">
+			<txt></txt>
+		</Question>
+		<Question id="0">
+			<txt>
+				&lt;p style="color:blue;font-weight:bold;font-size:large"&gt;דיור מוגן לאנשים עם מגבלות נפשיות.אורנשטיין, חדרה.&lt;/p&gt;
+				&lt;p style="color:blue;font-weight:bold"&gt;	"ארזים": קבוצת דיירים הפועלים למען עצמם ולמען דיירים אחרים. &lt;/p&gt;
+			</txt>
+		</Question>
+		<Question id="0">
+			<txt>
+				הדיירים הלוקחים חלק בקבוצת "ארזים" רשמו את חזון הקבוצה, המהווה את רוח הדברים של הדיירים הלוקחים חלק בקבוצת "ארזים" רשמו את חזון הקבוצה, המהווה את רוח הדברים של הפרויקט:  "הקבוצה המובילה בדיור ומהווה דוגמא לכלל החברה. הקבוצה מבוססת על: כבוד הדדי, האמנה אישית, שיפור איכות חיים, יצירת סביבה תומכת ומתן כלים להתמודדות, יחד עם ההנאה והחוויות שבמפגשים. הקבוצה תתמקד בהעלאת רצונות והגשמתם ותאפשר לכל חבר בקבוצה לבוא לידי ביטוי".
+				אנו, צוות הדיור המוגן ונציגי הדיירים מבקשים להגשים את החזון בעצם התהליך הייחודי של התנהלות הקבוצה וכן בהובלת פרויקטים ופעילויות לכלל הדיירים במסגרת (מעל 100 דיירים). בין הפרויקטים והרעיונות בתכנון עתידי: * "תמיכות בין דיירים": לאפשר תמיכה וליווי בין דיירים וניצול היכולות הייחודיים לטובת אחד השני וכן לתרגל בסביבה בטוחה לפניי המשך היציאה וההשתלבות בקהילה * קיום קבוצות העשרה ופנאי לדיירים וסיוע במימון ההגעה של דיירים ללא יכולת כלכלית  על מנת להפיג את תחושות הבדידות * הרחבת מפגשים ופורומים עם בני המשפחות והדמויות המשמעותיות של דיירים * טיולים למיעוטי יכולת מבחינה כלכלית ועוד...
+			</txt>
+		</Question>
+		<Question id="0">
+			<txt></txt>
+		</Question>
+		<Question id="0">
+			<txt>
+				&lt;p style="color:blue;font-weight:bold;font-size:large"&gt;הוסטל לדיירים המאובחנים על הרצף האוטיסטי.
+				ז'בוטינסקי, ת"א.
+				&lt;/p&gt;
+				&lt;p style="color:blue;font-weight:bold"&gt;"זום": קורס צילום, מן היסודות ועד הקמת תערוכה של צילומי הדיירים.  &lt;/p&gt;
+			</txt>
+			<style>color:Green;font-weight:bold</style>
+		</Question>
+		<Question id="0">
+			<txt>
+				פרויקט בצילום, שמטרתו להקנות לדיירים המתעניינים בתחום, ידע בנושא והתנסות עם ציוד צילום מקצועי, תוך שימוש בצילום כאמצעי לתקשורת ולעיבוד תהליכים אישיים. בסופו של הפרויקט המטרה היא להעלות תערוכת צילומים של דיירי ההוסטל.
+				בהתחלה הדיירים ילמדו מושגים בסיסיים כגון - מהי מצלמה, מה תכונותיה, מה זה חדר חושך, על צלמים גדולים. אח"כ הדיירים יצאו להתנסות בשטח ויצלמו צילומים אורבנים, חי, צומח, צילום עצמי ופורטרטים.  במקביל, ילמדו על תמונות ותחושות בעקבות תמונות.
+				וכמובן, אחרי שלמדנו, התנסינו, צילמנו, וחווינו אנחנו בשלים להעלות תערוכת צילומים שלנו. כשכל דייר/ת ייעזרו במנחי הפרויקט לצלם או לבחור תמונה שעל דעתו/ה להציג בתערוכה.
+				אז תגידו ....צ'יז!!
+			</txt>
+		</Question>
+		<Question id="0">
+			<txt></txt>
+		</Question>
+		<Question id="0">
+			<txt>
+				&lt;p style="color:blue;font-weight:bold;font-size:large"&gt;קהילה צעירה: פנימייה לנערים ומבוגרים עם פיגור שכלי בינוני ועמוק.
+				&lt;/p&gt;
+				&lt;p style="color:blue;font-weight:bold"&gt;"beנקי: רחיצת מכוניות מיוחדת"-
+				הפעלת מיזם תעסוקתי של רחיצת מכוניות על ידי הדיירים.
+				&lt;/p&gt;
+			</txt>
+			<style>color:Green;font-weight:bold</style>
+		</Question>
+		<Question id="0">
+			<txt>
+				בקהילה הצעירה מתגוררים 75 צעירים וצעירות בני עשרים פלוס, בעלי פיגור שכלי, אשר רוצים מאוד לעבוד ולתרום אך לא יכולים לעסוק בכל עבודה. אנו עסוקים רבות בפתרונות אשר יאפשר גם לדיירינו בתפקודים הנמוכים לעסוק בעבודה מתאימה, מכניסה ובעיקר מהנה. והחלטנו לעשות את זה לבד...
+				"BE נקי" הינו שירות שטיפת המכוניות הראשון אשר יתופעל על ידי אנשים מיוחדים. אתם תקבלו שירות מיוחד במינו ואנחנו תעסוקה.  בעזרתכם נגשים את חלומם של דיירינו- לעבוד בכבוד.
+			</txt>
+		</Question>
+		<Question id="0">
+			<txt></txt>
+		</Question>
+		<Question id="0">
+			<txt>
+				&lt;p style="color:blue;font-weight:bold;font-size:large"&gt;הוסטל המיועד לילדים ובני נוער עם אוטיזם.
+				עין שמר.
+				&lt;/p&gt;
+				&lt;p style="color:blue;font-weight:bold"&gt;"קורס למדריכים מומחים":
+				קורס מיוחד לצוות המדריכים להפעלת חדרי פעילות המיועדים לאוכלוסיית האוטיסטים.
+				&lt;/p&gt;
+			</txt>
+			<style>color:Green;font-weight:bold</style>
+		</Question>
+		<Question id="0">
+			<txt>
+				בהוסטל עין שמר חיים נערים ונערות עם אוטיזם.  בהוסטל קיימים חדרי פעילות המאובזרים ובנויים במיוחד עבור פעילות מסוימת המתאימה לדיירים:  חדר מחשבים, חדר כושר, ספרייה, חדר פאזלים ומשחקי שולחן, חדר סנסורי, חדר כישורי חיים ומשחקי רצפה וחדר מוסיקה.
+				על מנת להפעיל את חדרי הפעילות בהוסטל בצורה המקצועית והטובה ביותר עבור הדיירים ברצוננו  למקצע את צוות המדריכים ולהפוך אותם למומחים הן בהפעלת האוכלוסייה הספציפית והן בתחום בו עוסק החדר. לכן את חדרי הפעילות יפעילו מדריכים מצוות ההוסטל מתוך תפיסה הדוגלת בהשקעה ובהעצמת המדריך והפיכתו לאיש מקצוע בתחומו. לכל חדר יהיה מדריך "אחראי פעילות" שיהיה מומחה לתוכן הפעילות בחדר מסוים. את הקורס יעבירו מיטב אנשי המקצוע בתחומם, כולם בעלי התמחות בעבודה עם אוכלוסיית היעד המתגוררת בהוסטל.  הצעה זו מציגה את מבנה הקורס הנבנה במיוחד למטרה זו.
+			</txt>
+		</Question>
+		<Question id="0">
+			<txt></txt>
+		</Question>
+		<Question id="0">
+			<txt>
+				&lt;p style="color:blue;font-weight:bold;font-size:large"&gt;מסגרת שיקומית לגילאי 18 ומעלה.
+				קיבוץ גת.
+				&lt;/p&gt;
+				&lt;p style="color:blue;font-weight:bold"&gt;"עשה לך חבר": הקמת והפעלת חוות כלבים מגזע מיוחד בהוסטל.
+				&lt;/p&gt;
+			</txt>
+			<style>color:Green;font-weight:bold</style>
+		</Question>
+		<Question id="0">
+			<txt>
+				הקמת חוות גידול כלבים הינו פרויקט מיוחד המיועד לאנשים בעל צרכים מיוחדים.  דיירי ההוסטל מקבלים תרומה של 8 כלבים מגזע קבלייר קינג צ'ארלס ספנייל, וגם ליווי וטרינרי ומקצועי בגידול הכלבים.  סוג כלבים זה הנו בעל השפעה חיובית ומרגיעה אשר ביכולתו לעזור  ע"י תרפיה טיפולית לדיירי הבית ולסייע לבעיות רבות, החל מהפרעות קשב וריכוז ועד לאוטיזם ואפילפסיה.
+				בפרויקט זה תוקם חוות כלבים כאשר דיירי הבית יהיו שותפים בכל תהליך ההקמה, ובעיקר בכל הקשור לטיפול השוטף היומיומי בכלבים.  שילוב הדיירים במסגרת עבודה בחווה תקנה להם מוסר עבודה, עצמאות, ותעניק להם הנאה וסיפוק עצמי גם יחד.
+			</txt>
+		</Question>
+		<Question id="0">
+			<txt></txt>
+		</Question>
+		<Question id="0">
+			<txt>קטגוריה 3 (עד 25,000 שח)</txt>
+			<style>color:Red;font-weight:bold;font-size:x-large</style>
+		</Question>
+		<Question id="0">
+			<txt></txt>
+		</Question>
+		<Question id="0">
+			<txt>
+				&lt;p style="color:blue;font-weight:bold;font-size:large"&gt;בי"ס לתלמידים עם קשיים נפשיים.
+				תיכון בית-ינאי.
+				&lt;/p&gt;
+				&lt;p style="color:blue;font-weight:bold"&gt;"אמת מול אמת - ללמוד את
+				הנרטיב ההיסטורי של האחר": לימוד היסטוריה משני הצדדים על די צמד מורות מבית אקשטיין (יהודיה וערביה).
+				&lt;/p&gt;
+			</txt>
+			<style>color:Green;font-weight:bold</style>
+		</Question>
+		<Question id="0">
+			<txt>
+				לפני כשנה אחמד התחתן. החתונה התקיימה בכפר קרע וכל צוות התיכון הוזמן. הזרעים שנזרעו באירוע החתונה בראשינו, הפכו בבוא הימים לעשייה וכעת גם לתכנית מסודרת ואולי גם לדבר הגדול הבא.  כל חתונה היא אירוע מרגש, אך לחתונה הזו התווסף גוון מיוחד, שבא לידי ביטוי באהבת חינם שאין דומה לה ובאחווה בין כל האנשים שחגגו עם אחמד.  ברגע מסוים, אם התבוננת ברחבת הריקודים, יכולת לראות ערב רב של טיפוסים המייצגים אוכלוסיות שונות בחברה הישראלית, אוכלוסיות שביום יום למדו להימנע אחד מהשני במקרה הטוב, ובמקרה הרווח לא לאהוב ולעיתים אף לשנוא שנאת חינם.  הקבוצה הזו מגיעה כמעט מכל קבוצות השייכות החברתיות בישראל:  נשים וגברים, ערבים - יהודים, מזרחיים, אשכנזים, חילוניים, מזרחיים מסורתיים וברסלבים, ועוד הרבה מייצגי טיפוסים בעלי גוונים שונים ומגוונים.
+				כולם יחד באותו ערב רקדו בשמחה אמיתית, מתוך אהבה ורצון כן לשמח חתן ביום חתונתו, כי לא משנה איפה ההורים שלך נולדו, מה כתוב לך בתעודת זהות ועם מי אתה הולך לישון בלילה לשמח חתן זו כנראה מצווה גדולה שחוצה ענייני זהות....
+				ביום יום אנחנו כמעט ולא שמים לב לפסיפס החברתי המשונה והבלתי אפשרי הזה. אנו מבלים אחד במחיצת השני שעות ארוכות יום יום ועסוקים בלגעת בנשמותיהם האבודות של בני נוער, רק משהו בחתונה של אחמד חידד את החוויה המיוחדת הזו שכנראה מחלחלת ועושה שינוי ממעלה ראשונה גם בקרב התלמידים שלנו.
+				פרויקט זה נועד לאפשר לבני הנוער להיחשף להיסטוריה כפי שהיא מסופרת משני צדדים. האחד הצד היהודי והשני הוא הצד הפלסטיני. בדרך זו מתאפשרת להם חשיפה לסיפור היסטורי אחד של מדינת ישראל – פלסטין כפי שמתואר משתי פרספקטיבות שונות. הערך המוסף של הלמידה, מלבד רכישת הידע ההיסטורי הוא הכרת התרבות של עם נוסף החי עימנו.
+				אנחנו מאמינות כי היוזמה תעשה שינוי גדול בקרב התלמידים שלנו ותחנך לאהבת חינם, להסרת מחיצות ואנושיות וגם להסתכלות והבנה מעמיקה ומעוררת חשיבה בחברה המורכבת בה אנו חיים.
+			</txt>
+		</Question>
+		<Question id="0">
+			<txt></txt>
+		</Question>
+		<Question id="0">
+			<txt>
+				&lt;p style="color:blue;font-weight:bold;font-size:large"&gt;בי"ס לתלמידים עם קשיים נפשיים.
+				נצר-סירני.
+				&lt;/p&gt;
+				&lt;p style="color:blue;font-weight:bold"&gt;"להקשיב, לדבר, להתחבר: שפת הגישור כדרך לפתרון קונפליקטים" – קורס גישור לתלמידים וצוות.
+				&lt;/p&gt;
+			</txt>
+			<style>color:Green;font-weight:bold</style>
+		</Question>
+		<Question id="0">
+			<txt>
+				ילדים, כמו המבוגרים, מרבים להיתקל בחיי היום יום בקונפליקטים וסכסוכים רבים.  קונפליקטים המתנהלים בצורה לא טובה, מובילים לשימוש יתר באלימות לשם פתרון סכסוכים, וכן לתופעות שליליות נוספות, כגון: מתח נפשי, פגיעה בדימוי העצמי, ועוד.
+				"גישור" הינו שיטה אלטרנטיבית של יישוב סכסוכים, אשר בו מסייע צד שלישי ניטרלי, לצדדים מסוכסכים לנהל משא ומתן ולהגיע להסכם מרצון ללא כפייה וללא אלימות.  אנו בבית הספר רואים בכלי הגישור כלי מתאים לפתרון קונפליקטים באופן התואם לערכי הליבה של בית אקשטיין על כל מסגרותיו.
+				אנו מאמינים בבית הספר שאחת הדרכים לטפח אמפתיה ולחזק תחושת ערך, תחושת שייכות ומסוגלות היא דרך עשייה למען האחר.  עצם העובדה שהתלמידים יוכלו להעזר במגשרים אך גם להיות מגשרים בעצמם תתרום רבות לטיפוח תחושת הערך והמסוגלות שלהם.
+				הפרויקט כולל הכשרה של שני קהלי יעד: הצוות והתלמידים, מה שיעזור לכולם לדבר ולהבין את אותה שפה.  הכלים אותם יקבלו בתהליך שיכין אותם להיות מגשרים, יסייעו לתלמידים גם בפרויקט חונכות חברתית ו/או לימודית לתלמיד מתוך בית הספר - פרויקט אשר התחלנו בשנת הלימודים הנוכחית, באופן אשר יחזק עוד יותר את תחושת הערך שלהם.
+			</txt>
+		</Question>
+		<Question id="0">
+			<txt></txt>
+		</Question>
+		<Question id="0">
+			<txt>
+				&lt;p style="color:blue;font-weight:bold;font-size:large"&gt;קהילה מוגנת לדיירים מבוגרים עם פיגור שכלי.
+				&lt;/p&gt;
+				&lt;p style="color:blue;font-weight:bold"&gt;"הסיפור שbe": הוצאה לאור של סיפורי חיים של דיירים ועובדים מיוחדים.
+				&lt;/p&gt;
+			</txt>
+			<style>color:Green;font-weight:bold</style>
+		</Question>
+		<Question id="0">
+			<txt>
+				בית אקשטיין הוא ארגון מיוחד לאנשים מיוחדים ולא משנה אם אתה מטפל, או, אדם המתפקד ברמת פיגור שכלי זו או אחרת – כולנו בני אדם, כולנו רוצים שהעולם יכיר אותנו וידע מי אנחנו.  כולנו רוצים להשאיר חותם לאחר לכתנו. מה החותם שלכם?  השארת החותם הינה צורך אנושי של כל אדם באשר הוא.
+				פרויקט זה מציע לספר יחד איתנו סיפורי חיים שיתגבשו לספר.
+				ספר - שיהיה מבוסס על סיפורי החיים של הדיירים והעובדים במעון.
+				ספר  - שישמיע את קולם ויספר את סיפורם של  אנשים עם פיגור שכלי.
+				ספר – שיהיה תחילתו של שינוי בדרך בה החברה מכירה ותופסת אנשים מיוחדים.
+				הספר יבטיח שגם העולם מחוץ למעון יכיר את האנשים המיוחדים המקסימים שאנחנו כל כך אוהבים.
+				ספר הוא סמל להמשכיות החיים, ערך אלמותי הממשיך להתקיים גם אחרי לכתו של הכותב. הצביעו לנו ויחד נשמיע את קולם של אנשים עם  פיגור שכלי ומטפליהם.  הנוכל למנוע זאת מהם? מאתנו?
+				הספר ייכתב בעזרת סופר מקצועי שיראיין את דיירי ועובדי המעון ויעזור להם לספר את הסיפור האישי שלהם. הסיפור האישי ילווה גם בראיונות של אנשי צוות, חברים, דיירים ומשפחות.
+				לפרטים נוספים...
+			</txt>
+		</Question>
+		<Question id="0">
+			<txt></txt>
+		</Question>
+		<Question id="0">
+			<txt>
+				&lt;p style="color:blue;font-weight:bold;font-size:large"&gt;מרכז תעסוקה לאנשים בעלי פיגור שכלי.
+				בית-אקשטיין, רמלה.
+				&lt;/p&gt;
+				&lt;p style="color:blue;font-weight:bold"&gt;"מרכז יום טיפולי": פיתוח ערכות חושיות, ליצירת עולם של חוויות - מחוץ לכיסא הגלגלים.
+				&lt;/p&gt;
+			</txt>
+			<style>color:Green;font-weight:bold</style>
+		</Question>
+		<Question id="0">
+			<txt>
+				פרויקט זה כולל הקמה של ערכות חושיות ייחודיות, להפעלות רצפה עשירות ומגוונות, עבור נכים מחוץ לכיסאות הגלגלים שלהם.  האדם עם המוגבלות הפיזית הקשה נוטה לחיות את חייו עם צמצום חוויות ודרך הערכות ניתן להרחיב את החוויות החושיות שהוא חווה ולהביא אליו עולמות שהוא מתקשה להגיע אליהם.
+				זהו רעיון מקורי, שפרט לשדרוג איכות חייהם של המטופלים במרכז היום, בית אקשטיין רמלה, יכול להפוך גם למיזם עסקי רווחי ויוקרתי לארגון בית אקשטיין!!
+			</txt>
+		</Question>
+		<Question id="0">
+			<txt></txt>
+		</Question>
+		<Question id="0">
+			<txt>
+				&lt;p style="color:blue;font-weight:bold;font-size:large"&gt;מרכז תעסוקה
+				לאוכלוסיות עם פיגור, ואוכלוסיות שיקום.
+				הרכבת, בנימינה
+				&lt;/p&gt;
+				&lt;p style="color:blue;font-weight:bold"&gt;"תיאטרון ירוק": הקמת תיאטרון בובות המציג הצגות בנושא קבלת השונה ומיחזור ומופיע בפני גני ילדים ובתי ספר
+				&lt;/p&gt;
+			</txt>
+			<style>color:Green;font-weight:bold</style>
+		</Question>
+		<Question id="0">
+			<txt>
+				תיאטרון בובות שיופעל על ידי חברי מרכז התעסוקה, בו יועלו הצגות לילדים בגילאי 4-7, בנושאים של מיחזור וקבלת השונה בחברה.  מפעילי תיאטרון הבובות יגיעו אל גני הילדים ובתי הספר עם כל הציוד ויציגו סיפורים מוכרים בעיבודים מיוחדים.
+			</txt>
+		</Question>
+		<Question id="0">
+			<txt></txt>
+		</Question>
+		<Question id="0">
+			<txt>
+				&lt;p style="color:blue;font-weight:bold;font-size:large"&gt;בי"ס לתלמידים עם ליקויי למידה.
+				גן-שמואל.
+				&lt;/p&gt;
+				&lt;p style="color:blue;font-weight:bold"&gt;"מרכז למידה" – הקמת מערך של למידה ממוחשבת - מתוקשבת, הוראה מקוונת ושיעורים וירטואליים.
+				&lt;/p&gt;
+			</txt>
+			<style>color:Green;font-weight:bold</style>
+		</Question>
+		<Question id="0">
+			<txt>
+				מהפך בהוראה – למידה !
+				החל משנת הלימודים הקרובה (תשע"א), יופעלו בבי"ס בית אקשטיין, גן שמואל, כיתות ממוחשבות, מוקדי למידה, סביבות למידה מעוצבות ומותאמות לתלמידים עם לקויות למידה, הוראה מקוונת ושיעורים וירטואליים!!
+				בזה מצטרף ביה"ס לקהל המתנ"סים בתכניות ייחודיות, בהן יש לרשת האינטרנטית תפקיד מרכזי כמקור מידע, כאמצעי תקשורת, ככלי יצירה או כאמצעי להעברת אינטראקציות לימודיות.
+				נתחיל בהפעלת תכנית פיילוט ב- 4 כיתות ט' בשכבה הצעירה, משם נצמח ונתרחב לכלל השכבות.
+			</txt>
+		</Question>
+		<Question id="0">
+			<txt></txt>
+		</Question>
+		<Question id="0">
+			<txt>
+				&lt;p style="color:blue;font-weight:bold;font-size:large"&gt;הוסטל לאוטיסטים בתפקוד גבוה. הטללים, רעננה.
+				&lt;/p&gt;
+				&lt;p style="color:blue;font-weight:bold"&gt;"מבט על הבית": סדנת צילום משותפת לדיירים ב'בית אקשטיין רעננה' ולתלמידי תיכון ברעננה.
+				&lt;/p&gt;
+			</txt>
+			<style>color:Green;font-weight:bold</style>
+		</Question>
+		<Question id="0">
+			<txt>
+				סדנת צילום המשלבת שיתוף פעולה בין דיירי ההוסטל ותלמידי תיכון ברעננה יחד עם התנסות חווייתית בטכניקות ומושגים מעולם הצילום.
+				בסדנה יושם דגש על הצילום ככלי להתבוננות על הסביבה וליצירת תקשורת בין-אישית בין משתתפי הסדנה.  המשתתפים יחקרו את סביבתם הקרובה באמצעות המצלמה ויעבדו לקראת תערוכה משותפת בנושא 'בית'.
+				בסיום, תוצג תערוכה עם תוצרי המשתתפים בעיר רעננה ובגלריית 'צילום בעם' בתל אביב.
+			</txt>
+		</Question>
+		<Question id="0">
+			<txt></txt>
+		</Question>
+		<Question id="0">
+			<txt>
+				&lt;p style="color:blue;font-weight:bold;font-size:large"&gt;הוסטל לצעירים עם תסמונת אספרגר.
+				שלונסקי.
+				&lt;/p&gt;
+				&lt;p style="color:blue;font-weight:bold"&gt;"יוצרים מסגרת" – הקמת תערוכה של יצירות אומנות של אנשים עם תסמונת אספרגר.
+				&lt;/p&gt;
+			</txt>
+			<style>color:Green;font-weight:bold</style>
+		</Question>
+		<Question id="0">
+			<txt>
+				ביולי 2010 יינתן אות הפתיחה לפרויקט 'יוצרים מהמסגרת'. ערב הפתיחה יציג תערוכה של אומנות שנוצרה ע"י צעירים עם תסמונת אספרגר וייתקיים במרכז ענב, תל אביב. בנוסף תערך הופעה של אומנים, יוקרן סרט הסברתי דוקומנטרי באולם (300 מושבים), ויערך פאנל בנושא התסמונת. לאחר ערב הפתיחה, האומנות תוצג במרכז ענב לעוד כ 3 שבועות ולאחריה תוצג למשך חודש נוסף בדיזנגוף סנטר.
+				פרוייקט זה שם דגש על השיווק ויחסי הציבור של האומנים ושל יצירותיהם.
+			</txt>
+		</Question>
+	</Group>
+</Form>

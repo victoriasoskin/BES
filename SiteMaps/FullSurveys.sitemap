@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+	<siteMapNode url="default.aspx" title=""  description="כניסה">
+		<siteMapNode title="דוח סקרים" url="SurveyAvg.aspx" />
+		<siteMapNode url="ge.aspx" />
+		<siteMapNode url="Surveytexts.aspx" />
+		<siteMapNode url="ErrMessage.aspx" />
+		<siteMapNode title="יציאה מהמערכת" url="Exit.aspx" />
+	</siteMapNode>
+</siteMap>

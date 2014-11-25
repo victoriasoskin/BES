@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="BES1" Class="BES2DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=.\sqlexpress;Initial Catalog=BES1;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="bebook10" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.p5t_Forms" Member="p5t_Forms">
+    <Type Name="p5t_Form">
+      <Column Name="FormID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FormTypeID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="loadtime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="userid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.p5t_Texts" Member="p5t_Texts">
+    <Type Name="p5t_Text">
+      <Column Name="TextID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FormID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="QuestionID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TextDET" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="loadtime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="userid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.p5v_Answers" Member="p5v_Answers">
+    <Type Name="p5v_Answer">
+      <Column Name="AnswerID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FormID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="QuestionID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Val" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TextDET" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CustEventList" Member="CustEventLists">
+    <Type Name="CustEventList">
+      <Column Name="CustEventID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CustomerID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="CustEventTypeID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CustEventRegDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CustEventDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CustEventComment" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CustFrameID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CframeManager" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CReporterUserName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="UserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MSum" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="PCustEventID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CustEventResult" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CustRelateID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.p4v_Tarifs" Member="p4v_Tarifs">
+    <Type Name="p4v_Tarif">
+      <Column Name="ServiceID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ServiceName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="FrameID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FrameName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Pdate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Tarif" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.p5t_FormResults" Member="p5t_FormResults">
+    <Type Name="p5t_FormResult">
+      <Column Name="RowID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FormID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="grp" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="sumg" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="stan" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="perc" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="gid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.p6t_ActStatus" Member="p6t_ActStatus">
+    <Type Name="p6t_ActStatus">
+      <Column Name="ActStatID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="EmpID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="ActID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="p6t_Emp_p6t_ActStatus" Member="p6t_Emp" ThisKey="EmpID" OtherKey="EmpID" Type="p6t_Emp" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.p6t_jobs" Member="p6t_jobs">
+    <Type Name="p6t_job">
+      <Column Name="JobID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="JobName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="p6t_job_p6t_Emp" Member="p6t_Emps" ThisKey="JobID" OtherKey="JobID" Type="p6t_Emp" />
+    </Type>
+  </Table>
+  <Table Name="dbo.FrameList" Member="FrameLists">
+    <Type Name="FrameList">
+      <Column Name="FrameID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FrameName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="FrameManager" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ServiceID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PaymentType" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SuppTarget" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="VisibleforSUSER" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NFrameID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LakutID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ServiceTypeID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="YearType" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.p6t_Emps" Member="p6t_Emps">
+    <Type Name="p6t_Emp">
+      <Column Name="EmpID" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="FirstName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LastName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="JobID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FirstDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="LastDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="FrameID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Status" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="p6t_Emp_p6t_ActStatus" Member="p6t_ActStatus" ThisKey="EmpID" OtherKey="EmpID" Type="p6t_ActStatus" />
+      <Association Name="p6t_job_p6t_Emp" Member="p6t_job" ThisKey="JobID" OtherKey="JobID" Type="p6t_job" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.p1t_Categories" Member="p1t_Categories">
+    <Type Name="p1t_Category">
+      <Column Name="CompanyYear" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CategoryID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Category" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="CatAttributes" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="ItemOrder" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CategoryType" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="SQLWhere" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="Root" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Parent" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NameType" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MissingAssignment" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DataSources" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="PopType" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AutoPSRP" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SourceTable" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="UPD" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="PeriodType" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SubjectID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IsParent" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.vEFrameList" Member="vEFrameLists">
+    <Type Name="vEFrameList">
+      <Column Name="FormID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FrameID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SurveyID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="framename" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.vSurvey_Answers" Member="vSurvey_Answers">
+    <Type Name="vSurvey_Answer">
+      <Column Name="AnswerID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FormID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="QuestionID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Val" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TextDET" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="FrameName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="FrameID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

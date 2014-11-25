@@ -1,0 +1,1763 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Form txt="סקר שביעות רצון עובדים" ID="8" mode="survey" limit="" nextprevious="yes" closeform="yes" SecurityType="FormNumber">
+	<!--	Txt -  Name of Survey
+			ID  -  SurveyID in Surveys table
+			mode - survey - collect answers to each question, vote - for voting 
+			nextprevious - yes - show nextperevios buttons no - no
+			closefrom - yes - show close form button
+			SecurityType -  ID - find ID in SurveyIDList and check for single participation
+							FormNumber - no ID on Entering, getting form number to allow stopping in the middle and return to the survey -->
+	<txt>סקר שביעות רצון עובדים</txt>
+	<Group stype="Para" txt="הנחיות" gid="1">
+		<Question id="0">
+			<txt>הנחיות למילוי הסקר</txt>
+			<val></val>
+			<style>background-color:navy;color:white;font-weight:bold;font-size:medium;</style>
+		</Question>
+
+		<txt>סקר</txt>
+		<Question id="0">
+			<txt>עובד/ת יקר/ה,</txt>
+			<style>color:Blue</style>
+		</Question>
+		<Question id="0">
+			<txt></txt>
+		</Question>
+		<Question id="0">
+			<txt>נשמח שתקדיש/י כמה דקות מזמנך למילוי הסקר, ותשתפ/י אותנו בתחושותיך, ברעיונותיך ובמידת שביעות רצונך מעבודתך בבית אקשטיין.&lt;br/&gt;&lt;br/&gt;</txt>
+			<style>color:Blue</style>
+		</Question>
+		<Question id="0">
+			<txt>
+				השאלון הינו אנונימי לחלוטין.&lt;br/&gt;&lt;br/&gt;
+			</txt>
+				<style>color:Blue</style>
+		</Question>
+		<Question id="0">
+			<txt>בחלק הראשון, הנך מתבקש לסמן מספר נתונים דמוגרפיים אשר נועדים לצרכים סטטיסטיים בלבד. הנתון הראשון מתייחס למסגרת בא הנך מועסק. ניתן לסמן יותר ממסגרת אחת.&lt;br/&gt;&lt;br/&gt;</txt>
+			<style>color:Blue</style>
+		</Question>
+		<Question id="0">
+			<txt>בחלק השני יוצגו בפניך היגדים שונים עבורם תתבקש לסמן את מידת הסכמתך עם כל אחד מהם על סולם בין 5 דרגות (ממסכים לחלוטין עד לא מסכים בכלל). במידה וסימנת בפרק הראשון יותר ממסגרת אחת, יופיעו השאלות המתייחסות ישירות למסגרת, בנפרד לכל אחת מהן.&lt;br/&gt;&lt;br/&gt;</txt>
+			<style>color:Blue</style>
+		</Question>
+		<Question id="0">
+			<txt>בתום המילוי חשוב ללחוץ על "שליחה למערכת" ע"מ שהנתונים ייקלטו. </txt>
+			<style>color:Blue</style>
+		</Question>
+		<Question id="0">
+			<txt>הסקר יהיה פתוח למילוי עד ה-30 ביוני.&lt;br/&gt;&lt;br/&gt;</txt>
+			<style>color:Blue</style>
+		</Question>
+		<Question id="0">
+			<txt> </txt>
+		</Question>
+		<Question id="0">
+			<txt>אנו מודים לך על השתתפותך בסקר.</txt>
+			<style>color:Blue;text-align:left</style>
+		</Question>
+		<Question id="0">
+			<txt>צוות משאבי אנוש.</txt>
+			<style>color:Blue;text-align:left</style>
+		</Question>
+		<Question id="0">
+			<txt> </txt>
+		</Question>
+		<Question id="0">
+			<txt>* השאלון מנוסח בלשון זכר, אולם מיועד לנשים וגברים כאחד.</txt>
+			<style>color:Blue</style>
+		</Question>
+		<Question id="0">
+			<txt></txt>
+		</Question>
+	</Group>
+	<Group stype="Question" txt="נתונים דמוגרפיים" gid="2">
+		<txt>נתונים דמוגרפיים/שיוך ארגוני (לצרכים סטטיסטיים בלבד)</txt>
+		<val></val>
+		<Question id="0">
+			<txt>נתונים דמוגרפיים/שיוך ארגוני (לצרכים סטטיסטיים בלבד)</txt>
+			<val></val>
+			<style>background-color:navy;color:white;font-weight:bold;font-size:medium;</style>
+		</Question>
+		<Question id="90" control="treeview" must="yes">
+			<txt>סמן את כל המסגרות בהן אתה עובד.</txt>
+			<val></val>
+		</Question>
+		<Question id="91" must="yes">
+			<txt>סמן את תפקידך בארגון</txt>
+			<val></val>
+			<Answer>
+				<txt>מנהל מסגרת</txt>
+				<val>1</val>
+			</Answer>
+			<Answer>
+				<txt>מתאמ/ת תמיכות, עו"ס</txt>
+				<val>2</val>
+			</Answer>
+			<Answer>
+				<txt>רכז/ת השמה, תעסוקה</txt>
+				<val>3</val>
+			</Answer>
+			<Answer>
+				<txt>מדריכ/ה</txt>
+				<val>4</val>
+			</Answer>
+			<Answer>
+				<txt>מטפל/ת</txt>
+				<val>5</val>
+			</Answer>
+			<Answer>
+				<txt>מנהל/ת שכבה</txt>
+				<val>6</val>
+			</Answer>
+			<Answer>
+				<txt>מורה מחנכ/ת</txt>
+				<val>7</val>
+			</Answer>
+			<Answer>
+				<txt>מורה מקצועי/ת</txt>
+				<val>8</val>
+			</Answer>
+			<Answer>
+				<txt>עוזר/ת הוראה, מדריכ/ה, סייע/ת בבית ספר</txt>
+				<val>9</val>
+			</Answer>
+			<Answer>
+				<txt>משרדי הנהלה וכספים</txt>
+				<val>10</val>
+			</Answer>
+			<Answer>
+				<txt>צוות מוביל (רק מעון)</txt>
+				<val>11</val>
+			</Answer>
+			<Answer>
+				<txt>איש תפעול (רק מעון)</txt>
+				<val>12</val>
+			</Answer>
+			<Answer>
+				<txt>פארא-רפואי, תרפיסט/ית, פסיכיאטר/ית, פסיכולוג/ית, רופא, יועצ/ת חינוכי</txt>
+				<val>13</val>
+			</Answer>
+			<Answer>
+				<txt>אחר</txt>
+				<val>14</val>
+			</Answer>
+			<textbox>yes</textbox>
+		</Question>
+		<Question id="92">
+			<txt>סמן את מספר השנים בהן אתה עובד בארגון</txt>
+			<val></val>
+			<Answer>
+				<txt>עד חצי שנה</txt>
+				<val>1</val>
+			</Answer>
+			<Answer>
+				<txt>חצי שנה עד שנה</txt>
+				<val>2</val>
+			</Answer>
+			<Answer>
+				<txt>שנה עד שלוש שנים</txt>
+				<val>3</val>
+			</Answer>
+			<Answer>
+				<txt>שלוש עד שש שנים</txt>
+				<val>4</val>
+			</Answer>
+			<Answer>
+				<txt>שש שנים ומעלה</txt>
+				<val>5</val>
+			</Answer>
+		</Question>
+
+		<Question id="93">
+			<txt>סמן את קבוצת הגיל שהנך משתייך אליה</txt>
+			<val></val>
+			<Answer>
+				<txt>עד 25</txt>
+				<val>1</val>
+			</Answer>
+			<Answer>
+				<txt>25 - 40</txt>
+				<val>2</val>
+			</Answer>
+			<Answer>
+				<txt>40 - 55</txt>
+				<val>3</val>
+			</Answer>
+			<Answer>
+				<txt>מעל 55</txt>
+				<val>4</val>
+			</Answer>
+		</Question>
+		<Question id="94">
+			<txt>מין העובד</txt>
+			<val></val>
+			<Answer>
+				<txt>נקבה</txt>
+				<val>1</val>
+			</Answer>
+			<Answer>
+				<txt>זכר</txt>
+				<val>2</val>
+			</Answer>
+		</Question>
+		<Question id="95">
+			<txt>האם הנך אחראי על עובדים נוספים?</txt>
+			<val></val>
+			<Answer>
+				<txt>כן</txt>
+				<val>1</val>
+			</Answer>
+			<Answer>
+				<txt>לא</txt>
+				<val>2</val>
+			</Answer>
+		</Question>
+	</Group>
+	<Group stype="Question" txt="שאלון 1" gid="3">
+		<txt>באיזו מידה הנך מסכים/ה עם האמירות הבאות?</txt>
+		<val></val>
+		<Question id="0">
+			<txt>באיזו מידה הנך מסכים/ה עם האמירות הבאות?</txt>
+			<val></val>
+			<style>background-color:navy;color:white;font-weight:bold;font-size:medium;</style>
+		</Question>
+		<Question id="1">
+				<txt>התפקיד שלי משמעותי ותורם</txt>
+				<val></val>
+				<Answer>
+					<txt>מסכים לחלוטין</txt>
+					<val>5</val>
+				</Answer>
+				<Answer>
+					<txt>מסכים</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt>מסכים חלקית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt>לא מסכים</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt>כלל לא מסכים</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+			<Question id="2">
+				<txt>התפקיד שלי מאפשר לי להביא לידי ביטוי את המיומנויות והכישורים שלי</txt>
+				<val></val>
+				<Answer>
+					<txt>מסכים לחלוטין</txt>
+					<val>5</val>
+				</Answer>
+				<Answer>
+					<txt>מסכים</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt>מסכים חלקית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt>לא מסכים</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt>כלל לא מסכים</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+			<Question id="3">
+				<txt>יש לי את מידת העצמאות הנדרשת לביצוע תפקידי</txt>
+				<val></val>
+				<Answer>
+					<txt>מסכים לחלוטין</txt>
+					<val>5</val>
+				</Answer>
+				<Answer>
+					<txt>מסכים</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt>מסכים חלקית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt>לא מסכים</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt>כלל לא מסכים</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+			<Question id="4">
+				<txt>אני מוצא עניין בתפקיד שלי</txt>
+				<val></val>
+				<Answer>
+					<txt>מסכים לחלוטין</txt>
+					<val>5</val>
+				</Answer>
+				<Answer>
+					<txt>מסכים</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt>מסכים חלקית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt>לא מסכים</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt>כלל לא מסכים</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+			<Question id="5">
+				<txt>אני יודע מה הציפיות ממני במקום העבודה</txt>
+				<val></val>
+				<Answer>
+					<txt>מסכים לחלוטין</txt>
+					<val>5</val>
+				</Answer>
+				<Answer>
+					<txt>מסכים</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt>מסכים חלקית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt>לא מסכים</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt>כלל לא מסכים</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+			<Question id="6">
+				<txt>אני מקבל מידע מספק אודות בית אקשטיין והפעילות שלו</txt>
+				<val></val>
+				<Answer>
+					<txt>מסכים לחלוטין</txt>
+					<val>5</val>
+				</Answer>
+				<Answer>
+					<txt>מסכים</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt>מסכים חלקית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt>לא מסכים</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt>כלל לא מסכים</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+			<Question id="7">
+				<txt>אני מכיר את חזון הארגון ומודע לתוכניותיו</txt>
+				<val></val>
+				<Answer>
+					<txt>מסכים לחלוטין</txt>
+					<val>5</val>
+				</Answer>
+				<Answer>
+					<txt>מסכים</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt>מסכים חלקית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt>לא מסכים</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt>כלל לא מסכים</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+			<Question id="8">
+				<txt>אני חש בנוח לבטא את דעותיי, גם כשאינן תואמות לאלה של הממונים עלי</txt>
+				<val></val>
+				<Answer>
+					<txt>מסכים לחלוטין</txt>
+					<val>5</val>
+				</Answer>
+				<Answer>
+					<txt>מסכים</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt>מסכים חלקית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt>לא מסכים</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt>כלל לא מסכים</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+			<Question id="9">
+				<txt>בסביבת העבודה שלי, מעודדים אנשים ללמוד מהטעויות שלהם
+					(אין תרבות של הטחת האשמות)
+				</txt>
+				<val></val>
+				<Answer>
+					<txt>מסכים לחלוטין</txt>
+					<val>5</val>
+				</Answer>
+				<Answer>
+					<txt>מסכים</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt>מסכים חלקית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt>לא מסכים</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt>כלל לא מסכים</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+			<Question id="10">
+				<txt>סביבת העבודה שלי מאופיינת בפתיחות ובשקיפות</txt>
+				<val></val>
+				<Answer>
+					<txt>מסכים לחלוטין</txt>
+					<val>5</val>
+				</Answer>
+				<Answer>
+					<txt>מסכים</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt>מסכים חלקית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt>לא מסכים</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt>כלל לא מסכים</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+			<Question id="11">
+				<txt>עומדים לרשותי הכלים הדרושים לביצוע תפקידי</txt>
+				<val></val>
+				<Answer>
+					<txt>מסכים לחלוטין</txt>
+					<val>5</val>
+				</Answer>
+				<Answer>
+					<txt>מסכים</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt>מסכים חלקית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt>לא מסכים</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt>כלל לא מסכים</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+			<Question id="12">
+				<txt>אני מקבל את ההכשרה הדרושה לביצוע תפקידי</txt>
+				<val></val>
+				<Answer>
+					<txt>מסכים לחלוטין</txt>
+					<val>5</val>
+				</Answer>
+				<Answer>
+					<txt>מסכים</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt>מסכים חלקית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt>לא מסכים</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt>כלל לא מסכים</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+		<Question id="13">
+			<txt>העבודה בבית אקשטיין  תורמת  להתפתחותי האישית והמקצועית</txt>
+			<val></val>
+			<Answer>
+				<txt>מסכים לחלוטין</txt>
+				<val>5</val>
+			</Answer>
+			<Answer>
+				<txt>מסכים</txt>
+				<val>4</val>
+			</Answer>
+			<Answer>
+				<txt>מסכים חלקית</txt>
+				<val>3</val>
+			</Answer>
+			<Answer>
+				<txt>לא מסכים</txt>
+				<val>2</val>
+			</Answer>
+			<Answer>
+				<txt>כלל לא מסכים</txt>
+				<val>1</val>
+			</Answer>
+		</Question>
+		<Question id="14">
+				<txt>השכר שלי הוגן, בהשוואה לתפקידים מקבילים בארגונים דומים במשק</txt>
+				<val></val>
+				<Answer>
+					<txt>מסכים לחלוטין</txt>
+					<val>5</val>
+				</Answer>
+				<Answer>
+					<txt>מסכים</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt>מסכים חלקית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt>לא מסכים</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt>כלל לא מסכים</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+			<txt>חטיבה טיפולית</txt>
+			<val></val>
+			<Question id="15">
+				<txt>
+					פעילות הרווחה המוצעות היום לעובדים הינה אטרקטיבית
+					(אירוע חברה, טיול מסגרת, מתנות לאירועים מיוחדים, מלגות לימודים וכו...)
+				</txt>
+				<val></val>
+				<Answer>
+					<txt>מסכים לחלוטין</txt>
+					<val>5</val>
+				</Answer>
+				<Answer>
+					<txt>מסכים</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt>מסכים חלקית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt>לא מסכים</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt>כלל לא מסכים</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+			<Question id="16">
+				<txt>העומס והלחץ בתפקיד שלי הנם סבירים</txt>
+				<val></val>
+				<Answer>
+					<txt>מסכים לחלוטין</txt>
+					<val>5</val>
+				</Answer>
+				<Answer>
+					<txt>מסכים</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt>מסכים חלקית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt>לא מסכים</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt>כלל לא מסכים</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+			<Question id="17">
+				<txt>אני מרגיש שיש לי אפשרות לאזן בין צורכי העבודה לבין החיים האישיים שלי</txt>
+				<val></val>
+				<Answer>
+					<txt>מסכים לחלוטין</txt>
+					<val>5</val>
+				</Answer>
+				<Answer>
+					<txt>מסכים</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt>מסכים חלקית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt>לא מסכים</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt>כלל לא מסכים</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+			<Question id="18">
+				<txt>אני מרגיש ביטחון תעסוקתי סביר בבית אקשטיין</txt>
+				<val></val>
+				<Answer>
+					<txt>מסכים לחלוטין</txt>
+					<val>5</val>
+				</Answer>
+				<Answer>
+					<txt>מסכים</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt>מסכים חלקית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt>לא מסכים</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt>כלל לא מסכים</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+			<Question id="19">
+				<txt>ישנו מידע זמין לעובדים אודות הזדמנויות קידום בארגון</txt>
+				<val></val>
+				<Answer>
+					<txt>מסכים לחלוטין</txt>
+					<val>5</val>
+				</Answer>
+				<Answer>
+					<txt>מסכים</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt>מסכים חלקית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt>לא מסכים</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt>כלל לא מסכים</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+			<Question id="20">
+				<txt>קיימות הזדמנויות לקידום בארגון עבור עובדים בעלי הכישורים המתאימים</txt>
+				<Answer>
+					<txt>מסכים לחלוטין</txt>
+					<val>5</val>
+				</Answer>
+				<Answer>
+					<txt>מסכים</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt>מסכים חלקית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt>לא מסכים</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt>כלל לא מסכים</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+			<Question id="21">
+				<txt>מתקיים שיתוף פעולה פורה בין הצוותים השונים  במקום העבודה שלי</txt>
+				<Answer>
+					<txt>מסכים לחלוטין</txt>
+					<val>5</val>
+				</Answer>
+				<Answer>
+					<txt>מסכים</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt>מסכים חלקית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt>לא מסכים</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt>כלל לא מסכים</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+			<Question id="22">
+				<txt>המנהלים שאני מכיר מפגינים נכונות לשיתוף פעולה ביניהם</txt>
+				<val></val>
+				<Answer>
+					<txt>מסכים לחלוטין</txt>
+					<val>5</val>
+				</Answer>
+				<Answer>
+					<txt>מסכים</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt>מסכים חלקית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt>לא מסכים</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt>כלל לא מסכים</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+			<Question id="23">
+				<txt>הנהלת בית אקשטיין מקיימת תקשורת יעילה וכנה עם העובדים</txt>
+				<val></val>
+				<Answer>
+					<txt>מסכים לחלוטין</txt>
+					<val>5</val>
+				</Answer>
+				<Answer>
+					<txt>מסכים</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt>מסכים חלקית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt>לא מסכים</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt>כלל לא מסכים</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+			<Question id="24">
+				<txt>להנהלת בית אקשטיין אכפת באמת מן העובדים</txt>
+				<val></val>
+				<Answer>
+					<txt>מסכים לחלוטין</txt>
+					<val>5</val>
+				</Answer>
+				<Answer>
+					<txt>מסכים</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt>מסכים חלקית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt>לא מסכים</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt>כלל לא מסכים</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+			<Question id="25">
+				<txt>הנהלת בית אקשטיין מעורה בנעשה בקרב העובדים ו"מחוברת לשטח"</txt>
+				<val></val>
+				<Answer>
+					<txt>מסכים לחלוטין</txt>
+					<val>5</val>
+				</Answer>
+				<Answer>
+					<txt>מסכים</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt>מסכים חלקית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt>לא מסכים</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt>כלל לא מסכים</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+	</Group>
+	<Group stype="Question" txt="שאלון 2" gid="4">
+		<txt></txt>
+		<val></val>
+		<Question id="0">
+				<txt>לפניך מספר אמירות הנוגעות למסגרת שלך. נא סמן עד כמה הנך מסכים עם כל אמירה?   &lt;br/&gt;&lt;b&gt;&lt;u&gt;שים לב:&lt;/u&gt; במידה וסימנת בתחילת הסקר יותר ממסגרת אחת, כל אמירה תחזור על עצמה ותתיחס לכל אחת מהמסגרות שסימנת&lt;/b&gt;</txt>
+				<val></val>
+				<style>background-color:navy;color:white;font-weight:bold;font-size:medium;</style>
+			</Question>
+
+		<Question id="26" perframe="yes">
+				<txt>לצוות המוביל במסגרת שלי שלי איכפת באמת מן העובדים</txt>
+				<val></val>
+				<Answer>
+					<txt>מסכים לחלוטין</txt>
+					<val>5</val>
+				</Answer>
+				<Answer>
+					<txt>מסכים</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt>מסכים חלקית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt>לא מסכים</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt>כלל לא מסכים</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+			<Question id="27" perframe="yes">
+				<txt>הצוות המוביל במסגרת שלי מעורה בנעשה בקרב העובדים ו"מחובר  לשטח"</txt>
+				<val></val>
+				<Answer>
+					<txt>מסכים לחלוטין</txt>
+					<val>5</val>
+				</Answer>
+				<Answer>
+					<txt>מסכים</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt>מסכים חלקית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt>לא מסכים</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt>כלל לא מסכים</txt>
+					<val>1</val>
+				</Answer>
+				<style>background-color:lightblue;</style>
+			</Question>
+			<Question id="28" perframe="yes">
+				<txt>הצוות המוביל במסגרת שלי מנהלת היטב את המסגרת שלו</txt>
+				<val></val>
+				<Answer>
+					<txt>מסכים לחלוטין</txt>
+					<val>5</val>
+				</Answer>
+				<Answer>
+					<txt>מסכים</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt>מסכים חלקית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt>לא מסכים</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt>כלל לא מסכים</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+		<Question id="29" perframe="yes">
+			<txt>הצוות המוביל במסגרת שלי שלי מקיים תקשורת יעילה וכנה עם העובדים</txt>
+			<val></val>
+			<Answer>
+				<txt>מסכים לחלוטין</txt>
+				<val>5</val>
+			</Answer>
+			<Answer>
+				<txt>מסכים</txt>
+				<val>4</val>
+			</Answer>
+			<Answer>
+				<txt>מסכים חלקית</txt>
+				<val>3</val>
+			</Answer>
+			<Answer>
+				<txt>לא מסכים</txt>
+				<val>2</val>
+			</Answer>
+			<Answer>
+				<txt>כלל לא מסכים</txt>
+				<val>1</val>
+			</Answer>
+			<style>background-color:lightblue;</style>
+		</Question>
+		<Question id="30" perframe="yes">
+			<txt>התנאים הפיזיים בסביבת העבודה שלי הנם ברמה נאותה</txt>
+			<val></val>
+			<Answer>
+				<txt>מסכים לחלוטין</txt>
+				<val>5</val>
+			</Answer>
+			<Answer>
+				<txt>מסכים</txt>
+				<val>4</val>
+			</Answer>
+			<Answer>
+				<txt>מסכים חלקית</txt>
+				<val>3</val>
+			</Answer>
+			<Answer>
+				<txt>לא מסכים</txt>
+				<val>2</val>
+			</Answer>
+			<Answer>
+				<txt>כלל לא מסכים</txt>
+				<val>1</val>
+			</Answer>
+		</Question>
+		<Question id="31" perframe="yes">
+			<txt>בצוות שלי שוררת תחושה של שיתוף פעולה  ורוח צוות</txt>
+			<val></val>
+			<Answer>
+				<txt>מסכים לחלוטין</txt>
+				<val>5</val>
+			</Answer>
+			<Answer>
+				<txt>מסכים</txt>
+				<val>4</val>
+			</Answer>
+			<Answer>
+				<txt>מסכים חלקית</txt>
+				<val>3</val>
+			</Answer>
+			<Answer>
+				<txt>לא מסכים</txt>
+				<val>2</val>
+			</Answer>
+			<Answer>
+				<txt>כלל לא מסכים</txt>
+				<val>1</val>
+			</Answer>
+			<style>background-color:lightblue;</style>
+		</Question>
+		<Question id="32" perframe="yes">
+			<txt>הצוות שלי ממלא את תפקידו כנדרש</txt>
+			<val></val>
+			<Answer>
+				<txt>מסכים לחלוטין</txt>
+				<val>5</val>
+			</Answer>
+			<Answer>
+				<txt>מסכים</txt>
+				<val>4</val>
+			</Answer>
+			<Answer>
+				<txt>מסכים חלקית</txt>
+				<val>3</val>
+			</Answer>
+			<Answer>
+				<txt>לא מסכים</txt>
+				<val>2</val>
+			</Answer>
+			<Answer>
+				<txt>כלל לא מסכים</txt>
+				<val>1</val>
+			</Answer>
+		</Question>
+		<Question id="33" perframe="yes">
+			<txt>המנהל הישיר שלי במסגרת מניע את העובדים ומחדיר בהם מוטיבציה להצליח</txt>
+			<val></val>
+			<Answer>
+				<txt>מסכים לחלוטין</txt>
+				<val>5</val>
+			</Answer>
+			<Answer>
+				<txt>מסכים</txt>
+				<val>4</val>
+			</Answer>
+			<Answer>
+				<txt>מסכים חלקית</txt>
+				<val>3</val>
+			</Answer>
+			<Answer>
+				<txt>לא מסכים</txt>
+				<val>2</val>
+			</Answer>
+			<Answer>
+				<txt>כלל לא מסכים</txt>
+				<val>1</val>
+			</Answer>
+		<style>background-color:lightblue;</style>
+		</Question>
+		<Question id="34" perframe="yes">
+			<txt>המנהל הישיר שלי במסגרת מפגין כבוד ואכפתיות כלפי עובדיו</txt>
+			<val></val>
+			<Answer>
+				<txt>מסכים לחלוטין</txt>
+				<val>5</val>
+			</Answer>
+			<Answer>
+				<txt>מסכים</txt>
+				<val>4</val>
+			</Answer>
+			<Answer>
+				<txt>מסכים חלקית</txt>
+				<val>3</val>
+			</Answer>
+			<Answer>
+				<txt>לא מסכים</txt>
+				<val>2</val>
+			</Answer>
+			<Answer>
+				<txt>כלל לא מסכים</txt>
+				<val>1</val>
+			</Answer>
+		</Question>
+		<Question id="35" perframe="yes">
+			<txt>המנהל הישיר שלי במסגרת מספק לעובדיו משוב בונה ויעיל</txt>
+			<val></val>
+			<Answer>
+				<txt>מסכים לחלוטין</txt>
+				<val>5</val>
+			</Answer>
+			<Answer>
+				<txt>מסכים</txt>
+				<val>4</val>
+			</Answer>
+			<Answer>
+				<txt>מסכים חלקית</txt>
+				<val>3</val>
+			</Answer>
+			<Answer>
+				<txt>לא מסכים</txt>
+				<val>2</val>
+			</Answer>
+			<Answer>
+				<txt>כלל לא מסכים</txt>
+				<val>1</val>
+			</Answer>
+			<style>background-color:lightblue;</style>
+		</Question>
+		<Question id="36" perframe="yes">
+			<txt>המנהל הישיר שלי במסגרת יודע להוביל את היחידה שלו  להשגת יעדיה</txt>
+			<val></val>
+			<Answer>
+				<txt>מסכים לחלוטין</txt>
+				<val>5</val>
+			</Answer>
+			<Answer>
+				<txt>מסכים</txt>
+				<val>4</val>
+			</Answer>
+			<Answer>
+				<txt>מסכים חלקית</txt>
+				<val>3</val>
+			</Answer>
+			<Answer>
+				<txt>לא מסכים</txt>
+				<val>2</val>
+			</Answer>
+			<Answer>
+				<txt>כלל לא מסכים</txt>
+				<val>1</val>
+			</Answer>
+		</Question>
+		<Question id="37" perframe="yes">
+			<txt>
+				המנהל הישיר שלי במסגרת נותן דוגמא אישית לעובדיו ומקיים בעצמו
+				את מה שהוא מטיף אליו
+			</txt>
+			<val></val>
+			<Answer>
+				<txt>מסכים לחלוטין</txt>
+				<val>5</val>
+			</Answer>
+			<Answer>
+				<txt>מסכים</txt>
+				<val>4</val>
+			</Answer>
+			<Answer>
+				<txt>מסכים חלקית</txt>
+				<val>3</val>
+			</Answer>
+			<Answer>
+				<txt>לא מסכים</txt>
+				<val>2</val>
+			</Answer>
+			<Answer>
+				<txt>כלל לא מסכים</txt>
+				<val>1</val>
+			</Answer>
+			<style>background-color:lightblue;</style>
+		</Question>
+		<Question id="38" perframe="yes">
+			<txt>המנהל הישיר שלי במסגרת מקיים מפגשי העברת מידע והתייעצות עם עובדיו</txt>
+			<val></val>
+			<Answer>
+				<txt>מסכים לחלוטין</txt>
+				<val>5</val>
+			</Answer>
+			<Answer>
+				<txt>מסכים</txt>
+				<val>4</val>
+			</Answer>
+			<Answer>
+				<txt>מסכים חלקית</txt>
+				<val>3</val>
+			</Answer>
+			<Answer>
+				<txt>לא מסכים</txt>
+				<val>2</val>
+			</Answer>
+			<Answer>
+				<txt>כלל לא מסכים</txt>
+				<val>1</val>
+			</Answer>
+		</Question>
+	</Group>
+	<Group stype="Question" txt="שאלון 3" gid="5">
+		<txt></txt>
+		<val></val>
+		<Question id="0">
+			<txt>____</txt>
+			<val></val>
+			<style>background-color:navy;color:white;font-weight:bold;font-size:medium;</style>
+		</Question>
+		<Question id="39" must="yes">
+			<txt>בחר את ההבעה המייצגת בצורה הטובה ביותר את תחושתך הכללית כעובד בבית אקשטיין</txt>
+			<val></val>
+			<Answer>
+				<txt>
+					&lt;img src=&quot;images/5.jpg&quot; alt=&quot;מה&quot; /&gt;
+				</txt>
+				<val>5</val>
+			</Answer>
+			<Answer>
+				<txt>
+					&lt;img src=&quot;images/4.jpg&quot; alt=&quot;מה&quot; /&gt;
+				</txt>
+				<val>4</val>
+			</Answer>
+			<Answer>
+				<txt>
+					&lt;img src=&quot;images/3.jpg&quot; alt=&quot;מה&quot; /&gt;
+				</txt>
+				<val>3</val>
+			</Answer>
+			<Answer>
+				<txt>
+					&lt;img src=&quot;images/2.jpg&quot; alt=&quot;מה&quot; /&gt;
+				</txt>
+				<val>2</val>
+			</Answer>
+			<Answer>
+				<txt>
+					&lt;img src=&quot;images/1.jpg&quot; alt=&quot;מה&quot; /&gt;
+				</txt>
+				<val>1</val>
+			</Answer>
+		</Question>
+		<Question id="40">
+			<txt>
+				הייתי בוחר להישאר בבית אקשטיין, גם אם היו מציעים  לי תפקיד דומה
+				ותנאים דומים במקום אחר
+			</txt>
+			<val></val>
+			<Answer>
+				<txt>מסכים לחלוטין</txt>
+				<val>5</val>
+			</Answer>
+			<Answer>
+				<txt>מסכים</txt>
+				<val>4</val>
+			</Answer>
+			<Answer>
+				<txt>מסכים חלקית</txt>
+				<val>3</val>
+			</Answer>
+			<Answer>
+				<txt>לא מסכים</txt>
+				<val>2</val>
+			</Answer>
+			<Answer>
+				<txt>כלל לא מסכים</txt>
+				<val>1</val>
+			</Answer>
+		</Question>
+		<Question id="41">
+			<txt>הייתי ממליץ לחבר קרוב שלי לעבוד בבית אקשטיין</txt>
+			<val></val>
+			<Answer>
+				<txt>מסכים לחלוטין</txt>
+				<val>5</val>
+			</Answer>
+			<Answer>
+				<txt>מסכים</txt>
+				<val>4</val>
+			</Answer>
+			<Answer>
+				<txt>מסכים חלקית</txt>
+				<val>3</val>
+			</Answer>
+			<Answer>
+				<txt>לא מסכים</txt>
+				<val>2</val>
+			</Answer>
+			<Answer>
+				<txt>כלל לא מסכים</txt>
+				<val>1</val>
+			</Answer>
+		</Question>
+		<Question id="42">
+			<txt>אני גאה לעבוד בבית אקשטיין</txt>
+			<val></val>
+			<Answer>
+				<txt>מסכים לחלוטין</txt>
+				<val>5</val>
+			</Answer>
+			<Answer>
+				<txt>מסכים</txt>
+				<val>4</val>
+			</Answer>
+			<Answer>
+				<txt>מסכים חלקית</txt>
+				<val>3</val>
+			</Answer>
+			<Answer>
+				<txt>לא מסכים</txt>
+				<val>2</val>
+			</Answer>
+			<Answer>
+				<txt>כלל לא מסכים</txt>
+				<val>1</val>
+			</Answer>
+		</Question>
+		<Question id="43">
+			<txt>
+				הייתי בהחלט ממליץ על בית אקשטיין לחברים ובני
+				משפחה שיש להם קרובים בעלי צרכים מיוחדים רלוונטיים
+			</txt>
+			<val></val>
+			<Answer>
+				<txt>מסכים לחלוטין</txt>
+				<val>5</val>
+			</Answer>
+			<Answer>
+				<txt>מסכים</txt>
+				<val>4</val>
+			</Answer>
+			<Answer>
+				<txt>מסכים חלקית</txt>
+				<val>3</val>
+			</Answer>
+			<Answer>
+				<txt>לא מסכים</txt>
+				<val>2</val>
+			</Answer>
+			<Answer>
+				<txt>כלל לא מסכים</txt>
+				<val>1</val>
+			</Answer>
+		</Question>
+		<Question id="44">
+			<txt>בית אקשטיין הוא בשבילי יותר מסתם מקום עבודה</txt>
+			<val></val>
+			<Answer>
+				<txt>מסכים לחלוטין</txt>
+				<val>5</val>
+			</Answer>
+			<Answer>
+				<txt>מסכים</txt>
+				<val>4</val>
+			</Answer>
+			<Answer>
+				<txt>מסכים חלקית</txt>
+				<val>3</val>
+			</Answer>
+			<Answer>
+				<txt>לא מסכים</txt>
+				<val>2</val>
+			</Answer>
+			<Answer>
+				<txt>כלל לא מסכים</txt>
+				<val>1</val>
+			</Answer>
+		</Question>
+		<Question id="45">
+			<txt>העובדים במסגרת שלי מאופיינים במוטיבציה גבוהה לעבוד ולתרום</txt>
+			<val></val>
+			<Answer>
+				<txt>מסכים לחלוטין</txt>
+				<val>5</val>
+			</Answer>
+			<Answer>
+				<txt>מסכים</txt>
+				<val>4</val>
+			</Answer>
+			<Answer>
+				<txt>מסכים חלקית</txt>
+				<val>3</val>
+			</Answer>
+			<Answer>
+				<txt>לא מסכים</txt>
+				<val>2</val>
+			</Answer>
+			<Answer>
+				<txt>כלל לא מסכים</txt>
+				<val>1</val>
+			</Answer>
+		</Question>
+	</Group>
+	<Group stype="Question" txt="שאלון אחרון" gid="6">
+		<txt></txt>
+		<val></val>
+		<Question id="0">
+			<txt>באיזה מידה מאפיינים התיאורים הבאים את בית אקשטיין כארגון?</txt>
+			<val></val>
+			<style>background-color:navy;color:white;font-weight:bold;font-size:medium;</style>
+		</Question>
+		<Question id="46">
+			<txt>מצליח ומוביל בתחומו בארץ</txt>
+			<val></val>
+			<Answer>
+				<txt>מאפיין מאוד</txt>
+				<val>5</val>
+			</Answer>
+			<Answer>
+				<txt>מאפיין</txt>
+				<val>4</val>
+			</Answer>
+			<Answer>
+				<txt>ככה ככה</txt>
+				<val>3</val>
+			</Answer>
+			<Answer>
+				<txt>לא מאפיין</txt>
+				<val>2</val>
+			</Answer>
+			<Answer>
+				<txt>כלל לא מאפיין</txt>
+				<val>1</val>
+			</Answer>
+		</Question>
+		<Question id="47">
+			<txt>בעל חוסן כלכלי (המבטיח את עתידו)</txt>
+			<val></val>
+			<Answer>
+				<txt>מאפיין מאוד</txt>
+				<val>5</val>
+			</Answer>
+			<Answer>
+				<txt>מאפיין</txt>
+				<val>4</val>
+			</Answer>
+			<Answer>
+				<txt>ככה ככה</txt>
+				<val>3</val>
+			</Answer>
+			<Answer>
+				<txt>לא מאפיין</txt>
+				<val>2</val>
+			</Answer>
+			<Answer>
+				<txt>כלל לא מאפיין</txt>
+				<val>1</val>
+			</Answer>
+		</Question>
+
+		<Question id="48">
+			<txt>מנוהל היטב</txt>
+			<val></val>
+			<Answer>
+				<txt>מאפיין מאוד</txt>
+				<val>5</val>
+			</Answer>
+			<Answer>
+				<txt>מאפיין</txt>
+				<val>4</val>
+			</Answer>
+			<Answer>
+				<txt>ככה ככה</txt>
+				<val>3</val>
+			</Answer>
+			<Answer>
+				<txt>לא מאפיין</txt>
+				<val>2</val>
+			</Answer>
+			<Answer>
+				<txt>כלל לא מאפיין</txt>
+				<val>1</val>
+			</Answer>
+		</Question>
+		<Question id="49">
+			<txt>מציב את לקוחותיו במרכז</txt>
+			<val></val>
+			<Answer>
+				<txt>מאפיין מאוד</txt>
+				<val>5</val>
+			</Answer>
+			<Answer>
+				<txt>מאפיין</txt>
+				<val>4</val>
+			</Answer>
+			<Answer>
+				<txt>ככה ככה</txt>
+				<val>3</val>
+			</Answer>
+			<Answer>
+				<txt>לא מאפיין</txt>
+				<val>2</val>
+			</Answer>
+			<Answer>
+				<txt>כלל לא מאפיין</txt>
+				<val>1</val>
+			</Answer>
+		</Question>
+		<Question id="50">
+			<txt>שואף למצוינות (לא מסתפק בלהיות "טוב" בלבד)</txt>
+			<val></val>
+			<Answer>
+				<txt>מאפיין מאוד</txt>
+				<val>5</val>
+			</Answer>
+			<Answer>
+				<txt>מאפיין</txt>
+				<val>4</val>
+			</Answer>
+			<Answer>
+				<txt>ככה ככה</txt>
+				<val>3</val>
+			</Answer>
+			<Answer>
+				<txt>לא מאפיין</txt>
+				<val>2</val>
+			</Answer>
+			<Answer>
+				<txt>כלל לא מאפיין</txt>
+				<val>1</val>
+			</Answer>
+		</Question>
+		<Question id="51">
+			<txt>מקצועי בתחומו</txt>
+			<val></val>
+			<Answer>
+				<txt>מאפיין מאוד</txt>
+				<val>5</val>
+			</Answer>
+			<Answer>
+				<txt>מאפיין</txt>
+				<val>4</val>
+			</Answer>
+			<Answer>
+				<txt>ככה ככה</txt>
+				<val>3</val>
+			</Answer>
+			<Answer>
+				<txt>לא מאפיין</txt>
+				<val>2</val>
+			</Answer>
+			<Answer>
+				<txt>כלל לא מאפיין</txt>
+				<val>1</val>
+			</Answer>
+		</Question>
+		<Question id="52">
+			<txt>מספק ללקוחותיו שירות ברמה גבוהה</txt>
+			<val></val>
+			<Answer>
+				<txt>מאפיין מאוד</txt>
+				<val>5</val>
+			</Answer>
+			<Answer>
+				<txt>מאפיין</txt>
+				<val>4</val>
+			</Answer>
+			<Answer>
+				<txt>ככה ככה</txt>
+				<val>3</val>
+			</Answer>
+			<Answer>
+				<txt>לא מאפיין</txt>
+				<val>2</val>
+			</Answer>
+			<Answer>
+				<txt>כלל לא מאפיין</txt>
+				<val>1</val>
+			</Answer>
+		</Question>
+		<Question id="53">
+			<txt>פתוח לאמץ גישות חדשות</txt>
+			<val></val>
+			<Answer>
+				<txt>מאפיין מאוד</txt>
+				<val>5</val>
+			</Answer>
+			<Answer>
+				<txt>מאפיין</txt>
+				<val>4</val>
+			</Answer>
+			<Answer>
+				<txt>ככה ככה</txt>
+				<val>3</val>
+			</Answer>
+			<Answer>
+				<txt>לא מאפיין</txt>
+				<val>2</val>
+			</Answer>
+			<Answer>
+				<txt>כלל לא מאפיין</txt>
+				<val>1</val>
+			</Answer>
+		</Question>
+		<Question id="54">
+			<txt>יודע להביע הכרה על הישגים ועבודה קשה מצד עובדיו</txt>
+			<val></val>
+			<Answer>
+				<txt>מאפיין מאוד</txt>
+				<val>5</val>
+			</Answer>
+			<Answer>
+				<txt>מאפיין</txt>
+				<val>4</val>
+			</Answer>
+			<Answer>
+				<txt>ככה ככה</txt>
+				<val>3</val>
+			</Answer>
+			<Answer>
+				<txt>לא מאפיין</txt>
+				<val>2</val>
+			</Answer>
+			<Answer>
+				<txt>כלל לא מאפיין</txt>
+				<val>1</val>
+			</Answer>
+		</Question>
+		<Question id="55">
+			<txt>מצפה מעובדיו לקחת אחריות ולהיות מעורבים (להיות "ראש גדול")</txt>
+			<val></val>
+			<Answer>
+				<txt>מאפיין מאוד</txt>
+				<val>5</val>
+			</Answer>
+			<Answer>
+				<txt>מאפיין</txt>
+				<val>4</val>
+			</Answer>
+			<Answer>
+				<txt>ככה ככה</txt>
+				<val>3</val>
+			</Answer>
+			<Answer>
+				<txt>לא מאפיין</txt>
+				<val>2</val>
+			</Answer>
+			<Answer>
+				<txt>כלל לא מאפיין</txt>
+				<val>1</val>
+			</Answer>
+		</Question>
+		<Question id="56">
+			<txt>בעל תרבות של פתיחות ושקיפות (ללא "פוליטיקת" יתר)</txt>
+			<val></val>
+			<Answer>
+				<txt>מאפיין מאוד</txt>
+				<val>5</val>
+			</Answer>
+			<Answer>
+				<txt>מאפיין</txt>
+				<val>4</val>
+			</Answer>
+			<Answer>
+				<txt>ככה ככה</txt>
+				<val>3</val>
+			</Answer>
+			<Answer>
+				<txt>לא מאפיין</txt>
+				<val>2</val>
+			</Answer>
+			<Answer>
+				<txt>כלל לא מאפיין</txt>
+				<val>1</val>
+			</Answer>
+		</Question>
+		<Question id="57">
+			<txt>ער להתפתחויות בחוץ ומתאים את עצמו אליהן</txt>
+			<val></val>
+			<Answer>
+				<txt>מאפיין מאוד</txt>
+				<val>5</val>
+			</Answer>
+			<Answer>
+				<txt>מאפיין</txt>
+				<val>4</val>
+			</Answer>
+			<Answer>
+				<txt>ככה ככה</txt>
+				<val>3</val>
+			</Answer>
+			<Answer>
+				<txt>לא מאפיין</txt>
+				<val>2</val>
+			</Answer>
+			<Answer>
+				<txt>כלל לא מאפיין</txt>
+				<val>1</val>
+			</Answer>
+		</Question>
+		<Question id="58">
+			<txt>בעל ערכים של אתיקה ומוסריות</txt>
+			<val></val>
+			<Answer>
+				<txt>מאפיין מאוד</txt>
+				<val>5</val>
+			</Answer>
+			<Answer>
+				<txt>מאפיין</txt>
+				<val>4</val>
+			</Answer>
+			<Answer>
+				<txt>ככה ככה</txt>
+				<val>3</val>
+			</Answer>
+			<Answer>
+				<txt>לא מאפיין</txt>
+				<val>2</val>
+			</Answer>
+			<Answer>
+				<txt>כלל לא מאפיין</txt>
+				<val>1</val>
+			</Answer>
+		</Question>
+		<Question id="59">
+			<txt>בעל נהלים אדמיניסטרטיביים יעילים (ללא עודף  בירוקרטיה)</txt>
+			<val></val>
+			<Answer>
+				<txt>מאפיין מאוד</txt>
+				<val>5</val>
+			</Answer>
+			<Answer>
+				<txt>מאפיין</txt>
+				<val>4</val>
+			</Answer>
+			<Answer>
+				<txt>ככה ככה</txt>
+				<val>3</val>
+			</Answer>
+			<Answer>
+				<txt>לא מאפיין</txt>
+				<val>2</val>
+			</Answer>
+			<Answer>
+				<txt>כלל לא מאפיין</txt>
+				<val>1</val>
+			</Answer>
+		</Question>
+		<Question id="60">
+			<txt>מתנהל כארגון אחד מגובש (ולא כאוסף של מסגרות נפרדות ובלתי קשורות ביניהן)</txt>
+			<val></val>
+			<Answer>
+				<txt>מאפיין מאוד</txt>
+				<val>5</val>
+			</Answer>
+			<Answer>
+				<txt>מאפיין</txt>
+				<val>4</val>
+			</Answer>
+			<Answer>
+				<txt>ככה ככה</txt>
+				<val>3</val>
+			</Answer>
+			<Answer>
+				<txt>לא מאפיין</txt>
+				<val>2</val>
+			</Answer>
+			<Answer>
+				<txt>כלל לא מאפיין</txt>
+				<val>1</val>
+			</Answer>
+		</Question>
+		<Question id="61">
+			<txt>עד כמה שזה תלוי בך בלבד, כמה זמן היית נשאר לעבוד בבית אקשטיין (החל מעכשיו) ?</txt>
+			<val></val>
+			<Answer>
+				<txt>יותר מ 10 שנים</txt>
+				<val>4</val>
+			</Answer>
+			<Answer>
+				<txt>5 - 10 שנים</txt>
+				<val>3</val>
+			</Answer>
+			<Answer>
+				<txt>2 - 5 שנים</txt>
+				<val>2</val>
+			</Answer>
+			<Answer>
+				<txt>פחות משנתיים</txt>
+				<val>1</val>
+			</Answer>
+		</Question>
+		<Question id="0">
+			<txt> </txt>
+			<val></val>
+			<style>background-color:transparent;height:50px;color:white;font-weight:bold;font-size:medium;</style>
+		</Question>
+		<Question id="0">
+			<txt></txt>
+			<val></val>
+			<style>background-color:navy;color:white;font-weight:bold;font-size:medium;</style>
+		</Question>
+		<Question id="62">
+				<txt>מה הנך מעריך בבית אקשטיין כמקום עבודה?</txt>
+				<textbox>yes</textbox>
+			</Question>
+		<Question id="63">
+			<txt>מה היית מציע לשנות/לשפר ?</txt>
+			<textbox>yes</textbox>
+		</Question>
+	</Group>
+</Form>

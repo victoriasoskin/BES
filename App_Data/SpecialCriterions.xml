@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Criterions>
+	<Survey SurveyGroupID="2">
+		<Criterion text="ללא חתכים מיוחדים" value=""></Criterion>
+		<Criterion text="ללא שאלת השכר" value="(שאלה!=24)"></Criterion>
+	</Survey>
+</Criterions>

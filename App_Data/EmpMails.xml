@@ -1,0 +1,1042 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<EmpMails>
+	<Fields>
+		<Field>EmpName</Field>
+		<Field>BirthDate</Field>
+		<Field>EmpID</Field>
+		<Field>JobName</Field>
+		<Field>EMENAME</Field>
+		<Field>FirstDate</Field>
+		<Field>UName</Field>
+		<Field>FrameName</Field>
+		<Field>LastDate</Field>
+		<Field>Mail</Field>
+		<Field>CellPhone</Field>
+		<Field>SMngrAppr</Field>
+        <Field>ServiceName</Field>
+        <Field>CellPhoneNumber</Field>
+        <Field>MailAddress</Field>
+        <Field>Loadtime</Field>
+        <Field>MailAction</Field>
+        <Field>Comment</Field>
+        <Field>ActualLeavingDate</Field>
+    </Fields>
+    <Recipients>
+        <Recipient MailType="0" ServiceID="1" Name="טל" Email="talze@b-e.org.il" />
+        <!--<Recipient MailType="0" ServiceID="2" Name="לימור" Email="limore@b-e.org.il" />
+        <Recipient MailType="0" ServiceID="2" Name="ענבל" Email="inbalg@b-e.org.il" />-->
+        <!--<Recipient MailType="0" ServiceID="3" Name="חן" Email="hani.s@b-e.org.il" />-->
+        <Recipient MailType="0" ServiceID="3" Name="חן" Email="chenr@b-e.org.il" />
+        <Recipient MailType="0" ServiceID="4" Name="שירית" Email="shirit.y@b-e.org.il" />
+        <Recipient MailType="0" ServiceID="4" Name="עירית" Email="irit.e@b-e.org.il" />
+        <Recipient MailType="0" ServiceID="8" Name="כלילה" Email="klila.s@b-e.org.il" />
+        <Recipient MailType="1" ServiceID="0" Name="שירלי" Email="shirly.h@b-e.org.il" />
+        <Recipient MailType="2" ServiceID="0" Name="ויוי" Email="vivis@b-e.org.il" />
+        <Recipient MailType="3" ServiceID="0" Name="יעקב" Email="yakov@b-e.org.il" />
+    </Recipients>
+	
+	<MailGroup GroupID="1" Mode="1">
+		<Mail MailType="0" ServiceID="0">
+			<To>shirly.h@b-e.org.il</To>
+			<From>#Email#</From>
+			<Subject>קליטת עובד חדש:</Subject>
+			<Body>
+                שירלי שלום,
+
+                אנו קולטים עובד חדש:
+                --------------------
+                שם העובד____ #EmpName#
+                ת.ז_________ #EmpID#
+                תאריך לידה___ #BirthDate#
+                תפקיד_______ #JobName#
+                החל בתאריך___ #FirstDate#.
+                מייל ארגוני____ #Mail#.
+                טלפון סלולרי__ #CellPhone#
+                בקשה לחריגה: #SMngrAppr#
+                &lt;a href="http://be-online.org/NewEmpProp.aspx?E=#EmpID#"&gt;קישור לבקשה להצעת עבודה&lt;/a&gt;
+
+
+                בברכה,
+                #UName#
+                #FrameName#
+            </Body>
+		</Mail>
+    <Mail MailType="0" ServiceID="0">
+      <To>arielpelli1@gmail.com</To>
+      <From>#Email#</From>
+      <Subject>קליטת עובד חדש:</Subject>
+      <Body>
+        שירלי שלום,
+
+        אנו קולטים עובד חדש:
+        --------------------
+        שם העובד____ #EmpName#
+        ת.ז_________ #EmpID#
+        תאריך לידה___ #BirthDate#
+        תפקיד_______ #JobName#
+        החל בתאריך___ #FirstDate#.
+        מייל ארגוני____ #Mail#.
+        טלפון סלולרי__ #CellPhone#
+        בקשה לחריגה: #SMngrAppr#
+        &lt;a href="http://be-online.org/NewEmpProp.aspx?E=#EmpID#"&gt;קישור לבקשה להצעת עבודה&lt;/a&gt;
+
+
+        בברכה,
+        #UName#
+        #FrameName#
+      </Body>
+    </Mail>
+    <Mail MailType="0" ServiceID="0">
+			<To>zehava@b-e.org.il</To>
+			<From>#Email#</From>
+			<Subject>קליטת עובד חדש:</Subject>
+			<Body>
+				זהבה שלום,
+
+				אנו קולטים עובד חדש:
+				--------------------
+				שם העובד____ #EmpName#
+				ת.ז_________ #EmpID#
+				תאריך לידה___ #BirthDate#
+				תפקיד_______ #JobName#
+				החל בתאריך___ #FirstDate#.
+				מייל ארגוני____ #Mail#.
+				טלפון סלולרי__ #CellPhone#
+
+				בברכה,
+				#UName#
+				#FrameName#
+			</Body>
+		</Mail>
+		<Mail MailType="0" ServiceID="1">
+			<To>talze@b-e.org.il</To>
+			<From>#Email#</From>
+			<Subject>קליטת עובד חדש:</Subject>
+			<Body>
+				טל שלום,
+
+				אנו קולטים עובד חדש:
+				--------------------
+				שם העובד____ #EmpName#
+				ת.ז_________ #EmpID#
+				תאריך לידה___ #BirthDate#
+				תפקיד_______ #JobName#
+				החל בתאריך___ #FirstDate#.
+				מייל ארגוני____ #Mail#.
+				טלפון סלולרי__ #CellPhone#
+				בקשה לחריגה: #SMngrAppr#
+				&lt;a href="http://be-online.org/NewEmpProp.aspx?E=#EmpID#"&gt;קישור לבקשה להצעת עבודה&lt;/a&gt;
+
+				בברכה,
+				#UName#
+				#FrameName#
+			</Body>
+		</Mail>
+    <Mail MailType="0" ServiceID="3">
+			<To>chenr@b-e.org.il</To>
+			<From>#Email#</From>
+			<Subject>קליטת עובד חדש:</Subject>
+			<Body>
+				חן שלום,
+
+				אנו קולטים עובד חדש:
+				--------------------
+				שם העובד____ #EmpName#
+				ת.ז_________ #EmpID#
+				תאריך לידה___ #BirthDate#
+				תפקיד_______ #JobName#
+				החל בתאריך___ #FirstDate#.
+				מייל ארגוני____ #Mail#.
+				טלפון סלולרי__ #CellPhone#
+				&lt;a href="http://be-online.org/NewEmpProp.aspx?E=#EmpID#"&gt;קישור לבקשה להצעת עבודה&lt;/a&gt;
+
+				בברכה,
+				#UName#
+				#FrameName#
+			</Body>
+		</Mail>
+		<Mail MailType="0" ServiceID="4">
+			<To>shirit.y@b-e.org.il</To>
+			<From>#Email#</From>
+			<Subject>קליטת עובד חדש:</Subject>
+			<Body>
+				שירית שלום,
+
+				אנו קולטים עובד חדש:
+				--------------------
+				שם העובד____ #EmpName#
+				ת.ז_________ #EmpID#
+				תאריך לידה___ #BirthDate#
+				תפקיד_______ #JobName#
+				החל בתאריך___ #FirstDate#.
+				מייל ארגוני____ #Mail#.
+				טלפון סלולרי__ #CellPhone#
+				
+				&lt;a href="http://be-online.org/NewEmpProp.aspx?E=#EmpID#"&gt;קישור לבקשה להצעת עבודה&lt;/a&gt;
+
+				בברכה,
+				#UName#
+				#FrameName#
+			</Body>
+		</Mail>
+        <Mail MailType="0" ServiceID="4">
+            <To>irit.e@b-e.org.il</To>
+            <From>#Email#</From>
+            <Subject>קליטת עובד חדש:</Subject>
+            <Body>
+                עירית שלום,
+
+                אנו קולטים עובד חדש:
+                --------------------
+                שם העובד____ #EmpName#
+                ת.ז_________ #EmpID#
+                תאריך לידה___ #BirthDate#
+                תפקיד_______ #JobName#
+                החל בתאריך___ #FirstDate#.
+                מייל ארגוני____ #Mail#.
+                טלפון סלולרי__ #CellPhone#
+
+                &lt;a href="http://be-online.org/NewEmpProp.aspx?E=#EmpID#"&gt;קישור לבקשה להצעת עבודה&lt;/a&gt;
+
+                בברכה,
+                #UName#
+                #FrameName#
+            </Body>
+        </Mail>
+        <Mail MailType="1" ServiceID="0">
+			<To>vivis@b-e.org.il</To>
+			<From>#Email#</From>
+			<Subject>קליטת עובד חדש:</Subject>
+			<Body>
+				ויוי שלום,
+
+				אנו קולטים עובד חדש:
+				--------------------
+				שם העובד____ #EmpName#
+				ת.ז_________ #EmpID#
+				תאריך לידה___ #BirthDate#
+				תפקיד_______ #JobName#
+				החל בתאריך___ #FirstDate#.
+				מייל ארגוני____ #Mail#.
+				טלפון סלולרי__ #CellPhone#
+
+				בברכה,
+				#UName#
+				#FrameName#
+			</Body>
+		</Mail>
+	</MailGroup>
+
+  <MailGroup GroupID="1" Mode="2">
+    <Mail MailType="0" ServiceID="0">
+      <To>shirly.h@b-e.org.il</To>
+      <From>#Email#</From>
+      <Subject>קליטת עובד חדש:</Subject>
+      <Body>
+        שירלי שלום,
+
+        אנו קולטים עובד חדש:
+        --------------------
+        שם העובד____ #EmpName#
+        ת.ז_________ #EmpID#
+        תאריך לידה___ #BirthDate#
+        תפקיד_______ #JobName#
+        החל בתאריך___ #FirstDate#.
+        מייל ארגוני____ #Mail#.
+        טלפון סלולרי__ #CellPhone#
+        בקשה לחריגה: #SMngrAppr#
+        &lt;a href="http://be-online.org/NewEmpProp.aspx?E=#EmpID#"&gt;קישור לבקשה להצעת עבודה&lt;/a&gt;
+
+
+        בברכה,
+        #UName#
+        #FrameName#
+      </Body>
+    </Mail>
+    <Mail MailType="0" ServiceID="0">
+      <To>arielpelli1@gmail.com</To>
+      <From>#Email#</From>
+      <Subject>קליטת עובד חדש:</Subject>
+      <Body>
+        שירלי שלום,
+
+        אנו קולטים עובד חדש:
+        --------------------
+        שם העובד____ #EmpName#
+        ת.ז_________ #EmpID#
+        תאריך לידה___ #BirthDate#
+        תפקיד_______ #JobName#
+        החל בתאריך___ #FirstDate#.
+        מייל ארגוני____ #Mail#.
+        טלפון סלולרי__ #CellPhone#
+        בקשה לחריגה: #SMngrAppr#
+        &lt;a href="http://be-online.org/NewEmpProp.aspx?E=#EmpID#"&gt;קישור לבקשה להצעת עבודה&lt;/a&gt;
+
+
+        בברכה,
+        #UName#
+        #FrameName#
+      </Body>
+    </Mail>
+    <Mail MailType="0" ServiceID="0">
+      <To>zehava@b-e.org.il</To>
+      <From>#Email#</From>
+      <Subject>קליטת עובד חדש:</Subject>
+      <Body>
+        זהבה שלום,
+
+        אנו קולטים עובד חדש:
+        --------------------
+        שם העובד____ #EmpName#
+        ת.ז_________ #EmpID#
+        תאריך לידה___ #BirthDate#
+        תפקיד_______ #JobName#
+        החל בתאריך___ #FirstDate#.
+        מייל ארגוני____ #Mail#.
+        טלפון סלולרי__ #CellPhone#
+
+        בברכה,
+        #UName#
+        #FrameName#
+      </Body>
+    </Mail>
+    <Mail MailType="0" ServiceID="1">
+      <To>talze@b-e.org.il</To>
+      <From>#Email#</From>
+      <Subject>קליטת עובד חדש:</Subject>
+      <Body>
+        טל שלום,
+
+        אנו קולטים עובד חדש:
+        --------------------
+        שם העובד____ #EmpName#
+        ת.ז_________ #EmpID#
+        תאריך לידה___ #BirthDate#
+        תפקיד_______ #JobName#
+        החל בתאריך___ #FirstDate#.
+        מייל ארגוני____ #Mail#.
+        טלפון סלולרי__ #CellPhone#
+        בקשה לחריגה: #SMngrAppr#
+        &lt;a href="http://be-online.org/NewEmpProp.aspx?E=#EmpID#"&gt;קישור לבקשה להצעת עבודה&lt;/a&gt;
+
+        בברכה,
+        #UName#
+        #FrameName#
+      </Body>
+    </Mail>
+    <Mail MailType="0" ServiceID="3">
+      <To>chenr@b-e.org.il</To>
+      <From>#Email#</From>
+      <Subject>קליטת עובד חדש:</Subject>
+      <Body>
+        חן שלום,
+
+        אנו קולטים עובד חדש:
+        --------------------
+        שם העובד____ #EmpName#
+        ת.ז_________ #EmpID#
+        תאריך לידה___ #BirthDate#
+        תפקיד_______ #JobName#
+        החל בתאריך___ #FirstDate#.
+        מייל ארגוני____ #Mail#.
+        טלפון סלולרי__ #CellPhone#
+        &lt;a href="http://be-online.org/NewEmpProp.aspx?E=#EmpID#"&gt;קישור לבקשה להצעת עבודה&lt;/a&gt;
+
+        בברכה,
+        #UName#
+        #FrameName#
+      </Body>
+    </Mail>
+    <Mail MailType="0" ServiceID="4">
+      <To>shirit.y@b-e.org.il</To>
+      <From>#Email#</From>
+      <Subject>קליטת עובד חדש:</Subject>
+      <Body>
+        שירית שלום,
+
+        אנו קולטים עובד חדש:
+        --------------------
+        שם העובד____ #EmpName#
+        ת.ז_________ #EmpID#
+        תאריך לידה___ #BirthDate#
+        תפקיד_______ #JobName#
+        החל בתאריך___ #FirstDate#.
+        מייל ארגוני____ #Mail#.
+        טלפון סלולרי__ #CellPhone#
+
+        &lt;a href="http://be-online.org/NewEmpProp.aspx?E=#EmpID#"&gt;קישור לבקשה להצעת עבודה&lt;/a&gt;
+
+        בברכה,
+        #UName#
+        #FrameName#
+      </Body>
+    </Mail>
+    <Mail MailType="0" ServiceID="4">
+      <To>irit.e@b-e.org.il</To>
+      <From>#Email#</From>
+      <Subject>קליטת עובד חדש:</Subject>
+      <Body>
+        עירית שלום,
+
+        אנו קולטים עובד חדש:
+        --------------------
+        שם העובד____ #EmpName#
+        ת.ז_________ #EmpID#
+        תאריך לידה___ #BirthDate#
+        תפקיד_______ #JobName#
+        החל בתאריך___ #FirstDate#.
+        מייל ארגוני____ #Mail#.
+        טלפון סלולרי__ #CellPhone#
+
+        &lt;a href="http://be-online.org/NewEmpProp.aspx?E=#EmpID#"&gt;קישור לבקשה להצעת עבודה&lt;/a&gt;
+
+        בברכה,
+        #UName#
+        #FrameName#
+      </Body>
+    </Mail>
+    <Mail MailType="1" ServiceID="0">
+      <To>vivis@b-e.org.il</To>
+      <From>#Email#</From>
+      <Subject>קליטת עובד חדש:</Subject>
+      <Body>
+        ויוי שלום,
+
+        אנו קולטים עובד חדש:
+        --------------------
+        שם העובד____ #EmpName#
+        ת.ז_________ #EmpID#
+        תאריך לידה___ #BirthDate#
+        תפקיד_______ #JobName#
+        החל בתאריך___ #FirstDate#.
+        מייל ארגוני____ #Mail#.
+        טלפון סלולרי__ #CellPhone#
+
+        בברכה,
+        #UName#
+        #FrameName#
+      </Body>
+    </Mail>
+  </MailGroup>
+
+	<MailGroup GroupID="2" Mode="1">
+		<Mail MailType="0">
+			<To></To>
+			<From></From>
+			<Subject>עזיבת עובד</Subject>
+            <Body>
+                &lt;style type=&quot;text/css&quot;&gt;
+                .tdt
+                {
+                border-bottom:1px solid gray;background:#DDDDDD;
+                }
+                &lt;/style&gt;
+                &lt;div&gt;
+                &lt;table style=&quot;table-layout:fixed;&quot;&gt;
+                &lt;tr&gt;
+                &lt;td style=&quot;width:180px;&quot;&gt;
+                שלום %Name%,
+                &lt;/td&gt;
+                &lt;td style=&quot;width:150px&quot;&gt;
+                &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                &lt;td colspan=&quot;2&quot; style=&quot;height:20px;&quot;&gt;
+                &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                &lt;td colspan=&quot;2&quot; style=&quot;font-weight:bold;text-decoration:underline;&quot;&gt;
+                פרטי העובד
+                &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                &lt;td colspan=&quot;2&quot; style=&quot;height:20px;&quot;&gt;
+                &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr class=&quot;tdt&quot; &gt;
+                &lt;td class=&quot;tdt&quot; &gt;
+                שם העובד
+                &lt;/td&gt;
+                &lt;td&gt;
+                #EmpName#
+                &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr class=&quot;tdt&quot; &gt;
+                &lt;td class=&quot;tdt&quot; &gt;
+                תעודת זהות
+                &lt;/td&gt;
+                &lt;td&gt;
+                #EmpID#
+                &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr class=&quot;tdt&quot; &gt;
+                &lt;td class=&quot;tdt&quot; &gt;
+                מסגרת
+                &lt;/td&gt;
+                &lt;td&gt;
+                #FrameName#
+                &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr class=&quot;tdt&quot; &gt;
+                &lt;td class=&quot;tdt&quot; &gt;
+                אזור / חטיבה
+                &lt;/td&gt;
+                &lt;td&gt;
+                #ServiceName#
+                &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr class=&quot;tdt&quot; &gt;
+                &lt;td class=&quot;tdt&quot; &gt;
+                תאריך עזיבה
+                &lt;/td&gt;
+                &lt;td&gt;
+                #ActualLeavingDate#
+                &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr class=&quot;tdt&quot; &gt;
+                &lt;td class=&quot;tdt&quot; &gt;
+                טלפון סלולרי
+                &lt;/td&gt;
+                &lt;td&gt;
+                #CellPhone#
+                &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr class=&quot;tdt&quot; &gt;
+                &lt;td class=&quot;tdt&quot; &gt;
+                אי-מייל
+                &lt;/td&gt;
+                &lt;td&gt;
+                #Mail#
+                &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr class=&quot;tdt&quot; &gt;
+                &lt;td class=&quot;tdt&quot; &gt;
+                הערות
+                &lt;/td&gt;
+                &lt;td&gt;
+                #Comment#
+                &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr class=&quot;tdt&quot; &gt;
+                &lt;td class=&quot;tdt&quot; &gt;
+                תאריך הטופס
+                &lt;/td&gt;
+                &lt;td&gt;
+                #Loadtime#
+                &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                &lt;td colspan=&quot;2&quot; style=&quot;height:20px;&quot;&gt;
+                &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                &lt;td colspan=&quot;2&quot; style=&quot;height:20px;&quot;&gt;
+                &lt;a href=&quot;/LeavingEmp.aspx?E=#EmpID#&quot;&gt;קישור לטופס העזיבה&lt;/a&gt;
+                &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                &lt;td colspan=&quot;2&quot; style=&quot;height:20px;&quot;&gt;
+                &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                &lt;td&gt;
+                בברכה,
+               &lt;/td&gt;
+                &lt;td&gt;
+                 &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                &lt;td&gt;
+                #UName#
+                &lt;/td&gt;
+                &lt;td&gt;
+                &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;/table&gt;
+                &lt;/div&gt;
+            </Body>
+        </Mail>
+        <Mail MailType="1">
+            <To></To>
+            <From></From>
+            <Subject>עזיבת עובד שלא טופלה במועד</Subject>
+            <Body>
+                &lt;style type=&quot;text/css&quot;&gt;
+                .tdt
+                {
+                border-bottom:1px solid gray;background:#DDDDDD;
+                }
+                &lt;/style&gt;
+                &lt;div&gt;
+                &lt;table style=&quot;table-layout:fixed;&quot;&gt;
+                &lt;tr&gt;
+                &lt;td style=&quot;width:180px;&quot;&gt;
+                שלום %Name%,
+                &lt;/td&gt;
+                &lt;td style=&quot;width:150px&quot;&gt;
+                &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                &lt;td colspan=&quot;2&quot; style=&quot;height:20px;&quot;&gt;
+                &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                &lt;td colspan=&quot;2&quot; style=&quot;font-weight:bold;text-decoration:underline;&quot;&gt;
+                פרטי העובד
+                &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                &lt;td colspan=&quot;2&quot; style=&quot;height:20px;&quot;&gt;
+                &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr class=&quot;tdt&quot; &gt;
+                &lt;td class=&quot;tdt&quot; &gt;
+                שם העובד
+                &lt;/td&gt;
+                &lt;td&gt;
+                #EmpName#
+                &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr class=&quot;tdt&quot; &gt;
+                &lt;td class=&quot;tdt&quot; &gt;
+                תעודת זהות
+                &lt;/td&gt;
+                &lt;td&gt;
+                #EmpID#
+                &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr class=&quot;tdt&quot; &gt;
+                &lt;td class=&quot;tdt&quot; &gt;
+                מסגרת
+                &lt;/td&gt;
+                &lt;td&gt;
+                #FrameName#
+                &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr class=&quot;tdt&quot; &gt;
+                &lt;td class=&quot;tdt&quot; &gt;
+                אזור / חטיבה
+                &lt;/td&gt;
+                &lt;td&gt;
+                #ServiceName#
+                &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr class=&quot;tdt&quot; &gt;
+                &lt;td class=&quot;tdt&quot; &gt;
+                תאריך עזיבה
+                &lt;/td&gt;
+                &lt;td&gt;
+                #ActualLeavingDate#
+                &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr class=&quot;tdt&quot; &gt;
+                &lt;td class=&quot;tdt&quot; &gt;
+                טלפון סלולרי
+                &lt;/td&gt;
+                &lt;td&gt;
+                #CellPhone#
+                &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr class=&quot;tdt&quot; &gt;
+                &lt;td class=&quot;tdt&quot; &gt;
+                אי-מייל
+                &lt;/td&gt;
+                &lt;td&gt;
+                #Mail#
+                &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr class=&quot;tdt&quot; &gt;
+                &lt;td class=&quot;tdt&quot; &gt;
+                הערות
+                &lt;/td&gt;
+                &lt;td&gt;
+                #Comment#
+                &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr class=&quot;tdt&quot; &gt;
+                &lt;td class=&quot;tdt&quot; &gt;
+                תאריך הטופס
+                &lt;/td&gt;
+                &lt;td&gt;
+                #Loadtime#
+                &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                &lt;td colspan=&quot;2&quot; style=&quot;height:20px;&quot;&gt;
+                &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                &lt;td colspan=&quot;2&quot; style=&quot;height:20px;&quot;&gt;
+                &lt;a href=&quot;/LeavingEmp.aspx?E=#EmpID#&quot;&gt;קישור לטופס העזיבה&lt;/a&gt;
+                &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                &lt;td colspan=&quot;2&quot; style=&quot;height:20px;&quot;&gt;
+                &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                &lt;td&gt;
+                בברכה,
+                &lt;/td&gt;
+                &lt;td&gt;
+                &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                &lt;td&gt;
+                #UName#
+                &lt;/td&gt;
+                &lt;td&gt;
+                &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;/table&gt;
+                &lt;/div&gt;
+            </Body>
+        </Mail>
+        <Mail MailType="2">
+            <To></To>
+            <From></From>
+            <Subject>עזיבת עובד שיש לו טלפון סלולרי</Subject>
+            <Body>
+                &lt;style type=&quot;text/css&quot;&gt;
+                .tdt
+                {
+                border-bottom:1px solid gray;background:#DDDDDD;
+                }
+                &lt;/style&gt;
+                &lt;div&gt;
+                &lt;table style=&quot;table-layout:fixed;&quot;&gt;
+                &lt;tr&gt;
+                &lt;td style=&quot;width:180px;&quot;&gt;
+                שלום %Name%,
+                &lt;/td&gt;
+                &lt;td style=&quot;width:150px&quot;&gt;
+                &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                &lt;td colspan=&quot;2&quot; style=&quot;height:20px;&quot;&gt;
+                &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                &lt;td colspan=&quot;2&quot; style=&quot;font-weight:bold;text-decoration:underline;&quot;&gt;
+                פרטי העובד
+                &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                &lt;td colspan=&quot;2&quot; style=&quot;height:20px;&quot;&gt;
+                &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr class=&quot;tdt&quot; &gt;
+                &lt;td class=&quot;tdt&quot; &gt;
+                שם העובד
+                &lt;/td&gt;
+                &lt;td&gt;
+                #EmpName#
+                &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr class=&quot;tdt&quot; &gt;
+                &lt;td class=&quot;tdt&quot; &gt;
+                תעודת זהות
+                &lt;/td&gt;
+                &lt;td&gt;
+                #EmpID#
+                &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr class=&quot;tdt&quot; &gt;
+                &lt;td class=&quot;tdt&quot; &gt;
+                מסגרת
+                &lt;/td&gt;
+                &lt;td&gt;
+                #FrameName#
+                &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr class=&quot;tdt&quot; &gt;
+                &lt;td class=&quot;tdt&quot; &gt;
+                אזור / חטיבה
+                &lt;/td&gt;
+                &lt;td&gt;
+                #ServiceName#
+                &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr class=&quot;tdt&quot; &gt;
+                &lt;td class=&quot;tdt&quot; &gt;
+                טלפון סלולרי
+                &lt;/td&gt;
+                &lt;td&gt;
+                #CellPhoneNumber#
+                &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr class=&quot;tdt&quot; &gt;
+                &lt;td class=&quot;tdt&quot; &gt;
+                תאריך עזיבה
+                &lt;/td&gt;
+                &lt;td&gt;
+                #ActualLeavingDate#
+                &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr class=&quot;tdt&quot; &gt;
+                &lt;td class=&quot;tdt&quot; &gt;
+                תאריך הטופס
+                &lt;/td&gt;
+                &lt;td&gt;
+                #Loadtime#
+                &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                &lt;td colspan=&quot;2&quot; style=&quot;height:20px;&quot;&gt;
+                &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                &lt;td&gt;
+                בברכה,
+                &lt;/td&gt;
+                &lt;td&gt;
+                &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                &lt;td&gt;
+                #UName#
+                &lt;/td&gt;
+                &lt;td&gt;
+                &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;/table&gt;
+                &lt;/div&gt;
+            </Body>
+        </Mail>
+        <Mail MailType="3">
+            <To></To>
+            <From></From>
+            <Subject>טיפול בכתובת אי מייל של בית אקשטיין</Subject>
+            <Body>
+                &lt;style type=&quot;text/css&quot;&gt;
+                .tdt
+                {
+                border-bottom:1px solid gray;background:#DDDDDD;
+                }
+                &lt;/style&gt;
+                &lt;div&gt;
+                &lt;table style=&quot;table-layout:fixed;&quot;&gt;
+                &lt;tr&gt;
+                &lt;td style=&quot;width:180px;&quot;&gt;
+                שלום %Name%,
+                &lt;/td&gt;
+                &lt;td style=&quot;width:150px&quot;&gt;
+                &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                &lt;td colspan=&quot;2&quot; style=&quot;height:20px;&quot;&gt;
+                &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr class=&quot;tdt&quot; &gt;
+                &lt;td class=&quot;tdt&quot; &gt;
+                אנו מבקשים &lt;b&gt;#MailAction#&lt;/b&gt; את כתובת האימייל
+                &lt;/td&gt;
+                &lt;td&gt;
+                #MailAddress#
+                &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr class=&quot;tdt&quot; &gt;
+                &lt;td class=&quot;tdt&quot; &gt;
+                תאריך לביצוע
+                &lt;/td&gt;
+                &lt;td&gt;
+                #ActualLeavingDate#
+                &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr class=&quot;tdt&quot; &gt;
+                &lt;td class=&quot;tdt&quot; &gt;
+                תאריך הבקשה
+                &lt;/td&gt;
+                &lt;td&gt;
+                #Loadtime#
+                &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                &lt;td colspan=&quot;2&quot; style=&quot;height:20px;&quot;&gt;
+                &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                &lt;td&gt;
+                בתודה מראש,
+                &lt;/td&gt;
+                &lt;td&gt;
+                &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                &lt;td&gt;
+                צוות בית אקשטיין
+                &lt;/td&gt;
+                &lt;td&gt;
+                &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;/table&gt;
+                &lt;/div&gt;
+            </Body>
+        </Mail>
+    </MailGroup>
+
+	<MailGroup GroupID="2" Mode="2">
+			<Mail MailType="0" ServiceID="0">
+				<To>arielpelli1@gmail.com</To>
+				<From>#Email#</From>
+				<Subject>עדכון פרטים - עובד שעוזב</Subject>
+				<Body>
+					ענבל שלום,
+
+					פרטי העובד שעוזב
+					-------------------
+					שם העובד____ #EmpName#
+					ת.ז_________ #EmpID#
+					תאריך לידה___ #BirthDate#
+					תפקיד_______ #JobName#
+					סיבת עזיבה____ #EMENAME#
+					החל בתאריך___ #LastDate#.
+					מייל ארגוני____ #Mail#.
+					טלפון סלולרי__ #CellPhone#
+
+					בברכה,
+					#UName#
+					#FrameName#
+				</Body>
+			</Mail>
+		<Mail MailType="0" ServiceID="0">
+			<To>arielpelli1@gmail.com</To>
+			<From>#Email#</From>
+			<Subject>עדכון פרטים - עובד שעוזב</Subject>
+			<Body>
+				שולי שלום,
+
+				פרטי העובד שעוזב
+				-------------------
+				שם העובד____ #EmpName#
+				ת.ז_________ #EmpID#
+				תאריך לידה___ #BirthDate#
+				תפקיד_______ #JobName#
+				סיבת עזיבה____ #EMENAME#
+				החל בתאריך___ #LastDate#.
+				מייל ארגוני____ #Mail#.
+				טלפון סלולרי__ #CellPhone#
+
+				בברכה,
+				#UName#
+				#FrameName#
+			</Body>
+		</Mail>
+		<Mail MailType="0" ServiceID="1">
+			<To>arielpelli1@gmail.com</To>
+			<From>#Email#</From>
+			<Subject>עדכון פרטים - עובד שעוזב</Subject>
+			<Body>
+				לינה שלום,
+
+				פרטי העובד שעוזב
+				-------------------
+				שם העובד____ #EmpName#
+				ת.ז_________ #EmpID#
+				תאריך לידה___ #BirthDate#
+				תפקיד_______ #JobName#
+				סיבת עזיבה____ #EMENAME#
+				החל בתאריך___ #LastDate#.
+				מייל ארגוני____ #Mail#.
+				טלפון סלולרי__ #CellPhone#
+
+				בברכה,
+				#UName#
+				#FrameName#
+			</Body>
+		</Mail>
+		<Mail MailType="0" ServiceID="2">
+			<To>arielpelli1@gmail.com</To>
+			<From>#Email#</From>
+			<Subject>עדכון פרטים - עובד שעוזב</Subject>
+			<Body>
+				חן שלום,
+
+				פרטי העובד שעוזב
+				-------------------
+				שם העובד____ #EmpName#
+				ת.ז_________ #EmpID#
+				תאריך לידה___ #BirthDate#
+				תפקיד_______ #JobName#
+				סיבת עזיבה____ #EMENAME#
+				החל בתאריך___ #LastDate#.
+				מייל ארגוני____ #Mail#.
+				טלפון סלולרי__ #CellPhone#
+
+				בברכה,
+				#UName#
+				#FrameName#
+			</Body>
+		</Mail>
+		<Mail MailType="0" ServiceID="3">
+			<To>arielpelli1@gmail.com</To>
+			<From>#Email#</From>
+			<Subject>עדכון פרטים - עובד שעוזב</Subject>
+			<Body>
+				נופר שלום,
+
+				פרטי העובד שעוזב
+				-------------------
+				שם העובד____ #EmpName#
+				ת.ז_________ #EmpID#
+				תאריך לידה___ #BirthDate#
+				תפקיד_______ #JobName#
+				סיבת עזיבה____ #EMENAME#
+				החל בתאריך___ #LastDate#.
+				מייל ארגוני____ #Mail#.
+				טלפון סלולרי__ #CellPhone#
+
+				בברכה,
+				#UName#
+				#FrameName#
+			</Body>
+		</Mail>
+		<Mail MailType="0" ServiceID="4">
+			<To>arielpelli1@gmail.com</To>
+			<To></To>
+			<From>#Email#</From>
+			<Subject>עדכון פרטים - עובד שעוזב</Subject>
+			<Body>
+				עירית שלום,
+
+				פרטי העובד שעוזב
+				-------------------
+				שם העובד____ #EmpName#
+				ת.ז_________ #EmpID#
+				תאריך לידה___ #BirthDate#
+				תפקיד_______ #JobName#
+				סיבת עזיבה____ #EMENAME#
+				החל בתאריך___ #LastDate#.
+				מייל ארגוני____ #Mail#.
+				טלפון סלולרי__ #CellPhone#
+
+				בברכה,
+				#UName#
+				#FrameName#
+			</Body>
+		</Mail>
+		<Mail MailType="1" ServiceID="0">
+			<To>arielpelli1@gmail.com</To>
+			<From>#Email#</From>
+			<Subject>עדכון פרטים - עובד שעוזב</Subject>
+			<Body>
+				ויוי שלום,
+
+				פרטי העובד שעוזב
+				-------------------
+				שם העובד____ #EmpName#
+				ת.ז_________ #EmpID#
+				תאריך לידה___ #BirthDate#
+				תפקיד_______ #JobName#
+				החל בתאריך___ #LastDate#.
+				מייל ארגוני____ #Mail#.
+				טלפון סלולרי__ #CellPhone#
+
+				בברכה,
+				#UName#
+				#FrameName#
+			</Body>
+		</Mail>
+	</MailGroup>
+
+</EmpMails>

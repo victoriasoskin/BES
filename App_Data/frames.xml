@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<מסגרות>
+	<frame CategoryID="1000001" name="חטיבה טיפולית">
+		<frame CategoryID="1" name="כפר ילדים בית אקשטיין,תדהר פרדס חנה"/>
+		<frame CategoryID="2" name="קהילה צעירה בית אקשטיין, דרך בנימינה זכרון"/>
+		<frame CategoryID="3" name="קהילה מוגנת בית אקשטיין, דרך בנימינה זכרון "/>
+		<frame CategoryID="4" name="שלוחה בית אקשטיין, הבוטנים פרדס חנה"/>
+		<frame CategoryID="16" name="מרכז תעסוקה בית אקשטיין, הרכבת בנימינה"/>
+		<frame CategoryID="17" name="מרכז תעסוקה בית אקשטיין, א.ס. לוי, רמלה"/>
+		<frame CategoryID="19" name="בית ספר בית אקשטיין, תדהר פרדס חנה"/>
+		<frame CategoryID="27" name="הוסטל בית אקשטיין, קיבוץ עין שמר"/>
+		<frame CategoryID="36" name="מרכז יום טיפולי רמלה"/>
+		<frame CategoryID="103" name="חווה בית אקשטיין, יזרעאל, פרדס חנה"/>
+		<frame CategoryID="72" name="הנהלת חטיבה טיפולית"/>
+	</frame>
+	<frame CategoryID="1000002" name="איזור צפון">
+		<frame CategoryID="13" name="הוסטל בית אקשטיין,עדן אין, זיכרון יעקב"/>
+		<frame CategoryID="20" name="בית ספר בית אקשטיין, קיבוץ גן שמואל"/>
+		<frame CategoryID="24" name="שירותי השמה בית אקשטיין"/>
+		<frame CategoryID="26" name="בית ספר בית אקשטיין, קיבוץ שדות ים"/>
+		<frame CategoryID="30" name="דיור מוגן בית אקשטיין, אורנשטיין חדרה"/>
+		<frame CategoryID="39" name="שרותי השמה בית אקשטיין, הנביאים חיפה"/>
+		<frame CategoryID="40" name="קהילת Beראשית, אורנשטיין חדרה"/>
+		<frame CategoryID="44" name="בית ספר בית אקשטיין, אופקים"/>
+		<frame CategoryID="65" name="הוסטל בית אקשטיין, קיבוץ חפציבה"/>
+		<frame CategoryID="101" name="הוסטל בית אקשטיין, רמבם אור עקיבא"/>
+		<frame CategoryID="108" name="הוסטל בית אקשטיין, חיפה"/>
+		<frame CategoryID="70" name="הנהלת איזור צפון"/>
+	</frame>
+	<frame CategoryID="1000003" name="אזור שרון">
+		<frame CategoryID="6" name="הוסטל בית אקשטיין, הנרקיסים הרצליה"/>
+		<frame CategoryID="8" name="הוסטל בית אקשטיין, הטללים רעננה"/>
+		<frame CategoryID="9" name="הוסטל בית אקשטיין, טיראן הרצליה"/>
+		<frame CategoryID="21" name="בית ספר בית אקשטיין, אבן יהודה"/>
+		<frame CategoryID="33" name="מרכז תעסוקה בית אקשטיין, התעשייה רעננה"/>
+		<frame CategoryID="34" name="מרכז תעסוקה בית אקשטיין - רבינזון, פתח תקוה"/>
+		<frame CategoryID="43" name="בית ספר בית אקשטיין  בית ינאי "/>
+		<frame CategoryID="100" name="הוסטל בית אקשטיין, יקותיאל כפר סבא "/>
+		<frame CategoryID="107" name="בית ספר בית אקשטיין, אור יהודה"/>
+		<frame CategoryID="110" name="הוסטל בית אקשטיין- פתח תקווה "/>
+		<frame CategoryID="73" name="הנהלת איזור שרון"/>
+	</frame>
+	<frame CategoryID="1000004" name="איזור מרכז דרום">
+		<frame CategoryID="7" name="הוסטל בית אקשטיין, שלונסקי תל אביב"/>
+		<frame CategoryID="10" name="הוסטל בית אקשטיין, אנילביץ תל אביב"/>
+		<frame CategoryID="11" name="דיור מוגן בית אקשטיין, אנילביץ תל אביב"/>
+		<frame CategoryID="18" name="שירותי השמה בית אקשטיין, אזור מרכז דרום"/>
+		<frame CategoryID="22" name="בית ספר בית אקשטיין, יד רמבם"/>
+		<frame CategoryID="25" name="בית ספר בית אקשטיין תיכון, גבעתיים"/>
+		<frame CategoryID="32" name="הוסטל בית אקשטיין, ז'בוטינסקי תל אביב"/>
+		<frame CategoryID="42" name="בית ספר בית אקשטיין, ראשון לציון"/>
+		<frame CategoryID="46" name="הוסטל בית אקשטיין, קיבוץ גת"/>
+		<frame CategoryID="48" name="מרכז Be, קיבוץ גן שמואל "/>
+		<frame CategoryID="106" name="בית ספר בית אקשטיין יסודי, גבעתיים"/>
+		<frame CategoryID="109" name="גן בית אקשטיין, קיבוץ גן שמואל"/>
+		<frame CategoryID="71" name="הנהלת איזור מרכז דרום"/>
+	</frame>
+	<frame CategoryID="1000008" name="הנהלת בית אקשטיין">
+		<frame CategoryID="60" name="חטיבת כספים"/>
+		<frame CategoryID="115" name="אחר"/>
+	</frame>
+</מסגרות>
+
+

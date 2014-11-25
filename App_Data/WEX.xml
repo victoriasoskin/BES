@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Form txt="דוח ארועים חריגים למשרד הרווחה">
+    <Report Sort="yes">
+        <Column n="1" Name="מספר" Header="מספר דוח" Format="" Link="RepLink"></Column>
+        <Column n="2" Name="תז" Header="תעודת זהות" Format=""></Column>
+        <Column n="3" Name="שם פרטי" Header="שם פרטי" Format=""></Column>
+        <Column n="4" Name="שם משפחה" Header="שם משפחה" Format=""></Column>
+        <Column n="5" Name="תאריך לידה" Header="תאריך לידה" Format="{0:dd/MM/yyyy}"></Column>
+        <Column n="6" Name="ServiceName" Header="אזור/חטיבה" Format=""></Column>
+        <Column n="7" Name="מסגרת" Header="מסגרת" Format=""></Column>
+        <Column n="8" Name="מנהל" Header="מנהל" Format=""></Column>
+        <Column n="9" Name="תאריך רישום" Header="תאריך רישום" Format="{0:dd/MM/yyyy HH:mm}"></Column>
+        <Column n="10" Name="תאריך הארוע" Header="תאריך הארוע" Format="{0:dd/MM/yyyy HH:mm}"></Column>
+        <Column n="11" Name="שם הדוח" Header="כותרת הדוח" Format=""></Column>
+        <Column n="12" Name="מקום הארוע" Header="מקום הארוע" Format="" Wrap="no"></Column>
+        <Column n="13" Name="תאור המקום" Header="תאור המקום" Format=""></Column>
+        <Column n="14" Name="שם ותפקיד המדווח" Header="שם ותפקיד המדווח" Format=""></Column>
+        <Column n="15" Name="נזקי גוף" Header="נזקי גוף" Format=""></Column>
+        <Column n="16" Name="נזקי רכוש" Header="נזקי רכוש" Format=""></Column>
+        <Column n="17" Name="תאור מפורט" Header="תאור מפורט" Format=""></Column>
+        <Column n="18" Name="סיווג 1" Header="סיווג ראשי" Format=""></Column>
+        <Column n="19" Name="סווג 2" Header="סיווג משני" Format=""></Column>
+        <Column n="20" Name="חומרה" Header="חומרה" Format=""></Column>
+        <Column n="21" Name="פעולות מידיות שננקטו" Header="פעולות מידיות שננקטו" Format=""></Column>
+        <Column n="22" Name="פעולות לביצוע בהמשך" Header="פעולות לביצוע בהמשך" Format=""></Column>
+        <Column n="23" Name="סטטוס" Header="ססטטוס" Format=""></Column>
+        <Column n="24" Name="מדוע לא נסגר" Header="מדוע לא נסגר" Format=""></Column>
+        <Column n="25" Name="תאריך סגירה" Header="תאריך סגירה" Format="{0:dd/MM/yyyy}"></Column>
+        <Column n="26" Name="מנהל מסגרת" Header="דווח למנהל מסגרת" Format=""></Column>
+        <Column n="27" Name="מד&quot;א" Header="דווח למד&quot;א" Format=""></Column>
+        <Column n="28" Name="משפחה" Header="דווח למשפחה" Format=""></Column>
+        <Column n="29" Name="משטרה" Header="דווח למשטרה" Format=""></Column>
+        <Column n="30" Name="פקיד סעד" Header="דווח לפקיד סעד" Format=""></Column>
+        <Column n="31" Name="מתאם טיפול/עוס בקהילה" Header="דווח למתאם טיפול/עוס בקהילה" Format=""></Column>
+        <Column n="32" Name="מפקח/ת" Header="דווח למפקח/ת" Format=""></Column>
+        <Column n="33" Name="שירות" Header="שירות" Format=""></Column>
+        <Column n="34" Name="שירות כללי" Header="שירות כללי" Format=""></Column>
+        <Column n="35" Name="לקות" Header="לקות" Format=""></Column>
+      <columnGroups>
+            <RepColumns Name="כל העמודות">*</RepColumns>
+        </columnGroups>
+    </Report>
+</Form>

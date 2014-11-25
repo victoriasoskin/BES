@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="default.aspx" title="דף הבית"  description="כניסה">
+       <siteMapNode title="דיווח תשלומים" url="CustPaymentEvent.aspx" />
+        <siteMapNode title="דוח תיקי לקוחות" url="CustEventReportuS.aspx" />
+        <siteMapNode title="דוחות יציבות כלכלית">
+            <siteMapNode title="סיכום" url="p3aSummary.aspx" />
+            <siteMapNode title="דוח תקציב למסגרת" url="Reports.aspx?R=1" />
+            <siteMapNode title="יעד לקוחות" url="CSTCOUNT.aspx" />
+            <siteMapNode title="תקציב כח אדם" url="~/p1aSalary.Aspx" />
+            <siteMapNode title="תקציב הוצאות והשקעות" url="~/p3aBVAREPM.aspx" />
+            <siteMapNode title="לא משולמים" url="FMCUSTNOTPAIDCNT.aspx"/>
+            <siteMapNode title="חייבים" url="debits.aspx"/>
+            <siteMapNode title="דוחות שלא יוצגו"  url="p3aDontShowRep.aspx" />
+            <siteMapNode title="רשימת לקוחות" url="CustomerList.aspx" />
+          <siteMapNode title="הערכת עובדים" url="HRMngr.Aspx" />
+        </siteMapNode>
+        <siteMapNode title="שונות">
+        <siteMapNode title="משוב" url="FeedBack.aspx" />
+        <siteMapNode title="עדכון תעריפים" url="tarifs.aspx" />
+        <siteMapNode title="שינוי סיסמא" url="cpe.aspx" />
+      </siteMapNode>
+      <siteMapNode title="יציאה מהמערכת" url="~/Exit.aspx" />
+        <!--!לא מוצגים בתפריט - לצורך בקרת כניסה-->
+        <siteMapNode url="~/CustEventReportU.aspx" />
+        <siteMapNode url="~/CustStatus.aspx" />
+        <siteMapNode url="p3aDetTrans.aspx" />
+        <siteMapNode url="p3aDontShowMessage.aspx" />
+		<siteMapNode url="ge.aspx" />
+		<siteMapNode url="ErrMessage.aspx" />
+
+	</siteMapNode>
+</siteMap>

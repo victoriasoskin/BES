@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="default.aspx" title=""  description="כניסה">
+      <siteMapNode title="ניהול שוטף">
+        <siteMapNode title="ניהול הפניות/מועמדים" url="edu.ASPX" description="ניהול תיקי מועמדים" />
+        <siteMapNode title="ניהול תיקי לקוחות" url="CustEventReport.aspx" />
+		  <siteMapNode title="הצעת עבודה" url="NewEmpProp.aspx" />
+	  </siteMapNode>
+   <siteMapNode title="דוחות" >
+          <siteMapNode title="רשימת לקוחות" url="CustomerList.aspx" />
+          <siteMapNode title="דוח אירועים חריגים" url="WexReports.ASPX" />
+     <siteMapNode title="דוח תוקף פעולות" url="CEventExpiration.ASPX" />
+     <siteMapNode title="דוח מועמדים" url="CandReport.ASPX" />
+		  <siteMapNode title="דוח שאלונים" url="p5aFormAvg.ASPX" />
+		   <siteMapNode title="דוח סקרים" url="SurveyAvg.aspx" />
+	   <siteMapNode title="נתוני יציבות כלכלית"/>
+           <siteMapNode title="- עמידה ביעד לקוחות" url="CSTCOUNT.aspx" />
+          <siteMapNode title="- עמידה בתקציב כח אדם" url="~/p1aSalary.Aspx" />
+          <siteMapNode title="- עמידה בתקציב הוצאות" url="~/p3aBVAREPM.aspx" />
+          <siteMapNode title="- לא משולמים" url="FMCUSTNOTPAIDCNT.aspx"/>
+      </siteMapNode>
+      <siteMapNode title="שונות">
+		  <siteMapNode title="רישיון המסגרת" url="License.aspx" />
+          <siteMapNode title="שינוי סיסמא" url="cpe.aspx" />
+    </siteMapNode>
+    <siteMapNode title="יציאה מהמערכת" url="~/Exit.aspx" />
+    <!--!לא מוצגים בתפריט - לצורך בקרת כניסה-->
+          <siteMapNode url="CustEventList.aspx" />
+  <siteMapNode url="EVENTCOUNT.aspx" />
+    <siteMapNode url="~/CustomerAdd2.aspx" />
+    <siteMapNode url="~/CustomerUpd2.aspx" />
+    <siteMapNode url="~/CustStatus.aspx" />
+    <siteMapNode url="CustLateEvents.aspx" />
+    <siteMapNode url="CustEventReportU.aspx" />
+    <siteMapNode url="p3aFeedBack.aspx" />
+    <siteMapNode url="p3aproject.aspx" />
+    <siteMapNode url="p3aDetTrans.aspx" />
+    <siteMapNode url="p1aSalaryAcc.Aspx" />
+    <siteMapNode url="p1aSalaryTran.Aspx" />
+    <siteMapNode url="Forms.aspx" />
+    <siteMapNode url="FormsNew.aspx" />
+    <siteMapNode url="ExEvent.aspx" />
+      <siteMapNode url="ExEventU.aspx" />
+      <siteMapNode url="p3aDontShowMessage.aspx" />
+	  <siteMapNode url="ge.aspx" />
+	  <siteMapNode url="Surveytexts.aspx" />
+	  <siteMapNode url="ErrMessage.aspx" />
+        <siteMapNode url="EXREPORT.ASPX" />
+    <siteMapNode url="ShowOno.Aspx" />
+   </siteMapNode>
+</siteMap>

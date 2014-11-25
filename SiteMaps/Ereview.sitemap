@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="default.aspx" title="דף הבית"  description="כניסה">
+      <siteMapNode title="הערכת עובדים" url="HRMngr.Aspx" />
+      <siteMapNode title="שינוי סיסמא" url="cpe.aspx" />
+    <siteMapNode title="יציאה מהמערכת" url="~/Exit.aspx" />
+    <!--!לא מוצגים בתפריט - לצורך בקרת כניסה-->
+      <siteMapNode url="EVENTCOUNT.aspx" />
+      <siteMapNode url="~/CustomerAdd2.aspx" />
+      <siteMapNode url="~/CustomerUpd2.aspx" />
+      <siteMapNode url="~/CustStatus.aspx" />
+      <siteMapNode url="CustLateEvents.aspx" />
+      <siteMapNode url="CustEventReportU.aspx" />
+      <siteMapNode url="p3aFeedBack.aspx" />
+      <siteMapNode url="p3aproject.aspx" />
+      <siteMapNode url="p3aDetTrans.aspx" />
+      <siteMapNode url="p1aSalaryAcc.Aspx" />
+    <siteMapNode url="p1aSalaryTran.Aspx" />
+    <siteMapNode url="Forms.aspx" />
+    <siteMapNode url="FormsNew.aspx" />
+    <siteMapNode url="ExEvent.aspx" />
+      <siteMapNode url="ExEventU.aspx" />
+      <siteMapNode url="p3aDontShowMessage.aspx" />
+      <siteMapNode url="ge.aspx" />
+      <siteMapNode url="Surveytexts.aspx" />
+      <siteMapNode url="ErrMessage.aspx" />
+  </siteMapNode>
+</siteMap>

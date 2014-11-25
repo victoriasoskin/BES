@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="default.aspx" title=""  description="כניסה">
+        <siteMapNode title="ניהול שוטף">
+            <siteMapNode title="רשימת הפניות/מועמדים" url="EDUuS.ASPX" description="ניהול תיקי מועמדים" />
+            <siteMapNode title="דוח תיקי לקוחות" url="CustEventReportuS.aspx" />
+			      <siteMapNode title="הצעת עבודה" url="newempprop.aspx" />
+            <siteMapNode title="סיום העסקת עובד" url="LeavingEmp.aspx" />
+        </siteMapNode>
+        <siteMapNode title="דוחות" >
+            <siteMapNode title="רשימת לקוחות" url="CustomerList.aspx" />
+            <siteMapNode title="דוח אירועים חריגים" url="WexReports.ASPX" />
+          <siteMapNode title="דוח תוקף פעולות" url="CEventExpiration.ASPX" />
+          <siteMapNode title="דוח שאלונים" url="p5aFormAVG.ASPX" />
+          <siteMapNode title="נתוח תמיכות בחינוך" url="FormsReport.aspx"/>
+          <siteMapNode title="דוחות איכות חיים בחינוך" url="TTFStart.Aspx?T=TTF/TTWPReports.aspx"/>
+          <siteMapNode title="דוח סקרים" url="SurveyAVG.ASPX" />
+          <siteMapNode title="הערכת עובדים" url="HRMngr.Aspx?f=2" />
+          <siteMapNode title="דוח לאקסל" url="RSRCHREP.aspx" />
+          <siteMapNode title="נתוני יציבות כלכלית"/>
+            <siteMapNode title=" - דוח תקציב למסגרת" url="Reports.aspx?r=1" />
+            <siteMapNode title="- עמידה ביעד לקוחות" url="CSTCOUNT.aspx" />
+            <siteMapNode title="- עמידה בתקציב כח אדם" url="~/p1aSalary.aspx" />
+            <siteMapNode title="- עמידה בתקציב הוצאות" url="~/p3aBVAREPM.aspx" />
+			      <siteMapNode title="- לא משולמים" url="FMCUSTNOTPAIDCNT.aspx"/>
+			      <siteMapNode title="- מועמדים" url="CandReport.aspx"/>
+			      <siteMapNode title="- אחוזי הצבעה" url="surveystatus.aspx"/>
+			      <siteMapNode title="דוח מרכז למסגרת" url="FrameRep.aspx"/>
+          <siteMapNode title="דוח עוזבים" url="LEReports.aspx"/>
+          <siteMapNode title="גרפים לחינוך" url="dsb.aspx"/>
+        </siteMapNode>
+        <siteMapNode title="שונות">
+		  <siteMapNode title="שינוי סיסמא" url="cpe.aspx" />
+		  <siteMapNode url="CustEventList.aspx" />
+		</siteMapNode>
+    <siteMapNode title="יציאה מהמערכת" url="~/Exit.aspx" />
+    <!--!לא מוצגים בתפריט - לצורך בקרת כניסה-->
+    <siteMapNode url="~/CustomerAdd2.aspx" />
+    <siteMapNode url="~/CustomerUpd2.aspx" />
+    <siteMapNode url="~/CustStatus.aspx" />
+      <siteMapNode url="~/CustEventReport.aspx" />
+      <siteMapNode url="CustLateEvents.aspx" />
+        <siteMapNode url="TTPlanReportX.aspx" />
+      <siteMapNode url="TTPlanReport.aspx" />
+      <siteMapNode url="TTPlan.aspx" />
+      <siteMapNode url="p3aDetTrans.aspx" />
+      <siteMapNode url="p2aDetailsAcc.aspx" />
+      <siteMapNode url="p1aSalaryAcc.Aspx" />
+      <siteMapNode url="p1aSalaryTran.Aspx" />
+      <siteMapNode url="p2aDetailTrans.aspx" />
+      <siteMapNode url="DSBDef.aspx" />
+      <siteMapNode url="p2aPNTrans.aspx" />
+      <siteMapNode url="ExEvent.aspx" />
+      <siteMapNode url="Forms.aspx" />
+		<siteMapNode url="ge.aspx" />
+		<siteMapNode url="Surveytexts.aspx" />
+      <siteMapNode url="FormsNew.aspx" />
+      <siteMapNode url="ErrMessage.aspx" />
+        <siteMapNode url="MultiTemplate.aspx" />
+            <siteMapNode url="EXREPORT.ASPX" />
+      <siteMapNode url="ShowOno.Aspx" />
+    </siteMapNode>
+</siteMap>

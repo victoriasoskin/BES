@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<tab>
+	<Group Name="שביעות רצון" gid="2">
+		<Ctype ID="">
+			<Sgrade Grade="40" Percentage="99"/>
+			<Sgrade Grade="39" Percentage="99"/>
+			<Sgrade Grade="38" Percentage="99"/>
+			<Sgrade Grade="37" Percentage="99"/>
+			<Sgrade Grade="36" Percentage="99"/>
+			<Sgrade Grade="35" Percentage="99"/>
+			<Sgrade Grade="34" Percentage="99"/>
+			<Sgrade Grade="33" Percentage="99"/>
+			<Sgrade Grade="32" Percentage="99"/>
+			<Sgrade Grade="31" Percentage="99"/>
+			<Sgrade Grade="30" Percentage="97"/>
+			<Sgrade Grade="29" Percentage="95"/>
+			<Sgrade Grade="28" Percentage="92"/>
+			<Sgrade Grade="27" Percentage="86"/>
+			<Sgrade Grade="26" Percentage="79"/>
+			<Sgrade Grade="25" Percentage="69"/>
+			<Sgrade Grade="24" Percentage="59"/>
+			<Sgrade Grade="23" Percentage="48"/>
+			<Sgrade Grade="22" Percentage="36"/>
+			<Sgrade Grade="21" Percentage="27"/>
+			<Sgrade Grade="20" Percentage="18"/>
+			<Sgrade Grade="19" Percentage="12"/>
+			<Sgrade Grade="18" Percentage="7"/>
+			<Sgrade Grade="17" Percentage="4"/>
+			<Sgrade Grade="16" Percentage="2"/>
+			<Sgrade Grade="15" Percentage="1"/>
+			<Sgrade Grade="14" Percentage="0"/>
+			<Sgrade Grade="13" Percentage="0"/>
+			<Sgrade Grade="12" Percentage="0"/>
+			<Sgrade Grade="11" Percentage="0"/>
+			<Sgrade Grade="10" Percentage="0"/>
+		</Ctype>
+	</Group>
+	<Group Name="רווחה" gid="3">
+		<Ctype ID="">
+			<Sgrade Grade="40" Percentage="99"/>
+			<Sgrade Grade="39" Percentage="99"/>
+			<Sgrade Grade="38" Percentage="99"/>
+			<Sgrade Grade="37" Percentage="99"/>
+			<Sgrade Grade="36" Percentage="99"/>
+			<Sgrade Grade="35" Percentage="99"/>
+			<Sgrade Grade="34" Percentage="99"/>
+			<Sgrade Grade="33" Percentage="99"/>
+			<Sgrade Grade="32" Percentage="99"/>
+			<Sgrade Grade="31" Percentage="98"/>
+			<Sgrade Grade="30" Percentage="96"/>
+			<Sgrade Grade="29" Percentage="93"/>
+			<Sgrade Grade="28" Percentage="88"/>
+			<Sgrade Grade="27" Percentage="82"/>
+			<Sgrade Grade="26" Percentage="74"/>
+			<Sgrade Grade="25" Percentage="64"/>
+			<Sgrade Grade="24" Percentage="52"/>
+			<Sgrade Grade="23" Percentage="40"/>
+			<Sgrade Grade="22" Percentage="31"/>
+			<Sgrade Grade="21" Percentage="21"/>
+			<Sgrade Grade="20" Percentage="14"/>
+			<Sgrade Grade="19" Percentage="9"/>
+			<Sgrade Grade="18" Percentage="5"/>
+			<Sgrade Grade="17" Percentage="3"/>
+			<Sgrade Grade="16" Percentage="1"/>
+			<Sgrade Grade="15" Percentage="1"/>
+			<Sgrade Grade="14" Percentage="0"/>
+			<Sgrade Grade="13" Percentage="0"/>
+			<Sgrade Grade="12" Percentage="0"/>
+			<Sgrade Grade="11" Percentage="0"/>
+			<Sgrade Grade="10" Percentage="0"/>
+		</Ctype>
+	</Group>
+	<Group Name="שייכות חברתית" gid="4">
+		<Ctype ID="">
+			<Sgrade Grade="40" Percentage="98"/>
+			<Sgrade Grade="39" Percentage="98"/>
+			<Sgrade Grade="38" Percentage="98"/>
+			<Sgrade Grade="37" Percentage="98"/>
+			<Sgrade Grade="36" Percentage="98"/>
+			<Sgrade Grade="35" Percentage="98"/>
+			<Sgrade Grade="34" Percentage="98"/>
+			<Sgrade Grade="33" Percentage="98"/>
+			<Sgrade Grade="32" Percentage="98"/>
+			<Sgrade Grade="31" Percentage="95"/>
+			<Sgrade Grade="30" Percentage="91"/>
+			<Sgrade Grade="29" Percentage="85"/>
+			<Sgrade Grade="28" Percentage="77"/>
+			<Sgrade Grade="27" Percentage="66"/>
+			<Sgrade Grade="26" Percentage="56"/>
+			<Sgrade Grade="25" Percentage="44"/>
+			<Sgrade Grade="24" Percentage="33"/>
+			<Sgrade Grade="23" Percentage="21"/>
+			<Sgrade Grade="22" Percentage="15"/>
+			<Sgrade Grade="21" Percentage="8"/>
+			<Sgrade Grade="20" Percentage="5"/>
+			<Sgrade Grade="19" Percentage="3"/>
+			<Sgrade Grade="18" Percentage="1"/>
+			<Sgrade Grade="17" Percentage="1"/>
+			<Sgrade Grade="16" Percentage="1"/>
+			<Sgrade Grade="15" Percentage="1"/>
+			<Sgrade Grade="14" Percentage="0"/>
+			<Sgrade Grade="13" Percentage="0"/>
+			<Sgrade Grade="12" Percentage="0"/>
+			<Sgrade Grade="11" Percentage="0"/>
+			<Sgrade Grade="10" Percentage="0"/>
+		</Ctype>
+	</Group>
+	<Group Name="קידום / שליטה" gid="5">
+		<Ctype ID="">
+			<Sgrade Grade="40" Percentage="99"/>
+			<Sgrade Grade="39" Percentage="99"/>
+			<Sgrade Grade="38" Percentage="99"/>
+			<Sgrade Grade="37" Percentage="99"/>
+			<Sgrade Grade="36" Percentage="99"/>
+			<Sgrade Grade="35" Percentage="99"/>
+			<Sgrade Grade="34" Percentage="99"/>
+			<Sgrade Grade="33" Percentage="99"/>
+			<Sgrade Grade="32" Percentage="99"/>
+			<Sgrade Grade="31" Percentage="97"/>
+			<Sgrade Grade="30" Percentage="95"/>
+			<Sgrade Grade="29" Percentage="91"/>
+			<Sgrade Grade="28" Percentage="84"/>
+			<Sgrade Grade="27" Percentage="76"/>
+			<Sgrade Grade="26" Percentage="66"/>
+			<Sgrade Grade="25" Percentage="54"/>
+			<Sgrade Grade="24" Percentage="43"/>
+			<Sgrade Grade="23" Percentage="32"/>
+			<Sgrade Grade="22" Percentage="21"/>
+			<Sgrade Grade="21" Percentage="14"/>
+			<Sgrade Grade="20" Percentage="8"/>
+			<Sgrade Grade="19" Percentage="2"/>
+			<Sgrade Grade="18" Percentage="2"/>
+			<Sgrade Grade="17" Percentage="1"/>
+			<Sgrade Grade="16" Percentage="1"/>
+			<Sgrade Grade="15" Percentage="1"/>
+			<Sgrade Grade="14" Percentage="0"/>
+			<Sgrade Grade="13" Percentage="0"/>
+			<Sgrade Grade="12" Percentage="0"/>
+			<Sgrade Grade="11" Percentage="0"/>
+			<Sgrade Grade="10" Percentage="0"/>
+		</Ctype>
+	</Group>
+</tab>
+

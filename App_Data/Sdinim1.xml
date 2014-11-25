@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sdinim>
+	<Sadin ID="1" Name="תקציב מול בפועל">
+		<Versions>
+			SELECT DISTINCT p0v_GIRSA.VERSION, p0v_GIRSA.GirsaOrd, p0v_GIRSA.CategoryID FROM p2v_BvARepT LEFT OUTER JOIN p0v_GIRSA ON p0v_GIRSA.CategoryID =																			p2v_BvARepT.VersionCategoryID WHERE (p0v_GIRSA.VERSION IS NOT NULL) ORDER BY p0v_GIRSA.GirsaOrd
+		</Versions>
+		<Query>
+			<Txt>
+				Select y.[תקציב_-_1] + ' ' +  ColSource as Col , dbo.SHERUT_besqxl.[שירות_-_1], dbo.SHERUT_besqxl.[שירות_-_2],[סדר_שורות_שירות],
+				(Select min(סדר_שורות_תקציב) as  a From dbo.BUDGET_besqxl Where y.[תקציב_-_1]=[תקציב_-_1] And [תקציב_-_2] is null And [תקציב_-_3] is null) * 1000 + ColIndex As Ord
+				,sSum From
+				(SELECT VersionCategoryID,FrameCategoryID,BudgetCategoryID,[SB] As sSum, 'תקציב' as ColSource,1 as ColIndex
+				FROM [p2v_BvARepT] as x Where x.VersionCategoryID = @VersionCategoryID1 And x.DateB = @DateB
+				UNION ALL
+				SELECT VersionCategoryID,FrameCategoryID,BudgetCategoryID,[SA] As sSum, 'בפועל' as ColSource,2 as ColIndex
+				FROM [p2v_BvARepT] as x Where x.VersionCategoryID = @VersionCategoryID1 And x.DateB = @DateB
+				UNION ALL
+				SELECT VersionCategoryID,FrameCategoryID,BudgetCategoryID,isnull([sa],0) - isnull([Sb],0) As sSum, 'הפרש' as ColSource,3 asColIndex
+				FROM [p2v_BvARepT] as x Where x.VersionCategoryID = @VersionCategoryID1 And x.DateB = @DateB) as x
+				LEFT OUTER JOIN
+				dbo.p0v_GIRSA ON x.VersionCategoryID = dbo.p0v_GIRSA.CategoryID LEFT OUTER JOIN
+				dbo.SHERUT_besqxl ON x.FrameCategoryID = dbo.SHERUT_besqxl.CategoryID LEFT OUTER JOIN
+				dbo.BUDGET_besqxl as y ON x.BudgetCategoryID = y.CategoryID
+				Where [שירות_-_1] != 'חברה'
+			</Txt>
+			<Params>
+				<Param Name="@VersionCategoryID1"></Param>
+				<Param Name="@DateB"></Param>
+			</Params>
+		</Query>
+		<Pivot>
+			<Params
+			RowFields="[שירות_-_1]|[שירות_-_2]"
+			RowOrderFields="[סדר_שורות_שירות]"
+			ColumnField1="Col"
+			ColumnOrderFields="Ord"
+			DataFields="sSum"
+			Tottxt='סה^כ '
+			ColType="varchar(50)" />
+		</Pivot>
+		<AdditionalColumns>
+			<Column Name="רווח תפעולי תקציב" Sumtext="תקציב" />
+			<Column Name="רווח תפעולי בפועל" Sumtext="בפועל" />
+			<Column Name="רווח תפעולי הפרש" Sumtext="הפרש" />
+		</AdditionalColumns>
+		<Formats>
+			<RowHdr>אזור/מסגרת</RowHdr>
+			<NumberFormat>#,###,;(#,###,);  -  </NumberFormat>
+			<Seperator>הפרש</Seperator>
+		</Formats>
+	</Sadin>
+	<Sadin ID="2" Name="השוואת תקציב">
+		<Versions>
+			SELECT [גרסה_-_1] + char(183) + [גרסה_-_2] AS Version, [CategoryID] FROM [GIRSA_besqxl] Where  [גרסה_-_2] is not null ORDER BY [סדר_שורות_גרסה] DESC
+		</Versions>
+		<Query>
+			<Txt>
+				Select 'לקוחות ' +
+				(Select gx1.[גרסה_-_1] + ' ' + gx1.[גרסה_-_2]
+				From GIRSA_besqxl As Gx1
+				Where Gx1.CategoryID= Case gx.CategoryID when @VersionCategoryID1 then  @VersionCategoryID1
+				When @VersionCategoryID2 then  @VersionCategoryID2
+				When @VersionCategoryID3 then  @VersionCategoryID1
+				When @VersionCategoryID4 then  @VersionCategoryID2 End) AS ColH,
+				Case sx.[שירות_-_1] When 'הנהלת בית אקשטיין' Then 'מטה' Else 'מסגרות' End As Sherut_0,
+				sx.[שירות_-_1] sherut_1, sx.[שירות_-_2] as Sherut_2,
+				(Select round(Avg(isnull(x,0)),0) as xx From (select cast(tvd.val as float) as x ,tvd.versionCategoryID,FrameCategoryID,TermID
+				from vTermVal_Date_C as tvd)as yy where yy.termid=tl.TermID and yy.versioncategoryid = gx.CategoryID and yy.FrameCategoryID=sx.CategoryID) as sSum,
+				Case sx.[שירות_-_1] When 'הנהלת בית אקשטיין' Then 1 Else 0 End * 1000 + sx.סדר_שורות_שירות as roword,
+				(Select min(סדר_שורות_תקציב) as x From Budget_besqxl AS bx WHERE bx.CategoryID=48) * 100000 +  case when
+				gx.CategoryID IN (@VersionCategoryID1,@VersionCategoryID3) then 20000 else 10000 end +
+				(Select gx1.סדר_שורות_גרסה
+				From GIRSA_besqxl As Gx1
+				Where Gx1.CategoryID= Case gx.CategoryID		 when @VersionCategoryID1 then  @VersionCategoryID1
+				When @VersionCategoryID2 then  @VersionCategoryID2
+				When @VersionCategoryID3 then  @VersionCategoryID1
+				When @VersionCategoryID4 then  @VersionCategoryID2 End)  * 10 + 1 as ColOrd
+				From SHERUT_besqxl as sx
+				left outer join Term_List tl on tl.Term=sx.לקוחות
+				left outer join GIRSA_besqxl gx on gx.CategoryID in (@VersionCategoryID1,@VersionCategoryID2,@VersionCategoryID3,@VersionCategoryID4)
+				Where exists(Select * from BEBudget where FrameCategoryID=sx.categoryid and VersionCategoryID=gx.categoryid) And
+				sx.[שירות_-_1] not in (@Service_1) And sx.[שירות_-_1] != 'הנהלת בית אקשטיין' And sx.isparent is null And TermID!=72
+				group by sx.CategoryID,gx.[גרסה_-_1],gx.[גרסה_-_2],sx.[שירות_-_1],sx.[שירות_-_2],sx.סדר_שורות_שירות,gx.סדר_שורות_גרסה,termid,gx.CategoryID
+				UNION ALL
+
+				Select distinct '% מקדם בטחון ' As ColH, Case sx.[שירות_-_1] When 'הנהלת בית אקשטיין' Then 'מטה' Else 'מסגרות' End As Sherut_0,
+				sx.[שירות_-_1] sherut_1, sx.[שירות_-_2] as Sherut_2,
+				(Select x as xx From (select cast(tvd.val as float) as x ,tvd.versionCategoryID,FrameCategoryID,TermID
+				from vTermVal_NoDate as tvd
+				where tvd.termid=35 and tvd.versioncategoryid = gx.CategoryID and tvd.FrameCategoryID=sx.CategoryID)as yy) as sSum,
+				Case sx.[שירות_-_1] When 'הנהלת בית אקשטיין' Then 1 Else 0 End * 1000 + sx.סדר_שורות_שירות as roword,
+				(Select min(סדר_שורות_תקציב) as x From Budget_besqxl AS bx WHERE bx.CategoryID=204) * 200000 + gx.סדר_שורות_גרסה  * 10 + 3 as ColOrd
+				From SHERUT_besqxl as sx
+				left outer join Term_List tl on tl.Term=sx.לקוחות
+				left outer join GIRSA_besqxl gx on gx.CategoryID in (@VersionCategoryID1)
+				Where sx.[שירות_-_1] not in (@Service_1) And sx.isparent is null
+				UNION ALL
+
+				Select bb.[תקציב - 1] + ' ' +
+				(Select gx1.[גרסה_-_1] + ' ' + gx1.[גרסה_-_2]
+				From GIRSA_besqxl As Gx1
+				Where Gx1.CategoryID= Case bb.Versioncategoryid when @VersionCategoryID1 then  @VersionCategoryID1
+				When @VersionCategoryID2 then  @VersionCategoryID2
+				When @VersionCategoryID3 then  @VersionCategoryID1
+				When @VersionCategoryID4 then  @VersionCategoryID2 End) AS ColH,
+				Case sx.[שירות_-_1] When 'הנהלת בית אקשטיין' Then 'מטה' Else 'מסגרות' End As Sherut_0,
+				sx.[שירות_-_1] sherut_1, sx.[שירות_-_2] as Sherut_2,
+				Case bb.[תקציב - 1] When 'הכנסות'
+				then 1 - isnull((Select top 1 CAST(val as float) as xxx
+				From vTermVal_Nodate
+				Where TermID=35 And FrameCategoryID=sx.CategoryID And  Val IS not null),0) Else 1 End * bb.סכום as sSum ,
+				Case sx.[שירות_-_1] When 'הנהלת בית אקשטיין' Then 1 Else 0 End * 1000 + sx.סדר_שורות_שירות as roword,
+				(Select min(סדר_שורות_תקציב) as x From Budget_besqxl AS bx WHERE bx.[תקציב_-_1]=bb.[תקציב - 1]) * 100000 +
+				case when bb.versioncategoryid IN (@VersionCategoryID1,@VersionCategoryID3) then 20000 else 10000 end +
+				(Select gx1.סדר_שורות_גרסה
+				From GIRSA_besqxl As Gx1
+				Where Gx1.CategoryID= Case bb.Versioncategoryid when @VersionCategoryID1 then  @VersionCategoryID1
+				When @VersionCategoryID2 then  @VersionCategoryID2
+				When @VersionCategoryID3 then  @VersionCategoryID1
+				When @VersionCategoryID4 then  @VersionCategoryID2 End)  * 10  as ColOrd
+				From BEBudget as bb
+				left outer join GIRSA_besqxl as gx on gx.CategoryID=bb.VersionCategoryID
+				left outer join SHERUT_besqxl sx on sx.CategoryID=bb.FrameCategoryID
+				Where bb.[מספר תבנית] &lt; 100000000 AND bb.VersionCategoryID in (@VersionCategoryID1,@VersionCategoryID2,@VersionCategoryID3,@VersionCategoryID4)
+				And sx.[שירות_-_1] not in (@Service_1) And bb.[תקציב - 1] not in (@Budget_1)
+				UNION ALL
+
+				Select bb.[תקציב - 1] + ' % גידול.'  As ColH,
+				Case sx.[שירות_-_1] When 'הנהלת בית אקשטיין' Then 'מטה' Else 'מסגרות' End As Sherut_0,
+				sx.[שירות_-_1] sherut_1, sx.[שירות_-_2] as Sherut_2,
+				bb.סכום as sSum ,
+				Case sx.[שירות_-_1] When 'הנהלת בית אקשטיין' Then 1 Else 0 End * 1000 + sx.סדר_שורות_שירות as roword,
+				(Select min(סדר_שורות_תקציב) as x From Budget_besqxl AS bx WHERE bx.[תקציב_-_1]=bb.[תקציב - 1]) * 100000 + 20000 +
+				(Select gx1.סדר_שורות_גרסה
+				From GIRSA_besqxl As Gx1
+				Where Gx1.CategoryID= Case bb.Versioncategoryid when @VersionCategoryID1 then  @VersionCategoryID1
+				When @VersionCategoryID2 then  @VersionCategoryID2
+				When @VersionCategoryID3 then  @VersionCategoryID1
+				When @VersionCategoryID4 then  @VersionCategoryID2 End)  * 10 + 2 as ColOrd
+				From BEBudget as bb
+				left outer join GIRSA_besqxl as gx on gx.CategoryID=bb.VersionCategoryID
+				left outer join SHERUT_besqxl sx on sx.CategoryID=bb.FrameCategoryID
+				Where bb.VersionCategoryID in (@VersionCategoryID1) And sx.[שירות_-_1] not in (@Service_1) And bb.[תקציב - 1] = 'הכנסות'
+				UNION ALL
+
+				Select bb.[תקציב - 1] + ' % מהכנסות ' +
+				(Select gx1.[גרסה_-_1] + ' ' + gx1.[גרסה_-_2]
+				From GIRSA_besqxl As Gx1
+				Where Gx1.CategoryID= Case bb.Versioncategoryid when @VersionCategoryID1 then  @VersionCategoryID1
+				When @VersionCategoryID2 then  @VersionCategoryID2
+				When @VersionCategoryID3 then  @VersionCategoryID1
+				When @VersionCategoryID4 then  @VersionCategoryID2 End) +
+				Case When bb.VersionCategoryID in (@VersionCategoryID1,@VersionCategoryID3) then '.' Else  '' End AS ColH,
+				Case sx.[שירות_-_1] When 'הנהלת בית אקשטיין' Then 'מטה' Else 'מסגרות' End As Sherut_0,
+				sx.[שירות_-_1] sherut_1, sx.[שירות_-_2] as Sherut_2,
+				bb.סכום as sSum ,
+				Case sx.[שירות_-_1] When 'הנהלת בית אקשטיין' Then 1 Else 0 End * 1000 + sx.סדר_שורות_שירות as roword,
+				(Select min(סדר_שורות_תקציב) as x From Budget_besqxl AS bx WHERE bx.[תקציב_-_1]=bb.[תקציב - 1]) * 100000 +
+				case when bb.versioncategoryid IN (@VersionCategoryID1,@VersionCategoryID3) then 20000 else 10000 end +
+				(Select gx1.סדר_שורות_גרסה
+				From GIRSA_besqxl As Gx1
+				Where Gx1.CategoryID= Case bb.Versioncategoryid when @VersionCategoryID1 then  @VersionCategoryID1
+				When @VersionCategoryID2 then  @VersionCategoryID2
+				When @VersionCategoryID3 then  @VersionCategoryID1
+				When @VersionCategoryID4 then  @VersionCategoryID2 End) * 10 + 2 as ColOrd
+				From BEBudget as bb
+				left outer join GIRSA_besqxl as gx on gx.CategoryID=bb.VersionCategoryID
+				left outer join SHERUT_besqxl sx on sx.CategoryID=bb.FrameCategoryID
+				Where bb.VersionCategoryID in (@VersionCategoryID1,@VersionCategoryID2,@VersionCategoryID3,@VersionCategoryID4)
+				And sx.[שירות_-_1] not in (@Service_1) And bb.[תקציב - 1] not in (@Budget_1)
+				And bb.[תקציב - 1] != 'הכנסות'
+				UNION ALL
+
+				Select ' רווח תפעולי ' +
+				(Select gx1.[גרסה_-_1] + ' ' + gx1.[גרסה_-_2]
+				From GIRSA_besqxl As Gx1
+				Where Gx1.CategoryID= Case bb.Versioncategoryid when @VersionCategoryID1 then  @VersionCategoryID1
+				When @VersionCategoryID2 then  @VersionCategoryID2
+				When @VersionCategoryID3 then  @VersionCategoryID1
+				When @VersionCategoryID4 then  @VersionCategoryID2 End) AS ColH,
+				Case sx.[שירות_-_1] When 'הנהלת בית אקשטיין' Then 'מטה' Else 'מסגרות' End As Sherut_0,
+				sx.[שירות_-_1] sherut_1, sx.[שירות_-_2] as Sherut_2,
+				bb.סכום as sSum ,
+				Case sx.[שירות_-_1] When 'הנהלת בית אקשטיין' Then 1 Else 0 End * 1000 + sx.סדר_שורות_שירות as roword,
+				(Select min(סדר_שורות_תקציב) as x From Budget_besqxl AS bx WHERE bx.CategoryID=208) * 100000 +
+				case when bb.versioncategoryid IN (@VersionCategoryID1,@VersionCategoryID3) then 20000 else 10000 end +
+				(Select gx1.סדר_שורות_גרסה
+				From GIRSA_besqxl As Gx1
+				Where Gx1.CategoryID= Case bb.Versioncategoryid when @VersionCategoryID1 then  @VersionCategoryID1
+				When @VersionCategoryID2 then  @VersionCategoryID2
+				When @VersionCategoryID3 then  @VersionCategoryID1
+				When @VersionCategoryID4 then  @VersionCategoryID2 End)  * 10 as ColOrd
+				From BEBudget as bb
+				left outer join GIRSA_besqxl as gx on gx.CategoryID=bb.VersionCategoryID
+				left outer join SHERUT_besqxl sx on sx.CategoryID=bb.FrameCategoryID
+				Where bb.VersionCategoryID in (@VersionCategoryID1,@VersionCategoryID2,@VersionCategoryID3,@VersionCategoryID4)
+				And sx.[שירות_-_1] not in (@Service_1) And sx.[שירות_-_1] not in (@Service_1) And sx.isparent is null
+				UNION ALL
+
+				Select 'רווח תפעולי % גידול ' +
+				(Select gx1.[גרסה_-_1] + ' ' + gx1.[גרסה_-_2]
+				From GIRSA_besqxl As Gx1
+				Where Gx1.CategoryID= Case bb.Versioncategoryid when @VersionCategoryID1 then  @VersionCategoryID1
+				When @VersionCategoryID2 then  @VersionCategoryID2
+				When @VersionCategoryID3 then  @VersionCategoryID1
+				When @VersionCategoryID4 then  @VersionCategoryID2 End) +
+				Case When bb.VersionCategoryID in (@VersionCategoryID1,@VersionCategoryID3) then '.' Else  '' End AS ColH,
+				Case sx.[שירות_-_1] When 'הנהלת בית אקשטיין' Then 'מטה' Else 'מסגרות' End As Sherut_0,
+				sx.[שירות_-_1] sherut_1, sx.[שירות_-_2] as Sherut_2,
+				bb.סכום as sSum ,
+				Case sx.[שירות_-_1] When 'הנהלת בית אקשטיין' Then 1 Else 0 End * 1000 + sx.סדר_שורות_שירות As RowOrd,
+				(Select min(סדר_שורות_תקציב) as x From Budget_besqxl AS bx WHERE bx.CategoryID=208) * 100000 +
+				case when bb.versioncategoryid IN (@VersionCategoryID1,@VersionCategoryID3) then 20000 else 10000 end +
+				(Select gx1.סדר_שורות_גרסה
+				From GIRSA_besqxl As Gx1
+				Where Gx1.CategoryID= Case bb.Versioncategoryid when @VersionCategoryID1 then  @VersionCategoryID1
+				When @VersionCategoryID2 then  @VersionCategoryID2
+				When @VersionCategoryID3 then  @VersionCategoryID1
+				When @VersionCategoryID4 then  @VersionCategoryID2 End) * 10 + 2 as ColOrd
+				From BEBudget as bb
+				left outer join GIRSA_besqxl as gx on gx.CategoryID=bb.VersionCategoryID
+				left outer join SHERUT_besqxl sx on sx.CategoryID=bb.FrameCategoryID
+				Where bb.VersionCategoryID in (@VersionCategoryID1,@VersionCategoryID2,@VersionCategoryID3,@VersionCategoryID4)
+				And sx.[שירות_-_1] not in (@Service_1) And sx.[שירות_-_1] not in (@Service_1) And sx.isparent is null
+			</Txt>
+			<Params>
+				<Param Name="@VersionCategoryID1"></Param>
+				<Param Name="@VersionCategoryID2"></Param>
+				<Param Name="@VersionCategoryID3"></Param>
+				<Param Name="@VersionCategoryID4"></Param>
+				<Param Name="@Service_1">'תוכניות עסקיות','חברה','מיוחדים'</Param>
+				<Param Name="@Budget_1">'מימון','מידע','השקעות'</Param>
+			</Params>
+		</Query>
+		<Pivot>
+			<Params
+			RowFields="Sherut_0|Sherut_1|Sherut_2"
+			RowOrderFields="RowOrd"
+			ColumnField1="ColH"
+			ColumnOrderFields="ColOrd"
+			DataFields="sSum"
+			Tottxt='סה^כ '
+			ColType="varchar(50)" />
+		</Pivot>
+		<AdditionalColumns>
+			<Column Name="סכום מקדם בטחון" Sumtext="" />
+			<Column Name="רווח תפעולי מלא" Sumtext="" />
+			<Column Name="רווח תפעולי % מהכנסה" Sumtext="" />
+		</AdditionalColumns>
+		<Calculations>
+			<Column N="5" F="A|-1||D|+_3|+_1" />
+			<Column N="7" F="D|-_6|+_1" />
+			<Column N="9" F="D|-_8|+_3" />
+			<Column N="11" F="D|-_10|+_1" />
+			<Column N="13" F="D|-_12|+_3" />
+			<Column N="15" F="D|-_14|+_3" />
+			<Column N="17" F="D|-_16|+_3" />
+			<Column N="18" F="A|+_14||A|+_10||A|+_6|+_1" />
+			<Column N="19" F="D|+_18|+_1" />
+			<Column N="20" F="A|+_16||A|+_12||A|+_8|+_3" />
+			<Column N="21" F="D|+_20|+_3" />
+			<Column N="22" F="" SF="AVG"/>
+			<Column N="23" F="A|-_3||D|+_3||A|1|-_22" SF="SUM" />
+			<Column N="24" F="A|+_20|+_23" />
+			<Column N="25" F="D|+_24|+_3" />
+		</Calculations>
+		<Formats>
+			<RowHdr>אזור/מסגרת</RowHdr>
+			<NumberFormat Ftext="לקוחות">#,###;(#,###);  -  </NumberFormat>
+			<NumberFormat Ftext="%">#%;(#%);  -  </NumberFormat>
+			<NumberFormat Ftext="">#,###,;(#,###,);  -  </NumberFormat>
+			<Seperator>.</Seperator>
+		</Formats>
+	</Sadin>
+</Sdinim>

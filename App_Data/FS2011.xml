@@ -1,0 +1,376 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Form txt="סקר שביעות רצון משפחות 2011" ID="9" mode="surveynoid" limit="">
+	<txt>סקר שביעות רצון משפחות 2011</txt>
+	<Group stype="Question" txt="שאלון" gid="1">
+			<txt>סקר שביעות רצון משפחות 2011</txt>
+			<val></val>
+			<Question id="1">
+				<txt>מהמידה בה בן משפחתך מרגיש טוב ובטוח במסגרת בה הוא נמצא</txt>
+				<val></val>
+				<Answer>
+					<txt> במידה רבה מאוד</txt>
+					<val>5</val>
+				</Answer>
+				<Answer>
+					<txt> במידה רבה</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt> במידה בינונית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt> במידה מועטה</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt> בכלל לא</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+			<Question id="2">
+				<txt>ממידת המעורבות שהמסגרת מאפשרת לך באשר לחייו</txt>
+				<val></val>
+				<Answer>
+					<txt> במידה רבה מאוד</txt>
+					<val>5</val>
+				</Answer>
+				<Answer>
+					<txt> במידה רבה</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt> במידה בינונית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt> במידה מועטה</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt> בכלל לא</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+			<Question id="3">
+				<txt>מהמידה בה נותנת המסגרת מענה לצרכיו החברתיים</txt>
+				<val></val>
+				<Answer>
+					<txt> במידה רבה מאוד</txt>
+					<val>5</val>
+				</Answer>
+				<Answer>
+					<txt> במידה רבה</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt> במידה בינונית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt> במידה מועטה</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt> בכלל לא</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+			<Question id="4">
+				<txt>מהמידה בה מספקת המסגרת את התנאים הפיזיים המתאימים (סביבה אסטטית, ריהוט, מתקנים, ציוד חשמלי וכדומה)</txt>
+				<val></val>
+				<Answer>
+					<txt> במידה רבה מאוד</txt>
+					<val>5</val>
+				</Answer>
+				<Answer>
+					<txt> במידה רבה</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt> במידה בינונית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt> במידה מועטה</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt> בכלל לא</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+			<Question id="5">
+				<txt>מהמידה בה ניתנת לו ההזדמנות לממש את היכולות והכישורים שלו</txt>
+				<val></val>
+				<Answer>
+					<txt> במידה רבה מאוד</txt>
+					<val>5</val>
+				</Answer>
+				<Answer>
+					<txt> במידה רבה</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt> במידה בינונית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt> במידה מועטה</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt> בכלל לא</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+			<Question id="6">
+				<txt>מהמידה בה בית הספר מקדם אותו מבחינה לימודית (רלוונטי רק לגבי תלמידי בתי הספר)</txt>
+				<val></val>
+				<Answer>
+					<txt> במידה רבה מאוד</txt>
+					<val>5</val>
+				</Answer>
+				<Answer>
+					<txt> במידה רבה</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt> במידה בינונית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt> במידה מועטה</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt> בכלל לא</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+			<Question id="7">
+				<txt>מהמידה בה מקום העבודה שלו הולם את כישוריו (רלוונטי רק לגבי המקבלים שרותי תעסוקה)</txt>
+				<val></val>
+				<Answer>
+					<txt> במידה רבה מאוד</txt>
+					<val>5</val>
+				</Answer>
+				<Answer>
+					<txt> במידה רבה</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt> במידה בינונית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt> במידה מועטה</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt> בכלל לא</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+			<Question id="8">
+				<txt>מהשכר אותו הוא מקבל (רלוונטי רק לגבי המקבלים שרותי תעסוקה)</txt>
+				<val></val>
+				<Answer>
+					<txt> במידה רבה מאוד</txt>
+					<val>5</val>
+				</Answer>
+				<Answer>
+					<txt> במידה רבה</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt> במידה בינונית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt> במידה מועטה</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt> בכלל לא</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+			<Question id="9">
+				<txt>מהמידה בה מאפשרת המסגרת או פועלת, לקידום עצמאותו בכל הקשור לפעילויות היום יומיות בהתאם ליכולותיו - לאכול, להתלבש, להגיע לבד ממקום למקום  (רלוונטי רק לאלה שזקוקים לתמיכה בתחום זה)</txt>
+				<val></val>
+				<Answer>
+					<txt> במידה רבה מאוד</txt>
+					<val>5</val>
+				</Answer>
+				<Answer>
+					<txt> במידה רבה</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt> במידה בינונית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt> במידה מועטה</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt> בכלל לא</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+			<Question id="10">
+				<txt>מהמידה בה מאפשרת המסגרת בחירה אישית בנושאים שונים</txt>
+				<val></val>
+				<Answer>
+					<txt> במידה רבה מאוד</txt>
+					<val>5</val>
+				</Answer>
+				<Answer>
+					<txt> במידה רבה</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt> במידה בינונית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt> במידה מועטה</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt> בכלל לא</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+			<Question id="11">
+				<txt>מהמידה בה הוא מרגיש כי משתפים אותו בהחלטות הקשורות בו</txt>
+				<val></val>
+				<Answer>
+					<txt> במידה רבה מאוד</txt>
+					<val>5</val>
+				</Answer>
+				<Answer>
+					<txt> במידה רבה</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt> במידה בינונית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt> במידה מועטה</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt> בכלל לא</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+			<Question id="12">
+				<txt>מהמידה בה מתקיימות פעילויות עם הקהילה הרחבה מחוץ למסגרת</txt>
+				<val></val>
+				<Answer>
+					<txt> במידה רבה מאוד</txt>
+					<val>5</val>
+				</Answer>
+				<Answer>
+					<txt> במידה רבה</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt> במידה בינונית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt> במידה מועטה</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt> בכלל לא</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+			<Question id="13">
+				<txt>מהמידה בה פועלת המסגרת ליצור לו קבוצה חברתית תומכת</txt>
+				<val></val>
+				<Answer>
+					<txt> במידה רבה מאוד</txt>
+					<val>5</val>
+				</Answer>
+				<Answer>
+					<txt> במידה רבה</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt> במידה בינונית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt> במידה מועטה</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt> בכלל לא</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+			<txt>חטיבה טיפולית</txt>
+			<val></val>
+			<Question id="14">
+				<txt>מהמידה בה פועלת המסגרת למימוש הזכויות המגיעות לו עפ"י החוק</txt>
+				<val></val>
+				<Answer>
+					<txt> במידה רבה מאוד</txt>
+					<val>5</val>
+				</Answer>
+				<Answer>
+					<txt> במידה רבה</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt> במידה בינונית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt> במידה מועטה</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt> בכלל לא</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+			<Question id="15">
+				<txt>באופן כללי, באיזו מידה הינך שבע רצון מהשרות שהוא מקבל במסגרת</txt>
+				<val></val>
+				<Answer>
+					<txt> במידה רבה מאוד</txt>
+					<val>5</val>
+				</Answer>
+				<Answer>
+					<txt> במידה רבה</txt>
+					<val>4</val>
+				</Answer>
+				<Answer>
+					<txt> במידה בינונית</txt>
+					<val>3</val>
+				</Answer>
+				<Answer>
+					<txt> במידה מועטה</txt>
+					<val>2</val>
+				</Answer>
+				<Answer>
+					<txt> בכלל לא</txt>
+					<val>1</val>
+				</Answer>
+			</Question>
+			<Question id="16">
+				<txt>
+					האם ישנם דברים שאתה רוצה להוסיף שלדעתך לא באו לידי ביטוי בשאלון?(טקסט חופשי)
+				</txt>
+				<textbox>yes</textbox>
+			</Question>
+	</Group>
+</Form>

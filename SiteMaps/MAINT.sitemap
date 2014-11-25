@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="default.aspx" title="דף הבית"  description="כניסה">
+    <siteMapNode title="ניהול שוטף">
+        <siteMapNode title="קליטה וסיום העסקת עובד" url="~/EmpForm.aspx" />
+     </siteMapNode>
+	  <siteMapNode title="דוחות" >
+		  <siteMapNode title="" url="p3aSummary.aspx" />
+          <siteMapNode title="- דוח תקציב למסגרת" url="Reports.aspx?r=1" />
+          <siteMapNode title="- פרויקטים גדולים" url="Reports.aspx?r=2" />
+          <siteMapNode title="- עמידה בתקציב כח אדם" url="~/p1aSalary.Aspx" />
+		  <siteMapNode title="- עמידה בתקציב הוצאות" url="~/p3aBVAREPM.aspx" />
+	  </siteMapNode>
+	  <siteMapNode title="שונות">
+        <siteMapNode title="שינוי סיסמא" url="cpe.aspx" />
+    </siteMapNode>
+    <siteMapNode title="יציאה מהמערכת" url="~/Exit.aspx" />
+	<siteMapNode url="p3aFeedBack.aspx" />
+	<siteMapNode url="p3aproject.aspx" />
+	<siteMapNode url="p3aDetTrans.aspx" />
+	<siteMapNode url="p1aSalaryAcc.Aspx" />
+    <siteMapNode url="p1aSalaryTran.Aspx" />
+    <siteMapNode url="p3aDontShowMessage.aspx" />
+	<siteMapNode url="ge.aspx" />
+	<siteMapNode url="ErrMessage.aspx" />
+ </siteMapNode>
+</siteMap>
