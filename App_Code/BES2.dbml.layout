@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 15, 11.875" name="BES2">
+  <DataContextMoniker Name="/BES2DataContext" />
+  <nestedChildShapes>
+    <classShape Id="f60c398b-350d-4a63-b706-198f5d050cdb" absoluteBounds="5.875, 3.5, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/BES2DataContext/p5t_Form" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8c954ae8-081f-4295-8205-ec154e756d4b" absoluteBounds="5.8900000000000006, 3.96, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9baba684-b6af-4033-be70-6c347238c0f5" absoluteBounds="6.25, 1, 2, 1.9631982421875"> 
+      <DataClassMoniker Name="/BES2DataContext/p5t_Text" />
+      <nestedChildShapes>
+        <elementListCompartment Id="738be4e4-9ab1-4a3b-8509-13278af4b7c1" absoluteBounds="6.2650000000000006, 1.46, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4601c8e0-509c-4be1-a423-88450e776658" absoluteBounds="9.375, 4.375, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/BES2DataContext/p5v_Answer" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ba41f2a3-907a-471c-9e6c-373654b2bdc9" absoluteBounds="9.39, 4.835, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a05f470b-f18c-4dd3-a94b-78a25623accb" absoluteBounds="9.125, 0.5, 2, 3.5016097005208326">
+      <DataClassMoniker Name="/BES2DataContext/CustEventList" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cfde5847-aa73-4be0-9d98-fb15bb18879a" absoluteBounds="9.14, 0.96, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="52a21419-0918-4f93-887a-04b5848cc546" absoluteBounds="2.5, 2.5, 2, 1.9631982421875">
+      <DataClassMoniker Name="/BES2DataContext/p4v_Tarif" />
+      <nestedChildShapes>
+        <elementListCompartment Id="64331192-261b-4e80-a29e-4969423afe25" absoluteBounds="2.515, 2.96, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a9d38eb3-055c-4e59-96da-acc2975c5715" absoluteBounds="2.25, 5, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/BES2DataContext/p5t_FormResult" />
+      <nestedChildShapes>
+        <elementListCompartment Id="54a725ec-25e5-45bd-a992-856fa3e03766" absoluteBounds="2.265, 5.46, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="de3960f6-ff7d-4ee4-a799-08dfd97adc07" absoluteBounds="11, 9, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/BES2DataContext/p6t_ActStatus" />
+      <nestedChildShapes>
+        <elementListCompartment Id="dbc928e6-3b96-442e-9c7e-476f9e84f986" absoluteBounds="11.015, 9.46, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="66f20fa0-d4c6-4967-8650-9dbed03472fb" absoluteBounds="8.625, 7, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/BES2DataContext/p6t_job" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2e504f94-0f2b-4904-a956-d915d2804618" absoluteBounds="8.64, 7.4600000000000009, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5d79eef3-5771-423c-b7d4-727c501089e4" absoluteBounds="5.5, 8.125, 2, 3.1170068359375014">
+      <DataClassMoniker Name="/BES2DataContext/FrameList" />
+      <nestedChildShapes>
+        <elementListCompartment Id="744868f6-c66f-412f-b445-904c80f4f201" absoluteBounds="5.515, 8.585, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8c96774e-0f60-487f-ae84-0a57c47c3e91" absoluteBounds="8.375, 8.875, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/BES2DataContext/p6t_Emp" />
+      <nestedChildShapes>
+        <elementListCompartment Id="836ccf5d-a92b-4e64-acec-e04ad029b452" absoluteBounds="8.39, 9.335, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(10.375 : 9.69314697265625); (11 : 9.69314697265625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/BES2DataContext/p6t_Emp/p6t_Emp_p6t_ActStatus" />
+      <nodes>
+        <classShapeMoniker Id="8c96774e-0f60-487f-ae84-0a57c47c3e91" />
+        <classShapeMoniker Id="de3960f6-ff7d-4ee4-a799-08dfd97adc07" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(9.5 : 8.19399251302083); (9.5 : 8.875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/BES2DataContext/p6t_job/p6t_job_p6t_Emp" />
+      <nodes>
+        <classShapeMoniker Id="66f20fa0-d4c6-4967-8650-9dbed03472fb" />
+        <classShapeMoniker Id="8c96774e-0f60-487f-ae84-0a57c47c3e91" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="77f5bc60-12ae-4538-b1e5-5d8e11fd2596" absoluteBounds="1, 7, 2, 4.6554182942708326">
+      <DataClassMoniker Name="/BES2DataContext/p1t_Category" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f2f1ddaa-5079-4b20-bc05-d3dab856422f" absoluteBounds="1.0150000000000001, 7.46, 1.9700000000000002, 4.095418294270833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f50a6736-1542-4319-b9de-470422002b41" absoluteBounds="12.75, 3.375, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/BES2DataContext/vEFrameList" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9980923b-2b89-4036-9ee5-c54cc2e1a76e" absoluteBounds="12.765, 3.835, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="de8b8ce5-8121-46f2-94aa-2dadc2e1492a" absoluteBounds="1.625, 0.5, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/BES2DataContext/vSurvey_Answer" />
+      <nestedChildShapes>
+        <elementListCompartment Id="89e5c90e-1dd2-4b7e-ab50-b051c1d836ae" absoluteBounds="1.6400000000000001, 0.96, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
