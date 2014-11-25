@@ -12,7 +12,7 @@
             height: 400px;
             overflow: scroll;
             display: none;   
-        }
+        } 
 
         .wkshow {  
             position: fixed;   
