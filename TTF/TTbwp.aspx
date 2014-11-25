@@ -6,8 +6,8 @@
             position: fixed;
             top: 120px;
             left: 100px;
-            width: 820px;
-            background-color: red;
+            width: 820px;    
+            background-color: red;  
             border: 3px outset gray;
             height: 400px;
             overflow: scroll;
